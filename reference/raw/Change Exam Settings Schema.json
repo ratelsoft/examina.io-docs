@@ -47,22 +47,5 @@
     "proctorPolicySeconds": {
       "type": "integer"
     }
-  },
-  "required": [
-    "visibility",
-    "allowPhone",
-    "allowTablet",
-    "phoneExamPage",
-    "tabletExamPage",
-    "showAnswersAfterExam",
-    "showResultsAfterExam",
-    "requirePreverification",
-    "examinerName",
-    "examinerEmail",
-    "internetPolicyDisconnect",
-    "internetPolicyAttempts",
-    "inExamLiveProcturing",
-    "proctorPolicyDisconnect",
-    "proctorPolicySeconds"
-  ]
+  }
 }

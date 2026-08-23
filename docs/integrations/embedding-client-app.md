@@ -165,7 +165,7 @@ Backend flow:
    - `/login/exam/{examId}/code/{examineeCode}/token`
    - `/login/exam/{examId}/id/{examineeId}/token`
 4. Build the Client URL with URL-encoded query values.
-5. Render the public key and the one-time login URL to the approved page.
+5. Render the public key and the time-limited login URL to the approved page.
 
 Example link shape:
 

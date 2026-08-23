@@ -45,14 +45,11 @@
         "object",
         "null"
       ],
-      "required": [
-        "examinerName"
-      ],
-      "properties": {
-        "examinerName": {
-          "type": "string",
-          "description": "A map of the Examiner name and the Examiner email address."
-        }
+      "description": "A one-entry map from the examiner name to the examiner email address.",
+      "minProperties": 1,
+      "maxProperties": 1,
+      "additionalProperties": {
+        "type": "string"
       }
     },
     "internetDisconnectionPolicy": {

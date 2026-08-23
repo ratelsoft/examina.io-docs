@@ -73,27 +73,6 @@ Label** to replace the default label with a clearer name such as
 If several questions use the same passage, keep the wording and formatting
 consistent and preview each question.
 
-## Configure defaults
-
-For a series of similar questions, select **Edit → Configure Defaults**.
-
-![Configure default question settings](../../assets/images/Designer_Images/Question_Configure_Default_Settings.jpg)
-
-Defaults can cover:
-
-- case study, label, and score;
-- multiple-choice option count, shuffle, and partial scoring;
-- fill-in-the-blank case, whitespace, order, and partial-scoring rules;
-- paper duration, arrangement, calculator, and mark display; and
-- exam paper flow, answer display, and inter-paper navigation.
-
-Enable **Apply as Default Setting** to apply the configuration to questions
-created afterward. Existing questions are not automatically rewritten.
-
-![Apply the configured defaults to new questions](../../assets/images/Designer_Images/Question_Apply_Configure_Default_Settings.jpg)
-
-Disable the option when the repeated question series is complete.
-
 ## Edit and preview content
 
 The Edit pane supports text formatting, headings, colour, lists, alignment,
@@ -156,5 +135,4 @@ Before export, verify:
 - spelling, grammar, and mathematical notation are correct; and
 - the question works at the smallest permitted screen size.
 
-To reuse existing content, see [Import exams, papers, and
-questions](importing-questions.md).
+To reuse existing content, see [Reuse project content](importing-questions.md).

@@ -38,6 +38,12 @@ jobs:
       - name: Build guide site
         run: mkdocs build --strict
 
+      - name: Validate application contract
+        run: python scripts/check_application_contract.py
+
+      - name: Lint OpenAPI description
+        run: npx --yes @redocly/cli@2.47.0 lint reference/examina.io.v1.yaml
+
       - name: Build API reference
         run: >-
           npx --yes @redocly/cli@2.47.0 build-docs

@@ -76,15 +76,11 @@ Open **Contents and Sections** to create sections and set:
 For example, a language paper can contain Oral, Comprehension, and Vocabulary
 sections in a fixed order while randomizing questions inside each section.
 
-## Import questions
+## Reuse questions
 
-Right-click the paper and choose **Import Questions from File** to add questions
-from a supported project or text-based source.
-
-![Import questions into a paper](../../assets/images/Designer_Images/Download_or_Import_Questions.jpg)
-
-See [Import exams, papers, and questions](importing-questions.md) for file
-selection and text-template rules.
+To duplicate existing content in the open project, copy a question and paste it
+into the destination paper. See [Reuse project content](importing-questions.md)
+for the supported workflow.
 
 ## Validate the paper
 

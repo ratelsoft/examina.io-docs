@@ -14,7 +14,7 @@ and export a delivery package for Manager.
 
 ## Workspace tour
 
-- **Toolbar:** File, Edit, Help, and other application commands.
+- **Toolbar:** File, Help, and other application commands.
 - **Exam Explorer:** the project tree containing exams, papers, sections, and
   questions.
 - **Properties:** settings for the item currently selected in Exam Explorer.
@@ -75,5 +75,5 @@ For a reliable project:
 6. save the project; and
 7. export one exam for [Manager](../manager/import-exams.md).
 
-You can also [import exams, papers, or questions](importing-questions.md) from
-supported files.
+You can also [reuse papers and questions](importing-questions.md) within the
+open project.

@@ -69,7 +69,7 @@ nav:
           - The exam: user-guides/designer/exam.md
           - The paper: user-guides/designer/paper.md
           - Creating questions: user-guides/designer/questions.md
-          - Importing questions: user-guides/designer/importing-questions.md
+          - Reuse project content: user-guides/designer/importing-questions.md
       - Manager:
           - Manager overview: user-guides/manager/overview.md
           - Import exams: user-guides/manager/import-exams.md
