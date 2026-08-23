@@ -40,8 +40,11 @@ EXPECTED_ROUTES = {
     ("GET", "/login/exam/{}/id/{}/token"),
     ("GET", "/login/exam/{}/code/{}/token"),
     ("GET", "/examinees"),
+    ("POST", "/examinees"),
+    ("POST", "/examinees/bulk-upsert"),
     ("GET", "/examinees/{}"),
     ("GET", "/examinee/{}"),
+    ("PATCH", "/examinee/{}"),
     ("DELETE", "/examinee/{}"),
     ("GET", "/examinee/{}/exams"),
     ("GET", "/examinee/{}/exams/{}"),
@@ -56,6 +59,18 @@ EXPECTED_ROUTES = {
     ("GET", "/group/{}/examinees"),
     ("DELETE", "/group/{}/examinees"),
     ("POST", "/group/{}/groups"),
+    ("POST", "/assignments"),
+    ("GET", "/assignments/{}"),
+    ("PATCH", "/assignments/{}"),
+    ("DELETE", "/assignments/{}"),
+    ("POST", "/exam-sessions"),
+    ("GET", "/results"),
+    ("GET", "/results/{}"),
+    ("GET", "/webhook-endpoints"),
+    ("POST", "/webhook-endpoints"),
+    ("DELETE", "/webhook-endpoints/{}"),
+    ("GET", "/webhook-endpoints/deliveries"),
+    ("POST", "/webhook-endpoints/deliveries/{}/retry"),
 }
 
 
@@ -98,7 +113,6 @@ def main() -> int:
         "Import Questions from File",
         "Import Paper from File",
         "Edit → Configure Defaults",
-        "one-time login URL",
     )
     for claim in forbidden:
         if claim in claims:

@@ -10,9 +10,9 @@ info:
 
     ### Authentication
 
-    Send every request over HTTPS with the API Secret Key through Basic
-    Authentication. The username is always `api`; the password is the
-    organization's API Secret Key.
+    New integrations should send a scoped API key as a Bearer token. Legacy
+    organization API Secret Keys remain supported through Basic Authentication
+    during migration; the username is always `api`.
 
     > **Keep the API Secret Key secure**
     >
@@ -39,6 +39,7 @@ info:
 servers:
   - url: 'https://www.examina.io/api/v1'
 security:
+  - developerApiKey: []
   - apiSecretKey: []
 tags:
   - name: exams
@@ -53,6 +54,15 @@ tags:
   - name: groups
     x-displayName: Groups
     description: Organize examinees and manage group assignments.
+  - name: assignments
+    x-displayName: Assignments
+    description: Assign an examinee and selected papers to an exam.
+  - name: results
+    x-displayName: Results
+    description: Retrieve authoritative completed-exam results.
+  - name: webhooks
+    x-displayName: Webhooks
+    description: Configure signed event delivery and inspect or retry deliveries.
 paths:
   /exams:
     get:
@@ -130,6 +140,7 @@ paths:
       operationId: get-exams
       description: 'Get all exams created in your organization. Response is paginated and is 1-based. You can specify the optional *page* path param to load exams on that page.'
       security:
+        - developerApiKey: []
         - apiSecretKey: []
     parameters:
       - schema:
@@ -245,6 +256,7 @@ paths:
                   format: binary
         description: 'The **required** Exam .smex file sent as a multipart request with the handle: ***file***'
       security:
+        - developerApiKey: []
         - apiSecretKey: []
   '/exam/{id}':
     get:
@@ -305,6 +317,7 @@ paths:
       description: Get Exam details using either the Exam Code or Exam ID
       parameters: []
       security:
+        - developerApiKey: []
         - apiSecretKey: []
     delete:
       summary: Delete an Exam
@@ -325,6 +338,7 @@ paths:
       operationId: 'delete-exam-:id'
       description: Delete an Exam using either the Exam Code or Exam ID
       security:
+        - developerApiKey: []
         - apiSecretKey: []
     parameters:
       - schema:
@@ -346,6 +360,61 @@ paths:
             application/json:
               schema:
                 $ref: ./raw/Paginated Examinees.json
+    post:
+      summary: Create an examinee
+      operationId: create-examinee
+      tags: [examinees]
+      security:
+        - developerApiKey: []
+        - apiSecretKey: []
+      parameters:
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ExamineeInput'
+      responses:
+        '201':
+          description: Examinee created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ExamineeView'
+        '409':
+          $ref: '#/components/responses/Conflict'
+        '422':
+          $ref: '#/components/responses/InvalidRequest'
+  /examinees/bulk-upsert:
+    post:
+      summary: Create or update up to 500 examinees
+      operationId: bulk-upsert-examinees
+      tags: [examinees]
+      security:
+        - developerApiKey: []
+        - apiSecretKey: []
+      parameters:
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [examinees]
+              properties:
+                examinees:
+                  type: array
+                  minItems: 1
+                  maxItems: 500
+                  items:
+                    $ref: '#/components/schemas/ExamineeInput'
+      responses:
+        '200':
+          description: Upsert summary and resulting examinees
+        '422':
+          $ref: '#/components/responses/InvalidRequest'
   '/examinees/{page}':
     get:
       summary: Get Examinees
@@ -395,6 +464,7 @@ paths:
       operationId: get-examinees
       description: 'This endpoint is paginated. For other pages you need to specify the ***page*** number path parameter.'
       security:
+        - developerApiKey: []
         - apiSecretKey: []
     parameters:
       - schema:
@@ -453,6 +523,7 @@ paths:
       operationId: get-exams-tag
       description: 'Find all exams having this tag. This is a paginated response and so an optional *page* number can be added to the request'
       security:
+        - developerApiKey: []
         - apiSecretKey: []
     parameters:
       - schema:
@@ -530,6 +601,7 @@ paths:
       operationId: get-exam-examId-examinees
       description: 'Retrieve Examinees mapped to the exam specified by the *examId*. This returns a paginated response and so an optional page number can be specified.'
       security:
+        - developerApiKey: []
         - apiSecretKey: []
   '/exam/{examId}/tags':
     parameters:
@@ -618,6 +690,7 @@ paths:
                   - examina.io
         description: 'Send a JSON array payload with the tags you want to add to the Exam. This works as a transaction in that if there is any error in one tag, none will be added.'
       security:
+        - developerApiKey: []
         - apiSecretKey: []
     delete:
       summary: Delete tags from an Exam
@@ -672,6 +745,7 @@ paths:
                   - examina.io
         description: Send a JSON array payload with the tag(s) you want to remove from Exam.
       security:
+        - developerApiKey: []
         - apiSecretKey: []
     get:
       summary: Get all tags for an Exam
@@ -695,6 +769,7 @@ paths:
       tags:
         - exams
       security:
+        - developerApiKey: []
         - apiSecretKey: []
   '/examinee/{id}':
     parameters:
@@ -763,7 +838,33 @@ paths:
       operationId: get-examinee-id
       description: This allows fetching information about an Examinee using either the Examinee ID or the Examinee Code.
       security:
+        - developerApiKey: []
         - apiSecretKey: []
+    patch:
+      summary: Update an examinee
+      operationId: update-examinee
+      tags: [examinees]
+      security:
+        - developerApiKey: []
+        - apiSecretKey: []
+      parameters:
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ExamineeInput'
+      responses:
+        '200':
+          description: Examinee updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ExamineeView'
+        '404': { description: Examinee not found }
+        '422':
+          $ref: '#/components/responses/InvalidRequest'
     delete:
       summary: Delete an Examinee using ID or Code
       operationId: delete-examinee-id
@@ -799,6 +900,7 @@ paths:
       tags:
         - examinees
       security:
+        - developerApiKey: []
         - apiSecretKey: []
   '/examinee/{id}/exams':
     get:
@@ -851,6 +953,7 @@ paths:
 
         This is a paginated response and allows specifying an optional page number as path parameter.
       security:
+        - developerApiKey: []
         - apiSecretKey: []
   '/exam/{examId}/tags/all':
     parameters:
@@ -880,6 +983,7 @@ paths:
       operationId: delete-exam-examId-tags-all
       description: ''
       security:
+        - developerApiKey: []
         - apiSecretKey: []
   '/login/exam/{examId}/code/{examineeCode}/token':
     parameters:
@@ -940,6 +1044,7 @@ paths:
 
         This endpoint uses the Examinee Code of the examinee. If you did not specify one when creating the Examinee, one will be autogenerated.
       security:
+        - developerApiKey: []
         - apiSecretKey: []
       parameters:
         - name: duration
@@ -1008,6 +1113,7 @@ paths:
 
         This endpoint uses the global unique ID of the examinee to create the token.
       security:
+        - developerApiKey: []
         - apiSecretKey: []
       parameters:
         - name: duration
@@ -1065,6 +1171,7 @@ paths:
                     status: true
       operationId: put-exam-examId-settings
       security:
+        - developerApiKey: []
         - apiSecretKey: []
       description: |-
         This is to replace all of the exam settings. If you do not supply a value for any settings, they would be set to the default.
@@ -1139,6 +1246,7 @@ paths:
       tags:
         - exams
       security:
+        - developerApiKey: []
         - apiSecretKey: []
     patch:
       summary: Change Exam settings
@@ -1204,6 +1312,7 @@ paths:
 
           The minimum value for `internetPolicyAttempts` is 1.
       security:
+        - developerApiKey: []
         - apiSecretKey: []
   /group:
     post:
@@ -1268,6 +1377,7 @@ paths:
           `name` is the name of the Group.
           `desc` is optional and is the description for the group. If this is not specified, the name is used as the description.
       security:
+        - developerApiKey: []
         - apiSecretKey: []
   '/groups/{page}':
     get:
@@ -1385,6 +1495,7 @@ paths:
                     status: true
       operationId: get-group-groupId-examinees
       security:
+        - developerApiKey: []
         - apiSecretKey: []
       description: This allows you to get the IDs of all examinees in a Group
     post:
@@ -1420,6 +1531,7 @@ paths:
                     status: true
       operationId: post-group-groupId-examinees
       security:
+        - developerApiKey: []
         - apiSecretKey: []
       description: 'This allows you to add examinees to a group. If any examinee does not exist, or is already a member of the group, it is silently ignored.'
       requestBody:
@@ -1469,6 +1581,7 @@ paths:
                     status: true
       operationId: delete-group-groupId-examinees
       security:
+        - developerApiKey: []
         - apiSecretKey: []
       description: |-
         This allows you to remove examinees from a group. Any examinee that was not found will be silently ignored.
@@ -1537,6 +1650,7 @@ paths:
                         - 5eefc6f4e23b88151efc9326
       operationId: get-group-groupId
       security:
+        - developerApiKey: []
         - apiSecretKey: []
     delete:
       summary: Delete a Group
@@ -1556,6 +1670,7 @@ paths:
                     status: true
       operationId: delete-group-groupId
       security:
+        - developerApiKey: []
         - apiSecretKey: []
       description: This does not delete the examinees in the group. The examinees are removed from the group and then the group is deleted.
   '/group/{groupId}/groups':
@@ -1677,6 +1792,7 @@ paths:
       operationId: get-exam-examId-examinee-examineeId
       description: Get Mapping information for an Examinee.
       security:
+        - developerApiKey: []
         - apiSecretKey: []
     delete:
       summary: Delete Exam Examinee Mapping
@@ -1697,6 +1813,7 @@ paths:
                     status: true
       operationId: delete-exam-examId-examinee-examineeId
       security:
+        - developerApiKey: []
         - apiSecretKey: []
       description: Delete Exam mapping for an Examinee
   '/exam/{examId}/examinees':
@@ -1764,6 +1881,7 @@ paths:
       operationId: post-exam-examId-examinees
       description: Add multiple examinees to take an exam with same papers and time.
       security:
+        - developerApiKey: []
         - apiSecretKey: []
       requestBody:
         content:
@@ -1850,6 +1968,7 @@ paths:
                       - 5ec0b77182ae4f4d01109319
       operationId: delete-exam-examId-examinees
       security:
+        - developerApiKey: []
         - apiSecretKey: []
       description: |-
         This does not delete examinees or exams. It only removes examinees from taking an exam.
@@ -1939,6 +2058,7 @@ paths:
                     status: false
       operationId: post-groups
       security:
+        - developerApiKey: []
         - apiSecretKey: []
       requestBody:
         content:
@@ -2081,10 +2201,373 @@ paths:
           The supplied `startTime` would be converted to a UTC date-time for the same instant using `Africa/Accra` as reference.
       description: ''
       security:
+        - developerApiKey: []
         - apiSecretKey: []
+  /assignments:
+    post:
+      summary: Assign an examinee to an exam
+      operationId: create-assignment
+      tags: [assignments]
+      security:
+        - developerApiKey: []
+        - apiSecretKey: []
+      parameters:
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AssignmentInput'
+      responses:
+        '201':
+          description: Assignment created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Assignment'
+        '409':
+          $ref: '#/components/responses/Conflict'
+  '/assignments/{assignmentId}':
+    parameters:
+      - $ref: '#/components/parameters/AssignmentId'
+    get:
+      summary: Get an assignment
+      operationId: get-assignment
+      tags: [assignments]
+      security:
+        - developerApiKey: []
+        - apiSecretKey: []
+      responses:
+        '200':
+          description: Assignment
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Assignment'
+    patch:
+      summary: Update an assignment before the exam starts
+      operationId: update-assignment
+      tags: [assignments]
+      security:
+        - developerApiKey: []
+        - apiSecretKey: []
+      parameters:
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AssignmentInput'
+      responses:
+        '200':
+          description: Updated assignment
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Assignment'
+        '409':
+          $ref: '#/components/responses/Conflict'
+    delete:
+      summary: Delete an assignment that has not started
+      operationId: delete-assignment
+      tags: [assignments]
+      security:
+        - developerApiKey: []
+        - apiSecretKey: []
+      responses:
+        '204': { description: Assignment deleted }
+        '409':
+          $ref: '#/components/responses/Conflict'
+  /exam-sessions:
+    post:
+      summary: Create a single-use exam launch URL
+      operationId: create-exam-session
+      tags: [client, assignments]
+      security:
+        - developerApiKey: []
+        - apiSecretKey: []
+      parameters:
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [examId, examineeId]
+              properties:
+                examId: { type: string }
+                examineeId: { type: string }
+                expiresInSeconds:
+                  type: integer
+                  minimum: 60
+                  maximum: 86400
+                  default: 3600
+      responses:
+        '201':
+          description: A short-lived, single-use launch URL
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [assignmentId, launchUrl, expiresAt, singleUse]
+                properties:
+                  assignmentId: { type: string }
+                  launchUrl: { type: string, format: uri }
+                  expiresAt: { type: string, format: date-time }
+                  singleUse: { type: boolean, const: true }
+        '409':
+          $ref: '#/components/responses/Conflict'
+  /results:
+    get:
+      summary: List completed results
+      operationId: list-results
+      tags: [results]
+      security:
+        - developerApiKey: []
+        - apiSecretKey: []
+      parameters:
+        - $ref: '#/components/parameters/Page'
+        - $ref: '#/components/parameters/PageSize'
+        - name: examId
+          in: query
+          schema: { type: string }
+        - name: examineeId
+          in: query
+          schema: { type: string }
+      responses:
+        '200':
+          description: Paginated completed results
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Result'
+                  page: { type: integer }
+                  pageSize: { type: integer }
+                  total: { type: integer, format: int64 }
+                  pages: { type: integer }
+  '/results/{assignmentId}':
+    parameters:
+      - $ref: '#/components/parameters/AssignmentId'
+    get:
+      summary: Get a completed result
+      operationId: get-result
+      tags: [results]
+      security:
+        - developerApiKey: []
+        - apiSecretKey: []
+      responses:
+        '200':
+          description: Completed result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Result'
+        '404': { description: Completed result not found }
+  /webhook-endpoints:
+    get:
+      summary: List webhook endpoints
+      operationId: list-webhook-endpoints
+      tags: [webhooks]
+      security:
+        - developerApiKey: []
+        - apiSecretKey: []
+      responses:
+        '200':
+          description: Webhook endpoints
+    post:
+      summary: Create a signed webhook endpoint
+      operationId: create-webhook-endpoint
+      tags: [webhooks]
+      security:
+        - developerApiKey: []
+        - apiSecretKey: []
+      parameters:
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [url]
+              properties:
+                url: { type: string, format: uri }
+                events:
+                  type: array
+                  items: { type: string, enum: [result.completed] }
+      responses:
+        '201':
+          description: Endpoint created. `signingSecret` is returned only in this response.
+  '/webhook-endpoints/{endpointId}':
+    parameters:
+      - name: endpointId
+        in: path
+        required: true
+        schema: { type: string }
+    delete:
+      summary: Disable a webhook endpoint
+      operationId: disable-webhook-endpoint
+      tags: [webhooks]
+      security:
+        - developerApiKey: []
+        - apiSecretKey: []
+      responses:
+        '204': { description: Endpoint disabled }
+  /webhook-endpoints/deliveries:
+    get:
+      summary: List webhook deliveries
+      operationId: list-webhook-deliveries
+      tags: [webhooks]
+      security:
+        - developerApiKey: []
+        - apiSecretKey: []
+      parameters:
+        - $ref: '#/components/parameters/Page'
+        - $ref: '#/components/parameters/PageSize'
+      responses:
+        '200': { description: Paginated delivery history }
+  '/webhook-endpoints/deliveries/{deliveryId}/retry':
+    parameters:
+      - name: deliveryId
+        in: path
+        required: true
+        schema: { type: string }
+    post:
+      summary: Retry a webhook delivery
+      operationId: retry-webhook-delivery
+      tags: [webhooks]
+      security:
+        - developerApiKey: []
+        - apiSecretKey: []
+      responses:
+        '202': { description: Delivery queued }
+        '404': { description: Delivery not found }
 components:
-  schemas: {}
+  parameters:
+    IdempotencyKey:
+      name: Idempotency-Key
+      in: header
+      required: true
+      description: A caller-generated key, unique to this operation for at least 24 hours.
+      schema: { type: string, maxLength: 200 }
+    AssignmentId:
+      name: assignmentId
+      in: path
+      required: true
+      schema: { type: string }
+    Page:
+      name: page
+      in: query
+      schema: { type: integer, minimum: 1, default: 1 }
+    PageSize:
+      name: pageSize
+      in: query
+      schema: { type: integer, minimum: 1, maximum: 100, default: 25 }
+  responses:
+    Conflict:
+      description: The request conflicts with existing state or idempotency history.
+      content:
+        application/json:
+          schema:
+            $ref: ./raw/Error Format.json
+    InvalidRequest:
+      description: Request validation failed.
+      content:
+        application/json:
+          schema:
+            $ref: ./raw/Error Format.json
+  schemas:
+    ExamineeInput:
+      type: object
+      properties:
+        code: { type: string, minLength: 3 }
+        passcode: { type: string, writeOnly: true }
+        firstName: { type: string }
+        middleName: { type: string }
+        lastName: { type: string }
+        dateOfBirth: { type: string, format: date }
+        gender: { type: integer, minimum: 0, maximum: 2 }
+        phoneNumber: { type: string }
+        email: { type: string, format: email }
+      description: firstName, lastName, and passcode are required when creating a new examinee.
+    ExamineeView:
+      type: object
+      required: [id, code, firstName, lastName]
+      properties:
+        id: { type: string }
+        code: { type: string }
+        firstName: { type: string }
+        middleName: { type: [string, 'null'] }
+        lastName: { type: string }
+        email: { type: [string, 'null'], format: email }
+        phoneNumber: { type: [string, 'null'] }
+        gender: { type: integer }
+        dateOfBirth: { type: [string, 'null'], format: date }
+        createdAt: { type: string, format: date-time }
+    AssignmentInput:
+      type: object
+      required: [examId, examineeId]
+      properties:
+        examId: { type: string }
+        examineeId: { type: string }
+        papers:
+          type: array
+          items: { type: string }
+        startsAt:
+          type: [string, 'null']
+          description: ISO-8601 timestamp with timezone, `Anytime`, or null.
+        exemptFromProctoring: { type: boolean }
+    Assignment:
+      type: object
+      properties:
+        id: { type: string }
+        examId: { type: string }
+        examineeId: { type: string }
+        startsAt: { type: [string, 'null'] }
+        papers:
+          type: array
+          items: { type: string }
+        status: { type: string }
+        exemptFromProctoring: { type: boolean }
+    Result:
+      type: object
+      properties:
+        id: { type: string }
+        attemptId: { type: string }
+        examId: { type: string }
+        examineeId: { type: string }
+        status: { type: string, const: FINISHED }
+        score: { type: number }
+        maximumScore: { type: number }
+        percentage: { type: [number, 'null'] }
+        completedAt: { type: string, format: date-time }
+        papers:
+          type: array
+          items:
+            type: object
+            properties:
+              title: { type: string }
+              questionCount: { type: integer }
+              answered: { type: integer }
+              unanswered: { type: integer }
+              skipped: { type: integer }
+              score: { type: number }
+              maximumScore: { type: number }
+              completedAt: { type: string, format: date-time }
   securitySchemes:
+    developerApiKey:
+      type: http
+      scheme: bearer
+      bearerFormat: examina scoped API key
+      description: A named, scoped API key. The token is shown only when it is created.
     apiSecretKey:
       type: http
       scheme: basic

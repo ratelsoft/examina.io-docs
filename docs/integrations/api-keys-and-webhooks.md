@@ -1,122 +1,122 @@
 ---
-title: API Keys and Completion Webhooks
-description: Create examina.io public and secret API keys, authenticate REST requests, rotate credentials safely, and receive exam-completion webhooks.
-tags: [api authentication, api keys, exam webhook, integration security]
+title: Scoped API Keys and Signed Webhooks
+description: Secure examina.io integrations with scoped API keys, idempotent requests, signed result webhooks, delivery history, and safe key rotation.
+tags: [api authentication, scoped api keys, signed webhooks, webhook replay]
 ---
 
-# API keys and completion webhooks
+# Scoped API keys and signed webhooks
 
-Root and Administrator accounts manage integration credentials in **Home →
-Settings → API Keys & Webhook**.
+New integrations should use named, scoped API keys. Each key can be revoked
+without interrupting other integrations and receives only the permissions it
+needs. Legacy organization API Secret Keys remain compatible during migration.
 
-## Public key and secret key
+## Create a scoped API key
 
-The two keys have different purposes:
+An Administrator creates keys from the organization's developer settings. The
+complete token is displayed only once and begins with `exm_live.`. Store it in
+a server-side secret manager.
 
-| Credential | Intended use | May appear in browser code? |
-| --- | --- | --- |
-| **API Public Key** | Identifies an approved Client widget integration | Yes, when used with the domain allowlist |
-| **API Secret Key** | Authenticates server-to-server REST API requests | No |
+| Scope | Allows |
+| --- | --- |
+| `examinees:read` | Read examinee records through existing endpoints |
+| `examinees:write` | Create, update, and bulk-upsert examinees |
+| `exams:read` | Read exam definitions |
+| `exams:write` | Upload, configure, tag, and delete exams |
+| `groups:read` | Read groups and their membership |
+| `groups:write` | Create groups and change membership |
+| `assignments:read` | Read exam assignments |
+| `assignments:write` | Create, change, and delete unstarted assignments |
+| `results:read` | Read completed results and paper summaries |
+| `sessions:write` | Create single-use exam launch URLs |
+| `webhooks:read` | List endpoints and delivery history |
+| `webhooks:write` | Create endpoints, disable endpoints, and retry deliveries |
 
-The public key is not a substitute for the secret key. Domain approval remains
-required for the embedded Client widget.
-
-## Create and store credentials
-
-1. Open **Home → Settings**.
-2. In **API Keys & Webhook**, create the public key if you need the Client
-   widget.
-3. Create the secret key if you need the REST API or completion webhook.
-4. Copy the secret immediately; it is displayed only once.
-5. Store it in a server-side secret manager or encrypted deployment setting.
-
-Never commit the secret to Git, paste it into client-side JavaScript, embed it
-in a mobile application, or include it in support screenshots.
-
-## Authenticate an API request
-
-The API uses HTTPS Basic Authentication:
-
-- username: **api**
-- password: your API Secret Key
-
-Example:
+Authenticate using the Bearer scheme:
 
 ```bash
-curl --user "api:$EXAMINA_API_SECRET" \
+curl --request GET \
+  --header "Authorization: Bearer $EXAMINA_API_KEY" \
   --header "Accept: application/json" \
-  "https://www.examina.io/api/v1/exams/1"
+  "https://www.examina.io/api/v1/results?page=1&pageSize=25"
 ```
 
-The variable must be set only in the server or terminal environment running the
-request. Do not expose it in a public shell history, build log, or repository.
+Do not place API keys in browser code, mobile applications, screenshots,
+source control, or support logs.
 
-Success responses can use HTTP 200 or 201 depending on the operation. Error
-responses remain JSON and include a false `status` value. Use the HTTP status
-and documented response body together.
+## Make mutations idempotent
 
-See the [interactive API reference](../api/index.md) for available operations
-and schemas.
+Creation and update endpoints require an `Idempotency-Key` header. Generate a
+unique value for the logical operation and reuse it only when retrying that
+same request:
 
-## Rotate a key
+```bash
+curl --request POST \
+  --header "Authorization: Bearer $EXAMINA_API_KEY" \
+  --header "Content-Type: application/json" \
+  --header "Idempotency-Key: candidate-import-2026-08-23-0001" \
+  --data '{"code":"CANDIDATE-42","passcode":"temporary-secret","firstName":"Ada","lastName":"Okafor"}' \
+  "https://www.examina.io/api/v1/examinees"
+```
 
-Regenerating a public or secret key invalidates consumers that still use the
-old value. Plan a rotation:
+The key is retained for at least 24 hours. Repeating it with an identical body
+returns the original resource. Reusing it with different data returns HTTP 409.
 
-1. inventory every widget, backend, scheduled job, and deployment that uses the
-   key;
-2. choose a maintenance window if simultaneous dual-key operation is not
-   available;
-3. generate and securely distribute the replacement;
-4. update all consumers;
-5. test a low-risk request or exam;
-6. monitor for authentication failures; and
-7. record completion in the organization's secret inventory.
+## Configure a signed webhook
 
-Rotate immediately if a secret may have been exposed.
+Create an endpoint subscribed to `result.completed`:
 
-## Configure the completion webhook
+```bash
+curl --request POST \
+  --header "Authorization: Bearer $EXAMINA_API_KEY" \
+  --header "Content-Type: application/json" \
+  --header "Idempotency-Key: webhook-results-v1" \
+  --data '{"url":"https://integrator.example/webhooks/examina","events":["result.completed"]}' \
+  "https://www.examina.io/api/v1/webhook-endpoints"
+```
 
-The organization webhook receives an asynchronous HTTP POST when an examinee
-finishes an exam. Enter a public HTTPS endpoint in the **Webhook URL** field and
-select **Save**.
+The response includes a `signingSecret` beginning with `whsec_`. It is shown
+only once. Webhook URLs must use public HTTPS and must not resolve to a private,
+loopback, link-local, or multicast address.
 
-The current callback sends form fields:
+Every delivery contains a JSON event. The request also includes:
 
-| Field | Meaning |
+| Header | Meaning |
 | --- | --- |
-| `examineeId` | Internal examinee identifier |
-| `examineeCode` | Organization-assigned examinee code |
-| `examId` | Internal exam identifier |
-| `examCode` | Organization-assigned exam code |
-| `email` | Examinee email when available; otherwise empty |
+| `X-Examina-Event-Id` | Stable event identifier for deduplication |
+| `X-Examina-Timestamp` | Unix timestamp used in the signature |
+| `X-Examina-Signature` | `v1=` followed by the hexadecimal HMAC-SHA256 signature |
 
-The callback is a completion notification, not the full result. Retrieve
-authoritative details through the authenticated API.
+Concatenate the timestamp, a period, and the exact raw request body. Calculate
+HMAC-SHA256 with the signing secret and compare it to the `v1` signature using
+a constant-time comparison:
 
-## Build a resilient receiver
+```text
+signed_content = timestamp + "." + raw_request_body
+expected = hex(HMAC_SHA256(signing_secret, signed_content))
+```
 
-- Require HTTPS.
-- Accept the form fields and validate expected identifier formats.
-- Return a 2xx response quickly, then queue longer work.
-- Make processing idempotent using the exam and examinee identifiers.
-- Reconcile results through the API rather than trusting the callback alone.
-- Log a correlation ID and status without logging credentials or excessive
-  personal data.
-- Monitor missed or failed processing and provide a replay or reconciliation
-  process in your system.
+Return a 2xx response quickly and queue longer processing. Use the event ID to
+deduplicate processing, then retrieve the authoritative result from
+`GET /results/{assignmentId}`.
 
-The current public webhook contract does not document a request signature. Do
-not treat possession of the callback fields as proof of authenticity; verify
-the referenced state through the authenticated API before making consequential
-changes.
+## Inspect and retry deliveries
 
-## Test without real candidate data
+```bash
+curl --header "Authorization: Bearer $EXAMINA_API_KEY" \
+  "https://www.examina.io/api/v1/webhook-endpoints/deliveries?page=1&pageSize=25"
 
-Use a fictional examinee and test exam. Verify:
+curl --request POST \
+  --header "Authorization: Bearer $EXAMINA_API_KEY" \
+  "https://www.examina.io/api/v1/webhook-endpoints/deliveries/DELIVERY_ID/retry"
+```
 
-1. your endpoint receives the POST;
-2. field parsing works when email is empty;
-3. a duplicate event does not duplicate downstream work;
-4. API reconciliation finds the completed attempt; and
-5. logs and alerts contain no secret key or passcode.
+The earlier organization-level form callback remains available for existing
+integrations but is deprecated. New integrations should use signed endpoint
+resources because they provide event IDs, signatures, delivery state, and replay.
+
+## Rotate or revoke credentials
+
+Create a replacement key, deploy it to every consumer, verify successful calls,
+and then revoke the previous key. Because keys are independent, rotation does
+not require a simultaneous cutover. Revoke a key immediately if it may have
+been exposed.
