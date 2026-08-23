@@ -6,6 +6,8 @@ openapi:
   requiredPropsFirst: true
   sortRequiredPropsFirst: true
   theme:
+    breakpoints:
+      medium: "120rem"
     colors:
       primary:
         main: "#00acac"
@@ -14,7 +16,9 @@ openapi:
       text:
         primary: "#263238"
     typography:
+      fontSize: "15px"
       fontFamily: "Open Sans, Arial, sans-serif"
+      lineHeight: "1.6em"
       headings:
         fontFamily: "Open Sans, Arial, sans-serif"
         fontWeight: "700"

@@ -13,6 +13,10 @@ body {
   background: #fff;
 }
 
+#redoc .api-info > * {
+  max-width: 68rem;
+}
+
 .skip-link {
   position: absolute;
   top: -4rem;

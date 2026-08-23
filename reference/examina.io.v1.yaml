@@ -1,14 +1,12 @@
 openapi: 3.0.0
 info:
-  title: examina.io
+  title: examina.io API
   version: '1.0'
   description: |-
-    Use the examina.io REST API to work with exams, examinees, groups, mappings,
-    settings, and login tokens from your own server-side applications.
+    Use the examina.io REST API to manage exams, examinees, groups, assignments,
+    settings, and login tokens from your server-side applications.
 
-    The API follows standard HTTP semantics. A successful operation can return
-    status 200 or 201, depending on whether it retrieved or created a resource.
-    Response bodies also contain a boolean `status` field.
+    The production base URL is `https://www.examina.io/api/v1`.
 
     ### Authentication
 
@@ -21,53 +19,17 @@ info:
     > Never commit it to version control or include it in browser code, a public
     > repository, a mobile application, or a documentation screenshot.
 
-    A request without valid authentication returns HTTP 401 Unauthorized.
+    A request without valid authentication returns HTTP 401 Unauthorized. See
+    the [API keys and webhooks guide](../integrations/api-keys-and-webhooks/)
+    for a working request and security guidance.
 
-    ### Requests and responses
+    ### Request conventions
 
-    Operations with a body normally use `application/json`. Responses are JSON.
-    Set `Accept: application/json` or allow any media type.
-
-    ```json
-    {
-      "code": "OK",
-      "status": true
-    }
-    ```
-
-    A successful response can include additional operation-specific properties.
-
-    ```json
-    {
-      "code": "ERR",
-      "message": "Another exam already exists with the Exam Code - 'SAMPLEEXAM'",
-      "error": {
-        "code": "103",
-        "id": "ERR_103",
-        "desc": "Invalid state or duplicate request."
-      },
-      "status": false
-    }
-    ```
-
-    ### Paginated responses
-
-    List operations for exams, examinees, and groups can be paginated. Pages are
-    one-based. Read `maxPageCount`, `total`, `current`, `pages`, and `page`
-    from each response instead of assuming fixed limits.
-
-    ```json
-    {
-      "maxPageCount": 25,
-      "total": 2,
-      "current": 2,
-      "code": "OK",
-      "pages": 1,
-      "entity": [],
-      "page": 1,
-      "status": true
-    }
-    ```
+    - Send and accept `application/json` unless an operation specifies another
+      media type.
+    - Successful operations return HTTP 200 or 201 and a boolean `status` field.
+    - List operations are one-based. Use the pagination fields returned by the
+      API instead of assuming a fixed page size.
   contact:
     name: Ratelsoft Inc.
     url: 'https://www.examina.io/#contact'
@@ -75,6 +37,19 @@ info:
   termsOfService: 'https://www.examina.io/terms'
 servers:
   - url: 'https://www.examina.io/api/v1'
+tags:
+  - name: exams
+    x-displayName: Exams
+    description: Create, inspect, configure, tag, and assign exams.
+  - name: examinees
+    x-displayName: Examinees
+    description: Manage examinees and the exams assigned to them.
+  - name: client
+    x-displayName: Client access
+    description: Create secure login tokens for the exam client.
+  - name: groups
+    x-displayName: Groups
+    description: Organize examinees and manage group assignments.
 paths:
   '/exams/{page}':
     get:
