@@ -1,0 +1,18 @@
+{% extends "main.html" %}
+
+{% block extrahead %}
+  <meta name="robots" content="noindex, nofollow">
+{% endblock %}
+
+{% block htmltitle %}
+  <title>Page not found - examina.io Docs</title>
+{% endblock %}
+
+{% block content %}
+  <h1>We couldn't find that page</h1>
+  <p>The address may have changed during the documentation migration.</p>
+  <p>
+    <a href="{{ config.site_url }}" class="md-button md-button--primary">Go to the documentation home</a>
+    <a href="{{ config.site_url }}api/" class="md-button">Open the API reference</a>
+  </p>
+{% endblock %}
