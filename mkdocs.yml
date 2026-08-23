@@ -1,0 +1,104 @@
+site_name: examina.io Docs
+site_url: https://docs.examina.io/
+site_description: Guides and API reference for creating, managing, delivering, and integrating secure online assessments with examina.io.
+site_author: Ratelsoft Inc.
+repo_url: https://github.com/ratelsoft/examina.io-docs
+repo_name: ratelsoft/examina.io-docs
+edit_uri: edit/main/docs/
+copyright: >-
+  Copyright &copy; 2026 Ratelsoft Inc. &nbsp;&middot;&nbsp;
+  <a href="https://www.examina.io/terms">Terms</a> &nbsp;&middot;&nbsp;
+  <a href="https://www.examina.io/privacy">Privacy</a>
+
+docs_dir: docs
+site_dir: site
+use_directory_urls: true
+exclude_docs: |
+  drafts/
+
+theme:
+  name: material
+  language: en
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+  font:
+    text: Open Sans
+    code: Roboto Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - content.code.copy
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - toc.follow
+
+nav:
+  - Home: index.md
+  - Getting started:
+      - Platform overview: getting-started/overview.md
+  - User guides:
+      - Client:
+          - Custom exam login page: user-guides/client/custom-login-page.md
+      - Designer:
+          - Introducing Designer: user-guides/designer/introduction.md
+          - The exam: user-guides/designer/exam.md
+          - The paper: user-guides/designer/paper.md
+          - Creating questions: user-guides/designer/questions.md
+          - Importing questions: user-guides/designer/importing-questions.md
+  - Integrations:
+      - Embed the client app: integrations/embedding-client-app.md
+  - API reference: api/index.md
+
+plugins:
+  - search:
+      lang: en
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://www.examina.io/
+      name: examina.io website
+    - icon: fontawesome/brands/github
+      link: https://github.com/ratelsoft
+      name: Ratelsoft on GitHub

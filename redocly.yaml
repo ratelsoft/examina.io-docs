@@ -1,0 +1,27 @@
+openapi:
+  disableSearch: false
+  hideDownloadButton: false
+  hideHostname: false
+  nativeScrollbars: true
+  requiredPropsFirst: true
+  sortRequiredPropsFirst: true
+  theme:
+    colors:
+      primary:
+        main: "#00acac"
+      success:
+        main: "#008a8a"
+      text:
+        primary: "#263238"
+    typography:
+      fontFamily: "Open Sans, Arial, sans-serif"
+      headings:
+        fontFamily: "Open Sans, Arial, sans-serif"
+        fontWeight: "700"
+    sidebar:
+      backgroundColor: "#f7f9fa"
+      textColor: "#405261"
+      activeTextColor: "#008a8a"
+      width: "300px"
+    rightPanel:
+      backgroundColor: "#1f2d3d"

@@ -71,4 +71,4 @@ This means that there may be times when you have created or imported a pool of q
 
 - Then Click on `Import Questions from File`.
 
-Importing questions from file is an interesting process which has it's own dedicated page which you can [read here](Importing-Questions-from-File.md).
+Importing questions from file is an interesting process which has its own dedicated page which you can [read here](importing-questions.md).

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{title}}</title>
+    <meta name="description" content="{{{templateOptions.metaDescription}}}">
+    <link rel="canonical" href="https://docs.examina.io/api/">
+    <link rel="icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../stylesheets/redoc.css">
+    {{#unless disableGoogleFont}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+    {{/unless}}
+    {{{redocHead}}}
+  </head>
+  <body>
+    <a class="skip-link" href="#redoc-container">Skip to API reference</a>
+    <header class="api-topbar">
+      <a class="api-brand" href="../">
+        <img src="../assets/logo.png" alt="">
+        examina.io <span>Docs</span>
+      </a>
+      <nav class="api-nav" aria-label="Documentation">
+        <a href="../getting-started/overview/">Guides</a>
+        <a href="./" aria-current="page">API reference</a>
+        <a class="dashboard-link" href="https://www.examina.io/login">Sign in</a>
+      </nav>
+    </header>
+    <main id="redoc-container">
+      {{{redocHTML}}}
+    </main>
+  </body>
+</html>

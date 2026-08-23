@@ -28,7 +28,7 @@ Now, for embedding the client App, you will need to do the following things:
 
 If you've not already done so, you'll need to create an API public Key by clicking on the reload icon to the right as annotated below.
 
-![API Section on the Settings Page](../../assets/images/embedding-client-app/api_section_1.jpg)
+![API Section on the Settings Page](../assets/images/embedding-client-app/api_section_1.jpg)
 
 > &#x26a0;&#xfe0f; Note that if you change your public key, all sites using that key would need to be updated.
 
@@ -40,7 +40,7 @@ Next you'll need to add the domain which you'll be using to host the exams to th
 
 To add a domain, enter the domain URL (*without the protocol part*) in the text field and click on the ***Add Domain*** button.
 
-![API Section on the Settings Page](../../assets/images/embedding-client-app/domain_section.jpg)
+![API Section on the Settings Page](../assets/images/embedding-client-app/domain_section.jpg)
 
 In my case, I am hosting the exam on `exam.richboy.me` so I added it.
 
@@ -89,7 +89,7 @@ You need to replace `{YOUR_PUBLIC_API_KEY}` in the code above with your API Publ
 
 The next thing you need to do is to add an anchor tag with the link to the exam and the class `examina-io-client-widget`. If Javascript is enabled on the page, the achor tag will be replaced with an iframe that loads the exam page. You can get the link to an Exam from the Manager application as show below or by using an API endpoint.
 
-![Getting an Exam Link](../../assets/images/embedding-client-app/manager_exam_details.jpg)
+![Getting an Exam Link](../assets/images/embedding-client-app/manager_exam_details.jpg)
 
 If you click to open the Exam in another tab, you can get the link from the address bar. The code snippet below shows how one may include the exam link on their website. You can design around it and apply a few more attributes which we will talk about next.
 
@@ -154,7 +154,7 @@ So to recap,
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Testing Embedding of examina.io client</title>
-    <script src="http://www.examina.io/client/widget.js?apiKey=AXBJe28Pdej5U7rmtE2kRmT75htWTb6s"></script>
+    <script src="https://www.examina.io/client/widget.js?apiKey={YOUR_PUBLIC_API_KEY}"></script>
 </head>
 <body style="display: flex; flex-direction: column; align-items: stretch;">
 <div style="height: 50px; padding: 0 15px; margin: 0">Ratelsoft Test Exam</div>
@@ -200,7 +200,7 @@ session_start();
 
 $examineeCode = $_SESSION['examineeCode'];
 $apiSecret = '{YOUR_API_SECRET_KEY}';
-$apiPublic = "AXBJe28Pdej5U7rmtE2kRmT75htWTb6s";
+$apiPublic = "{YOUR_PUBLIC_API_KEY}";
 $examId = "5eeb850ddc61f42affe8297c";   // The ID of the exam. Can be gotten from the Exam Link
 
 // query the API to get a login token for this examinee
@@ -241,4 +241,4 @@ if ($response) {
 
 Remember to replace `{YOUR_API_SECRET_KEY}` with your API Secret key. 
 
-For more information please [visit the API docs](https://stoplight.io/p/docs/gh/ratelsoft/examina.io-api-docs).
+For endpoint details and response schemas, [visit the API reference](../api/index.md).

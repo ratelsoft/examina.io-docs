@@ -1,0 +1,87 @@
+:root > * {
+  --md-primary-fg-color: #00acac;
+  --md-primary-fg-color--light: #31a3a3;
+  --md-primary-fg-color--dark: #008a8a;
+  --md-accent-fg-color: #008a8a;
+  --examina-amber: #f59c1a;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-hue: 184;
+  --md-primary-fg-color: #008a8a;
+  --md-accent-fg-color: #4dcaca;
+}
+
+.md-header {
+  box-shadow: 0 1px 0 rgb(255 255 255 / 14%);
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 1.8rem;
+  width: 1.8rem;
+  border-radius: 0.4rem;
+}
+
+.md-typeset h1 {
+  color: var(--md-default-fg-color);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.md-typeset h2,
+.md-typeset h3 {
+  font-weight: 650;
+  letter-spacing: -0.015em;
+}
+
+.md-typeset .md-button {
+  border-radius: 0.35rem;
+  font-weight: 700;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin: 1.6rem 0 2.2rem;
+}
+
+.doc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.4rem 0 2rem;
+}
+
+.doc-card {
+  padding: 1.15rem 1.25rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.65rem;
+  background: var(--md-default-bg-color);
+  box-shadow: 0 0.2rem 0.8rem rgb(23 43 77 / 6%);
+}
+
+.doc-card h3 {
+  margin-top: 0;
+  color: var(--md-primary-fg-color--dark);
+}
+
+.doc-card p:last-child {
+  margin-bottom: 0;
+}
+
+.md-typeset img {
+  border-radius: 0.45rem;
+  box-shadow: 0 0.3rem 1rem rgb(23 43 77 / 12%);
+}
+
+.md-footer-meta {
+  background: #1f2d3d;
+}
+
+@media screen and (max-width: 44.9844em) {
+  .doc-grid {
+    grid-template-columns: 1fr;
+  }
+}

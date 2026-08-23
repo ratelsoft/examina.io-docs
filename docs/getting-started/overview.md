@@ -27,7 +27,7 @@ The Designer has several question types available (*more under development*) and
 
 
 
-![Edit and Preview on the Designer](../../assets/images/general/designer-edit-preview.jpg)
+![Edit and Preview on the Designer](../assets/images/general/designer-edit-preview.jpg)
 *A sample Exam being created on the online Designer, showing question Edit and Preview windows.*
 
 After creating the exam question, the exam file can be exported from the designer. The questions are encrypted when the file is being generated. The file can then be forwarded to the department responsible for handling the examinations. In the case that the same person is responsible for organizing the examination, the file can be imported to the manager for the exam administration.
@@ -35,7 +35,7 @@ After creating the exam question, the exam file can be exported from the designe
 
 ## The Manager
 
-![The Manager](../../assets/images/general/manager-view.jpg)
+![The Manager](../assets/images/general/manager-view.jpg)
 
 The Manager is at the center of it all. After creating the questions from the Designer, the exam file needs to be imported into the Manager.
 
@@ -51,7 +51,7 @@ The Proctor application is for exam invigilators and must be explicitly enabled 
 
 The Proctor application allows examinee monitoring to ensure that the exam is conducted under the required condition. The invigilator must grant access to an examinee before the exam can be started. Before granting permission, the invigilator can request that the examinee show around their environment for verification.
 
-![The Manager](../../assets/images/general/proctoring-view.jpg)
+![The Proctor](../assets/images/general/proctoring-view.jpg)
 
 The invigilator receives video streams from the examinee webcam and screen as well as audio stream from their microphone and can monitor these streams for the duration of the examination. The invigilator can choose to enable their own microphone to speak directly with an examinee and/or send a notification message.
 
@@ -60,7 +60,7 @@ The invigilator receives video streams from the examinee webcam and screen as we
 
 The Client is the application which the examinees would use to take the exam. The exam link would normally be sent to the examinees via email to notify them of their exam time and possibly their login credentials (*if needed*).
 
-![The Manager](../../assets/images/general/client-view.jpg)
+![The Client](../assets/images/general/client-view.jpg)
 
 If an exam has been configured to use eFace ID verification, the examinee would be pre-verified using facial recognition with existing photograph of the examinee that was added on the Manager application.
 
@@ -88,4 +88,3 @@ This ensures that Users can only perform actions where they have been granted pe
 ## Conclusion
 
 examina.io is inherently distributed, allowing organizations to retain their existing workflow processes while delivering secure assessments. Each stakeholder in the organization already has a defined job description which should be respected. examina.io ensures that the stakeholders are given the adequate permissions necessary to carryout their duties effectively and their defined job descriptions are well respected. 
-
