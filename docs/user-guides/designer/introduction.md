@@ -1,62 +1,79 @@
 ---
-tags: [designer]
+title: Introducing examina.io Designer
+description: Learn the Designer workspace and create an exam project, papers, sections, and questions for delivery through examina.io.
+tags: [assessment authoring, designer, exam project, questions]
 ---
-# Introducing The Designer
 
-SmartExaminer Designer is the application responsible for building exam questions that would be ultimately used on SmartExaminer. You can regard it as the MicroSoft Word of SmartExaminer.
+# Introducing Designer
 
-**The image below is the Designer interface.**
+Designer is the exam-authoring workspace. Use it to build an exam project,
+organize papers and sections, create questions, configure scoring and timing,
+and export a delivery package for Manager.
 
-![Designer UserInterface](../../assets/images/Designer_Images/Designer_user_interface.jpg)
+![The Designer user interface](../../assets/images/Designer_Images/Designer_user_interface.jpg)
 
-Like on most other application, the SmartExaminer's Tool Bar on which the `File` `Edit`  and `Help` are displayed, is the starting point in working with the SmartExaminer Designer.
+## Workspace tour
 
-Before we explore each of the basic active tabs, let's introduce you to the environment.
+- **Toolbar:** File, Edit, Help, and other application commands.
+- **Exam Explorer:** the project tree containing exams, papers, sections, and
+  questions.
+- **Properties:** settings for the item currently selected in Exam Explorer.
+- **Hint:** contextual guidance for the selected item or command.
+- **Question editor and preview:** content-authoring and examinee-preview panes
+  shown when a question is selected.
 
-- From the image above, the blank field beneath the `Exam Explorer` is the field of display where Exams, Papers and Questions being created will be listed. 
+## Create an exam project
 
-- The next field is that of the `Properties` this field displays active Exam, Paper and Question property settings, which guides on how the questions and exam features are configured.
+1. Select **File → New Exam Project**.
+2. Designer creates an **Untitled Exam**.
+3. Select the exam in Exam Explorer.
+4. Complete the required exam properties.
+5. Select **File → Save Project** and save the editable project.
 
-- The `Hint` field displays clues and information regarding some of the commands you will see as we begin to build questions, and how to work with them.
+![Create a new exam project from the File menu](../../assets/images/Designer_Images/Intro_Designer_first_start.jpg)
 
+![A new Untitled Exam in Designer](../../assets/images/Designer_Images/Intro_Designer_Page.jpg)
 
-### Create an Exam Project
+Save the project early and often. The project is your editable source; the
+exported exam file is the package used for delivery.
 
-The very first step to building questions is to create an **Exam Project**.
+## Add a paper
 
-1. Click on `File` 
+1. Right-click the exam in **Exam Explorer**.
+2. Select **New Exam Paper**.
+3. Select the new paper.
+4. Set its title, duration, instructions, arrangement, and other properties.
 
-![Designer First Step](../../assets/images/Designer_Images/Intro_Designer_first_start.jpg)
+An exam can contain multiple papers. Depending on your organization, a paper
+may represent a subject, course, module, or assessment section.
 
-2. From the resulting drop-down, Click on `New Exam Project`. This creates an `Untitled Exam` for you.
-3. The page becomes active and ready for Exam customisation as shown below when you click on the `Untitled Exam`.
+## Add a question
 
-![Designer Environment](../../assets/images/Designer_Images/Intro_Designer_Page.jpg)
+Right-click a paper and select the new-question action, or use the **New
+Question** button below Exam Explorer.
 
-  On the Untitled Exam field, you can create Exam Papers. 
-  From a school's perspective, the **Papers** can be regarded as Modules, Courses or Subjects, depending on what term it bears in your school.
+![Create a question under an exam paper](../../assets/images/Designer_Images/Intro_creating_questions.jpg)
 
+Designer supports these core question types:
 
-
-### Adding Papers and Questions
-
-  1. Right click on `UNTITLED EXAM` and the dropdown reveals options to create a 
-  - `NEW EXAM PAPER` 
-  - `Import Papers from File` 
-  - `Export Exam to File` and a few others.
-
-  2. Clicking on the `Paper` also activates the Paper Properties from which you can set feature preferences; it also shows the Hint.
-  *note: One can create multiple papers under an exam.*
- 
-  3. From the Paper, you can go ahead and create `Questions` by right clicking on the `Paper` or just click the **New Question** icon under the Exam Explorer.
-
-  ![Intro Question creating](../../assets/images/Designer_Images/Intro_creating_questions.jpg)
-
-At the moment there are three question types to choose from, Other types will be coming up in subsequent updates.
-The available question types are:
-- Multiple Choice (single select)
-- Multiple Choice (multiple select)
+- Multiple Choice — single select
+- Multiple Choice — multiple select
 - Fill in the Blank
 
-> Note: Once you have started an Exam Project on the designer, It is advisable to save that particular body of work.
-> Simply click `File` and then `Save Project`
+Set the answer, score, section, shuffle behavior, and other properties, then use
+Preview to check the examinee experience.
+
+## Authoring sequence
+
+For a reliable project:
+
+1. configure the [exam](exam.md);
+2. create and configure each [paper](paper.md);
+3. add sections where needed;
+4. [create questions](questions.md);
+5. preview and proofread;
+6. save the project; and
+7. export one exam for [Manager](../manager/import-exams.md).
+
+You can also [import exams, papers, or questions](importing-questions.md) from
+supported files.

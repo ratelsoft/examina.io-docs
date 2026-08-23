@@ -1,136 +1,166 @@
 ---
-tags: [designer]
+title: Import Exams, Papers, and Questions in Designer
+description: Reuse Designer projects, merge exam papers, select questions, and import simple multiple-choice content from structured text files.
+tags: [designer import, exam project, question bank, question import]
 ---
 
-# Importing Exams, Papers and Questions
-If you have gone through previous pages, you would be conversant with the terms Exam, Paper and Question by now, and how they are interlinked.
+# Import exams, papers, and questions
 
-However let us refresh your mind.
-The sole aim of the SmartExaminer Designer is to build questions that would be administered to examinees on the Client end as an Exam or Test. 
+Designer can reuse content from another project or import simple questions from
+a structured text file. Save a copy of the destination project before a large
+import.
 
-In creating an **EXAM** Project, you need to specify or name what **PAPER** (also called Subject, Modules or Courses) it is you are building. Several Papers or Subjects may be created in an EXAM. and obviously **QUESTIONS** are found in all the PAPERS.
+## Open an existing project
 
-So we would show you haw you can import already existing Exams, Papers and Questions below.
+To continue editing a saved project:
 
-### Importing Exams
+1. Select **File → Open Project**.
+2. Choose the project file.
+3. Confirm the imported exam, papers, and questions.
+4. Save the project under the intended name.
 
-Kindly note that a body of Exam work is often regarded as **Project**, so to begin, 
-- Open the designer and click on `File` then `Open Project`, select your choice project file from your system and import.
+## Import exams from another project
 
-![Import Exam](../../assets/images/Designer_Images/Import_Exam.jpg)
+Use this when the destination project should contain an additional exam.
 
-- In a Situation where you have other Exam Projects and you want to Merge files, 
-Click on `Import Exams from a Project` then select the Project which you'd like to add then 'Open'.
+1. Select **Import Exams from a Project**.
+2. Choose the source project.
+3. Select one or more exams.
+4. Expand an exam to review its papers and questions.
+5. Confirm the import.
 
-![Import Exam and Merge](../../assets/images/Designer_Images/Import_Exam_Merge.jpg)
-- Then select The Exam Project you want to import Exam from.
+![Import an exam from a project](../../assets/images/Designer_Images/Import_Exam.jpg)
 
-  - If you open an Exam Project that contains lots of Exams, Papers and Questions as shown in the image below, you can choose to Import Multiple Exams, Papers and Questions by checking the select boxes.
-  The Select All and Deselect All helps ease the stress of having to singularly selecting each box.
+![Merge an exam into the current project](../../assets/images/Designer_Images/Import_Exam_Merge.jpg)
 
-![Import Multiple Exam Paper Questions](../../assets/images/Designer_Images/Import_Multiple_Exam.jpg)
+Use **Select All** and **Deselect All** when the source contains many items.
 
-> Note: Imported Exams, Papers and Questions are editable. This is necessary where you wish to change the previous prevailing Property settings and Instructions.
-> 
+![Select several exams, papers, and questions](../../assets/images/Designer_Images/Import_Multiple_Exam.jpg)
 
+Imported content remains editable. Review properties and instructions because
+the source project may have been designed for a different delivery workflow.
 
-### Importing Papers
-Previously, we showed how to import an Exam with Papers and Questions.
-However, you can choose to import only **PAPERS**.
+## Import papers into an exam
 
-In this case, 
-- Right click on the `EXAM` and then,
-- Select `Import Paper from File`
-- Go on and Select the choice file.
+Use this when you want papers added to an existing destination exam:
 
-![Import Paper](../../assets/images/Designer_Images/Import_Paper.jpg)
+1. Right-click the destination exam.
+2. Select **Import Paper from File**.
+3. Choose the source file.
+4. Select one or more papers.
+5. Expand papers to include or exclude particular questions.
+6. Confirm the import.
 
-![Import Paper Questions](../../assets/images/Designer_Images/Import_Paper_Questions.jpg)
+![Choose a paper to import](../../assets/images/Designer_Images/Import_Paper.jpg)
 
-While trying to Import a Paper or Papers, it is possible to expand a paper as shown in the Image above, to reveal Questions.
+![Select questions while importing a paper](../../assets/images/Designer_Images/Import_Paper_Questions.jpg)
 
-At this point, you can Deselect or Select multiple questions. 
-Likewise, you can jump to an entirely new Paper and Select Multiple Questions.
-The Exam, Paper and Question Selection is quite flexible and unrestrictive.
->  Note: The major difference with adding papers from an Exam Import, is that an entirely new exam is created, while Importing papers only add new papers to an existing exam folder on the Exam Explorer field.
+Importing an exam creates another exam in the project. Importing papers adds
+those papers to the selected existing exam.
 
+## Import questions into a paper
 
+1. Right-click the destination paper.
+2. Select **Import Questions from File**.
+3. Choose a supported project or question file.
+4. Expand source exams and papers.
+5. Select the required questions, including questions from more than one source
+   paper when needed.
+6. Confirm the import.
 
-### Importing Questions
-Here, Importing is narrowed just to **Questions** only.
-To do this,
-- Right click on the `Paper` which you would want the Questions to appear in,then,
-- Select `Import Questions from File`
-- Go on and Select the choice file.
+![Import questions into the selected paper](../../assets/images/Designer_Images/Import_Questions.jpg)
 
-![Import Questions](../../assets/images/Designer_Images/Import_Questions.jpg)
+![Select several questions from a source project](../../assets/images/Designer_Images/Import_Multiple_Questions.jpg)
 
-Even though you can see saved `Exams` and `Papers` when the file is opened, selecting an Exam or Paper for import through this medium is not possible. Clicking on them only expands them to reveal the questions in them.
+In this workflow, source exams and papers are navigation containers; only the
+selected questions are copied into the destination paper.
 
-One can only select `Questions`, but can do that even from multiple Paper and Exam unit.
+## Import simple questions from text
 
-![Import Multiple Questions](../../assets/images/Designer_Images/Import_Multiple_Questions.jpg)
+Text import is suitable for questions without complex equations, images, or
+other rich media. Start with a plain-text or rich-text template and use one
+consistent pattern throughout the file.
 
+![A plain-text question template](../../assets/images/Designer_Images/Notepad_Template.jpg)
 
+![A WordPad question template](../../assets/images/Designer_Images/Wordpad_Template.jpg)
 
-## Importing Simple Questions from Txt. file or a WordPad
+Text before the first question is treated as description or instruction.
 
-You can also build simple questions on a notepad or WordPad. By simple questions, i mean questions that have no images, fractions or other complex mathematical equations.
-We have created a template that can guide you with the question building for easy importing into the Designer.
+![Description before the first question](../../assets/images/Designer_Images/Notepad_Template_Description.jpg)
 
-In situations where you may already have simple formatting questions in other formats, You may do well to copy into a Notepad or WordPad and adapt to the given template below.
+### Question markers
 
-![Notepad Question template](../../assets/images/Designer_Images/Notepad_Template.jpg)
-*NotePad template/ guide*
+Use one consistent marker style:
 
-![Wordpad Question template](../../assets/images/Designer_Images/Wordpad_Template.jpg)
-*WordPad template/ guide*
+- \`1.\`, \`2.\`, \`3.\`
+- \`Q1.\`, \`Q2.\`, \`Q3.\`
+- \`Q1\`, \`Q2\`, \`Q3\`
+- \`Q.\` for automatically numbered questions
 
-Now either of the two will serve, however we advice you use the **Wordpad**.
-Its advantage over the Notepad or txt. file is thatyou can use some microSoft features present such as - **Underline, Bold, *Italics*, Font size** etc. which otherwise are not present on the txt. files.
+### Options and instructions
 
-- Starting out 
+Put each option on its own line. Supported option labels can use a period,
+colon, semicolon, or closing parenthesis when used consistently.
 
-Any Text that comes before the first '**Question** depicted as **Q1**', Is regarded as **Question Description** or **Instruction** as highlighted below.
+For question-specific instructions, begin the line with:
 
-![Question template description](../../assets/images/Designer_Images/Notepad_Template_Description.jpg)
+\`\`\`text
+Instruction: Read the passage before answering.
+\`\`\`
 
-As Demonstrated in the above image,
+![A question instruction followed by options](../../assets/images/Designer_Images/Notepad_Sample_Instr.jpg)
 
-1. A **Question** may be represented with the following...
-- Numbers with Dot, e.g. -  `1.`, `2.`, `3.` ect.
-- Q-prefixed number with a dot, e.g. - `Q1.`, `Q2.`, `Q3.`
-- Q-prefixed number without a dot, e.g. - `Q1`, `Q2`, `Q3`
-- Q with a dot, e.g. - `Q.`, `Q.`, `Q.` the system automatically attach numbers when imported into the designer. 
+### Correct answer
 
-Any of the above systems can be used, however you must be consistent with whichever pattern you decide to work with, if not your questions won't recognised.
+End the options with an answer component:
 
-2. The next lines are for **Options** except cases where a particular question requires its specific Instructions.
+\`\`\`text
+Answer: B
+\`\`\`
 
-In that case, an In-Question Instruction can be depicted as -
-- 'Instruction' with a Colon. `Instruction: `
+or:
 
-![Question Instruction and Option](../../assets/images/Designer_Images/Notepad_Sample_Instr.jpg)
+\`\`\`text
+Ans: B
+\`\`\`
 
+If the correct answer is intentionally unknown during drafting, retain the
+\`Answer:\` or \`Ans:\` label and leave its value empty. The label also acts as a
+delimiter; omitting it can cause options from the next question to merge into
+the current question.
 
-- The above image illustrates how to enter an In-Question Instruction, take note of the Colon (:) after the 'Instruction'.
-- Entering 'Options' as shown here, we alternated the samples to show you that regardless of with **'Colon (:), SemiColon (;), Closed-bracket ()) or dot (.), **the system will accept your entry.
+![How a missing answer delimiter merges options](../../assets/images/Designer_Images/Notepad_Delimiter.jpg)
 
-3. In Entering the Option that bears the `Correct Answer`.
-- You can use prefix 'Ans' with a 'colon' - e.g. `Ans:` A
-- or you can write it out fully 'Answer' with a 'colon' e.g. `Answer:` b
+### Explanation or reference
 
-> Note: In situations where the Correct Answer is yet unknown or deliberately withheld, It is important not to entirely leave the space blank, rather, enter the Answer Component `Answer:` or `Ans:` and leave then continue. The Answers could be entered after importing to the Designer app.
-This style can come into use when a third party is helping you type a question.
+After the answer, use one of:
 
-An Answer Component often serves as a Delimiter for question Options, So in situations where an Answer Component `Answer:` or `Ans:` is not provided after the Question options, The Options merge with that of the Following Questions only stopping when it finds an Answer Component as shown below.
+- \`Explanation:\`
+- \`Exp:\`
+- \`Reference:\`
+- \`Ref:\`
 
-![Option Answer Delimiter](../../assets/images/Designer_Images/Notepad_Delimiter.jpg)
-*The Options from Question without an Answer component merge with other Options from the next Question with Answer component. *
+Example:
 
-4. If there's an explanation for the Answer provided, you can represent it with.
-- 'Explanation' with a 'colon' e.g. - `Explanation:` 
-- or in an abbreviated pattern 'Exp' with a 'colon' e.g. - `Exp:` 
-- 'Reference' can also serve the purpose with a 'colon' e.g. - `Reference:` 
-- or abbreviated to 'Ref' with a 'colon' e.g. - `Ref:` 
+\`\`\`text
+Q1. Which protocol secures an HTTPS connection?
+A. FTP
+B. TLS
+C. SMTP
+D. DNS
+Answer: B
+Explanation: HTTPS uses TLS to protect data in transit.
+\`\`\`
 
+## Validate imported content
+
+After any import:
+
+1. compare the imported item count with the source selection;
+2. check for duplicate exam or paper titles;
+3. verify question type, answer, score, and section;
+4. preview formatting, equations, images, and audio;
+5. recheck paper duration and questions-to-answer counts;
+6. proofread instructions; and
+7. save the destination project under a new version before export.

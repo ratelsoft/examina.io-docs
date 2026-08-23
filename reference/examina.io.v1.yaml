@@ -2,7 +2,72 @@ openapi: 3.0.0
 info:
   title: examina.io
   version: '1.0'
-  description: "API endpoints to access and create data on examina.io.\n\nWith the APIs you can do just about everything you can using the Manager and probably a little bit more. It strives to be RESTful and so you can also listen listen out for the HTTP response codes.\n\n> While you can use the HTTP response codes from the request, not all success responses are `200`. Some return with `201`. \n\nWe provide a `status` boolean parameter in each response that lets you know if a request was successful or not.\n\n### Authentication\n\nAll requests must be made with your API secret key using Basic Authentication and over HTTPS. See the **Security Schemes** section below for more.\n\n> &#x26a0;&#xfe0f; **Keep your API Secret Secure**<br/>\n  Do not commit your API Secret Key to version control or use it with front-facing client-side code.\n  \nIf a request is made without your Authentication code, you will receive a `401: Unauthorized` HTTP error code.\n\n### Requests and Response\n\nAlmost all requests that require a body/payload are required in JSON format (application/json). \n\nAll responses are returned as JSON. If your HTTP Accept header is set to anything else, you will receive an error response still in JSON format. Since we try to be RESTful, we check to make sure your Accept header is either not set or is set to `*/*` or `application/json`.\n\n```javascript\n{\n  \"code\": \"OK\",\n  \"status\": true,\n  {...}  // The response data\n}\n``` \n*Sample Success response: All success responses take this shape and could include more properties for the response.*\n\n```javascript\n{\n  \"code\": \"ERR\",\n  \"message\": \"Another exam already exists with the Exam Code - 'SAMPLEEXAM'\",\n  \"error\": {\n    \"code\": \"103\",\n    \"id\": \"ERR_103\",\n    \"desc\": \"Invalid state or duplicate request.\"\n  },\n  \"status\": false\n}\n```\n*Sample Error Response: All Error responses take this shape.*\n\n\n### Paginated Responses\n\nSome responses are paginated by default, mostly ones that return a list of exams, examinees or groups. The default format for a paginated response is shown below.\n\n```javascript\n{\n    \"maxPageCount\": 25, // Maximum items per page\n    \"total\": 2,  // Total number items existing\n    \"current\": 2,  // Total items in this response\n    \"code\": \"OK\",\n    \"pages\": 1,  // The number of pages that can be retrieved\n    \"entity\": [...],  // entity can either be groups, examinees or exams\n    \"page\": 1,  // The current page\n    \"status\": true\n}\n```\n\nIn the request, you would be able to specify a path parameter for the page you want to retrieve. The current maximum items per page as seen on `maxPageCount` is 25.  If you are building a paginated application, you should make sure to pay attention to this value as it can change."
+  description: |-
+    Use the examina.io REST API to work with exams, examinees, groups, mappings,
+    settings, and login tokens from your own server-side applications.
+
+    The API follows standard HTTP semantics. A successful operation can return
+    status 200 or 201, depending on whether it retrieved or created a resource.
+    Response bodies also contain a boolean `status` field.
+
+    ### Authentication
+
+    Send every request over HTTPS with the API Secret Key through Basic
+    Authentication. The username is always `api`; the password is the
+    organization's API Secret Key.
+
+    > **Keep the API Secret Key secure**
+    >
+    > Never commit it to version control or include it in browser code, a public
+    > repository, a mobile application, or a documentation screenshot.
+
+    A request without valid authentication returns HTTP 401 Unauthorized.
+
+    ### Requests and responses
+
+    Operations with a body normally use `application/json`. Responses are JSON.
+    Set `Accept: application/json` or allow any media type.
+
+    ```json
+    {
+      "code": "OK",
+      "status": true
+    }
+    ```
+
+    A successful response can include additional operation-specific properties.
+
+    ```json
+    {
+      "code": "ERR",
+      "message": "Another exam already exists with the Exam Code - 'SAMPLEEXAM'",
+      "error": {
+        "code": "103",
+        "id": "ERR_103",
+        "desc": "Invalid state or duplicate request."
+      },
+      "status": false
+    }
+    ```
+
+    ### Paginated responses
+
+    List operations for exams, examinees, and groups can be paginated. Pages are
+    one-based. Read `maxPageCount`, `total`, `current`, `pages`, and `page`
+    from each response instead of assuming fixed limits.
+
+    ```json
+    {
+      "maxPageCount": 25,
+      "total": 2,
+      "current": 2,
+      "code": "OK",
+      "pages": 1,
+      "entity": [],
+      "page": 1,
+      "status": true
+    }
+    ```
   contact:
     name: Ratelsoft Inc.
     url: 'https://www.examina.io/#contact'

@@ -32,6 +32,7 @@ npx --yes @redocly/cli@2.47.0 build-docs reference/examina.io.v1.yaml \
   --template redoc-template.hbs \
   --templateOptions.metaDescription "REST API reference for integrating with examina.io." \
   --title "API Reference | examina.io Docs"
+python scripts/check_internal_links.py site
 ```
 
 Changes pushed to `main` are validated and deployed to GitHub Pages by

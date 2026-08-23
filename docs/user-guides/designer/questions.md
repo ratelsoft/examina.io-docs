@@ -1,154 +1,160 @@
 ---
-tags: [designer]
+title: Create Questions in examina.io Designer
+description: Create multiple-choice and fill-in-the-blank questions, set scores and sections, add passages and media, and preview content in Designer.
+tags: [designer, exam questions, fill in the blank, multiple choice, question authoring]
 ---
 
-# Creating Questions
-How to Create Exam Questions:
+# Create questions in Designer
 
-1. Click on `File` 
+Questions belong to a paper and, when sections exist, to one section within that
+paper.
 
-![Designer First Step](../../assets/images/Designer_Images/Intro_Designer_first_start.jpg)
+## Add a question
 
-2. From the resulting drop-down, Click on `New Exam Project`. This creates an `Untitled Exam`.
+1. Open an exam project and create a paper.
+2. Right-click the paper and choose the new-question action, or select **New
+   Question** below Exam Explorer.
+3. Choose a question type.
+4. Enter the prompt, answer choices or accepted answers, and optional
+   explanation.
+5. Set the question properties.
+6. Open **Preview** and check the result.
+7. Save the project.
 
-![Designer Environment](../../assets/images/Designer_Images/Intro_Designer_Page.jpg)
+![Question authoring in Designer](../../assets/images/Designer_Images/questiondesign.jpg)
 
-3. Right click on `UNTITLED EXAM` and the dropdown reveals options to create a `NEW EXAM PAPER` 
+## Question types
 
-4. Go ahead and create `Questions` by right clicking on the `Paper` or just clicking the **New Question** icon under the Exam Explorer.
+Designer supports:
 
-At the moment there are three question types to choose from, Other types will be coming up in subsequent updates.
-The available question types are:
+- **Multiple Choice — single select:** one option is correct.
+- **Multiple Choice — multiple select:** more than one option can be correct.
+- **Fill in the Blank:** the examinee enters text that is evaluated against the
+  configured answer rules.
 
-- Multiple Choice (single select)
-- Multiple Choice (multiple select)
-- Fill in the Blank
+Choose the type that measures the intended skill. Do not turn a multi-answer
+item into single select merely to simplify marking.
 
-![Question Environment](../../assets/images/Designer_Images/questiondesign.jpg)
+## Core properties
 
-![Question Environment](../../assets/images/Designer_Images/Question_Environment.jpg)
+![Question properties in Designer](../../assets/images/Designer_Images/Question_Environment.jpg)
 
-### **Paper Properties and Settings**
+**Option Count**
 
-1.  **Option Count:**
-This defines the number of answer choices which will be visible from which the answer would be chosen and must be between 2 and 10.
+: Sets the number of multiple-choice options. The supported range is 2 to 10.
 
-2. **Correct Option:** 
-This is the option bearing the correct answer.
+**Correct Option**
 
-3. **Allow Shuffle Choices:** 
+: Identifies the correct answer for a single-select item. Multiple-select items
+  allow the applicable correct choices.
 
-This feature can be set to alternate and randomly display Question Options on the different client App. 
-(For example, if this property is `allowed`, Option A may appear on another client/examinee's page as Option B, nevertheless, the correct answer is maintained regardless of what option it appears on.)
+**Allow Shuffle Choices**
 
-4. **Question Section:**
+: Randomizes option order in Client while preserving which option is correct.
+  Avoid shuffling choices such as “all of the above” that depend on position.
 
-In a situation where Paper Sections have been created, this avails the opportunity to assign particular questions to a target Paper Section. question must belong to a section and can only be in a single section within a paper.
-On how to create Paper Sections, refer to Paper Properties on 'Creating an Exam Paper' Page.
+**Question Section**
 
+: Assigns the question to one section. Create the required paper sections
+  before assigning questions.
 
-5. **Add Case Study/Passage:** 
+**Question Score/Value**
 
-A Case Study/Passage can be added to this question. This can be a sort of question guide just like a 'Comprehension' with which the examinee is required to read and answer more than a question originating from the script. It could also be literature scripts, sample problems/exhibits which could be used as a guide to answer the given question.
-Therefore A Case Study often precedes a question or series of questions. So choosing `Yes` for Add case study, adds The Case Study field in question entry plane.
+: Sets the mark awarded for the question. Decimal values such as 0.5 are
+  supported.
 
+## Case studies and passages
 
-6. **Case Study Label:** 
+Enable **Add Case Study/Passage** when a prompt depends on shared reading
+material, an exhibit, a scenario, or a problem statement. Use **Case Study
+Label** to replace the default label with a clearer name such as
+**Comprehension Passage**.
 
-The default title settings for the Case Study/Passage is Case Study, but The Case Study Label feature affords the opportunity to rename the desired Passage. So if it's a Comprehension, you can name it so at this point.
+If several questions use the same passage, keep the wording and formatting
+consistent and preview each question.
 
+## Configure defaults
 
-7. **Question Score/Value:**
-is the mark assigned to the question. The default is 1 mark. For half mark, use 0.5
+For a series of similar questions, select **Edit → Configure Defaults**.
 
+![Configure default question settings](../../assets/images/Designer_Images/Question_Configure_Default_Settings.jpg)
 
+Defaults can cover:
 
-#### Configure Default Question 
-This is necessary when you have series of questions that you need to follow a particular trajectory or pattern. Configuring this settings ensures you don't have to go to properties to input singular settings for the questions.
+- case study, label, and score;
+- multiple-choice option count, shuffle, and partial scoring;
+- fill-in-the-blank case, whitespace, order, and partial-scoring rules;
+- paper duration, arrangement, calculator, and mark display; and
+- exam paper flow, answer display, and inter-paper navigation.
 
-- Open Designer App, Click on `EDIT` then `CONFIGURE DEFAULTS`
+Enable **Apply as Default Setting** to apply the configuration to questions
+created afterward. Existing questions are not automatically rewritten.
 
-![CONFIGURE DEFAULTS Question](../../assets/images/Designer_Images/Question_Configure_Default_Settings.jpg)
+![Apply the configured defaults to new questions](../../assets/images/Designer_Images/Question_Apply_Configure_Default_Settings.jpg)
 
-On the `Configure Default Settings` Page, There are several Settings available for use, and we have explained each of the feature in the Paper and Question Properties. 
+Disable the option when the repeated question series is complete.
 
-1.  **Question Settings:**
-     Add `Case Study/Passage`, `Passage Label`, `Question Score/Value`
-2.  ** Muliple Choice Question Settings**:
-    `Option Count`, `Allow Shuffle Choices`, `Partial Scoring (multiple Select)`
-3.  **Fill in the Blank Question Settings**:
-    `Case Sensitive Matching`, `Strip Spaces`, `Ignore Multiple Spaces`,`Partial Scoring`, `Strict Ordering`.
-4.  **Paper Settings**:
-    `Duration`, `Arrangement`, `Calculator type`, `Show Question Marks`.
-5.  **Exam Settings**:
-    `Exam Paper Flow`, `Show Answers After Exam`, Allow `Inter-Paper Navigation`.
+## Edit and preview content
 
-![SAVE CONFIGURE DEFAULTS Question](../../assets/images/Designer_Images/Question_Apply_Configure_Default_Settings.jpg)
+The Edit pane supports text formatting, headings, colour, lists, alignment,
+superscript, subscript, symbols, expressions, images, audio, and tables.
 
-_Note: Applying Default settings, by checking the box as shown in the above image, ensures that every other question created follows the settings without affecting previous questions already set. The new setting may cut across the Exam, Paper and Question Pages. However, when the series of questions you need to conform to a the Configured setting has been entered and you wish to go back to default settings or Singular edit, simply go back to the Configure Default page and uncheck `Apply as Default Setting`._
+![The question Edit fields](../../assets/images/Designer_Images/Question_Edit_Fields.jpg)
 
+![The question editor toolbar](../../assets/images/Designer_Images/Question_Edit_Fields_Tab.jpg)
 
-### **Questions Entry**
+Use formatting to improve structure, not decoration. Confirm that important
+meaning is not communicated by colour alone.
 
-The Question Entry Plane or field is where you build the Question, Question Options and Explanation/Reference if available.
+### Images
 
-![Question Entry Field Page](../../assets/images/Designer_Images/Question_Edit_Fields.jpg)
+Keep an imported image within the limits shown by Designer. The existing editor
+guidance recommends no more than 650 pixels wide and 500 KB so the image
+renders reliably across desktop and mobile devices.
 
+![Import an image into a question](../../assets/images/Designer_Images/Question_Import_Image.jpg)
 
+Resize and compress large images before import. Add enough wording in the
+question for the image's purpose to remain understandable.
 
-![Question Edit Tab](../../assets/images/Designer_Images/Question_Edit_Fields_Tab.jpg)
-_The Question edit panel red-marked above presents opportunities for configuring question fields. Hovering your mouse over them gives clues as to what property each icon signifies._
+### Audio
 
+Audio items can support listening questions. Configure the available volume,
+pause, stop, and seek controls to match the assessment rules.
 
-** The Question Edit Panel has features such as are present in The MircoSoft Word. Example -**
+![Configure audio in a question](../../assets/images/Designer_Images/Question_Import_Audio.jpg)
 
-- **Body Text:** Refers to the style of the text, It's a body of text by default, but you have options to make the Text a paragraph, different headings, a quote, etcetera.
+Test with headphones and the lowest bandwidth expected on exam day. Provide an
+approved accommodation path when required.
 
-- **Font Size:** There are options to change the entered text to different sizes.
+### Tables
 
-- **Colour:** One may want to change the texts to a particular colour, there are assorted ranges of colours to pick from.
+Use the table tool to add rows and columns.
 
-- **Bold**
+![Create a table in a question](../../assets/images/Designer_Images/Question_Table.jpg)
 
-- **Italics**
+To edit or remove a table, right-click inside it and open **Table Properties**.
 
-- **Unordered and Ordered Lists (Numbers and Bullets)**
+![Edit table properties](../../assets/images/Designer_Images/Question_Table_Properties.jpg)
 
-- **Word Alignment**
+Keep tables small enough to fit supported screens without horizontal scrolling.
 
-- **Import image**:
-Ensure that the image being imported is not larger than 650 pixels. This is so that the image could show properly across all devices (PC or Mobile), and the image file cannot be greater than 500kb, this so that when the files are being downloaded by the web server it doesn't take so long.
-You may need an editor to resize images that do not meet the above specifications.
-![Question Image Import](../../assets/images/Designer_Images/Question_Import_Image.jpg)
+## Preview and quality check
 
-Images can also be used within any of the edit fields - question,options, etc.
-The imported image fields are also quite active, so you can right click on it and effect changes as allowed.
+Select **Preview** to inspect the rendered prompt and options.
 
-- **Import Audio (For Audio Questions):**
-In situations where listening or audio questions and tests are required, this comes in handy. You can import audio files and input different available controls to ensure you get the best out of it.
-![Audio Question Import](../../assets/images/Designer_Images/Question_Import_Audio.jpg)
+![Preview a question in Designer](../../assets/images/Designer_Images/Question_Edit_Preview_Field.jpg)
 
-Features such as Volume controls, options to make the audio Stoppable, Pausable or Seekable also enhances examiners usage options.
+Before export, verify:
 
-- **Create Tables**
-Just like on Microsoft Word, you can build your tables, add rows and columns at wish. 
-![Table Config](../../assets/images/Designer_Images/Question_Table.jpg)
-There are also ample table properties you can use to achieve desired result.
+- the prompt has one defensible interpretation;
+- the correct answer and score are set;
+- distractors are plausible and not accidentally revealing;
+- section assignment is correct;
+- shuffled options remain meaningful;
+- media loads and is readable or audible;
+- spelling, grammar, and mathematical notation are correct; and
+- the question works at the smallest permitted screen size.
 
-![Table Properties and Edit](../../assets/images/Designer_Images/Question_Table_Properties.jpg)
-To edit or delet a table, the best approach wouldn't be to use a backspace or delete tab; rather, right click on the table's background, and click on `Table Proprerties` and then you can reconfigure or delete table properly.
-
-- Insert Mathematical Symbols and Unicode Characters
-
-- Recall Most Recently used symbols
-
-- Make selected Text SuperScript or SubScript
-
-- Insert Sample Expression Templates (Such as Mathematical templates)
-
-- Import or Export Saved Raw Content
-
-- Pull Content from Previous (This comes in handy in comprehension questions, or when questions/informations are relevant to several sequnce of questions.)
-
-![Question Entry Preview Field Page](../../assets/images/Designer_Images/Question_Edit_Preview_Field.jpg)
-_While entering questions, one can click on the `Preview` tab as shown on the above image to Preview. The click on `Edit` to go back to edit page._
+To reuse existing content, see [Import exams, papers, and
+questions](importing-questions.md).

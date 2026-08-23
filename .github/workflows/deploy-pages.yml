@@ -47,6 +47,9 @@ jobs:
           --templateOptions.metaDescription "REST API reference for integrating with examina.io."
           --title "API Reference | examina.io Docs"
 
+      - name: Check internal links
+        run: python scripts/check_internal_links.py site
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 

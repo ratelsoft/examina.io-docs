@@ -56,9 +56,13 @@ theme:
 nav:
   - Home: index.md
   - Getting started:
+      - Quick start: getting-started/quick-start.md
       - Platform overview: getting-started/overview.md
+      - Roles and permissions: getting-started/roles-and-permissions.md
   - User guides:
       - Client:
+          - Take an exam: user-guides/client/take-an-exam.md
+          - Test-day troubleshooting: user-guides/client/troubleshooting.md
           - Custom exam login page: user-guides/client/custom-login-page.md
       - Designer:
           - Introducing Designer: user-guides/designer/introduction.md
@@ -66,7 +70,18 @@ nav:
           - The paper: user-guides/designer/paper.md
           - Creating questions: user-guides/designer/questions.md
           - Importing questions: user-guides/designer/importing-questions.md
+      - Manager:
+          - Manager overview: user-guides/manager/overview.md
+          - Import exams: user-guides/manager/import-exams.md
+          - Add and import examinees: user-guides/manager/examinees.md
+          - Groups and exam assignments: user-guides/manager/groups-and-assignments.md
+          - Deliver, monitor, and report: user-guides/manager/deliver-monitor-report.md
+      - Administrators:
+          - Users and account roles: user-guides/administration/users-and-roles.md
+          - Circles and permissions: user-guides/administration/circles-and-permissions.md
+          - Organization settings and branding: user-guides/administration/organization-settings.md
   - Integrations:
+      - API keys and webhooks: integrations/api-keys-and-webhooks.md
       - Embed the client app: integrations/embedding-client-app.md
   - API reference: api/index.md
 

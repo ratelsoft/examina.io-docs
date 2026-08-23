@@ -11,7 +11,7 @@ Everything you need to design questions, manage examinees, deliver exams, and
 connect examina.io to your own applications.
 
 <div class="hero-actions" markdown>
-[Explore the platform](getting-started/overview.md){ .md-button .md-button--primary }
+[Start using examina.io](getting-started/quick-start.md){ .md-button .md-button--primary }
 [Browse the API](api/index.md){ .md-button }
 </div>
 
@@ -20,10 +20,10 @@ connect examina.io to your own applications.
 <div class="doc-card" markdown>
 ### :material-compass-outline: Start here
 
-See how Designer, Manager, Proctor, and Client work together across the
-assessment lifecycle.
+Follow a practical setup path, then see how Designer, Manager, Proctor, and
+Client work together across the assessment lifecycle.
 
-[Platform overview](getting-started/overview.md)
+[Quick start](getting-started/quick-start.md) · [Platform overview](getting-started/overview.md)
 </div>
 
 <div class="doc-card" markdown>
@@ -36,7 +36,25 @@ banks in Designer.
 </div>
 
 <div class="doc-card" markdown>
-### :material-palette-outline: Match your brand
+### :material-account-group-outline: Manage delivery
+
+Import exams, add examinees, organize groups, assign papers, and publish an
+exam link in Manager.
+
+[Manager guides](user-guides/manager/overview.md)
+</div>
+
+<div class="doc-card" markdown>
+### :material-shield-account-outline: Administer access
+
+Choose account roles, use Circles to control access, and configure organization
+branding and domains.
+
+[Administrator guides](user-guides/administration/users-and-roles.md)
+</div>
+
+<div class="doc-card" markdown>
+### :material-palette-outline: Brand the experience
 
 Customize the examinee login experience with your organization logo and a
 branded background.
@@ -47,9 +65,10 @@ branded background.
 <div class="doc-card" markdown>
 ### :material-code-tags: Integrate
 
-Embed an exam in your website or use the REST API to connect your own systems.
+Create API keys, receive completion webhooks, embed an exam, or connect your
+own systems through the REST API.
 
-[Embed the client](integrations/embedding-client-app.md) · [API reference](api/index.md)
+[API keys and webhooks](integrations/api-keys-and-webhooks.md) · [Embed the client](integrations/embedding-client-app.md) · [API reference](api/index.md)
 </div>
 
 </div>
