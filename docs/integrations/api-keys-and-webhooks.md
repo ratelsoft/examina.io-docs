@@ -42,17 +42,17 @@ The API uses HTTPS Basic Authentication:
 
 Example:
 
-\`\`\`bash
+```bash
 curl --user "api:$EXAMINA_API_SECRET" \
   --header "Accept: application/json" \
   "https://www.examina.io/api/v1/exams/1"
-\`\`\`
+```
 
 The variable must be set only in the server or terminal environment running the
 request. Do not expose it in a public shell history, build log, or repository.
 
 Success responses can use HTTP 200 or 201 depending on the operation. Error
-responses remain JSON and include a false \`status\` value. Use the HTTP status
+responses remain JSON and include a false `status` value. Use the HTTP status
 and documented response body together.
 
 See the [interactive API reference](../api/index.md) for available operations
@@ -85,11 +85,11 @@ The current callback sends form fields:
 
 | Field | Meaning |
 | --- | --- |
-| \`examineeId\` | Internal examinee identifier |
-| \`examineeCode\` | Organization-assigned examinee code |
-| \`examId\` | Internal exam identifier |
-| \`examCode\` | Organization-assigned exam code |
-| \`email\` | Examinee email when available; otherwise empty |
+| `examineeId` | Internal examinee identifier |
+| `examineeCode` | Organization-assigned examinee code |
+| `examId` | Internal exam identifier |
+| `examCode` | Organization-assigned exam code |
+| `email` | Examinee email when available; otherwise empty |
 
 The callback is a completion notification, not the full result. Retrieve
 authoritative details through the authenticated API.

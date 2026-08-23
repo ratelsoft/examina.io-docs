@@ -8,7 +8,7 @@ tags: [exam setup, getting started, online assessment, quick start]
 
 This checklist takes an organization administrator from a new account to a
 testable exam link. If another person authors the questions, they can complete
-the Designer steps and send you the exported \`.smex\` file.
+the Designer steps and send you the exported `.smex` file.
 
 ## 1. Confirm staff access
 
@@ -27,7 +27,7 @@ Open **Designer**, then:
 3. Add sections and questions.
 4. Set the exam and paper instructions, timing, scoring, and navigation rules.
 5. Preview the content.
-6. Export the finished exam as a \`.smex\` file.
+6. Export the finished exam as a `.smex` file.
 
 For detailed authoring instructions, see [Introducing
 Designer](../user-guides/designer/introduction.md).
@@ -35,7 +35,7 @@ Designer](../user-guides/designer/introduction.md).
 ## 3. Import the exam into Manager
 
 Open **Manager** and choose **File → Add New Exam**. Select the exported
-\`.smex\` file and wait for the success message. Review the imported title,
+`.smex` file and wait for the success message. Review the imported title,
 code, papers, and delivery properties before assigning anyone.
 
 See [Import exams](../user-guides/manager/import-exams.md).

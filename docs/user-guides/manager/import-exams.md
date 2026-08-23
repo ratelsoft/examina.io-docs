@@ -6,7 +6,7 @@ tags: [designer export, exam import, manager, smex]
 
 # Import an exam into Manager
 
-Manager accepts exam packages exported by Designer as \`.smex\` files. Import
+Manager accepts exam packages exported by Designer as `.smex` files. Import
 the package before adding assignments or sharing an exam link.
 
 ## Before you import
@@ -20,20 +20,20 @@ In Designer, confirm:
 - instructions and navigation rules are complete; and
 - the project has been saved before export.
 
-Keep the source project as your editable master. The exported \`.smex\` file is
+Keep the source project as your editable master. The exported `.smex` file is
 the delivery package.
 
 ## Import the file
 
 1. Open **Manager**.
 2. Select **File → Add New Exam**.
-3. Drag the \`.smex\` file into the upload area or select it with the file
+3. Drag the `.smex` file into the upload area or select it with the file
    chooser.
 4. Submit the upload.
 5. Wait for the success message containing the imported exam code and title.
 
 If Manager reports that the file type is unsupported, return to Designer and
-export the exam in the supported \`.smex\` format. If the file exceeds the
+export the exam in the supported `.smex` format. If the file exceeds the
 allowed size for your environment or plan, reduce large media assets and export
 again.
 

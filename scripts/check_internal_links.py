@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail when a generated HTML page references a missing local file or anchor."""
+"""Validate generated documentation links, anchors, and code rendering."""
 
 from __future__ import annotations
 
@@ -14,11 +14,19 @@ class PageParser(HTMLParser):
         super().__init__()
         self.references: list[str] = []
         self.ids: set[str] = set()
+        self.article_depth = 0
+        self.code_depth = 0
+        self.literal_backticks = 0
 
     def handle_starttag(
         self, tag: str, attrs: list[tuple[str, str | None]]
     ) -> None:
         attributes = dict(attrs)
+        if tag == "article":
+            self.article_depth += 1
+        elif tag == "code":
+            self.code_depth += 1
+
         element_id = attributes.get("id")
         if element_id:
             self.ids.add(element_id)
@@ -26,6 +34,16 @@ class PageParser(HTMLParser):
         attribute = "href" if tag in {"a", "link"} else "src"
         if tag in {"a", "link", "img", "script"} and attributes.get(attribute):
             self.references.append(attributes[attribute] or "")
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "article":
+            self.article_depth = max(0, self.article_depth - 1)
+        elif tag == "code":
+            self.code_depth = max(0, self.code_depth - 1)
+
+    def handle_data(self, data: str) -> None:
+        if self.article_depth and not self.code_depth:
+            self.literal_backticks += data.count("`")
 
 
 def destination(root: Path, source: Path, reference: str) -> Path:
@@ -51,6 +69,12 @@ def main() -> int:
 
     errors: list[str] = []
     for source, parsed_page in pages.items():
+        if parsed_page.literal_backticks:
+            errors.append(
+                f"{source.relative_to(root)}: {parsed_page.literal_backticks} "
+                "unrendered backtick(s) in article content"
+            )
+
         for reference in parsed_page.references:
             parsed = urlsplit(reference)
             if (

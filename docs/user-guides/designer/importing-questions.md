@@ -93,10 +93,10 @@ Text before the first question is treated as description or instruction.
 
 Use one consistent marker style:
 
-- \`1.\`, \`2.\`, \`3.\`
-- \`Q1.\`, \`Q2.\`, \`Q3.\`
-- \`Q1\`, \`Q2\`, \`Q3\`
-- \`Q.\` for automatically numbered questions
+- `1.`, `2.`, `3.`
+- `Q1.`, `Q2.`, `Q3.`
+- `Q1`, `Q2`, `Q3`
+- `Q.` for automatically numbered questions
 
 ### Options and instructions
 
@@ -105,9 +105,9 @@ colon, semicolon, or closing parenthesis when used consistently.
 
 For question-specific instructions, begin the line with:
 
-\`\`\`text
+```text
 Instruction: Read the passage before answering.
-\`\`\`
+```
 
 ![A question instruction followed by options](../../assets/images/Designer_Images/Notepad_Sample_Instr.jpg)
 
@@ -115,18 +115,18 @@ Instruction: Read the passage before answering.
 
 End the options with an answer component:
 
-\`\`\`text
+```text
 Answer: B
-\`\`\`
+```
 
 or:
 
-\`\`\`text
+```text
 Ans: B
-\`\`\`
+```
 
 If the correct answer is intentionally unknown during drafting, retain the
-\`Answer:\` or \`Ans:\` label and leave its value empty. The label also acts as a
+`Answer:` or `Ans:` label and leave its value empty. The label also acts as a
 delimiter; omitting it can cause options from the next question to merge into
 the current question.
 
@@ -136,14 +136,14 @@ the current question.
 
 After the answer, use one of:
 
-- \`Explanation:\`
-- \`Exp:\`
-- \`Reference:\`
-- \`Ref:\`
+- `Explanation:`
+- `Exp:`
+- `Reference:`
+- `Ref:`
 
 Example:
 
-\`\`\`text
+```text
 Q1. Which protocol secures an HTTPS connection?
 A. FTP
 B. TLS
@@ -151,7 +151,7 @@ C. SMTP
 D. DNS
 Answer: B
 Explanation: HTTPS uses TLS to protect data in transit.
-\`\`\`
+```
 
 ## Validate imported content
 

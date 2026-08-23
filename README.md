@@ -35,5 +35,9 @@ npx --yes @redocly/cli@2.47.0 build-docs reference/examina.io.v1.yaml \
 python scripts/check_internal_links.py site
 ```
 
+The final check validates internal files and anchors and fails if escaped
+Markdown backticks leak into generated article text instead of rendering as
+inline code or code blocks.
+
 Changes pushed to `main` are validated and deployed to GitHub Pages by
 `.github/workflows/deploy-pages.yml`.

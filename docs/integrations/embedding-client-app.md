@@ -35,20 +35,20 @@ In **Approved Domains and Sub-domains for Client Widget embedding**:
 1. Enter the hostname without a protocol or path.
 2. Select **Add Domain**.
 
-For example, enter \`assessment.example.edu\`, not
-\`https://assessment.example.edu/exams\`.
+For example, enter `assessment.example.edu`, not
+`https://assessment.example.edu/exams`.
 
 ![The approved domain list for the Client widget](../assets/images/embedding-client-app/domain_section.jpg)
 
-For local testing, add the hostname you actually use, such as \`localhost\` or
-\`127.0.0.1\`; do not include the port. Remove development hosts after testing.
+For local testing, add the hostname you actually use, such as `localhost` or
+`127.0.0.1`; do not include the port. Remove development hosts after testing.
 Avoid allowing every domain in production.
 
 ## 3. Load the widget script
 
-Add the widget script to the page and replace \`YOUR_PUBLIC_API_KEY\`:
+Add the widget script to the page and replace `YOUR_PUBLIC_API_KEY`:
 
-\`\`\`html
+```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -63,7 +63,7 @@ Add the widget script to the page and replace \`YOUR_PUBLIC_API_KEY\`:
   <h1>Readiness assessment</h1>
 </body>
 </html>
-\`\`\`
+```
 
 If the key is missing or invalid, the widget script will not load correctly.
 
@@ -73,15 +73,15 @@ In Manager, select the exam and choose **Open Exam Link**. Copy the URL.
 
 ![Find the exam link in Manager](../assets/images/embedding-client-app/manager_exam_details.jpg)
 
-Add the link with the \`examina-io-client-widget\` class:
+Add the link with the `examina-io-client-widget` class:
 
-\`\`\`html
+```html
 <a
   class="examina-io-client-widget"
   href="https://www.examina.io/client/YOUR_EXAM_ID">
   Open the exam
 </a>
-\`\`\`
+```
 
 When JavaScript is available, the widget replaces the anchor with the embedded
 Client. The anchor text remains a useful fallback if the script cannot run.
@@ -91,8 +91,8 @@ Place only one widget anchor on a page.
 
 The widget uses these optional attributes:
 
-- \`data-examina-io-height\`
-- \`data-examina-io-width\`
+- `data-examina-io-height`
+- `data-examina-io-width`
 
 If an attribute is omitted, the widget manages that dimension relative to the
 browser window and can adjust it when the window resizes.
@@ -101,11 +101,11 @@ Use:
 
 - a positive number for a fixed pixel dimension;
 - a negative number to use the window size minus that number of pixels; or
-- \`auto\` to leave that dimension to your CSS or browser defaults.
+- `auto` to leave that dimension to your CSS or browser defaults.
 
 This example reserves 64 pixels for a page header and lets CSS manage width:
 
-\`\`\`html
+```html
 <header class="exam-header">Readiness assessment</header>
 <a
   class="examina-io-client-widget"
@@ -114,15 +114,15 @@ This example reserves 64 pixels for a page header and lets CSS manage width:
   data-examina-io-width="auto">
   Open the exam
 </a>
-\`\`\`
+```
 
-Test at the smallest supported viewport. When using \`auto\`, apply an explicit
+Test at the smallest supported viewport. When using `auto`, apply an explicit
 CSS size to the resulting layout so the browser's default iframe size is not
 used accidentally.
 
 ## Complete responsive example
 
-\`\`\`html
+```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -148,7 +148,7 @@ used accidentally.
   </a>
 </body>
 </html>
-\`\`\`
+```
 
 ## Optional autologin
 
@@ -162,14 +162,14 @@ Backend flow:
 2. Resolve their examina.io examinee code or ID on the server.
 3. From your server, call one of the documented token endpoints with HTTPS
    Basic Authentication:
-   - \`/login/exam/{examId}/code/{examineeCode}/token\`
-   - \`/login/exam/{examId}/id/{examineeId}/token\`
+   - `/login/exam/{examId}/code/{examineeCode}/token`
+   - `/login/exam/{examId}/id/{examineeId}/token`
 4. Build the Client URL with URL-encoded query values.
 5. Render the public key and the one-time login URL to the approved page.
 
 Example link shape:
 
-\`\`\`html
+```html
 <a
   class="examina-io-client-widget"
   href="https://www.examina.io/client/YOUR_EXAM_ID?autologin=true&amp;examineeCode=URL_ENCODED_CODE&amp;token=URL_ENCODED_TOKEN"
@@ -177,9 +177,9 @@ Example link shape:
   data-examina-io-width="auto">
   Open the exam
 </a>
-\`\`\`
+```
 
-\`autologin\` must be \`true\`. Supply either \`examineeCode\` or \`examineeId\`;
+`autologin` must be `true`. Supply either `examineeCode` or `examineeId`;
 when both are present, Client uses the examinee code.
 
 Never generate tokens in browser JavaScript, expose the secret key to the

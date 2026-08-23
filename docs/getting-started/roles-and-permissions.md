@@ -33,7 +33,7 @@ A Circle contains three kinds of member:
 - **Exams** they may work with; and
 - **Examinees** they may view or manage.
 
-For example, a \`BIO-201\` Circle could contain the course coordinator and
+For example, a `BIO-201` Circle could contain the course coordinator and
 invigilators, the midterm exam, and the enrolled students. Staff outside that
 Circle would not gain access merely because they have a Regular account.
 

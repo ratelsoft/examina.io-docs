@@ -28,8 +28,8 @@ images or identity verification.
 
 Manager supports:
 
-- Excel workbooks: \`.xls\` and \`.xlsx\`
-- delimited text: \`.csv\` and \`.txt\`
+- Excel workbooks: `.xls` and `.xlsx`
+- delimited text: `.csv` and `.txt`
 
 Put one examinee on each row. Required fields are:
 
@@ -38,19 +38,19 @@ Put one examinee on each row. Required fields are:
 - gender.
 
 Codes and passcodes can be generated when they are omitted. If you include
-phone numbers, use international format such as \`+14165550100\`. If you include
-dates of birth, use the format shown by the importer, such as \`8/7/1900\`.
+phone numbers, use international format such as `+14165550100`. If you include
+dates of birth, use the format shown by the importer, such as `8/7/1900`.
 
 For a reliable import, use a header row with clear column names and save a copy
 of the original source file.
 
 Example CSV:
 
-\`\`\`csv
+```csv
 student_id,first_name,last_name,gender,email
 STU-1001,Avery,Okafor,F,avery@example.edu
 STU-1002,Noah,Martin,M,noah@example.edu
-\`\`\`
+```
 
 ## Import a file
 
