@@ -15,3 +15,7 @@ New integrations authenticate with a named, scoped Bearer API key. Legacy Basic
 Authentication remains supported during migration. Mutating developer endpoints
 require an `Idempotency-Key`; see the [developer workflow](../integrations/developer-workflow.md)
 and [security guide](../integrations/api-keys-and-webhooks.md).
+
+Use `https://sandbox.examina.io/api/v1` with an `exm_test.` key for isolated,
+non-billable integration testing. See the [developer sandbox guide](../integrations/developer-sandbox.md)
+for quotas, retention, reset behavior, and environment isolation rules.

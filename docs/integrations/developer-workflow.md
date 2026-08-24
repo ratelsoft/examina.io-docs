@@ -9,6 +9,10 @@ tags: [assessment api, exam integration, lms api, results api]
 The v1 API supports the complete server-to-server journey from candidate
 provisioning through result synchronization.
 
+For pre-production integration testing, use the [developer sandbox](developer-sandbox.md)
+with its test-only base URL and `exm_test.` credentials. The endpoint paths and
+request contracts are the same as the live v1 API.
+
 ## 1. Provision an examinee
 
 Create one examinee with `POST /examinees`, or synchronize up to 500 records

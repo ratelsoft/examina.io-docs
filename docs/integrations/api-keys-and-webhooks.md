@@ -13,8 +13,9 @@ needs. Legacy organization API Secret Keys remain compatible during migration.
 ## Create a scoped API key
 
 An Administrator creates keys from the organization's developer settings. The
-complete token is displayed only once and begins with `exm_live.`. Store it in
-a server-side secret manager.
+complete token is displayed only once. Live tokens begin with `exm_live.`;
+[developer sandbox](developer-sandbox.md) tokens begin with `exm_test.`. Store
+each token in a server-side secret manager.
 
 | Scope | Allows |
 | --- | --- |
@@ -42,6 +43,10 @@ curl --request GET \
 
 Do not place API keys in browser code, mobile applications, screenshots,
 source control, or support logs.
+
+API keys are environment-bound. An `exm_live.` key works only on the live API.
+An `exm_test.` key works only at `https://sandbox.examina.io/api/v1`. Legacy
+Basic Authentication is accepted only by the live API.
 
 ## Make mutations idempotent
 
@@ -79,6 +84,10 @@ only once. Webhook URLs must use public HTTPS and must not resolve to a private,
 loopback, link-local, or multicast address.
 
 Every delivery contains a JSON event. The request also includes:
+
+The event envelope includes `livemode` and `environment`. Sandbox deliveries
+use `"livemode": false` and `"environment": "test"`; live deliveries use
+`true` and `"live"`. Reject an unexpected environment before processing data.
 
 | Header | Meaning |
 | --- | --- |

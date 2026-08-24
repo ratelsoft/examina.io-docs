@@ -6,13 +6,17 @@ info:
     Use the examina.io REST API to manage exams, examinees, groups, assignments,
     settings, and login tokens from your server-side applications.
 
-    The production base URL is `https://www.examina.io/api/v1`.
+    The production base URL is `https://www.examina.io/api/v1`. Use
+    `https://sandbox.examina.io/api/v1` with an `exm_test.` key for isolated,
+    non-billable integration testing.
 
     ### Authentication
 
     New integrations should send a scoped API key as a Bearer token. Legacy
-    organization API Secret Keys remain supported through Basic Authentication
-    during migration; the username is always `api`.
+    organization API Secret Keys remain supported on the live API through Basic
+    Authentication during migration; the username is always `api`. Test keys
+    begin with `exm_test.` and work only on the sandbox host. Live keys begin
+    with `exm_live.` and cannot be used on the sandbox host.
 
     > **Keep the API Secret Key secure**
     >
@@ -38,6 +42,9 @@ info:
   termsOfService: 'https://www.examina.io/terms'
 servers:
   - url: 'https://www.examina.io/api/v1'
+    description: Production
+  - url: 'https://sandbox.examina.io/api/v1'
+    description: Developer sandbox (use an exm_test key)
 security:
   - developerApiKey: []
   - apiSecretKey: []
@@ -2599,6 +2606,17 @@ components:
     WebhookDeliveryStatus:
       type: string
       enum: [PENDING, DELIVERED, FAILED]
+    WebhookEvent:
+      type: object
+      required: [id, type, createdAt, livemode, environment, data]
+      properties:
+        id: { type: string }
+        type:
+          $ref: '#/components/schemas/WebhookEventType'
+        createdAt: { type: string, format: date-time }
+        livemode: { type: boolean }
+        environment: { type: string, enum: [live, test] }
+        data: { type: object, additionalProperties: true }
     WebhookEndpoint:
       type: object
       required: [id, url, events, enabled, createdAt, updatedAt]
@@ -2621,7 +2639,8 @@ components:
         eventId: { type: string }
         eventType:
           $ref: '#/components/schemas/WebhookEventType'
-        payload: { type: object, additionalProperties: true }
+        payload:
+          $ref: '#/components/schemas/WebhookEvent'
         status:
           $ref: '#/components/schemas/WebhookDeliveryStatus'
         attempts: { type: integer, minimum: 0 }
@@ -2647,8 +2666,8 @@ components:
       type: http
       scheme: bearer
       bearerFormat: examina scoped API key
-      description: A named, scoped API key. The token is shown only when it is created.
+      description: A named, scoped API key. Live tokens use exm_live and sandbox tokens use exm_test; tokens are shown only when created and are bound to their environment.
     apiSecretKey:
       type: http
       scheme: basic
-      description: 'This uses a Basic Authentication scheme and is required for all API requests. Username is always ***api*** and password is your API Secret Key.'
+      description: 'Legacy live-only Basic Authentication. Username is always ***api*** and password is your API Secret Key. It is rejected by the developer sandbox.'

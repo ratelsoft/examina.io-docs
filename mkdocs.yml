@@ -84,6 +84,7 @@ nav:
           - Organization settings and branding: user-guides/administration/organization-settings.md
   - Integrations:
       - Developer workflow: integrations/developer-workflow.md
+      - Developer sandbox: integrations/developer-sandbox.md
       - API keys and webhooks: integrations/api-keys-and-webhooks.md
       - Embed the client app: integrations/embedding-client-app.md
   - API reference: api/index.md
