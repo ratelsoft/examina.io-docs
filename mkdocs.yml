@@ -85,6 +85,7 @@ nav:
   - Integrations:
       - Developer workflow: integrations/developer-workflow.md
       - Developer sandbox: integrations/developer-sandbox.md
+      - Sandbox API quickstart: integrations/sandbox-api-quickstart.md
       - API keys and webhooks: integrations/api-keys-and-webhooks.md
       - Embed the client app: integrations/embedding-client-app.md
   - API reference: api/index.md

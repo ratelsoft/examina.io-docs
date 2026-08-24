@@ -90,5 +90,5 @@ and per-paper counts and scores. Only completed attempts are returned.
 
 Use a distinct `Idempotency-Key` for each logical create or update operation.
 After a network timeout, resend the same body and key. Handle HTTP 409 as a state
-or idempotency conflict, HTTP 422 as invalid input, HTTP 429 as an organization
-plan limit, and HTTP 5xx with bounded exponential backoff.
+or idempotency conflict, HTTP 422 as invalid input or a resource limit, HTTP 429
+as a request-rate limit, and HTTP 5xx with bounded exponential backoff.

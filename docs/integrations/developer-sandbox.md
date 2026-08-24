@@ -14,14 +14,19 @@ webhooks, or billing state.
 Use it to validate provisioning, assignment, launch-session, results, and
 webhook integrations before sending live traffic.
 
-## Provision your sandbox
+## Open your sandbox
 
-An organization Administrator can provision one sandbox:
+Every live organization can use one sandbox. Any verified organization user can
+open it:
 
 1. Sign in to the live dashboard.
 2. Open **Settings → Developer Sandbox**.
-3. Select **Create sandbox**.
-4. Select **Open sandbox** and complete sign-in on `sandbox.examina.io`.
+3. Select **Open sandbox**.
+
+The first visit creates the isolated sandbox automatically. examina.io then
+signs you in at `sandbox.examina.io` with a short-lived, one-time browser
+handoff, so there is normally no second login screen. The handoff contains no
+password or reusable session credential and cannot be replayed after use.
 
 The persistent **TEST MODE** banner and test styling indicate that the current
 dashboard is using sandbox data. There is no environment toggle: the hostname
@@ -65,6 +70,8 @@ The shared-infrastructure sandbox is intentionally small and free:
 | Exam attempts | 5 per 30-day period |
 | Concurrent exam sessions | 1 |
 | Completed-result retention | 30 days |
+| API requests | 120 per test key per minute |
+| Sandbox resets | 3 per day |
 
 Sandbox attempts never reserve funds, consume paid-plan allowances, write usage
 ledgers, or generate billable feature charges. Reconnecting to the same attempt
@@ -75,7 +82,8 @@ not available in the sandbox. Email delivery and recording are disabled.
 
 ## Reset test data
 
-An Administrator can use **Reset sandbox** from sandbox Settings. Reset removes
+An Administrator can use **Reset sandbox** from sandbox Settings up to three
+times per day. Reset removes
 test exams, examinees, groups, assignments, results, webhook configuration,
 delivery records, and uploaded sandbox files.
 
@@ -103,3 +111,16 @@ for search indexing. Public developer documentation remains indexable at
 4. Create a separate `exm_live.` key with the minimum required scopes.
 5. Change both the base URL and secret through environment-specific deployment
    configuration; never transform a test token into a live token.
+
+For copy-ready requests and a complete first test, follow the
+[sandbox API quickstart](sandbox-api-quickstart.md).
+
+## Troubleshoot access
+
+If the automatic handoff expires or has already been used, return to the live
+**Developer Sandbox** settings page and select **Open sandbox** again. A handoff
+expires after 90 seconds. Direct sign-in at `sandbox.examina.io` remains
+available as a fallback.
+
+If API calls return HTTP 429, wait for the `Retry-After` period before retrying.
+Use bounded exponential backoff and do not start parallel retry loops.
