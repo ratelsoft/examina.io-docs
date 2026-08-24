@@ -23,7 +23,7 @@ The domain allowlist controls which sites may load the Client widget.
 For example, enter **assessment.example.edu**, not
 **https://assessment.example.edu/exams**.
 
-Avoid **Allow Access from all domains** in production. If you add
+Avoid **Allow All Domains** in production. If you add
 **localhost** or another development host, remove it after testing because it
 is not exclusive to your organization.
 
@@ -31,19 +31,21 @@ See [Embed the Client app](../../integrations/embedding-client-app.md).
 
 ## Organization logo
 
-The logo appears in supported organization-facing and examinee-facing views.
-Select **Change Logo** and choose a JPG, GIF, or PNG file up to 512 KB.
+The **Logo Customization** panel controls the logo shown in supported
+organization-facing and examinee-facing views. Select **Upload New Logo** and
+choose a JPG, GIF, or PNG file up to 512 KB.
 
 Use a high-contrast logo with transparent or neutral padding, then verify it on
 both desktop and mobile-sized screens.
 
 ## Exam login page
 
-Choose **Default**, **Modern**, or **Classic** as the organization login style.
+In the **Client Experience** panel, set **Exam Login View** to **Default**,
+**Modern**, or **Classic**.
 Modern and Classic can use an organization background image. If none is
 provided, Client can show a supplied background.
 
-1. Choose a login style and select **Save Style**.
+1. Choose a login view and select **Save Style**.
 2. Select **Change Image** to upload a JPG, GIF, or PNG background.
 3. Use a 1920 × 1280 pixel image when possible and keep it within the displayed
    size limit.

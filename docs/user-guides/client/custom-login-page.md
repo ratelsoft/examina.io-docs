@@ -33,7 +33,7 @@ assuming they will look identical.
 
 1. Sign in as a Root or Administrator.
 2. Open **Home → Settings**.
-3. In **Organization Logo**, select **Change Logo**.
+3. In **Logo Customization**, select **Upload New Logo**.
 4. Choose a JPG, GIF, or PNG file no larger than 512 KB.
 5. Wait for the upload to complete.
 
@@ -45,8 +45,8 @@ backgrounds.
 
 ## Select a login style
 
-1. Find **Exam Login Page Customization**.
-2. Choose Default, Modern, or Classic.
+1. Find **Client Experience**.
+2. Under **Exam Login View**, choose Default, Modern, or Classic.
 3. Select **Save Style**.
 
 The change applies at the organization level. Coordinate it with anyone
@@ -54,7 +54,7 @@ running an active exam before switching styles.
 
 ## Upload a background
 
-1. Select **Change Image**.
+1. Under **Login Background Image**, select **Change Image**.
 2. Choose a JPG, GIF, or PNG file.
 3. Use the displayed recommended dimensions—1920 × 1280 pixels—and stay within
    the displayed file-size limit.
