@@ -34,7 +34,12 @@
       "type": "integer"
     },
     "examPaperFlow": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "Force Continuous",
+        "Client Controlled",
+        "Server Controlled"
+      ]
     },
     "papers": {
       "type": "array",

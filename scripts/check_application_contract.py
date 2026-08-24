@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import json
 import re
 from pathlib import Path
 
@@ -73,9 +74,43 @@ EXPECTED_ROUTES = {
     ("POST", "/webhook-endpoints/deliveries/{}/retry"),
 }
 
+ENUM_CONTRACTS = (
+    ("reference/raw/Base Exam Schema.json", ("properties", "examPaperFlow", "enum"),
+     ["Force Continuous", "Client Controlled", "Server Controlled"]),
+    ("reference/raw/Base Exam Settings Schema.json",
+     ("properties", "handheldSettings", "properties", "phoneExamPage", "enum"),
+     ["REGULAR", "MOBILE"]),
+    ("reference/raw/Base Exam Settings Schema.json",
+     ("properties", "handheldSettings", "properties", "tabletExamPage", "enum"),
+     ["REGULAR", "MOBILE"]),
+    ("reference/raw/Base Exam Settings Schema.json",
+     ("properties", "internetDisconnectionPolicy", "properties", "onDisconnect", "enum"),
+     ["DO_NOTHING", "PAUSE_EXAM", "LOGOUT_EXAMINEE"]),
+    ("reference/raw/Base Exam Settings Schema.json",
+     ("properties", "proctorPolicy", "properties", "onDisconnect", "enum"),
+     ["DO_NOTHING", "PAUSE_EXAM", "LOGOUT_EXAMINEE"]),
+    ("reference/raw/Change Exam Settings Schema.json", ("properties", "phoneExamPage", "enum"),
+     ["REGULAR", "MOBILE"]),
+    ("reference/raw/Change Exam Settings Schema.json", ("properties", "tabletExamPage", "enum"),
+     ["REGULAR", "MOBILE"]),
+    ("reference/raw/Change Exam Settings Schema.json",
+     ("properties", "internetPolicyDisconnect", "enum"),
+     ["DO_NOTHING", "PAUSE_EXAM", "LOGOUT_EXAMINEE"]),
+    ("reference/raw/Change Exam Settings Schema.json",
+     ("properties", "proctorPolicyDisconnect", "enum"),
+     ["DO_NOTHING", "PAUSE_EXAM", "LOGOUT_EXAMINEE"]),
+)
+
 
 def normalize(path: str) -> str:
     return re.sub(r"\{[^}]+}", "{}", path)
+
+
+def nested(document: dict, keys: tuple[str, ...]):
+    value = document
+    for key in keys:
+        value = value[key]
+    return value
 
 
 def main() -> int:
@@ -94,6 +129,25 @@ def main() -> int:
         errors.append("Undocumented application routes: " + repr(sorted(missing)))
     if extra:
         errors.append("Documented routes absent from the application: " + repr(sorted(extra)))
+
+    for relative_path, keys, expected in ENUM_CONTRACTS:
+        document = json.loads((ROOT / relative_path).read_text(encoding="utf-8"))
+        try:
+            actual = nested(document, keys)
+        except KeyError:
+            actual = None
+        if actual != expected:
+            errors.append(f"{relative_path}:{'.'.join(keys)} must declare enum {expected!r}")
+
+    component_enums = {
+        "ConnectionStatus": ["CONNECTED", "READY", "RUNNING", "DISCONNECTED", "FINISHED"],
+        "WebhookEventType": ["result.completed"],
+        "WebhookDeliveryStatus": ["PENDING", "DELIVERED", "FAILED"],
+    }
+    for name, expected in component_enums.items():
+        actual = spec.get("components", {}).get("schemas", {}).get(name, {}).get("enum")
+        if actual != expected:
+            errors.append(f"components.schemas.{name} must declare enum {expected!r}")
 
     for path in (
         "/login/exam/{examId}/code/{examineeCode}/token",

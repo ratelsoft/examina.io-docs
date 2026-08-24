@@ -2382,6 +2382,12 @@ paths:
       responses:
         '200':
           description: Webhook endpoints
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/WebhookEndpoint'
     post:
       summary: Create a signed webhook endpoint
       operationId: create-webhook-endpoint
@@ -2402,10 +2408,20 @@ paths:
                 url: { type: string, format: uri }
                 events:
                   type: array
-                  items: { type: string, enum: [result.completed] }
+                  items:
+                    $ref: '#/components/schemas/WebhookEventType'
       responses:
         '201':
           description: Endpoint created. `signingSecret` is returned only in this response.
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/WebhookEndpoint'
+                  - type: object
+                    required: [signingSecret]
+                    properties:
+                      signingSecret: { type: string, writeOnly: true }
   '/webhook-endpoints/{endpointId}':
     parameters:
       - name: endpointId
@@ -2433,7 +2449,12 @@ paths:
         - $ref: '#/components/parameters/Page'
         - $ref: '#/components/parameters/PageSize'
       responses:
-        '200': { description: Paginated delivery history }
+        '200':
+          description: Paginated delivery history
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/WebhookDeliveryPage'
   '/webhook-endpoints/deliveries/{deliveryId}/retry':
     parameters:
       - name: deliveryId
@@ -2448,7 +2469,12 @@ paths:
         - developerApiKey: []
         - apiSecretKey: []
       responses:
-        '202': { description: Delivery queued }
+        '202':
+          description: Delivery queued
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/WebhookDelivery'
         '404': { description: Delivery not found }
 components:
   parameters:
@@ -2535,7 +2561,8 @@ components:
         papers:
           type: array
           items: { type: string }
-        status: { type: string }
+        status:
+          $ref: '#/components/schemas/ConnectionStatus'
         exemptFromProctoring: { type: boolean }
     Result:
       type: object
@@ -2544,7 +2571,7 @@ components:
         attemptId: { type: string }
         examId: { type: string }
         examineeId: { type: string }
-        status: { type: string, const: FINISHED }
+        status: { type: string, enum: [FINISHED] }
         score: { type: number }
         maximumScore: { type: number }
         percentage: { type: [number, 'null'] }
@@ -2562,6 +2589,59 @@ components:
               score: { type: number }
               maximumScore: { type: number }
               completedAt: { type: string, format: date-time }
+    ConnectionStatus:
+      type: string
+      enum: [CONNECTED, READY, RUNNING, DISCONNECTED, FINISHED]
+      description: Current lifecycle state of an exam assignment.
+    WebhookEventType:
+      type: string
+      enum: [result.completed]
+    WebhookDeliveryStatus:
+      type: string
+      enum: [PENDING, DELIVERED, FAILED]
+    WebhookEndpoint:
+      type: object
+      required: [id, url, events, enabled, createdAt, updatedAt]
+      properties:
+        id: { type: string }
+        url: { type: string, format: uri }
+        events:
+          type: array
+          items:
+            $ref: '#/components/schemas/WebhookEventType'
+        enabled: { type: boolean }
+        createdAt: { type: string, format: date-time }
+        updatedAt: { type: string, format: date-time }
+    WebhookDelivery:
+      type: object
+      required: [id, endpointId, eventId, eventType, payload, status, attempts, createdAt]
+      properties:
+        id: { type: string }
+        endpointId: { type: string }
+        eventId: { type: string }
+        eventType:
+          $ref: '#/components/schemas/WebhookEventType'
+        payload: { type: object, additionalProperties: true }
+        status:
+          $ref: '#/components/schemas/WebhookDeliveryStatus'
+        attempts: { type: integer, minimum: 0 }
+        responseStatus: { type: [integer, 'null'] }
+        lastError: { type: [string, 'null'] }
+        createdAt: { type: string, format: date-time }
+        lastAttemptAt: { type: [string, 'null'], format: date-time }
+        deliveredAt: { type: [string, 'null'], format: date-time }
+    WebhookDeliveryPage:
+      type: object
+      required: [data, page, pageSize, total, pages]
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/WebhookDelivery'
+        page: { type: integer, minimum: 1 }
+        pageSize: { type: integer, minimum: 1, maximum: 100 }
+        total: { type: integer, minimum: 0 }
+        pages: { type: integer, minimum: 0 }
   securitySchemes:
     developerApiKey:
       type: http

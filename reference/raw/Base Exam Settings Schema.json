@@ -22,10 +22,18 @@
           "type": "boolean"
         },
         "phoneExamPage": {
-          "type": "string"
+          "type": "string",
+          "enum": [
+            "REGULAR",
+            "MOBILE"
+          ]
         },
         "tabletExamPage": {
-          "type": "string"
+          "type": "string",
+          "enum": [
+            "REGULAR",
+            "MOBILE"
+          ]
         }
       }
     },
@@ -61,7 +69,11 @@
       "properties": {
         "onDisconnect": {
           "type": "string",
-          "description": "options are DO_NOTHING, PAUSE_EXAM and LOGOUT_EXAMINEE"
+          "enum": [
+            "DO_NOTHING",
+            "PAUSE_EXAM",
+            "LOGOUT_EXAMINEE"
+          ]
         },
         "after": {
           "type": "integer",
@@ -81,7 +93,11 @@
       "properties": {
         "onDisconnect": {
           "type": "string",
-          "description": "options are DO_NOTHING, PAUSE_EXAM and LOGOUT_EXAMINEE"
+          "enum": [
+            "DO_NOTHING",
+            "PAUSE_EXAM",
+            "LOGOUT_EXAMINEE"
+          ]
         },
         "after": {
           "type": "integer",
