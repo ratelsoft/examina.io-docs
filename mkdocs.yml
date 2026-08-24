@@ -24,7 +24,9 @@ theme:
   logo: assets/logo.png
   favicon: assets/favicon.ico
   font:
-    text: Open Sans
+    # Body face of the 2026 brand. Outfit is used for headings and is loaded in
+    # stylesheets/extra.css, since Material only manages a single text family.
+    text: Plus Jakarta Sans
     code: Roboto Mono
   palette:
     - media: "(prefers-color-scheme: light)"
