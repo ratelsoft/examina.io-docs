@@ -64,10 +64,10 @@ an exam, authorized invigilators can review the available audio, webcam, and
 screen streams, communicate with an examinee, and approve an exam start when
 the configured workflow requires it.
 
-![The Proctor workspace before any examinee has connected](../assets/images/general/proctoring-view.jpg)
+![The Proctor workspace with two connected examinees](../assets/images/general/proctoring-view.jpg)
 
-The workspace lists each connected examinee as they sign in; until then it shows
-the waiting state above.
+Each connected examinee appears as a tile with Details, Webcam, and Screen views,
+recording and mute controls, and a direct message box.
 
 Only enable proctoring features that your organization is authorized to use,
 and inform examinees about the data that will be collected.
