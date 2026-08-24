@@ -1,3 +1,12 @@
+/* Outfit carries the headings, matching the application's display face. Material
+   loads only the single `font.text` family (Plus Jakarta Sans), so the display
+   family is requested here. Weights mirror the app's own Google Fonts request. */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --examina-font-display: 'Outfit', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
 :root > * {
   --md-primary-fg-color: #00acac;
   --md-primary-fg-color--light: #31a3a3;
@@ -23,15 +32,28 @@
   border-radius: 0.4rem;
 }
 
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6,
+.md-header__topic > .md-ellipsis,
+.md-nav__title {
+  font-family: var(--examina-font-display);
+}
+
 .md-typeset h1 {
   color: var(--md-default-fg-color);
   font-weight: 700;
   letter-spacing: -0.025em;
 }
 
+/* 700 rather than 650: the loaded Outfit weights are discrete, so an
+   intermediate value would snap and render inconsistently across headings. */
 .md-typeset h2,
 .md-typeset h3 {
-  font-weight: 650;
+  font-weight: 700;
   letter-spacing: -0.015em;
 }
 
