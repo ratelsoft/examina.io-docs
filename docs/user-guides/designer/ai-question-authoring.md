@@ -1,6 +1,6 @@
 ---
 title: Create Source-Backed Exam Questions with AI
-description: Author cited, editable multiple-choice and fill-in-the-blank question drafts from PDF, Word, PowerPoint, text, Markdown, HTML, and existing passages in examina.io Designer.
+description: Author cited, editable exam questions from PDF, DOCX, PPTX, TXT, Markdown, HTML, and existing passages with examina.io Designer.
 tags: [source-backed AI question authoring, assessment authoring, exam questions, Designer, cited questions]
 ---
 
