@@ -29,10 +29,10 @@ Client work together across the assessment lifecycle.
 <div class="doc-card" markdown>
 ### :material-pencil-ruler: Create exams
 
-Build exams, organize papers, create questions, and import existing question
-banks in Designer.
+Build exams, organize papers, create questions manually or with source-grounded
+AI, and import existing question banks in Designer.
 
-[Designer guides](user-guides/designer/introduction.md)
+[Designer guides](user-guides/designer/introduction.md) · [Create questions with AI](user-guides/designer/ai-question-authoring.md)
 </div>
 
 <div class="doc-card" markdown>

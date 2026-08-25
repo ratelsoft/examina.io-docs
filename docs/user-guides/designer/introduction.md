@@ -76,4 +76,6 @@ For a reliable project:
 7. export one exam for [Manager](../manager/import-exams.md).
 
 You can also [reuse papers and questions](importing-questions.md) within the
-open project.
+open project. To build editable drafts from passages, PDF, Word, PowerPoint,
+text, Markdown, or HTML sources, see [Create and review questions with
+AI](ai-question-authoring.md).
