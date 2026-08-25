@@ -136,3 +136,5 @@ Before export, verify:
 - the question works at the smallest permitted screen size.
 
 To reuse existing content, see [Reuse project content](importing-questions.md).
+If **Create questions with AI** is available for your organization, see
+[Create and review questions with AI](ai-question-authoring.md).
