@@ -1,7 +1,7 @@
 ---
-title: Create and Review Exam Questions with AI
-description: Generate grounded multiple-choice and fill-in-the-blank question drafts from PDF, Word, PowerPoint, text, Markdown, HTML, and existing passages in examina.io Designer.
-tags: [AI question generator, assessment authoring, exam questions, Designer, source-grounded questions]
+title: Create Source-Backed Exam Questions with AI
+description: Author cited, editable multiple-choice and fill-in-the-blank question drafts from PDF, Word, PowerPoint, text, Markdown, HTML, and existing passages in examina.io Designer.
+tags: [source-backed AI question authoring, assessment authoring, exam questions, Designer, cited questions]
 ---
 
 # Create and review questions with AI
@@ -10,25 +10,49 @@ Designer can turn source material into editable question drafts without leaving
 the current paper. It never inserts or publishes AI output automatically: an
 authorized author reviews every candidate and chooses what enters the paper.
 
-## What your plan includes
+## What your plan includes and what extra questions cost
 
-AI authoring is included in every plan. One AI credit covers one valid,
-source-grounded, non-duplicate candidate that reaches **Review**.
+Source-backed AI question authoring is included in every plan. Your monthly
+allowance counts valid, source-backed, non-duplicate candidates that reach
+**Review**—not requests, uploaded pages, or provider retries.
 
-| Plan | AI question credits per month | Source library storage | Saved sources | Maximum file size |
+| Plan | Source-backed questions per month | Source library storage | Saved sources | Maximum file size |
 | --- | ---: | ---: | ---: | ---: |
 | Starter | 10 | 250 MB | 25 | 50 MB |
 | Basic | 100 | 2 GB | 250 | 250 MB |
 | Professional | 500 | 10 GB | 1,000 | 500 MB |
 | Flexible | 100 | 5 GB | 500 | 500 MB |
-| Enterprise | 2,500 | 50 GB | 5,000 | 2 GB |
+| Enterprise | Custom | Custom | Custom | Custom |
 
-Included credits reset at the start of each UTC calendar month and are shared
-by the organization. The current balance is shown in the AI authoring window.
+The included allowance resets at the start of each UTC calendar month and is
+shared by the organization. The current allowance is shown in the AI authoring
+window.
 
-!!! info "Only valid candidates are charged"
+After the included allowance is used, the current price for each additional
+valid question reaching Review is:
+
+| Billing currency | Price per question |
+| --- | ---: |
+| USD | $0.15 |
+| CAD | C$0.20 |
+| NGN | ₦200 |
+
+There is no separate AI-credit product or AI wallet. The price is reserved and
+deducted from your organization's normal prepaid balance. Every plan can add
+funds from **Billing → Prepaid Balance** using the available payment provider.
+The AI window shows the applicable price and available prepaid balance before
+you generate. If the balance cannot cover the part of the request beyond your
+allowance, generation does not start and tells you how much to add.
+
+For example, if two included questions remain and you request five, Designer
+reserves the price of three questions. If four valid candidates reach Review,
+the two included questions count first, only two prepaid questions are charged,
+and the unused one-question reservation is returned to the prepaid balance.
+
+!!! info "Only valid, source-backed candidates reaching Review count"
     Failed requests, invalid candidates, candidates without verifiable source
-    evidence, and duplicates rejected before Review do not consume AI credits.
+    evidence, and duplicates rejected before Review do not use the allowance or
+    prepaid balance.
 
 ## Supported sources
 
@@ -54,7 +78,7 @@ instead of storing another copy.
 ## Generate question candidates
 
 1. Open an exam project and select the paper that should receive the questions.
-2. Choose **Create questions with AI** in the Exam Explorer toolbar.
+2. Choose **Author questions from your sources** in the Exam Explorer toolbar.
 3. On **Source**, choose the current passage, select saved resources, or upload
    a supported file. Wait until every selected resource is ready.
 4. On **Questions**, add one or more blueprint rows.
@@ -94,7 +118,7 @@ Designer editing and preview.
     source. A subject-matter expert should verify the wording, answer key,
     explanation, difficulty, accessibility, and score before delivery.
 
-## Grounding and duplicate checks
+## Evidence and duplicate checks
 
 Candidates must cite text found at the stated PDF page, Word section,
 PowerPoint slide, text line range, Markdown heading, or HTML heading before they
@@ -115,7 +139,9 @@ organization content.
 - For PDF, run OCR if you cannot select and copy its text.
 - Confirm that the requested question count meets the large-source minimum.
 - Select fewer or more focused sources and try again.
-- Check the organization's remaining AI credit balance.
+- Check the organization's remaining included allowance and prepaid balance.
+- If the allowance is exhausted, open **Billing → Prepaid Balance** and add at
+  least the shortfall shown in the AI authoring window.
 
 After insertion, use the normal [question preview and quality
 check](questions.md#preview-and-quality-check) before saving and exporting the
