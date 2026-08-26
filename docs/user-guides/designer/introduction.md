@@ -51,9 +51,12 @@ ability to edit comfortably.
 
 ![The File menu](../../assets/images/designer/file-menu.png)
 
-Notice which items are greyed out. **Save Project**, **New Exam** and both
-export actions only become available once a project is open, so an empty File
-menu is not a fault.
+Notice which items are greyed out, and that they wake up in two stages.
+**Save Project**, **Save Project As...** and **New Exam** become available once
+a project is open. The two export actions stay disabled until you actually
+**select an exam** in Exam Explorer, because Designer exports one exam at a
+time and needs to know which. A File menu full of grey text is not a fault — it
+usually means nothing is selected yet.
 
 ## Open an existing project
 

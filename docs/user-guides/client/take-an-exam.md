@@ -36,7 +36,16 @@ instructions when they differ from this general guide.
 
 The appearance of the login page may be branded by the organization.
 
-![An example of the examina.io Client application](../../assets/images/general/client-view.jpg)
+![The Client sign-in page](../../assets/images/client/login.png)
+
+Once you are signed in, Client shows the exam before it starts: its title, the
+total duration, the description and general instruction written by the exam
+author, and a table of the papers with their question counts and durations.
+
+![The exam details screen shown before the exam begins](../../assets/images/client/exam-details.png)
+
+Read this screen properly. The duration shown is for the whole sitting, and the
+paper table is the clearest picture you will get of what is ahead.
 
 ## Start the exam
 
@@ -52,7 +61,24 @@ Depending on the configuration, the exam may:
 If a paper is missing or the start button remains unavailable, contact the
 organizer rather than trying a different person's credentials.
 
+How the exam begins depends on how it was configured:
+
+- if the exam is **server controlled**, Client shows *Awaiting Manager to issue
+  Exam Start Order* and waits — you cannot begin until the invigilator starts it;
+- otherwise a **Begin Exam** button appears, and you choose which paper to start
+  with.
+
+![Choosing the starting paper](../../assets/images/client/choose-paper.png)
+
 ## While answering
+
+![Answering a question, with the Exam Explorer on the left](../../assets/images/client/question.png)
+
+The header carries the time left, the exam progress, the current paper, and the
+question number. The **Exam Explorer** on the left lists every paper and
+question, and the legend beneath it explains the icons: green for answered,
+grey for unanswered, red for skipped. Use it to find what you still owe before
+you submit.
 
 - Watch the remaining time shown by Client.
 - Use the exam navigation controls rather than the browser's Back button.
@@ -68,13 +94,24 @@ succeeds.
 ## Finish and submit
 
 1. Review unanswered or skipped questions if the exam allows navigation.
-2. Use the exam's **Finish** or submit control.
+2. Use the **Finish Exam** control at the top right.
 3. Read the confirmation carefully before submitting.
 4. Wait for the completion message or result page.
 5. Do not close the browser while a submission is still processing.
 
+Client counts what you have left and tells you before it accepts the
+submission, so this dialog is the last chance to go back:
+
+![The finish confirmation, warning about unanswered questions](../../assets/images/client/finish-confirm.png)
+
 Whether a score is displayed immediately depends on the organizer's settings.
 A generic completion message can be normal.
+
+Where results are shown, Client breaks them down per paper — questions
+answered, unanswered and skipped, the score and the obtainable score — with the
+total underneath.
+
+![The exam report shown after submission](../../assets/images/client/result.png)
 
 ## If something goes wrong
 
