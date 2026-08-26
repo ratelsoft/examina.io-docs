@@ -44,9 +44,9 @@ The appearance of the login page may be branded by the organization.
     to anyone — it carries your identity for this exam.
 
     The link keeps working if your browser closes and you need to reopen it,
-    but it will not let you sit the exam in two places at once. If it does not
-    work, it takes you to this sign-in page, where your code and passcode still
-    work as normal.
+    but it will not let you sit the exam in two places at once. If it has
+    expired, or is not valid for that exam, it takes you to this sign-in page
+    and tells you which — your code and passcode still work as normal.
 
 Once you are signed in, Client shows the exam before it starts: its title, the
 total duration, the description and general instruction written by the exam

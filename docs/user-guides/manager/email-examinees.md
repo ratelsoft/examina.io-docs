@@ -56,9 +56,10 @@ place. Placeholders work in the subject line as well as the body.
 | `#[RESULT]` | A formatted result summary |
 
 !!! warning "Result placeholders only belong in a result email"
-    These read from a completed attempt. In an invitation sent before anyone has
-    sat the exam there is no score to substitute, and `#[PERCENT]` in particular
-    has nothing to divide by. Keep them out of invitations.
+    These read from a completed attempt. In an invitation, sent before anyone
+    has sat the exam, there is no score to substitute and they render as
+    nothing — leaving a sentence with a hole in it. Keep them out of
+    invitations.
 
 ## Sign-in links
 
@@ -106,9 +107,13 @@ examinee's inbox rather than replacing it, so the first email keeps working.
 ### When a link does not work
 
 The examinee lands on the sign-in page for that exam with a message explaining
-why, and can sign in with their code and passcode instead. That covers an
-expired link, a link for an exam they are no longer mapped to, and a link opened
-before the exam is due to start.
+why, and can sign in with their code and passcode instead. An expired link says
+so plainly, separately from a link that was never valid for that exam, so a
+candidate is not told their credentials are wrong when their link has simply run
+out.
+
+The one exception is an exam that has been deleted. There is no exam left to
+show a sign-in page for, so the link leads to a not-found page.
 
 ## Before you send
 
