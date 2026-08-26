@@ -19,11 +19,9 @@ module, or another assessment segment. One exam can contain several papers.
 
 Paper titles must be unique within the exam.
 
-![A newly created paper selected in Designer](../../assets/images/Designer_Images/Paper_Environment.jpg)
+![A paper selected in Exam Explorer, with its questions listed beneath it](../../assets/images/designer/paper-in-explorer.png)
 
 ## Paper properties
-
-![Paper properties and settings](../../assets/images/Designer_Images/Paper_Properties1.jpg)
 
 **Paper Title**
 
@@ -43,8 +41,6 @@ Paper titles must be unique within the exam.
 
 : Controls whether sections are presented sequentially or selected in a
   randomized order.
-
-![Choose sequential or randomized section arrangement](../../assets/images/Designer_Images/PaperSectionArrangementRandomizedSequential.jpg)
 
 **Questions to Answer**
 
