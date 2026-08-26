@@ -159,6 +159,8 @@ an LTI learner using the platform's pseudonymous subject identifier. Enable
 additional profile fields only when your institution has a documented need and
 lawful basis for sharing them.
 
+![The active Moodle tool using the production examina.io launch URL](../assets/images/integrations/moodle/02-moodle-manage-tools.png)
+
 Return to examina.io and activate the registration. A suspended or revoked
 registration cannot accept new launches.
 
