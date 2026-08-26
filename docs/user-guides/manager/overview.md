@@ -18,17 +18,22 @@ they can access may be limited by [Circles](../administration/circles-and-permis
 
 ## Main workspace
 
+![The Manager workspace with the Exams tab selected](../../assets/images/manager/exams-tab.png)
+
 Manager has three resource tabs:
 
 - **Exams** lists imported assessments.
 - **Examinees** lists candidates who can be mapped to exams.
 - **Groups** lists reusable collections of examinees.
 
-Select an item in the left panel to open its details and available actions. Use
-the search box to filter the current list, the table button to change the list
-view, and refresh when another user may have changed server data.
+Select an item in the left panel to open its details and available actions. The
+small toolbar above each list adds a new record, switches to a table view, and
+refreshes from the server. Refresh whenever another user may have changed data.
 
-The **File** menu contains the main creation commands:
+The **File** menu contains the four creation commands, and they are the same
+whichever tab you are on:
+
+![The Manager File menu](../../assets/images/manager/file-menu.png)
 
 - **Add New Exam**
 - **Add New Examinee**
@@ -50,9 +55,12 @@ The **File** menu contains the main creation commands:
 
 ## Exams
 
-An exam record shows details such as its title, code, version, file size, paper
-count, paper flow, visibility, and the time it was added. Exam actions can
-include:
+![An exam selected, with its settings and mapped examinees](../../assets/images/manager/exam-details.png)
+
+An exam record shows its title, code and version, the link examinees use,
+visibility, whether results are shown after the exam, whether live proctoring
+and eFace ID preverification are enabled, the time it was added, the imported
+file size, and the paper flow. Exam actions can include:
 
 - map examinees or Groups;
 - open the exam link;
@@ -68,12 +76,17 @@ state.
 
 ## Examinees
 
+![An examinee selected, with mapped exams and Group membership](../../assets/images/manager/examinee-details.png)
+
 An examinee record stores a unique code or ID, passcode, name, gender, and
 optional details such as email, phone number, date of birth, and photograph.
-From an examinee, you can manage Group membership, map an exam and papers,
-review mapping details, and view a completed result.
+Below the details are two panels: the exams this person is mapped to, and the
+Groups they belong to. From here you can manage Group membership, map an exam
+and papers, review mapping details, and view a completed result.
 
 ## Groups
+
+![A Group selected, listing its members](../../assets/images/manager/group-details.png)
 
 A Group is an operational collection of examinees, such as a class, cohort, or
 exam sitting. Mapping a Group to an exam applies the assignment to the Group's

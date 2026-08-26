@@ -25,6 +25,8 @@ the delivery package.
 
 ## Import the file
 
+![File → Add New Exam](../../assets/images/manager/file-menu.png)
+
 1. Open **Manager**.
 2. Select **File → Add New Exam**.
 3. Drag the `.smex` file into the upload area or select it with the file
@@ -39,14 +41,19 @@ again.
 
 ## Verify the imported exam
 
-Select the exam and review:
+Select the exam and review its details panel:
+
+![The imported exam's details](../../assets/images/manager/exam-details.png)
 
 - exam title, code, and version;
-- paper count and paper names;
 - exam paper flow;
 - visibility;
 - imported file size; and
 - the time it was added.
+
+**Exam File Size** is the quickest sanity check that the right package
+arrived — a figure far smaller than expected usually means an export that is
+missing its media.
 
 Open the paper information and compare it with the Designer project. Do not map
 real examinees until the content and timing are correct.

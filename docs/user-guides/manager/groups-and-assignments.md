@@ -30,6 +30,12 @@ for access control.
 4. Save the Group.
 5. Select the Group, then add examinees from the searchable list.
 
+![A Group and its members](../../assets/images/manager/group-details.png)
+
+The buttons beside the member list cover every way of filling a Group: add
+examinees one at a time, add several at once, add the examinees matching an
+uploaded file, or copy the membership of another Group.
+
 You can also add Group membership from an examinee record or assign imported
 examinees to a Group during file import.
 
@@ -86,6 +92,8 @@ that assignment. Always verify:
 ## Verify mappings
 
 Before publishing an exam:
+
+![The mapped-examinee list for an exam](../../assets/images/manager/exam-details.png)
 
 1. Open the exam's mapped-examinee list.
 2. Compare its count with the intended roster.

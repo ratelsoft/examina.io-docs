@@ -62,8 +62,14 @@ device requirements, proctoring expectations, and support contact. Share the
 
 ## Monitor an active session
 
-Manager can show mapping and connection states such as **Ready**, **Running**,
-**Disconnected**, and **Finished**. Refresh the mapping table before making a
+The exam's mapped-examinee table is the monitoring view. It shows each person's
+connection state and, once they finish, their score.
+
+![Connection status and scores in the mapped-examinee table](../../assets/images/manager/exam-details.png)
+
+Manager shows mapping and connection states such as **Connected**, **Ready**,
+**Running**, **Disconnected**, and **Finished**, colour-coded so an in-progress
+sitting can be read at a glance. Refresh the mapping table before making a
 decision so you have the latest server data.
 
 Depending on the exam configuration, actions may include:
