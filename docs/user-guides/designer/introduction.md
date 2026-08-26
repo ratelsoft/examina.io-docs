@@ -100,7 +100,6 @@ Exam Explorer. Designer supports:
 - Multiple Choice, single select
 - Multiple Choice, multiple select
 - Fill in the Blank
-- Drag and Drop
 
 Set the answer, the score and the section, then use **Preview** to see the
 question exactly as an examinee will. See [Creating questions](questions.md).
