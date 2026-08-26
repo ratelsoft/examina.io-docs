@@ -9,6 +9,8 @@ tags: [candidate import, csv import, examinees, excel import, manager]
 An **examinee** is a candidate who takes an exam through the Client
 application. Examinees are separate from staff **Users**.
 
+![The Examinees tab](../../assets/images/manager/examinees-tab.png)
+
 ## Add one examinee
 
 1. Open **Manager**.
@@ -23,6 +25,8 @@ application. Examinees are separate from staff **Users**.
 The code identifies the examinee during login and must be unique. A square
 photo around 256 × 256 pixels works best when your workflow uses examinee
 images or identity verification.
+
+![A saved examinee record](../../assets/images/manager/examinee-details.png)
 
 ## Prepare an import file
 
