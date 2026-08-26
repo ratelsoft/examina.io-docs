@@ -6,76 +6,115 @@ tags: [assessment authoring, designer, exam project, questions]
 
 # Introducing Designer
 
-Designer is the exam-authoring workspace. Use it to build an exam project,
-organize papers and sections, create questions, configure scoring and timing,
-and export a delivery package for Manager.
+Designer is where exams are written. You build a **project**, put one or more
+**exams** inside it, divide each exam into **papers**, and fill the papers with
+**questions**. When the exam is ready you send it to Manager, which is where it
+gets assigned to people and delivered.
 
-![The Designer user interface](../../assets/images/Designer_Images/Designer_user_interface.jpg)
+Designer runs in the browser and needs nothing installed.
 
-## Workspace tour
+![The Designer workspace with no project open](../../assets/images/designer/workspace-empty.png)
 
-- **Toolbar:** File, Help, and other application commands.
-- **Exam Explorer:** the project tree containing exams, papers, sections, and
-  questions.
-- **Properties:** settings for the item currently selected in Exam Explorer.
-- **Hint:** contextual guidance for the selected item or command.
-- **Question editor and preview:** content-authoring and examinee-preview panes
-  shown when a question is selected.
+## The workspace
 
-## Create an exam project
+Four areas, and they stay in the same place throughout.
 
-1. Select **File → New Exam Project**.
-2. Designer creates an **Untitled Exam**.
-3. Select the exam in Exam Explorer.
-4. Complete the required exam properties.
-5. Select **File → Save Project** and save the editable project.
+| Area | What it holds |
+|---|---|
+| **Exam Explorer** (top left) | The project tree: exams, then papers, then questions |
+| **Properties** (lower left) | Settings for whatever is selected in the tree |
+| **Hint** (bottom left) | Plain-English explanation of the selected property |
+| **Editing pane** (right) | The exam, paper, or question you are working on |
 
-![Create a new exam project from the File menu](../../assets/images/Designer_Images/Intro_Designer_first_start.jpg)
+The Hint panel is worth knowing about. Select any row in Properties and it
+explains what that setting does, which is usually faster than looking it up.
 
-![A new Untitled Exam in Designer](../../assets/images/Designer_Images/Intro_Designer_Page.jpg)
+## Two kinds of file
 
-Save the project early and often. The project is your editable source; the
-exported exam file is the package used for delivery.
+This distinction causes more confusion than anything else in Designer, so it is
+worth getting straight before you start.
+
+| File | Extension | What it is |
+|---|---|---|
+| **Project** | `.smexproj` | Your editable source. Contains every exam, paper and question, and can be reopened and changed |
+| **Exam** | `.smex` | A single exam packaged for delivery. This is what Manager consumes |
+
+Keep the project. If you lose it and keep only the exported exam, you lose the
+ability to edit comfortably.
+
+## Create a project
+
+1. Choose **File → New Exam Project**.
+2. Designer creates an **Untitled Exam** inside it.
+3. Select that exam in Exam Explorer to fill in its details.
+4. Choose **File → Save Project** and keep the `.smexproj` somewhere safe.
+
+![The File menu](../../assets/images/designer/file-menu.png)
+
+Notice which items are greyed out. **Save Project**, **New Exam** and both
+export actions only become available once a project is open, so an empty File
+menu is not a fault.
+
+## Open an existing project
+
+**File → Open Project**, then choose a `.smexproj` file.
+
+!!! warning "Projects from a newer version will not open"
+    Designer refuses a project saved by a later version of the application than
+    the one you are running, because it cannot be sure it understands
+    everything inside. You will see *"The file version is greater than the
+    application version"*.
+
+    Export the exam from the version that created it, or ask whoever sent it to
+    save from a matching version.
+
+![A project open, with its exam in Exam Explorer](../../assets/images/designer/project-loaded.png)
+
+## The shape of an exam
+
+Everything in Designer nests the same way:
+
+```
+Project
+└── Exam                     one or more
+    └── Paper                one or more
+        └── Question         one or more
+            └── Section      optional grouping within a paper
+```
+
+A **paper** usually maps to a subject, course or module. An exam with six papers
+might be a single sitting covering six subjects, with its own duration and
+question set for each.
 
 ## Add a paper
 
-1. Right-click the exam in **Exam Explorer**.
-2. Select **New Exam Paper**.
-3. Select the new paper.
-4. Set its title, duration, instructions, arrangement, and other properties.
-
-An exam can contain multiple papers. Depending on your organization, a paper
-may represent a subject, course, module, or assessment section.
+Right-click the exam in Exam Explorer and choose **New Exam Paper**, then select
+the new paper to set its title, duration and instructions. See
+[The paper](paper.md) for what each setting does.
 
 ## Add a question
 
-Right-click a paper and select the new-question action, or use the **New
-Question** button below Exam Explorer.
+Right-click a paper and choose the new-question action, or use the button below
+Exam Explorer. Designer supports:
 
-![Create a question under an exam paper](../../assets/images/Designer_Images/Intro_creating_questions.jpg)
-
-Designer supports these core question types:
-
-- Multiple Choice — single select
-- Multiple Choice — multiple select
+- Multiple Choice, single select
+- Multiple Choice, multiple select
 - Fill in the Blank
+- Drag and Drop
 
-Set the answer, score, section, shuffle behavior, and other properties, then use
-Preview to check the examinee experience.
+Set the answer, the score and the section, then use **Preview** to see the
+question exactly as an examinee will. See [Creating questions](questions.md).
 
-## Authoring sequence
+## A working order
 
-For a reliable project:
+1. Configure the [exam](exam.md) — title, code, description, instructions
+2. Create each [paper](paper.md) and set its duration
+3. Add sections if the paper needs them
+4. Write the [questions](questions.md)
+5. Preview and proofread
+6. **Save the project**
+7. Export one exam to [Manager](../manager/import-exams.md)
 
-1. configure the [exam](exam.md);
-2. create and configure each [paper](paper.md);
-3. add sections where needed;
-4. [create questions](questions.md);
-5. preview and proofread;
-6. save the project; and
-7. export one exam for [Manager](../manager/import-exams.md).
-
-You can also [reuse papers and questions](importing-questions.md) within the
-open project. To build editable drafts from passages, PDF, Word, PowerPoint,
-text, Markdown, or HTML sources, see [Create and review questions with
-AI](ai-question-authoring.md).
+You can also [reuse papers and questions](importing-questions.md) from elsewhere
+in the open project, or build drafts from existing documents with
+[AI authoring](ai-question-authoring.md).

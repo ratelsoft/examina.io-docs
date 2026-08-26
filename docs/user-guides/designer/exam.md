@@ -1,90 +1,99 @@
 ---
-title: Create and Configure an Exam in Designer
-description: Set the exam title, code, branding, instructions, paper flow, answer display, and navigation rules in examina.io Designer.
-tags: [designer, exam authoring, exam properties, paper flow]
+title: The exam
+description: Configure exam title, exam code, branding, description, instructions, paper flow, and answer visibility in examina.io Designer.
+tags: [designer, exam settings, exam code, branding, paper flow]
 ---
 
-# Create and configure an exam
+# The exam
 
-An exam is the top-level assessment in Designer. It contains one or more papers,
-and each paper contains its questions and optional sections.
+Select an exam in Exam Explorer and the editing pane shows everything that
+applies to the exam as a whole. Most of it is visible to the examinee, so it is
+worth being deliberate here rather than filling it in to get past the screen.
 
-## Create the project
+![Exam properties and settings](../../assets/images/designer/exam-properties.png)
 
-1. Select **File → New Exam Project**.
-2. Select **Untitled Exam** in Exam Explorer.
-3. Complete the Exam properties.
-4. Save the project.
+## Exam title
 
-![A newly created exam project](../../assets/images/Designer_Images/Intro_Designer_Page.jpg)
+The name the examinee sees while sitting the exam. Write it the way you would
+print it on a paper: *MTH 201 Fall Examination*, not *mth201-final-v2*.
 
-## Core exam properties
+## Exam code
 
-**Exam Title**
+**Required, and the field most likely to cause trouble later.**
 
-: The examinee-facing name. Make it specific enough to distinguish the
-  assessment and sitting.
+The code identifies the exam when it reaches Manager, so it has to be unique
+across every exam your organization imports. Two exams sharing a code cannot
+both be imported cleanly.
 
-**Exam Code**
+Two rules the field enforces:
 
-: A unique alphanumeric code used when the exam is imported into Manager. Avoid
-  spaces and punctuation.
+- **No spaces**
+- **Letters and numbers only** — no punctuation, dashes or underscores
 
-**Branding Banner**
+`MTH201FALL` is fine. `MTH 201` and `MTH-201` are not.
 
-: An optional exam-specific image displayed in supported Default-style Client
-  views.
+!!! tip "Decide a scheme before your second exam, not your twentieth"
+    Something like `SUBJECT` + `YEAR` + `SITTING` stays readable and stays
+    unique: `MTH201F26`, `CHM104M26`. Retrofitting a scheme means re-importing
+    exams that are already in use.
 
-**Branding Colour**
+## Branding banner and colour
 
-: An optional organization or exam colour used in supported Client views.
+Optional. The banner appears to the examinee while they take the exam, and the
+colour tints the surrounding interface.
 
-**Exam Description and General Instruction**
+Use these when a single organization delivers exams on behalf of several
+departments or clients, and each needs to look like its own. **Clear** removes
+either without affecting the other.
 
-: Information shown before the exam starts. These required fields must be
-  complete before the exam can be exported.
+## Description
 
-Write instructions that state permitted materials, navigation rules, timing,
-submission expectations, and the support process without exposing answers.
+Shown to the examinee before they begin. Say what the exam is and what it
+covers — this is the first thing a nervous candidate reads, so plain language
+serves better than formal wording.
 
-## Paper flow
+## General instruction
 
-![Exam paper-flow settings in Designer](../../assets/images/Designer_Images/The_Exam-Force.Cont._Client.Cntrl._.Server.Cntrl..jpg)
+Also shown before the exam starts, and the right place for rules that apply
+across every paper: whether materials are permitted, what happens if the
+connection drops, how to raise a problem.
 
-For an exam with several papers, choose how the next paper starts:
+Per-paper instructions belong on [the paper](paper.md) instead. Anything
+repeated on every paper belongs here.
 
-- **Force Continuous:** Client starts the next paper after the previous paper
-  finishes.
-- **Client Controlled:** the examinee chooses when to start an available paper.
-- **Server Controlled:** Manager controls when examinees may start a paper.
+## Exam paper flow
 
-Choose the flow that matches the operating plan, then test it with an exam that
-contains the same number of papers as production.
+For exams with more than one paper, this decides how the next paper arrives.
 
-## Result and navigation settings
+| Setting | Behaviour |
+|---|---|
+| **Server Controlled** | The server decides when each paper opens. Everyone moves together |
+| **Client Controlled** | The examinee moves on when they finish the current paper |
+| **Force Continuous** | Papers run one after another without a break |
 
-**Show Answers After Exam**
+Choose **Server Controlled** for a sitting where everyone must be on the same
+paper at the same time. Choose **Client Controlled** when candidates should
+work at their own pace within an overall time limit.
 
-: Enable for a learning or practice workflow only when revealing answers is
-  appropriate. Keep it disabled for assessments where answers must remain
-  confidential.
+## Show answers after exam
 
-**Allow Inter-Paper Navigation**
+Whether the examinee sees which answers were right once they submit.
 
-: Allows the examinee to move between papers. Review how this interacts with
-  the chosen paper flow and timing rules.
+Useful for practice tests and revision. Almost always wrong for a live
+assessment, because it hands the answer key to everyone who sits early.
 
-## Validate before export
+## Allow inter-paper navigation
 
-- Title and code are final and unique.
-- Description and general instructions are complete.
-- Branding is legible and appropriately licensed.
-- Paper flow matches the delivery plan.
-- Answer display and inter-paper navigation are intentional.
-- Every paper has been previewed.
-- The editable project has been saved.
+Whether an examinee can go back to a paper they have already left.
 
-A project can contain multiple exams, but export one exam at a time for import
-into Manager.
+Set to **No** when each paper is meant to be sealed once submitted. Set to
+**Yes** when the whole exam is really one long paper split into parts and
+candidates should be free to revisit.
 
-Continue with [Create and configure a paper](paper.md).
+## Before you move on
+
+The exam code is the one setting that is genuinely painful to change later,
+because it is how Manager recognises the exam. Everything else can be edited and
+re-exported without consequence.
+
+Next: [The paper](paper.md).

@@ -21,8 +21,6 @@ paper.
 6. Open **Preview** and check the result.
 7. Save the project.
 
-![Question authoring in Designer](../../assets/images/Designer_Images/questiondesign.jpg)
-
 ## Question types
 
 Designer supports:
@@ -36,8 +34,6 @@ Choose the type that measures the intended skill. Do not turn a multi-answer
 item into single select merely to simplify marking.
 
 ## Core properties
-
-![Question properties in Designer](../../assets/images/Designer_Images/Question_Environment.jpg)
 
 **Option Count**
 
@@ -78,9 +74,7 @@ consistent and preview each question.
 The Edit pane supports text formatting, headings, colour, lists, alignment,
 superscript, subscript, symbols, expressions, images, audio, and tables.
 
-![The question Edit fields](../../assets/images/Designer_Images/Question_Edit_Fields.jpg)
-
-![The question editor toolbar](../../assets/images/Designer_Images/Question_Edit_Fields_Tab.jpg)
+![The question editor, with instruction, question, options and explanation](../../assets/images/designer/question-editor.png)
 
 Use formatting to improve structure, not decoration. Confirm that important
 meaning is not communicated by colour alone.
@@ -91,8 +85,6 @@ Keep an imported image within the limits shown by Designer. The existing editor
 guidance recommends no more than 650 pixels wide and 500 KB so the image
 renders reliably across desktop and mobile devices.
 
-![Import an image into a question](../../assets/images/Designer_Images/Question_Import_Image.jpg)
-
 Resize and compress large images before import. Add enough wording in the
 question for the image's purpose to remain understandable.
 
@@ -101,8 +93,6 @@ question for the image's purpose to remain understandable.
 Audio items can support listening questions. Configure the available volume,
 pause, stop, and seek controls to match the assessment rules.
 
-![Configure audio in a question](../../assets/images/Designer_Images/Question_Import_Audio.jpg)
-
 Test with headphones and the lowest bandwidth expected on exam day. Provide an
 approved accommodation path when required.
 
@@ -110,11 +100,7 @@ approved accommodation path when required.
 
 Use the table tool to add rows and columns.
 
-![Create a table in a question](../../assets/images/Designer_Images/Question_Table.jpg)
-
 To edit or remove a table, right-click inside it and open **Table Properties**.
-
-![Edit table properties](../../assets/images/Designer_Images/Question_Table_Properties.jpg)
 
 Keep tables small enough to fit supported screens without horizontal scrolling.
 
@@ -122,7 +108,7 @@ Keep tables small enough to fit supported screens without horizontal scrolling.
 
 Select **Preview** to inspect the rendered prompt and options.
 
-![Preview a question in Designer](../../assets/images/Designer_Images/Question_Edit_Preview_Field.jpg)
+![Preview shows the question as the examinee will see it](../../assets/images/designer/question-preview.png)
 
 Before export, verify:
 
