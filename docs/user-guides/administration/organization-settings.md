@@ -79,9 +79,10 @@ webhook URL.
 
 ## Learning-platform integrations
 
-Settings can show connectors such as Google Classroom, Blackboard, and
-Brightspace. Availability and setup requirements depend on your plan and the
-external platform configuration.
+Settings can show learning-platform connectors and LTI 1.3 registrations.
+Availability and setup requirements depend on your plan and the external
+platform configuration. For a complete setup and validation flow, see
+[Integrate examina.io with Moodle](../../integrations/moodle-lms.md).
 
 Use a dedicated integration account where appropriate, grant only required
 permissions, document the owner, and disconnect integrations that are no longer

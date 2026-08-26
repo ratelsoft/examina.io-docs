@@ -85,6 +85,7 @@ nav:
           - Circles and permissions: user-guides/administration/circles-and-permissions.md
           - Organization settings and branding: user-guides/administration/organization-settings.md
   - Integrations:
+      - Moodle LMS: integrations/moodle-lms.md
       - Developer workflow: integrations/developer-workflow.md
       - Developer sandbox: integrations/developer-sandbox.md
       - Sandbox API quickstart: integrations/sandbox-api-quickstart.md
