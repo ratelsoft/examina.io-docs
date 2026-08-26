@@ -79,10 +79,11 @@ I put in my document?** for a reference to the tags, each at a line start.
 
 ### The cases that catch people out
 
-A question is only finished once an answer line has been seen, which is what
-lets an option read `The population grew by 1. 5 million` without starting a
-new question. A question with no answer line never closes and swallows the ones
-after it, so one imported question holding the text of several usually means a
+A question is only finished once an answer line has been seen. That is what
+lets a numbered list inside a case study, `1. First point` and `2. Second
+point`, stay in the passage instead of each line starting a question of its
+own. A question with no answer line never closes and swallows the ones after
+it, so one imported question holding the text of several usually means a
 missing **Ans:** line. A second answer replaces the first; it does not add one.
 
 A line carrying no tag continues the line before it, which is how a multi-line
