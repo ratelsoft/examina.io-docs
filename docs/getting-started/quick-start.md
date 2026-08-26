@@ -98,8 +98,8 @@ Use a fictional or designated test examinee rather than a real candidate.
 
 ## 9. Publish and communicate
 
-Make the exam visible, then copy **Open Exam Link** or use **Send Email to
-Examinees** from Manager. Include:
+Make the exam visible, then copy **Open Exam Link** or use [**Send Email to
+Examinees**](../user-guides/manager/email-examinees.md) from Manager. Include:
 
 - the exam date, start time, and time zone;
 - the exam link;

@@ -79,6 +79,7 @@ nav:
           - Import exams: user-guides/manager/import-exams.md
           - Add and import examinees: user-guides/manager/examinees.md
           - Groups and exam assignments: user-guides/manager/groups-and-assignments.md
+          - Email your examinees: user-guides/manager/email-examinees.md
           - Deliver, monitor, and report: user-guides/manager/deliver-monitor-report.md
       - Administrators:
           - Users and account roles: user-guides/administration/users-and-roles.md
