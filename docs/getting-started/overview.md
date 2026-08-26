@@ -36,7 +36,7 @@ Designer is the exam-authoring application. Use it to create exam projects,
 organize one or more papers, add sections, write questions, set scoring and
 timing rules, and import existing question content.
 
-![A question in the Designer edit and preview panes](../assets/images/general/designer-edit-preview.jpg)
+![The same question in the Designer edit pane and preview pane](../assets/images/general/designer-edit-preview.png)
 
 When authoring is complete, export the exam as an encrypted `.smex` file for
 delivery through Manager. Start with [Introducing Designer](../user-guides/designer/introduction.md).
@@ -54,6 +54,8 @@ authorized staff use Manager to:
 - open or distribute an exam link; and
 - monitor progress and generate results or reports.
 
+![An exam in Manager, with its mapped examinees](../assets/images/manager/exam-details.png)
+
 See the [Manager overview](../user-guides/manager/overview.md) for the main
 navigation and a recommended operating sequence.
 
@@ -64,7 +66,7 @@ an exam, authorized invigilators can review the available audio, webcam, and
 screen streams, communicate with an examinee, and approve an exam start when
 the configured workflow requires it.
 
-![The Proctor workspace with two connected examinees](../assets/images/general/proctoring-view.jpg)
+![The Proctor workspace, one tile per examinee](../assets/images/general/proctoring-view.png)
 
 Each connected examinee appears as a tile with Details, Webcam, and Screen views,
 recording and mute controls, and a direct message box.
