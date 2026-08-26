@@ -26,16 +26,19 @@ allowance counts valid, source-backed, non-duplicate candidates that reach
 
 The included allowance resets at the start of each UTC calendar month and is
 shared by the organization. The current allowance is shown in the AI authoring
-window.
+window. A text-only question or a question that reuses an image from the source
+uses one included question. A question with a newly generated visual uses four
+included questions. For example, an allowance of 100 can produce up to 100
+text or source-image questions, up to 25 newly generated-visual questions, or a
+mixture of both.
 
 After the included allowance is used, the current price for each additional
 valid question reaching Review is:
 
-| Billing currency | Price per question |
-| --- | ---: |
-| USD | $0.15 |
-| CAD | C$0.20 |
-| NGN | ₦200 |
+| Output reaching Review | USD | CAD | NGN |
+| --- | ---: | ---: | ---: |
+| Text-only or source-image question | $0.15 | C$0.20 | ₦200 |
+| Question with a newly generated visual | $0.60 | C$0.80 | ₦800 |
 
 There is no separate AI-credit product or AI wallet. The price is reserved and
 deducted from your organization's normal prepaid balance. Every plan can add
@@ -65,6 +68,7 @@ organization resources, or upload any of these file types:
 - plain UTF-8 text (`.txt`)
 - Markdown (`.md` or `.markdown`)
 - HTML (`.html` or `.htm`)
+- PNG, JPEG, GIF, or WebP images
 
 PDF sources should contain selectable text. Run OCR before uploading a scanned
 or image-only PDF. Macro-enabled and encrypted Office files are not supported.
@@ -146,3 +150,26 @@ organization content.
 After insertion, use the normal [question preview and quality
 check](questions.md#preview-and-quality-check) before saving and exporting the
 project.
+
+## Create questions that use visuals
+
+When a selected source contains a supported image, each blueprint row offers
+these visual choices:
+
+| Choice | What Designer does | Included-question usage |
+| --- | --- | ---: |
+| No visual | Generates a text-only question. | 1 |
+| Reuse source image | Uses a relevant image extracted from the cited source location. | 1 |
+| Generate new visual | Creates a distinct 1K visual that tests a similar concept. | 4 |
+| Auto | Chooses text, source reuse, or a new visual according to the source and returns unused reserved questions after settlement. | 1 or 4 |
+
+A visual question must cite readable source text from the same PDF page,
+PowerPoint slide, document section, or other source location as its reference
+image. Designer avoids cover art, logos, decorative images, and unrelated
+front matter. Newly generated visuals retain their source, model, and job
+lineage and remain pending human review.
+
+Before inserting a visual candidate, check that the image is relevant, does
+not reveal the answer, and has accurate alternative text and a useful long
+description. A failed or rejected image does not use the organization's
+allowance or prepaid balance.
