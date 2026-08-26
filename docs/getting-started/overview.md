@@ -78,7 +78,7 @@ Client is the examinee-facing application. Examinees open the exam link, enter
 their assigned credentials, complete any required system or identity checks,
 and take the mapped papers.
 
-![The examinee-facing Client application](../assets/images/general/client-view.jpg)
+![The examinee-facing Client application](../assets/images/client/question.png)
 
 Client periodically saves exam state while a connection is available. The
 [test-day guide](../user-guides/client/take-an-exam.md) explains how examinees
