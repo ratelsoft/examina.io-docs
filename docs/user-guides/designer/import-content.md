@@ -118,14 +118,14 @@ set scores and sections, and save the project.
 **Download Questions** is a separate feature, not part of the import wizard.
 Right-click a paper and choose it to pull questions from SmartQuestions.
 
-1. Sign in with your SmartQuestions account.
+1. Sign in with your Ratelsoft account.
 2. Choose a scheme, then up to five subjects.
 3. Set how many questions to take from each subject, between 1 and 100.
 4. Choose sequential or randomized order, then download.
 
 The sign-in is not stored. Designer asks for it again in a new session.
 
-![The Download Questions dialog asking for SmartQuestions sign-in](../../assets/images/designer/import-download-questions.png)
+![The Download Questions dialog asking for a Ratelsoft account sign-in](../../assets/images/designer/import-download-questions.png)
 
 To copy content inside the open project, see [Reuse project
 content](importing-questions.md).
