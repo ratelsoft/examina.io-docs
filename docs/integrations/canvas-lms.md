@@ -150,6 +150,7 @@ with the exact value shown by examina.io:
 | Redirect URI | LTI launch and Deep Linking URLs, one per line |
 | Assignment Selection target link | Deep Linking |
 | Public JWK URL | Public key set (JWKS) |
+| Tool Icon URL | `https://www.examina.io/img/logo128.png` |
 
 The production browser-facing routes begin with `https://www.examina.io`.
 For example, the launch URL is
@@ -159,6 +160,11 @@ registration card because the JWKS URL includes the registration identifier.
 Save the key and turn it **On**. In **Apps → Manage**, open **examina.io
 assessments**, confirm that the App is on, and make it available to the root
 account or to the approved sub-accounts and courses.
+
+The **Tool Icon URL** gives instructors and administrators a recognizable
+examina.io logo in Canvas. If an existing installation still shows Canvas's
+generic external-tool icon, update the Developer Key with this value and
+refresh or reinstall the App so Canvas reloads its registration metadata.
 
 ![The active examina.io App in a Canvas root account](../assets/images/integrations/canvas/02-canvas-installed-app.png)
 
