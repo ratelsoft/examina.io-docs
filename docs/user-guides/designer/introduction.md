@@ -116,11 +116,12 @@ question exactly as an examinee will. See [Creating questions](questions.md).
 1. Configure the [exam](exam.md) — title, code, description, instructions
 2. Create each [paper](paper.md) and set its duration
 3. Add sections if the paper needs them
-4. Write the [questions](questions.md)
+4. Write the [questions](questions.md), or [import them](import-content.md)
 5. Preview and proofread
 6. **Save the project**
 7. Export one exam to [Manager](../manager/import-exams.md)
 
 You can also [reuse papers and questions](importing-questions.md) from elsewhere
-in the open project, or build drafts from existing documents with
+in the open project, [import existing content](import-content.md) from another
+project or a document, or build drafts from your own sources with
 [AI authoring](ai-question-authoring.md).

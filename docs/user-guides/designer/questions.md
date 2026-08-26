@@ -122,3 +122,5 @@ Before export, verify:
 - the question works at the smallest permitted screen size.
 
 To reuse existing content, see [Reuse project content](importing-questions.md).
+To bring questions in from a document or another project, see [Import existing
+content](import-content.md).

@@ -72,6 +72,7 @@ nav:
           - The paper: user-guides/designer/paper.md
           - Creating questions: user-guides/designer/questions.md
           - Create questions with AI: user-guides/designer/ai-question-authoring.md
+          - Import existing content: user-guides/designer/import-content.md
           - Reuse project content: user-guides/designer/importing-questions.md
       - Manager:
           - Manager overview: user-guides/manager/overview.md

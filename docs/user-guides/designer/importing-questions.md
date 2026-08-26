@@ -38,15 +38,13 @@ The copy remains editable and does not alter the source paper.
 3. Update the prompt, answer, score, and section as needed.
 4. Preview the copied question before export.
 
-Copy and paste operate within the currently open project. To reuse content from
-another project, open that project and save a working copy, then reorganize the
-content within it.
+Copy and paste operate within the currently open project.
 
-## Features not currently available
+## Content from outside this project
 
-Designer does not currently support importing exams, papers, or questions from
-another project or from a text file. Some older screenshots or builds may show
-import commands, but those commands are not active in the current application.
+To bring in exams from another project, papers from an exported exam, or
+questions typed out in a Word, RTF, or text document, use the import wizard
+instead of copy and paste. See [Import existing content](import-content.md).
 
 ## Validate reused content
 
