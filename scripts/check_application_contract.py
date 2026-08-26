@@ -163,14 +163,33 @@ def main() -> int:
     markdown_pages = list((ROOT / "docs").rglob("*.md"))
     page_text = {page: page.read_text(encoding="utf-8") for page in markdown_pages}
     claims = "\n".join(page_text.values())
-    forbidden = (
-        "Import Questions from File",
-        "Import Paper from File",
+    # Behavior the application does not offer at all. A guide must never
+    # promise any of these.
+    unavailable = (
         "Edit → Configure Defaults",
     )
-    for claim in forbidden:
+    for claim in unavailable:
         if claim in claims:
             errors.append(f"Documentation still advertises unavailable behavior: {claim}")
+
+    # Menu items that do exist, spelled the way they are not. Designer ships
+    # the import commands with this exact capitalization, so a guide using any
+    # other rendering sends the reader hunting for a command they will not
+    # find on screen.
+    mislabelled = {
+        "Import Questions from File": "Import Questions From File",
+        "Import Paper from File": "Import Papers From File",
+        "Import Papers from File": "Import Papers From File",
+        "Import Exams from Another Project": "Import Exams from another Project",
+        "Import Exams From Another Project": "Import Exams from another Project",
+        "Import Exams From another Project": "Import Exams from another Project",
+    }
+    for wrong, shipped in mislabelled.items():
+        if wrong in claims:
+            errors.append(
+                f"Documentation uses a menu label the application does not show: "
+                f"{wrong!r}; the application shows {shipped!r}"
+            )
 
     for page, content in page_text.items():
         match = re.match(r"^---\n(.*?)\n---\n", content, re.DOTALL)

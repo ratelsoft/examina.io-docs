@@ -76,7 +76,9 @@ sections in a fixed order while randomizing questions inside each section.
 
 To duplicate existing content in the open project, copy a question and paste it
 into the destination paper. See [Reuse project content](importing-questions.md)
-for the supported workflow.
+for the supported workflow. To pull questions in from a document or another
+project, right-click the paper and see [Import existing
+content](import-content.md).
 
 ## Validate the paper
 

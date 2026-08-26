@@ -32,7 +32,7 @@ Client work together across the assessment lifecycle.
 Build exams, organize papers, create questions manually or author cited drafts
 from your own sources with AI, and import existing question banks in Designer.
 
-[Designer guides](user-guides/designer/introduction.md) · [Create questions with AI](user-guides/designer/ai-question-authoring.md)
+[Designer guides](user-guides/designer/introduction.md) · [Create questions with AI](user-guides/designer/ai-question-authoring.md) · [Import existing content](user-guides/designer/import-content.md)
 </div>
 
 <div class="doc-card" markdown>
