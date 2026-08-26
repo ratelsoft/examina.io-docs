@@ -54,7 +54,9 @@ Do not reuse a real candidate's credentials for testing.
 2. Select **Open Exam Link** and copy the final link.
 3. Use **Send Email to Examinees** when mapped examinees have valid email
    addresses, or distribute the link through your approved communication
-   system.
+   system. See [Email your examinees](email-examinees.md) for the
+   personalisation placeholders, and for sign-in links that save candidates
+   typing a code and passcode.
 
 Tell examinees the date, time, time zone, link, credential-distribution method,
 device requirements, proctoring expectations, and support contact. Share the
