@@ -15,7 +15,13 @@ worth being deliberate here rather than filling it in to get past the screen.
 ## Exam title
 
 The name the examinee sees while sitting the exam. Write it the way you would
-print it on a paper: *MTH 201 Fall Examination*, not *mth201-final-v2*.
+print it on a paper: *Northgate Entrance Examination*, not *entrance-final-v2*.
+
+!!! note "About the examples"
+    The screenshots throughout the Designer pages use one sample project,
+    **Northgate Entrance Exam 2026**, containing a single exam called
+    *Northgate Entrance Examination* with six papers. Where this guide names a
+    field's value, it is the value visible in that sample.
 
 ## Exam code
 
@@ -30,11 +36,12 @@ Two rules the field enforces:
 - **No spaces**
 - **Letters and numbers only** — no punctuation, dashes or underscores
 
-`MTH201FALL` is fine. `MTH 201` and `MTH-201` are not.
+`NGCENTRY26` is fine, and is the code used in the sample. `NGC ENTRY 26` and
+`NGC-ENTRY-26` are not.
 
 !!! tip "Decide a scheme before your second exam, not your twentieth"
     Something like `SUBJECT` + `YEAR` + `SITTING` stays readable and stays
-    unique: `MTH201F26`, `CHM104M26`. Retrofitting a scheme means re-importing
+    unique: `NGCENTRY26`, `NGCMOCK26`. Retrofitting a scheme means re-importing
     exams that are already in use.
 
 ## Branding banner and colour
@@ -48,18 +55,56 @@ either without affecting the other.
 
 ## Description
 
-Shown to the examinee before they begin. Say what the exam is and what it
-covers — this is the first thing a nervous candidate reads, so plain language
-serves better than formal wording.
+Shown to the examinee before they begin, and the first thing a nervous candidate
+reads. Say what the exam **is** and what it **covers**, in plain language.
+
+Useful things to put here:
+
+- what the exam is for — entrance, end of module, practice
+- which subjects or topics it covers, and how many papers
+- roughly how long the whole sitting takes
+- what a pass means, if that is decided in advance
+
+The sample uses:
+
+> Six papers covering quantitative reasoning, verbal reasoning, chemistry,
+> biochemistry, current affairs and religious knowledge.
+
+Avoid restating the exam title, and avoid internal references like version
+numbers or committee codes. The candidate cannot act on those.
 
 ## General instruction
 
-Also shown before the exam starts, and the right place for rules that apply
-across every paper: whether materials are permitted, what happens if the
-connection drops, how to raise a problem.
+Also shown before the exam starts. This is for the rules of the room: things a
+candidate needs to know to sit the exam properly, applying across **every**
+paper.
 
-Per-paper instructions belong on [the paper](paper.md) instead. Anything
-repeated on every paper belongs here.
+Useful things to put here:
+
+- whether they must answer every question, or may choose
+- whether they can move between papers, and whether they can return
+- what is permitted — calculator, notes, scratch paper
+- what happens if the connection drops or the browser closes
+- how to report a problem during the exam
+- whether the work is saved as they go
+
+The sample uses:
+
+> Answer every question. You may move between papers until you submit. Your work
+> is saved as you go.
+
+That last sentence does more than it looks: candidates who do not know their
+answers are being saved will avoid navigating, and will spend the exam anxious
+about losing work.
+
+!!! tip "Say what happens when things go wrong"
+    The instruction most worth including is the one nobody writes: what to do if
+    the connection drops. A candidate who knows they can rejoin will rejoin. One
+    who does not may give up.
+
+Per-paper instructions belong on [the paper](paper.md) instead — timing,
+question choice, and anything that applies to one subject only. Anything you
+would otherwise repeat on every paper belongs here.
 
 ## Exam paper flow
 

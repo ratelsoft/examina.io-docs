@@ -68,7 +68,11 @@ menu is not a fault.
     Export the exam from the version that created it, or ask whoever sent it to
     save from a matching version.
 
-![A project open, with its exam in Exam Explorer](../../assets/images/designer/project-loaded.png)
+![The sample project open, with its exam in Exam Explorer](../../assets/images/designer/project-loaded.png)
+
+The screenshots in these pages use one sample throughout: a project named
+**Northgate Entrance Exam 2026** holding a single exam, *Northgate Entrance
+Examination*, split into six papers.
 
 ## The shape of an exam
 
