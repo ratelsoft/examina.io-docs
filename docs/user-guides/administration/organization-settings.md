@@ -81,8 +81,9 @@ webhook URL.
 
 Settings can show learning-platform connectors and LTI 1.3 registrations.
 Availability and setup requirements depend on your plan and the external
-platform configuration. For a complete setup and validation flow, see
-[Integrate examina.io with Moodle](../../integrations/moodle-lms.md).
+platform configuration. For complete setup and validation flows, see
+[Integrate examina.io with Moodle](../../integrations/moodle-lms.md) and
+[Integrate examina.io with Canvas](../../integrations/canvas-lms.md).
 
 Use a dedicated integration account where appropriate, grant only required
 permissions, document the owner, and disconnect integrations that are no longer
