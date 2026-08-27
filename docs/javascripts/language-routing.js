@@ -1,5 +1,5 @@
 (() => {
-  const supported = new Set(["en", "fr", "ar"]);
+  const supported = new Set(["en", "fr", "ar", "es-419", "pt-br"]);
   const url = new URL(window.location.href);
   const requested = url.searchParams.get("lang")?.toLowerCase();
 

@@ -24,7 +24,7 @@
   {% endif %}
   {% set root = config.extra.canonical_root %}
   {% for alt in config.extra.alternate %}
-    {% set prefix = "" if alt.lang == "en" else "/" ~ alt.lang %}
+    {% set prefix = "" if alt.lang == "en" else ("/pt-br" if alt.lang == "pt-BR" else "/" ~ alt.lang) %}
     <link rel="alternate" href="{{ root }}{{ prefix }}/{{ page.url }}" hreflang="{{ alt.lang }}">
   {% endfor %}
   <link rel="alternate" href="{{ root }}/{{ page.url }}" hreflang="x-default">
@@ -41,5 +41,9 @@
     Traduction initiale en cours de révision. En cas d'ambiguïté, utilisez le sélecteur de langue pour consulter la version anglaise.
   {% elif config.theme.language == "ar" %}
     هذه ترجمة أولية قيد المراجعة. إذا كان أي نص غير واضح، فاستخدم محدد اللغة للرجوع إلى النسخة الإنجليزية.
+  {% elif config.theme.language == "es" %}
+    Esta traducción inicial está en revisión. Si algún texto no está claro, usa el selector de idioma para consultar la versión en inglés.
+  {% elif config.theme.language == "pt-BR" %}
+    Esta tradução inicial está em revisão. Se algum texto não estiver claro, use o seletor de idioma para consultar a versão em inglês.
   {% endif %}
 {% endblock %}

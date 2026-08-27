@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the English, French, and Arabic guide sites into one Pages artifact."""
+"""Build every localized guide site into one Pages artifact."""
 
 from __future__ import annotations
 
@@ -11,7 +11,8 @@ def build(config: str) -> None:
 
 
 def main() -> int:
-    for config in ("mkdocs.yml", "mkdocs.fr.yml", "mkdocs.ar.yml"):
+    for config in ("mkdocs.yml", "mkdocs.fr.yml", "mkdocs.ar.yml",
+                   "mkdocs.es-419.yml", "mkdocs.pt-BR.yml"):
         build(config)
     return 0
 

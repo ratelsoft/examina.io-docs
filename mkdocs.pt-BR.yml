@@ -1,0 +1,79 @@
+INHERIT: mkdocs.yml
+
+site_name: Documentação do examina.io
+site_url: https://docs.examina.io/pt-br/
+site_description: Guias e referência de API para criar, gerenciar, aplicar e integrar avaliações seguras com o examina.io.
+docs_dir: locales/pt-BR
+site_dir: site/pt-br
+edit_uri: edit/main/locales/pt-BR/
+copyright: >-
+  Copyright &copy; 2026 Ratelsoft Inc. &nbsp;&middot;&nbsp;
+  <a href="https://www.examina.io/terms?lang=pt-BR">Termos</a> &nbsp;&middot;&nbsp;
+  <a href="https://www.examina.io/privacy?lang=pt-BR">Privacidade</a>
+
+theme:
+  language: pt-BR
+  logo: /assets/logo.png
+  favicon: /assets/favicon.ico
+
+nav:
+  - Início: index.md
+  - Primeiros passos:
+      - Início rápido: getting-started/quick-start.md
+      - Visão geral da plataforma: getting-started/overview.md
+      - Funções e permissões: getting-started/roles-and-permissions.md
+  - Guias do usuário:
+      - Client:
+          - Fazer uma prova: user-guides/client/take-an-exam.md
+          - Solução de problemas no dia da prova: user-guides/client/troubleshooting.md
+          - Página de login personalizada: user-guides/client/custom-login-page.md
+      - Designer:
+          - Introdução ao Designer: user-guides/designer/introduction.md
+          - O exame: user-guides/designer/exam.md
+          - O questionário: user-guides/designer/paper.md
+          - Criar questões: user-guides/designer/questions.md
+          - Criar questões com IA: user-guides/designer/ai-question-authoring.md
+          - Importar conteúdo existente: user-guides/designer/import-content.md
+          - Reutilizar conteúdo do projeto: user-guides/designer/importing-questions.md
+      - Manager:
+          - Visão geral do Manager: user-guides/manager/overview.md
+          - Importar exames: user-guides/manager/import-exams.md
+          - Adicionar e importar candidatos: user-guides/manager/examinees.md
+          - Grupos e atribuições de exames: user-guides/manager/groups-and-assignments.md
+          - Enviar e-mails aos candidatos: user-guides/manager/email-examinees.md
+          - Aplicar, supervisionar e gerar relatórios: user-guides/manager/deliver-monitor-report.md
+      - Administradores:
+          - Usuários e funções da conta: user-guides/administration/users-and-roles.md
+          - Círculos e permissões: user-guides/administration/circles-and-permissions.md
+          - Configurações e identidade da organização: user-guides/administration/organization-settings.md
+  - Integrações:
+      - Moodle LMS: integrations/moodle-lms.md
+      - Canvas LMS: integrations/canvas-lms.md
+      - Blackboard Learn Ultra: integrations/blackboard-lms.md
+      - Fluxo de trabalho do desenvolvedor: integrations/developer-workflow.md
+      - Sandbox do desenvolvedor: integrations/developer-sandbox.md
+      - Início rápido da API sandbox: integrations/sandbox-api-quickstart.md
+      - Chaves de API e webhooks: integrations/api-keys-and-webhooks.md
+      - Incorporar o aplicativo Client: integrations/embedding-client-app.md
+  - Referência da API: api/index.md
+
+plugins:
+  - search:
+      lang: pt
+
+extra:
+  generator: false
+  canonical_root: https://docs.examina.io
+  alternate:
+    - {name: English, link: /, lang: en}
+    - {name: Français, link: /fr/, lang: fr}
+    - {name: العربية, link: /ar/, lang: ar}
+    - {name: Español (Latinoamérica), link: /es-419/, lang: es-419}
+    - {name: Português (Brasil), link: /pt-br/, lang: pt-BR}
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://www.examina.io/pt-br/
+      name: Site do examina.io
+    - icon: fontawesome/brands/github
+      link: https://github.com/ratelsoft
+      name: Ratelsoft no GitHub

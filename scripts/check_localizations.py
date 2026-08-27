@@ -12,7 +12,12 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "docs"
-LOCALES = {"fr": ROOT / "locales/fr", "ar": ROOT / "locales/ar"}
+LOCALES = {
+    "fr": ROOT / "locales/fr",
+    "ar": ROOT / "locales/ar",
+    "es-419": ROOT / "locales/es-419",
+    "pt-BR": ROOT / "locales/pt-BR",
+}
 
 
 def parse(page: Path) -> tuple[dict, str]:
