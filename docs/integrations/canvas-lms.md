@@ -11,12 +11,10 @@ assessments to assignments without copying exam links. Learners open the
 assessment inside Canvas without a second sign-in, and examina.io returns each
 result to the corresponding Canvas gradebook column.
 
-!!! note "Integration preview"
+!!! tip "Validate before a live assessment"
 
-    Canvas integration is currently in testing. Ask your examina.io account
-    contact to enable LMS integrations for your organization, and validate the
-    complete workflow in a non-production Canvas course before using it for a
-    live assessment.
+    Connect and validate the complete workflow in a non-production Canvas
+    course with fictional users before enabling it for a live assessment.
 
 The screenshots use a fictional **Northbridge College** course,
 **Introduction to Biology (BIO 101)**, and an assessment named **Cell
