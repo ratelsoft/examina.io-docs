@@ -1,0 +1,87 @@
+INHERIT: mkdocs.yml
+
+site_name: وثائق examina.io
+site_url: https://docs.examina.io/ar/
+site_description: أدلة ومرجع واجهة API لإنشاء التقييمات الآمنة وإدارتها وتقديمها ودمجها باستخدام examina.io.
+docs_dir: locales/ar
+site_dir: site/ar
+edit_uri: edit/main/locales/ar/
+copyright: >-
+  حقوق النشر &copy; 2026 Ratelsoft Inc. &nbsp;&middot;&nbsp;
+  <a href="https://www.examina.io/terms?lang=ar">الشروط</a> &nbsp;&middot;&nbsp;
+  <a href="https://www.examina.io/privacy?lang=ar">الخصوصية</a>
+
+theme:
+  language: ar
+  direction: rtl
+  logo: /assets/logo.png
+  favicon: /assets/favicon.ico
+  font:
+    text: Noto Sans Arabic
+    code: Roboto Mono
+
+nav:
+  - الرئيسية: index.md
+  - البدء:
+      - البدء السريع: getting-started/quick-start.md
+      - نظرة عامة على المنصة: getting-started/overview.md
+      - الأدوار والأذونات: getting-started/roles-and-permissions.md
+  - أدلة الاستخدام:
+      - تطبيق المتقدم:
+          - أداء اختبار: user-guides/client/take-an-exam.md
+          - استكشاف مشكلات يوم الاختبار: user-guides/client/troubleshooting.md
+          - صفحة تسجيل دخول مخصصة: user-guides/client/custom-login-page.md
+      - Designer:
+          - مقدمة إلى Designer: user-guides/designer/introduction.md
+          - الاختبار: user-guides/designer/exam.md
+          - ورقة الأسئلة: user-guides/designer/paper.md
+          - إنشاء الأسئلة: user-guides/designer/questions.md
+          - إنشاء الأسئلة بالذكاء الاصطناعي: user-guides/designer/ai-question-authoring.md
+          - استيراد محتوى موجود: user-guides/designer/import-content.md
+          - إعادة استخدام محتوى مشروع: user-guides/designer/importing-questions.md
+      - Manager:
+          - نظرة عامة على Manager: user-guides/manager/overview.md
+          - استيراد الاختبارات: user-guides/manager/import-exams.md
+          - إضافة المتقدمين واستيرادهم: user-guides/manager/examinees.md
+          - المجموعات وتعيينات الاختبارات: user-guides/manager/groups-and-assignments.md
+          - مراسلة المتقدمين: user-guides/manager/email-examinees.md
+          - التقديم والمراقبة والتقارير: user-guides/manager/deliver-monitor-report.md
+      - المسؤولون:
+          - المستخدمون وأدوار الحساب: user-guides/administration/users-and-roles.md
+          - الدوائر والأذونات: user-guides/administration/circles-and-permissions.md
+          - إعدادات المؤسسة وهويتها: user-guides/administration/organization-settings.md
+  - التكاملات:
+      - Moodle LMS: integrations/moodle-lms.md
+      - Canvas LMS: integrations/canvas-lms.md
+      - Blackboard Learn Ultra: integrations/blackboard-lms.md
+      - سير عمل المطور: integrations/developer-workflow.md
+      - بيئة المطور التجريبية: integrations/developer-sandbox.md
+      - البدء السريع بواجهة API التجريبية: integrations/sandbox-api-quickstart.md
+      - مفاتيح API وخطافات الويب: integrations/api-keys-and-webhooks.md
+      - تضمين تطبيق المتقدم: integrations/embedding-client-app.md
+  - مرجع API: api/index.md
+
+plugins:
+  - search:
+      lang: ar
+
+extra:
+  generator: false
+  canonical_root: https://docs.examina.io
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    - name: Français
+      link: /fr/
+      lang: fr
+    - name: العربية
+      link: /ar/
+      lang: ar
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://www.examina.io/?lang=ar
+      name: موقع examina.io
+    - icon: fontawesome/brands/github
+      link: https://github.com/ratelsoft
+      name: Ratelsoft على GitHub
