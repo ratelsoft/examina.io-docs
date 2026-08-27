@@ -76,26 +76,72 @@ During the preview, configuration therefore has two passes:
 
 ## 1. Create the provisional Canvas key and App
 
-As a Canvas root-account administrator:
+Sign in with a Canvas root-account administrator account. Select **Admin** in
+the global navigation, then choose your institution's root account. If Canvas
+first shows the account list, select the root account name.
 
-1. Open **Admin → your root account → Developer keys**.
-2. Select **+ Developer Key → + LTI Key**.
-3. Choose **Manual Entry** and name the key **examina.io assessments**.
-4. Set the OIDC initiation, target-link, redirect, Deep Linking, and public-key
-   fields to the provisional HTTPS values supplied for the preview. You will
-   replace them in Step 3.
-5. Add these placements:
-   - **Assignment Selection** with message type `LtiDeepLinkingRequest`;
-   - **Course Navigation** with message type `LtiResourceLinkRequest`, if your
-     institution wants a course-level entry point.
-6. Grant only the services you intend to enable:
-   - AGS line-item access, score submission, and result read access for grade
-     return;
-   - NRPS context-membership read access only when course-roster access is
-     required.
-7. Save the key, copy its **Client ID**, and keep the key **Off**.
-8. Open **Admin → your root account → Apps → Manage**, install the App using
-   the Client ID, and copy its **Deployment ID**.
+![Select the institution's Canvas root account](../assets/images/integrations/canvas/admin-01-accounts.png)
+
+The account navigation must include **Developer keys** and **Apps**. If either
+item is missing, your Canvas role does not have the required root-account
+permission; ask the institution's Canvas administrator to perform this setup.
+
+![Open Developer keys from the Canvas root-account navigation](../assets/images/integrations/canvas/admin-02-root-account.png)
+
+Open **Developer keys**, then select **+ Developer Key**.
+
+![Open the Canvas Developer keys page](../assets/images/integrations/canvas/admin-03-developer-keys.png)
+
+Choose **LTI Key**. Canvas may also show **LTI Registration**; use that option
+only when examina.io has supplied a one-time Dynamic Registration URL.
+
+![Choose LTI Key from the Canvas Developer Key menu](../assets/images/integrations/canvas/admin-04-create-lti-key.png)
+
+Choose **Manual Entry**, then complete the key settings:
+
+1. Enter **examina.io Assessments** as the key name and title.
+2. Add the email address of the administrator responsible for this
+   integration.
+3. Add `https://www.examina.io/lti/launch` and
+   `https://www.examina.io/lti/deep-link` as separate redirect URIs.
+4. Enter `https://www.examina.io/lti/launch` as the **Target Link URI**.
+5. Enter `https://www.examina.io/lti/login` as the **OpenID Connect
+   Initiation URL**.
+6. Set **JWK Method** to **Public JWK URL** and enter the provisional key-set
+   URL described above.
+
+![Enter the public examina.io URLs in a Canvas LTI key](../assets/images/integrations/canvas/admin-05-lti-key-settings.png)
+
+!!! warning "The JWKS value is registration-specific"
+
+    If you use `https://www.examina.io/lti/jwks/your-registration-id` during
+    the provisional pass, `your-registration-id` is only a placeholder. Step
+    3 replaces the entire value with the exact **Public key set (JWKS)** URL
+    shown by examina.io.
+
+In **LTI Advantage Services**, enable only the five scopes needed for the
+services in this guide:
+
+- create and view assignment data;
+- view assignment data;
+- view submission data;
+- create and update submission results; and
+- retrieve user data associated with the context.
+
+The first four support grade return through AGS. The final scope supports the
+optional NRPS course roster; leave it disabled when you do not need roster
+access.
+
+![Select the Canvas AGS and optional NRPS scopes](../assets/images/integrations/canvas/admin-06-lti-services.png)
+
+Under **Placements**, add **Assignment Selection**. Add **Course Navigation**
+only if your institution also wants a course-level examina.io entry point.
+
+![Add Assignment Selection and optional Course Navigation placements](../assets/images/integrations/canvas/admin-07-placements.png)
+
+Save the key, copy its **Client ID**, and keep the key **Off**. Open **Admin →
+your root account → Apps → Manage**, install the App using the Client ID, and
+copy its **Deployment ID**.
 
 Canvas also supports Dynamic Registration, but its registration APIs are
 currently marked beta. Use a one-time Dynamic Registration URL only when it is
@@ -164,7 +210,14 @@ examina.io logo in Canvas. If an existing installation still shows Canvas's
 generic external-tool icon, update the Developer Key with this value and
 refresh or reinstall the App so Canvas reloads its registration metadata.
 
-![The active examina.io App in a Canvas root account](../assets/images/integrations/canvas/02-canvas-installed-app.png)
+![Confirm examina.io Assessments is on and up to date in Canvas Apps](../assets/images/integrations/canvas/admin-08-apps-manage.png)
+
+If the App shows **Not Available**, open its availability setting, choose the
+root account or an approved sub-account, select **Available**, and save. Limit
+availability to the institutions, sub-accounts, or courses approved for the
+integration.
+
+![Make the Canvas App available to the approved account](../assets/images/integrations/canvas/admin-09-availability.png)
 
 Return to examina.io and activate the registration. A suspended or revoked
 registration cannot accept new launches.
