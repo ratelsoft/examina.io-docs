@@ -68,19 +68,48 @@ needs. For that reason, initial configuration has two passes:
 
 ## 1. Create the provisional Moodle tool
 
-As a Moodle site administrator:
+Sign in with a Moodle site-administrator account and open **Site
+administration** from the main navigation.
 
-1. Open **Site administration → Plugins → Activity modules → External tool →
-   Manage tools**.
-2. Select **Configure a tool manually**.
-3. Enter a recognizable tool name, such as **examina.io assessments**.
-4. Set **LTI version** to **LTI 1.3**.
-5. Set **Public key type** to **Keyset URL**.
-6. Enter the provisional key-set URL described above.
-7. Enter the public examina.io address in the tool, login, and redirect fields
-   for now. You will replace these values with the exact endpoints in Step 4.
-8. Keep the tool hidden from the activity chooser until configuration is
+![Open Site administration in Moodle](../assets/images/integrations/moodle/admin-01-site-administration.png)
+
+Select the **Plugins** tab. Under **Activity modules**, select **External
+tool**.
+
+![Find Activity modules on Moodle's Plugins page](../assets/images/integrations/moodle/admin-02-plugins.png)
+
+On the External tool settings page, select **Manage tools**.
+
+![Open Manage tools from Moodle's External tool settings](../assets/images/integrations/moodle/admin-03-external-tool-menu.png)
+
+Select **Configure a tool manually**. If another examina.io tool already
+exists, edit it instead of creating a duplicate.
+
+![Choose Configure a tool manually on Moodle's Manage tools page](../assets/images/integrations/moodle/admin-04-manage-tools.png)
+
+Complete the tool form:
+
+1. Enter **examina.io Assessments** as the tool name.
+2. Enter `https://www.examina.io/lti/launch` as the **Tool URL**.
+3. Set **LTI version** to **LTI 1.3**.
+4. Set **Public key type** to **Keyset URL**.
+5. Enter the provisional key-set URL described above.
+6. Enter `https://www.examina.io/lti/login` as the **Initiate login URL**.
+7. Add the launch and Deep Linking URLs as separate **Redirection URI(s)**:
+   `https://www.examina.io/lti/launch` and
+   `https://www.examina.io/lti/deep-link`.
+8. Enable **Supports Deep Linking** and enter
+   `https://www.examina.io/lti/deep-link` as the **Content selection URL**.
+9. Keep the tool hidden from the activity chooser until configuration is
    complete, then save it.
+
+![Enter the public examina.io endpoints in Moodle](../assets/images/integrations/moodle/admin-05-production-endpoints.png)
+
+!!! warning "The JWKS value in the screenshot is an example"
+
+    `your-registration-id` is a placeholder, not a value to copy. After you
+    save the Moodle details in examina.io, replace that entire URL with the
+    exact **Public key set (JWKS)** URL shown on the saved registration card.
 
 Moodle now assigns the tool identity needed by examina.io.
 
@@ -151,6 +180,8 @@ Then configure the Moodle services and privacy settings:
   service settings are complete.
 - Use **Embed** as the default launch container if you want the assessment to
   remain inside the Moodle course page.
+
+![Enable Moodle grade and roster services while limiting shared identity data](../assets/images/integrations/moodle/admin-06-services-privacy.png)
 
 Sharing a Moodle display name or email address is optional. Examina.io can map
 an LTI learner using the platform's pseudonymous subject identifier. Enable
