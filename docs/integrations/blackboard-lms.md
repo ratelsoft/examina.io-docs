@@ -21,6 +21,10 @@ an assessment named **General Chemistry Fundamentals**, and a fictional learner
 named **Layla Al-Harbi**. Your institution, course, users, identifiers, and
 published exams will be different.
 
+The Blackboard screenshots were captured in Learn Ultra 4000.19.0. A newer
+release may move an action or slightly change its label, but the LTI 1.3 fields
+and the order in which the two systems exchange them remain the same.
+
 ## What the integration provides
 
 - **One Blackboard sign-in:** learners do not sign in to examina.io again when
@@ -82,6 +86,12 @@ As an examina.io Root or Administrator:
 3. Choose **Blackboard Learn / Ultra**.
 4. Copy the read-only **Examina Application ID**.
 
+The LMS integration area is near the bottom of **Settings**. Blackboard Learn /
+Ultra should show **Available**, alongside Moodle and Canvas. Select **Add
+registration** from this area to begin.
+
+![Open the LMS integration area in examina.io Settings](../assets/images/integrations/blackboard/01-examina-lti-settings.png)
+
 Keep the form open. Blackboard needs the Application ID before it can create
 the institution-specific Deployment ID that completes this registration.
 
@@ -89,28 +99,63 @@ the institution-specific Deployment ID that completes this registration.
 
 As a Blackboard Learn system administrator:
 
-1. Open **Administrator Panel → Integrations → LTI Tool Providers**.
-2. Select **Register LTI 1.3/Advantage Tool**.
-3. Enter the **Examina Application ID**, then select **Submit**.
-4. Review the imported tool name, domain, public-key URL, redirect URLs, and
+1. Open the Blackboard administrator area. In Ultra navigation, select **System
+   Admin**; in Original Experience, open **Administrator Panel**.
+2. Find the **Integrations** section and select **LTI Tool Providers**.
+
+![Open LTI Tool Providers from the Integrations section of Blackboard Administrator Tools](../assets/images/integrations/blackboard/02-blackboard-admin-integrations.png)
+
+3. Select **Register LTI 1.3/Advantage Tool**.
+
+![Select Register LTI 1.3/Advantage Tool](../assets/images/integrations/blackboard/03-blackboard-lti-providers.png)
+
+4. Enter the **Examina Application ID**, then select **Submit**.
+
+![Enter the Examina Application ID in Blackboard](../assets/images/integrations/blackboard/04-blackboard-register-application-id.png)
+
+5. Review the imported tool name, domain, public-key URL, redirect URLs, and
    managed placement.
-5. Set **Tool Status** to **Approved**.
-6. Under user data sharing, approve the data your institution permits:
+6. Set **Tool Status** to **Approved**.
+
+![Review the Examina production domains and approve the tool](../assets/images/integrations/blackboard/05-blackboard-approve-tool.png)
+
+7. Under user data sharing, approve the data your institution permits:
    **Name**, **Email**, and **Role**.
-7. Enable **Allow grade service access** when scores should be returned with
+8. Enable **Allow grade service access** when scores should be returned with
    AGS.
-8. Enable **Allow Membership Service Access** only when course-roster access is
+9. Enable **Allow Membership Service Access** only when course-roster access is
    required through NRPS.
-9. Select **Submit**.
+10. Select **Submit**.
+
+![Approve the learner fields, grade service, and optional membership service](../assets/images/integrations/blackboard/06-blackboard-institution-policies.png)
+
+!!! note "System Admin is permission-controlled"
+
+    If **System Admin** is not visible in the main Blackboard navigation, the
+    signed-in account does not have the system role required to install an LTI
+    tool. An instructor cannot complete this institution-level step.
 
 Blackboard always supplies a stable LTI subject identifier for the learner.
 Name and email are profile data, so approve them only when your institution's
 policy allows examina.io to receive them. Role is needed to distinguish an
 instructor workflow from a learner launch.
 
-Open the registered tool's menu, choose **Edit**, and copy its
-institution-specific **Deployment ID**. This value belongs to this Blackboard
-installation and must not be copied to another institution.
+Open the registered tool's menu and choose **Manage Deployments**. Copy the
+Deployment ID that applies to the institution or institutional-hierarchy node
+where instructors will use examina.io. If your Blackboard release exposes only
+one deployment, the same value may appear on the tool's **Edit** page instead.
+This value belongs to this Blackboard installation and must not be copied to
+another institution.
+
+Create another Blackboard deployment only when the institution intentionally
+needs a separate installation boundary, such as a different campus or licensed
+unit. Every Deployment ID needs its own examina.io registration.
+
+After submission, the provider list should show **examina.io Assessments** as
+an approved LTI 1.3 tool. The exact data fields and number of placements depend
+on the permissions and placements your institution approved.
+
+![Examina installed as an approved Blackboard LTI 1.3 tool](../assets/images/integrations/blackboard/07-blackboard-installed-tool.png)
 
 ## 4. Finish the registration in examina.io
 
@@ -174,6 +219,8 @@ approved managed placement:
 Do not create a second placement unless your institution intentionally needs a
 separate placement with different availability. A duplicate placement can make
 it unclear which registration an instructor is launching.
+
+![Confirm the examina.io Assessments Deep Linking placement](../assets/images/integrations/blackboard/08-blackboard-manage-placement.png)
 
 ## 6. Add a published exam to an Ultra course
 
