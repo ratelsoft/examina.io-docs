@@ -11,12 +11,10 @@ to their courses without sending learners to a separate login page. Learners
 open the assessment inside Moodle, and examina.io can return their scores to
 the Moodle gradebook.
 
-!!! note "Integration preview"
+!!! tip "Validate before a live assessment"
 
-    Moodle integration is currently in testing. Ask your examina.io account
-    contact to enable LMS integrations for your organization, and validate the
-    complete workflow in a non-production Moodle course before using it for a
-    live assessment.
+    Connect and validate the complete workflow in a non-production Moodle
+    course with fictional users before enabling it for a live assessment.
 
 The screenshots in this guide use a fictional **Northbridge College** course,
 **Introduction to Biology**, and an assessment named **Cell Structure and
