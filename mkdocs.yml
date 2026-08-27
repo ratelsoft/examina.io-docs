@@ -121,8 +121,22 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/language-routing.js
+
 extra:
   generator: false
+  canonical_root: https://docs.examina.io
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    - name: Français
+      link: /fr/
+      lang: fr
+    - name: العربية
+      link: /ar/
+      lang: ar
   social:
     - icon: fontawesome/solid/globe
       link: https://www.examina.io/
