@@ -137,6 +137,12 @@ extra:
     - name: العربية
       link: /ar/
       lang: ar
+    - name: Español (Latinoamérica)
+      link: /es-419/
+      lang: es-419
+    - name: Português (Brasil)
+      link: /pt-br/
+      lang: pt-BR
   social:
     - icon: fontawesome/solid/globe
       link: https://www.examina.io/

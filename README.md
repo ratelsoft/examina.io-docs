@@ -38,9 +38,11 @@ python scripts/check_localized_site.py
 python scripts/check_internal_links.py site
 ```
 
-English source remains in `docs/` and keeps its existing public URLs. French
-and Arabic pages mirror the same paths under `locales/fr/` and `locales/ar/`,
-and are published beneath `/fr/` and `/ar/`. Localized metadata records the
+English source remains in `docs/` and keeps its existing public URLs. French,
+Arabic, Latin American Spanish, and Brazilian Portuguese pages mirror the same
+paths under `locales/fr/`, `locales/ar/`, `locales/es-419/`, and
+`locales/pt-BR/`; they are published beneath `/fr/`, `/ar/`, `/es-419/`, and
+`/pt-br/`. Localized metadata records the
 English source path and SHA-256 digest. `check_localizations.py` fails when a
 translation is missing, structurally damaged, or stale after its English page
 changes; update and review the translated page rather than changing only the
@@ -48,7 +50,7 @@ recorded digest.
 
 The generated-site checks validate internal files and anchors, Markdown code
 rendering, localized canonical URLs, reciprocal page-level `hreflang` links,
-Arabic right-to-left rendering, and all three sitemaps.
+Arabic right-to-left rendering, and all five sitemaps.
 
 Changes pushed to `main` are validated and deployed to GitHub Pages by
 `.github/workflows/deploy-pages.yml`.

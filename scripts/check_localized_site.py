@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 SITE = ROOT / "site"
 ORIGIN = "https://docs.examina.io"
-LANGUAGES = {"en": "", "fr": "fr", "ar": "ar"}
+LANGUAGES = {"en": "", "fr": "fr", "ar": "ar", "es-419": "es-419", "pt-BR": "pt-br"}
 
 
 class MetadataParser(HTMLParser):
@@ -94,7 +94,8 @@ def main() -> int:
         errors.append("language query compatibility script is missing")
 
     robots = (SITE / "robots.txt").read_text(encoding="utf-8")
-    for sitemap in ("/sitemap.xml", "/fr/sitemap.xml", "/ar/sitemap.xml"):
+    for sitemap in ("/sitemap.xml", "/fr/sitemap.xml", "/ar/sitemap.xml",
+                    "/es-419/sitemap.xml", "/pt-br/sitemap.xml"):
         if f"Sitemap: {ORIGIN}{sitemap}" not in robots:
             errors.append(f"robots.txt does not advertise {sitemap}")
 
@@ -103,7 +104,7 @@ def main() -> int:
         print(f"Localized site check failed with {len(errors)} error(s).")
         return 1
 
-    print(f"Localized SEO metadata passed for {len(pages)} pages in 3 languages.")
+    print(f"Localized SEO metadata passed for {len(pages)} pages in {len(LANGUAGES)} locales.")
     return 0
 
 
