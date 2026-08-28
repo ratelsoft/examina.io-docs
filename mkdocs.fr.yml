@@ -7,7 +7,7 @@ docs_dir: locales/fr
 site_dir: site/fr
 edit_uri: edit/main/locales/fr/
 copyright: >-
-  Copyright &copy; 2026 Ratelsoft Inc. &nbsp;&middot;&nbsp;
+  &copy; 2026 Ratelsoft Inc. Tous droits réservés. &nbsp;&middot;&nbsp;
   <a href="https://www.examina.io/terms?lang=fr">Conditions d'utilisation</a> &nbsp;&middot;&nbsp;
   <a href="https://www.examina.io/privacy?lang=fr">Confidentialité</a>
 

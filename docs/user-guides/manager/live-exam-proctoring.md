@@ -27,7 +27,7 @@ In Manager, confirm that:
 - every invigilator has the correct role and Circle access; and
 - the support and incident-escalation contacts are published.
 
-![The BIO 201 protection controls with eFaceID and proctoring enabled](../../assets/images/identity-proctoring/exam-protection-controls.png)
+![The BIO 201 protection controls with eFaceID and proctoring enabled](../../assets/images/identity-proctoring/exam-protection-controls.webp)
 
 ### Prepare devices and networks
 
@@ -53,7 +53,7 @@ The candidate signs in and, when configured, completes the
 [eFaceID workflow](efaceid-identity-verification.md). Examina then displays
 **Device Setup**.
 
-![Device Setup before the candidate grants camera, microphone, and screen access](../../assets/images/identity-proctoring/candidate-device-setup.png)
+![Device Setup before the candidate grants camera, microphone, and screen access](../../assets/images/identity-proctoring/candidate-device-setup.webp)
 
 The candidate chooses **Start**, allows camera and microphone access, and
 selects the current exam tab or screen in the browser's sharing chooser. The
@@ -90,7 +90,7 @@ Choose **Webcam** on the candidate tile. Confirm that:
 - no unexpected person is present; and
 - the connection is stable.
 
-![The invigilator viewing Amina's live webcam stream](../../assets/images/identity-proctoring/invigilator-live-webcam.png)
+![The invigilator viewing Amina's live webcam stream](../../assets/images/identity-proctoring/invigilator-live-webcam.webp)
 
 The screenshot uses a fictional candidate image for privacy while preserving
 the tested live console state.
@@ -100,7 +100,7 @@ the tested live console state.
 Choose **Screen** on the same tile. Confirm that the exam page is visible and
 the candidate shared the intended tab or display.
 
-![The invigilator viewing the candidate's shared exam screen](../../assets/images/identity-proctoring/invigilator-shared-screen.png)
+![The invigilator viewing the candidate's shared exam screen](../../assets/images/identity-proctoring/invigilator-shared-screen.webp)
 
 The invigilator can switch between **Details**, **Webcam**, and **Screen** as
 the assessment proceeds. Use the message field for concise, assessment-related
@@ -119,7 +119,7 @@ The candidate receives **Setup Complete** and moves to the exam overview. They
 review the title, duration, instructions, papers, and question count before
 choosing **Begin Exam**.
 
-![The authorized BIO 201 exam overview shown to the candidate](../../assets/images/identity-proctoring/candidate-authorized-exam-overview.png)
+![The authorized BIO 201 exam overview shown to the candidate](../../assets/images/identity-proctoring/candidate-authorized-exam-overview.webp)
 
 Do not authorize the wrong candidate. Read the candidate name and exam title
 before using the action.
@@ -129,7 +129,7 @@ before using the action.
 The candidate answers questions in the normal Client player while webcam and
 screen monitoring continue.
 
-![Amina answering a Human Genetics question during the proctored exam](../../assets/images/identity-proctoring/candidate-live-exam-question.png)
+![Amina answering a Human Genetics question during the proctored exam](../../assets/images/identity-proctoring/candidate-live-exam-question.webp)
 
 During the sitting:
 
@@ -145,7 +145,7 @@ The candidate chooses **Finish Exam**, confirms submission, and receives the
 configured result or completion view. In this rehearsal, Amina answered all
 three questions and scored 3 out of 3.
 
-![The submitted BIO 201 result showing three answered questions and a score of 100 percent](../../assets/images/identity-proctoring/candidate-exam-result.png)
+![The submitted BIO 201 result showing three answered questions and a score of 100 percent](../../assets/images/identity-proctoring/candidate-exam-result.webp)
 
 In Manager:
 

@@ -3,7 +3,7 @@ title: Organiser un examen surveillé en direct
 description: Configurez la surveillance, contrôlez la caméra et l’écran, autorisez le démarrage et vérifiez le résultat.
 tags: [surveillance en direct, webcam, partage d’écran, sécurité des examens]
 translation_source: user-guides/manager/live-exam-proctoring.md
-translation_source_sha256: acb6daed2ab8f82eae6a0b46d3d239ee7776bfa97f126ba6e1360d8596c6c5ac
+translation_source_sha256: d2a81c977e23534e252abe275008f71848437aee550701ab6a34b7c0ffb9b27f
 ---
 
 # Organiser un examen surveillé en direct
@@ -22,7 +22,7 @@ instructions et la visibilité des résultats. Activez **Surveillance en
 direct** et, si nécessaire, **Vérification eFaceID**. Donnez aux surveillants
 le bon rôle et l’accès au Cercle.
 
-![Contrôles de protection de BIO 201](../../assets/images/identity-proctoring/exam-protection-controls.png)
+![Contrôles de protection de BIO 201](../../assets/images/identity-proctoring/exam-protection-controls.webp)
 
 Le candidat utilise un ordinateur avec caméra, microphone, navigateur récent,
 partage d’écran et connexion stable. Le surveillant utilise un autre ordinateur
@@ -43,7 +43,7 @@ Après la connexion et, le cas échéant, le parcours
 [eFaceID](efaceid-identity-verification.md), le candidat voit **Configuration
 de l’appareil**.
 
-![Configuration avant l’autorisation de la caméra, du microphone et de l’écran](../../assets/images/identity-proctoring/candidate-device-setup.png)
+![Configuration avant l’autorisation de la caméra, du microphone et de l’écran](../../assets/images/identity-proctoring/candidate-device-setup.webp)
 
 Il choisit **Démarrer**, autorise la caméra et le microphone, puis partage
 l’onglet de l’examen ou l’écran prévu. Fermez auparavant les fenêtres et
@@ -68,11 +68,11 @@ demande de flux.
 Sous **Webcam**, confirmez l’identité attendue, l’éclairage, l’angle et
 l’absence d’une autre personne.
 
-![Webcam d’Amina dans la console du surveillant](../../assets/images/identity-proctoring/invigilator-live-webcam.png)
+![Webcam d’Amina dans la console du surveillant](../../assets/images/identity-proctoring/invigilator-live-webcam.webp)
 
 Sous **Écran**, confirmez que l’examen ou l’affichage prévu est partagé.
 
-![Écran d’examen partagé dans la console](../../assets/images/identity-proctoring/invigilator-shared-screen.png)
+![Écran d’examen partagé dans la console](../../assets/images/identity-proctoring/invigilator-shared-screen.webp)
 
 Les images utilisent une candidate fictive pour protéger la vie privée tout en
 conservant l’état réel de la console testée.
@@ -84,13 +84,13 @@ le démarrage**. Vérifiez le message de réussite. Le candidat reçoit
 **Configuration terminée** et contrôle le titre, la durée, les instructions,
 les sujets et le nombre de questions.
 
-![Aperçu de BIO 201 après autorisation](../../assets/images/identity-proctoring/candidate-authorized-exam-overview.png)
+![Aperçu de BIO 201 après autorisation](../../assets/images/identity-proctoring/candidate-authorized-exam-overview.webp)
 
 ## 5. Surveiller et terminer
 
 La surveillance continue pendant que le candidat répond dans Client.
 
-![Question de génétique pendant l’examen surveillé](../../assets/images/identity-proctoring/candidate-live-exam-question.png)
+![Question de génétique pendant l’examen surveillé](../../assets/images/identity-proctoring/candidate-live-exam-question.webp)
 
 Surveillez l’état de connexion, intervenez uniquement si nécessaire, consignez
 les incidents selon votre politique et distinguez une panne d’un comportement
@@ -100,7 +100,7 @@ Le candidat choisit **Terminer l’examen** et confirme l’envoi. Vérifiez ens
 dans Manager les questions répondues, non répondues et ignorées, ainsi que le
 score obtenu et le score possible.
 
-![Résultat final de BIO 201 avec trois réponses et 100 %](../../assets/images/identity-proctoring/candidate-exam-result.png)
+![Résultat final de BIO 201 avec trois réponses et 100 %](../../assets/images/identity-proctoring/candidate-exam-result.webp)
 
 ## 6. Terminer la session
 

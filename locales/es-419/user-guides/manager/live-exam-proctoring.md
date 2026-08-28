@@ -3,7 +3,7 @@ title: Supervisar un examen en vivo
 description: Configura la supervisión, verifica cámara y pantalla, autoriza el inicio y valida el resultado.
 tags: [supervisión en vivo, cámara web, pantalla compartida, seguridad de exámenes]
 translation_source: user-guides/manager/live-exam-proctoring.md
-translation_source_sha256: acb6daed2ab8f82eae6a0b46d3d239ee7776bfa97f126ba6e1360d8596c6c5ac
+translation_source_sha256: d2a81c977e23534e252abe275008f71848437aee550701ab6a34b7c0ffb9b27f
 ---
 
 # Supervisar un examen en vivo
@@ -22,7 +22,7 @@ de resultados. Activa **Supervisión en vivo** y, cuando corresponda,
 **Verificación eFaceID**. Otorga al supervisor el rol y acceso al Círculo
 correctos.
 
-![Controles de protección de BIO 201](../../assets/images/identity-proctoring/exam-protection-controls.png)
+![Controles de protección de BIO 201](../../assets/images/identity-proctoring/exam-protection-controls.webp)
 
 El candidato necesita computadora, cámara, micrófono, navegador actualizado,
 pantalla compartida y red estable. El supervisor debe usar otra computadora y
@@ -43,7 +43,7 @@ Después de iniciar sesión y, si aplica, completar
 [eFaceID](efaceid-identity-verification.md), el candidato ve **Configuración
 del dispositivo**.
 
-![Pantalla previa a permitir cámara, micrófono y pantalla](../../assets/images/identity-proctoring/candidate-device-setup.png)
+![Pantalla previa a permitir cámara, micrófono y pantalla](../../assets/images/identity-proctoring/candidate-device-setup.webp)
 
 Selecciona **Iniciar**, permite cámara y micrófono, y comparte la pestaña del
 examen o la pantalla prevista. Antes debe cerrar ventanas y notificaciones
@@ -66,11 +66,11 @@ antes de solicitar de nuevo.
 En **Cámara web**, confirma identidad, iluminación, ángulo y ausencia de otra
 persona.
 
-![Cámara de Amina en la consola](../../assets/images/identity-proctoring/invigilator-live-webcam.png)
+![Cámara de Amina en la consola](../../assets/images/identity-proctoring/invigilator-live-webcam.webp)
 
 En **Pantalla**, confirma que se comparte el examen o la pantalla acordada.
 
-![Pantalla del examen compartida](../../assets/images/identity-proctoring/invigilator-shared-screen.png)
+![Pantalla del examen compartida](../../assets/images/identity-proctoring/invigilator-shared-screen.webp)
 
 Las imágenes usan una candidata ficticia para proteger la privacidad y
 conservan el estado real de la consola probada.
@@ -82,13 +82,13 @@ Tras validar el entorno, abre el menú del candidato correcto y selecciona
 **Configuración completa** y revisa título, duración, instrucciones, pruebas y
 cantidad de preguntas.
 
-![Resumen de BIO 201 después de la autorización](../../assets/images/identity-proctoring/candidate-authorized-exam-overview.png)
+![Resumen de BIO 201 después de la autorización](../../assets/images/identity-proctoring/candidate-authorized-exam-overview.webp)
 
 ## 5. Supervisar y finalizar
 
 La supervisión continúa mientras el candidato responde en Client.
 
-![Pregunta de genética durante el examen](../../assets/images/identity-proctoring/candidate-live-exam-question.png)
+![Pregunta de genética durante el examen](../../assets/images/identity-proctoring/candidate-live-exam-question.webp)
 
 Observa la conexión, interviene solo cuando sea necesario, registra incidentes
 según la política y distingue una falla técnica de una conducta irregular. No
@@ -98,7 +98,7 @@ Al terminar, el candidato selecciona **Finalizar examen** y confirma el envío.
 En Manager valida preguntas respondidas, sin responder y omitidas, además del
 puntaje obtenido y posible.
 
-![Resultado de BIO 201 con tres respuestas y 100 por ciento](../../assets/images/identity-proctoring/candidate-exam-result.png)
+![Resultado de BIO 201 con tres respuestas y 100 por ciento](../../assets/images/identity-proctoring/candidate-exam-result.webp)
 
 ## 6. Cerrar la sesión
 

@@ -3,7 +3,7 @@ title: تشغيل اختبار بمراقبة مباشرة
 description: أعد المراقبة وتحقق من الكاميرا والشاشة واسمح ببدء الاختبار وراجع النتيجة.
 tags: [المراقبة المباشرة, كاميرا الويب, مشاركة الشاشة, أمن الاختبارات]
 translation_source: user-guides/manager/live-exam-proctoring.md
-translation_source_sha256: acb6daed2ab8f82eae6a0b46d3d239ee7776bfa97f126ba6e1360d8596c6c5ac
+translation_source_sha256: d2a81c977e23534e252abe275008f71848437aee550701ab6a34b7c0ffb9b27f
 ---
 
 # تشغيل اختبار بمراقبة مباشرة
@@ -20,7 +20,7 @@ Genetics Midterm**.
 فعّل **المراقبة المباشرة**، وفعّل **التحقق عبر eFaceID** عند الحاجة. امنح
 المراقب الدور والوصول إلى الدائرة الصحيحة.
 
-![عناصر حماية BIO 201](../../assets/images/identity-proctoring/exam-protection-controls.png)
+![عناصر حماية BIO 201](../../assets/images/identity-proctoring/exam-protection-controls.webp)
 
 يحتاج الممتحَن إلى حاسوب وكاميرا وميكروفون ومتصفح حديث ومشاركة شاشة واتصال
 مستقر. يستخدم المراقب حاسوبًا وجلسة منفصلين. استخدم HTTPS في الإنتاج؛ لا
@@ -40,7 +40,7 @@ Genetics Midterm**.
 [eFaceID](efaceid-identity-verification.md) عند تفعيله، تظهر صفحة **إعداد
 الجهاز**.
 
-![إعداد الجهاز قبل السماح بالكاميرا والميكروفون والشاشة](../../assets/images/identity-proctoring/candidate-device-setup.png)
+![إعداد الجهاز قبل السماح بالكاميرا والميكروفون والشاشة](../../assets/images/identity-proctoring/candidate-device-setup.webp)
 
 يختار الممتحَن **بدء**، ويسمح بالكاميرا والميكروفون، ثم يشارك علامة تبويب
 الاختبار أو الشاشة المطلوبة. يجب إغلاق النوافذ والإشعارات الخاصة أولًا.
@@ -61,11 +61,11 @@ Genetics Midterm**.
 في **Webcam** تحقّق من الهوية المتوقعة والإضاءة وزاوية الكاميرا وعدم وجود
 شخص آخر.
 
-![كاميرا Amina في وحدة المراقب](../../assets/images/identity-proctoring/invigilator-live-webcam.png)
+![كاميرا Amina في وحدة المراقب](../../assets/images/identity-proctoring/invigilator-live-webcam.webp)
 
 في **Screen** تحقّق من مشاركة صفحة الاختبار أو الشاشة المتفق عليها.
 
-![شاشة الاختبار المشتركة في وحدة المراقب](../../assets/images/identity-proctoring/invigilator-shared-screen.png)
+![شاشة الاختبار المشتركة في وحدة المراقب](../../assets/images/identity-proctoring/invigilator-shared-screen.webp)
 
 تستخدم الصور ممتحَنة خيالية لحماية الخصوصية مع الحفاظ على حالة الوحدة التي
 تم اختبارها فعليًا.
@@ -76,13 +76,13 @@ Genetics Midterm**.
 من رسالة النجاح. يتلقى الممتحَن **اكتمل الإعداد** ويراجع العنوان والمدة
 والتعليمات والأوراق وعدد الأسئلة.
 
-![ملخص BIO 201 بعد السماح](../../assets/images/identity-proctoring/candidate-authorized-exam-overview.png)
+![ملخص BIO 201 بعد السماح](../../assets/images/identity-proctoring/candidate-authorized-exam-overview.webp)
 
 ## 5. المراقبة والإنهاء
 
 تستمر المراقبة أثناء إجابة الممتحَن في Client.
 
-![سؤال في علم الوراثة أثناء الاختبار](../../assets/images/identity-proctoring/candidate-live-exam-question.png)
+![سؤال في علم الوراثة أثناء الاختبار](../../assets/images/identity-proctoring/candidate-live-exam-question.webp)
 
 راقب الاتصال، ولا تتدخل إلا عند الحاجة، وسجّل الحوادث وفق سياسة المؤسسة،
 وميّز بين العطل التقني والسلوك غير النظامي. لا تجمع محتوى شخصيًا لا يتعلق
@@ -91,7 +91,7 @@ Genetics Midterm**.
 عند النهاية يختار الممتحَن **إنهاء الاختبار** ويؤكد الإرسال. راجع في Manager
 الأسئلة المجابة وغير المجابة والمتروكة والدرجة المحققة والدرجة الممكنة.
 
-![نتيجة BIO 201 بثلاث إجابات ودرجة 100 بالمئة](../../assets/images/identity-proctoring/candidate-exam-result.png)
+![نتيجة BIO 201 بثلاث إجابات ودرجة 100 بالمئة](../../assets/images/identity-proctoring/candidate-exam-result.webp)
 
 ## 6. إنهاء الجلسة
 

@@ -42,7 +42,7 @@ Confirm that its status is **Enabled**. The card also shows the processing
 location and the successful and review retention periods configured for the
 organization.
 
-![The eFaceID verification card enabled for Cedar Valley University](../../assets/images/identity-proctoring/organization-efaceid-enabled.png)
+![The eFaceID verification card enabled for Cedar Valley University](../../assets/images/identity-proctoring/organization-efaceid-enabled.webp)
 
 The location is presented as a city or region and country—for example,
 **Northern Virginia, United States**. Your organization's location and
@@ -59,7 +59,7 @@ In **Manager**:
 5. verify the candidate name, code, and exam mapping; and
 6. save the candidate.
 
-![Amina Hassan's candidate record with a clear enrollment portrait](../../assets/images/identity-proctoring/manager-enroll-candidate-photo.png)
+![Amina Hassan's candidate record with a clear enrollment portrait](../../assets/images/identity-proctoring/manager-enroll-candidate-photo.webp)
 
 Only authorized administrators can access the enrolled image. Replace it when
 the candidate's appearance has materially changed or when your organization's
@@ -74,7 +74,7 @@ Enable:
 - **Live Proctoring** as well when an invigilator must monitor the sitting; and
 - the intended retention and fallback settings for the assessment.
 
-![eFaceID verification and live proctoring enabled for BIO 201](../../assets/images/identity-proctoring/exam-protection-controls.png)
+![eFaceID verification and live proctoring enabled for BIO 201](../../assets/images/identity-proctoring/exam-protection-controls.webp)
 
 Map every candidate to the correct paper and confirm that each protected
 candidate has an enrollment image. Test the complete workflow with a fictional
@@ -85,7 +85,7 @@ candidate before publishing a live assessment.
 The candidate opens the exam link and enters the code and passcode supplied by
 the institution.
 
-![Amina signing in to the BIO 201 assessment](../../assets/images/identity-proctoring/candidate-sign-in.png)
+![Amina signing in to the BIO 201 assessment](../../assets/images/identity-proctoring/candidate-sign-in.webp)
 
 Tell candidates to use one browser window and avoid reopening the same attempt
 on another device. An active attempt is deliberately protected against a
@@ -102,7 +102,7 @@ Before the camera starts, Examina shows:
 - the photosensitivity warning; and
 - the option to request non-biometric review.
 
-![Identity verification consent with processing and retention details](../../assets/images/identity-proctoring/candidate-identity-consent.png)
+![Identity verification consent with processing and retention details](../../assets/images/identity-proctoring/candidate-identity-consent.webp)
 
 The candidate selects the consent checkbox and chooses **Continue**. Consent
 can be withdrawn while the check is running; withdrawal stops biometric
@@ -118,7 +118,7 @@ The browser requests camera access. The candidate should:
 4. centre their face inside the guide; and
 5. follow the on-screen colour and movement prompts until a decision appears.
 
-![A privacy-safe example of the candidate positioned for liveness](../../assets/images/identity-proctoring/candidate-liveness-positioning.png)
+![A privacy-safe example of the candidate positioned for liveness](../../assets/images/identity-proctoring/candidate-liveness-positioning.webp)
 
 The published screenshot uses a fictional portrait for privacy. The controls
 and workflow are the same as the tested live check.

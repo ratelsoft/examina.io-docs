@@ -3,7 +3,7 @@ title: إعداد واستخدام التحقق من الهوية عبر eFaceID
 description: فعّل eFaceID وسجّل صورة الممتحَن واحمِ الاختبار وأدِر المراجعة البيومترية أو غير البيومترية.
 tags: [eFaceID, التحقق من الهوية, التحقق من الحيوية, أمن الاختبارات]
 translation_source: user-guides/manager/efaceid-identity-verification.md
-translation_source_sha256: b57baa79e7123322f1bfeb125b841a120d0e2a3728779ef9713fd580395f8872
+translation_source_sha256: 69350001a122b6850011a8d2b1b58e1fbcfeeef1d6a9c0ca4ac7fda03639f403
 ---
 
 # إعداد واستخدام eFaceID
@@ -31,7 +31,7 @@ translation_source_sha256: b57baa79e7123322f1bfeb125b841a120d0e2a3728779ef9713fd
 افتح **الفوترة** وتأكد من أن **التحقق عبر eFaceID** في حالة **مفعّل**. تعرض
 البطاقة أيضًا موقع المعالجة وفترات الاحتفاظ المطبقة.
 
-![تفعيل eFaceID لمؤسسة Cedar Valley University](../../assets/images/identity-proctoring/organization-efaceid-enabled.png)
+![تفعيل eFaceID لمؤسسة Cedar Valley University](../../assets/images/identity-proctoring/organization-efaceid-enabled.webp)
 
 يظهر الموقع في صورة مدينة أو منطقة ودولة، مثل **شمال فرجينيا، الولايات
 المتحدة**. قد تختلف إعدادات مؤسستك.
@@ -42,7 +42,7 @@ translation_source_sha256: b57baa79e7123322f1bfeb125b841a120d0e2a3728779ef9713fd
 ارفع صورة شخصية حديثة وواضحة وأمامية بإضاءة جيدة. راجع الاسم والرمز وربط
 الاختبار.
 
-![سجل Amina Hassan مع صورة تسجيل واضحة](../../assets/images/identity-proctoring/manager-enroll-candidate-photo.png)
+![سجل Amina Hassan مع صورة تسجيل واضحة](../../assets/images/identity-proctoring/manager-enroll-candidate-photo.webp)
 
 لا تستخدم صورة جماعية أو صفحة ممسوحة ضوئيًا أو صورة ذات مرشح أو صورة تحتوي
 على أكثر من وجه.
@@ -53,27 +53,27 @@ translation_source_sha256: b57baa79e7123322f1bfeb125b841a120d0e2a3728779ef9713fd
 المباشرة** إذا كان المراقب سيشاهد الجلسة. راجع الممتحَنين والأوراق وفترات
 الاحتفاظ ومسار المراجعة البديل.
 
-![تفعيل eFaceID والمراقبة في BIO 201](../../assets/images/identity-proctoring/exam-protection-controls.png)
+![تفعيل eFaceID والمراقبة في BIO 201](../../assets/images/identity-proctoring/exam-protection-controls.webp)
 
 ## 4. تجربة الممتحَن
 
 يفتح الممتحَن الرابط الرسمي ويُدخل الرمز وكلمة المرور.
 
-![تسجيل Amina الدخول إلى BIO 201](../../assets/images/identity-proctoring/candidate-sign-in.png)
+![تسجيل Amina الدخول إلى BIO 201](../../assets/images/identity-proctoring/candidate-sign-in.webp)
 
 ## 5. مراجعة الموافقة
 
 بعد ذلك يراجع نص الموافقة: الغرض، وموقع المعالجة، وفترات الاحتفاظ، والأشخاص
 المخوّلين، وتحذير الحساسية للضوء، وخيار المراجعة غير البيومترية.
 
-![الموافقة على التحقق من الهوية](../../assets/images/identity-proctoring/candidate-identity-consent.png)
+![الموافقة على التحقق من الهوية](../../assets/images/identity-proctoring/candidate-identity-consent.webp)
 
 ## 6. إكمال فحص الحيوية
 
 بعد الموافقة يسمح للكاميرا، ويضع الوجه وسط الإطار، ويتبع تعليمات الألوان
 والحركة. يجب أن يظهر وجه واحد فقط مع إضاءة أمامية مناسبة.
 
-![وضع الممتحَن أثناء التحقق من الحيوية](../../assets/images/identity-proctoring/candidate-liveness-positioning.png)
+![وضع الممتحَن أثناء التحقق من الحيوية](../../assets/images/identity-proctoring/candidate-liveness-positioning.webp)
 
 تستخدم الصورة المنشورة شخصية خيالية لحماية الخصوصية، بينما تمثل عناصر التحكم
 المسار الذي تم اختباره فعليًا.
