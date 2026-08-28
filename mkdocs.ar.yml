@@ -46,6 +46,8 @@ nav:
           - المجموعات وتعيينات الاختبارات: user-guides/manager/groups-and-assignments.md
           - مراسلة المتقدمين: user-guides/manager/email-examinees.md
           - التقديم والمراقبة والتقارير: user-guides/manager/deliver-monitor-report.md
+          - التحقق من الهوية عبر eFaceID: user-guides/manager/efaceid-identity-verification.md
+          - تشغيل اختبار بمراقبة مباشرة: user-guides/manager/live-exam-proctoring.md
       - المسؤولون:
           - المستخدمون وأدوار الحساب: user-guides/administration/users-and-roles.md
           - الدوائر والأذونات: user-guides/administration/circles-and-permissions.md

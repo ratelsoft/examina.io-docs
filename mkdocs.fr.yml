@@ -42,6 +42,8 @@ nav:
           - Groupes et affectations d'examens: user-guides/manager/groups-and-assignments.md
           - Envoyer un courriel aux candidats: user-guides/manager/email-examinees.md
           - Diffuser, surveiller et produire des rapports: user-guides/manager/deliver-monitor-report.md
+          - Vérification d’identité eFaceID: user-guides/manager/efaceid-identity-verification.md
+          - Surveillance d’un examen en direct: user-guides/manager/live-exam-proctoring.md
       - Administrateurs:
           - Utilisateurs et rôles de compte: user-guides/administration/users-and-roles.md
           - Cercles et autorisations: user-guides/administration/circles-and-permissions.md
