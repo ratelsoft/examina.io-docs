@@ -3,7 +3,7 @@ title: Fiscalizar uma prova ao vivo
 description: Configure a fiscalização, verifique câmera e tela, autorize o início e valide o resultado.
 tags: [fiscalização ao vivo, webcam, compartilhamento de tela, segurança de provas]
 translation_source: user-guides/manager/live-exam-proctoring.md
-translation_source_sha256: acb6daed2ab8f82eae6a0b46d3d239ee7776bfa97f126ba6e1360d8596c6c5ac
+translation_source_sha256: d2a81c977e23534e252abe275008f71848437aee550701ab6a34b7c0ffb9b27f
 ---
 
 # Fiscalizar uma prova ao vivo
@@ -21,7 +21,7 @@ Confirme vínculos, cadernos, duração, janela de início, instruções e exibi
 de resultados. Ative **Fiscalização ao vivo** e, quando necessário,
 **Verificação eFaceID**. Dê ao fiscal a função e o acesso ao Círculo corretos.
 
-![Controles de proteção de BIO 201](../../assets/images/identity-proctoring/exam-protection-controls.png)
+![Controles de proteção de BIO 201](../../assets/images/identity-proctoring/exam-protection-controls.webp)
 
 O candidato precisa de computador, câmera, microfone, navegador atual,
 compartilhamento de tela e rede estável. O fiscal usa outro computador e outra
@@ -42,7 +42,7 @@ Depois de entrar e, se aplicável, concluir o
 [eFaceID](efaceid-identity-verification.md), o candidato vê **Configuração do
 dispositivo**.
 
-![Tela antes de permitir câmera, microfone e compartilhamento](../../assets/images/identity-proctoring/candidate-device-setup.png)
+![Tela antes de permitir câmera, microfone e compartilhamento](../../assets/images/identity-proctoring/candidate-device-setup.webp)
 
 Ele seleciona **Iniciar**, permite câmera e microfone e compartilha a aba da
 prova ou a tela prevista. Antes, deve fechar janelas e notificações privadas.
@@ -64,11 +64,11 @@ fluxos novamente.
 Em **Webcam**, confirme identidade, iluminação, ângulo e ausência de outra
 pessoa.
 
-![Webcam de Amina no console](../../assets/images/identity-proctoring/invigilator-live-webcam.png)
+![Webcam de Amina no console](../../assets/images/identity-proctoring/invigilator-live-webcam.webp)
 
 Em **Tela**, confirme que a prova ou a tela combinada está sendo compartilhada.
 
-![Tela da prova compartilhada](../../assets/images/identity-proctoring/invigilator-shared-screen.png)
+![Tela da prova compartilhada](../../assets/images/identity-proctoring/invigilator-shared-screen.webp)
 
 As imagens usam uma candidata fictícia para preservar a privacidade e mantêm o
 estado real do console testado.
@@ -79,13 +79,13 @@ Após as verificações, abra o menu do candidato correto e escolha **Autorizar
 início**. Confira a mensagem de sucesso. O candidato recebe **Configuração
 concluída** e revisa título, duração, instruções, cadernos e número de questões.
 
-![Resumo de BIO 201 após autorização](../../assets/images/identity-proctoring/candidate-authorized-exam-overview.png)
+![Resumo de BIO 201 após autorização](../../assets/images/identity-proctoring/candidate-authorized-exam-overview.webp)
 
 ## 5. Acompanhar e concluir
 
 A fiscalização continua enquanto o candidato responde no Client.
 
-![Questão de genética durante a prova](../../assets/images/identity-proctoring/candidate-live-exam-question.png)
+![Questão de genética durante a prova](../../assets/images/identity-proctoring/candidate-live-exam-question.webp)
 
 Acompanhe a conexão, intervenha apenas quando necessário, registre incidentes
 conforme a política e diferencie falha técnica de conduta irregular. Não
@@ -95,7 +95,7 @@ Ao terminar, o candidato escolhe **Finalizar prova** e confirma o envio. No
 Manager, confira respondidas, não respondidas, ignoradas, nota obtida e nota
 possível.
 
-![Resultado de BIO 201 com três respostas e 100 por cento](../../assets/images/identity-proctoring/candidate-exam-result.png)
+![Resultado de BIO 201 com três respostas e 100 por cento](../../assets/images/identity-proctoring/candidate-exam-result.webp)
 
 ## 6. Encerrar a sessão
 

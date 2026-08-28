@@ -7,7 +7,7 @@ docs_dir: locales/es-419
 site_dir: site/es-419
 edit_uri: edit/main/locales/es-419/
 copyright: >-
-  Copyright &copy; 2026 Ratelsoft Inc. &nbsp;&middot;&nbsp;
+  &copy; 2026 Ratelsoft Inc. Todos los derechos reservados. &nbsp;&middot;&nbsp;
   <a href="https://www.examina.io/terms?lang=es-419">Términos</a> &nbsp;&middot;&nbsp;
   <a href="https://www.examina.io/privacy?lang=es-419">Privacidad</a>
 

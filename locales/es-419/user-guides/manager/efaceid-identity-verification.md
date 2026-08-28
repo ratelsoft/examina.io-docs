@@ -3,7 +3,7 @@ title: Configurar y usar la verificación de identidad eFaceID
 description: Activa eFaceID, registra la foto del candidato, protege un examen y administra la revisión biométrica o no biométrica.
 tags: [eFaceID, verificación de identidad, prueba de vida, seguridad de exámenes]
 translation_source: user-guides/manager/efaceid-identity-verification.md
-translation_source_sha256: b57baa79e7123322f1bfeb125b841a120d0e2a3728779ef9713fd580395f8872
+translation_source_sha256: 69350001a122b6850011a8d2b1b58e1fbcfeeef1d6a9c0ca4ac7fda03639f403
 ---
 
 # Configurar y usar eFaceID
@@ -32,7 +32,7 @@ Abre **Facturación** y confirma que **Verificación eFaceID** aparezca como
 **Activada**. La tarjeta también muestra la ubicación de procesamiento y los
 periodos de retención configurados.
 
-![eFaceID activado para Cedar Valley University](../../assets/images/identity-proctoring/organization-efaceid-enabled.png)
+![eFaceID activado para Cedar Valley University](../../assets/images/identity-proctoring/organization-efaceid-enabled.webp)
 
 La ubicación se expresa como ciudad o región y país, por ejemplo, **Virginia
 del Norte, Estados Unidos**. Tu organización puede usar otros valores.
@@ -43,7 +43,7 @@ En **Manager**, abre **Candidatos**, selecciona a la persona, elige **Cambiar
 imagen** y carga un retrato actual, nítido, frontal y bien iluminado. Confirma
 el nombre, código y asignación del examen.
 
-![Registro de Amina Hassan con una foto clara](../../assets/images/identity-proctoring/manager-enroll-candidate-photo.png)
+![Registro de Amina Hassan con una foto clara](../../assets/images/identity-proctoring/manager-enroll-candidate-photo.webp)
 
 No uses fotos grupales, páginas escaneadas, selfis con filtros ni imágenes con
 más de un rostro.
@@ -54,27 +54,27 @@ Abre la configuración del examen y activa **Verificación eFaceID**. Activa
 también **Supervisión en vivo** cuando un supervisor deba observar la sesión.
 Confirma candidatos, pruebas asignadas, retención y el procedimiento alterno.
 
-![eFaceID y supervisión habilitados para BIO 201](../../assets/images/identity-proctoring/exam-protection-controls.png)
+![eFaceID y supervisión habilitados para BIO 201](../../assets/images/identity-proctoring/exam-protection-controls.webp)
 
 ## 4. Recorrido del candidato
 
 El candidato abre el enlace oficial e ingresa su código y contraseña.
 
-![Amina inicia sesión en BIO 201](../../assets/images/identity-proctoring/candidate-sign-in.png)
+![Amina inicia sesión en BIO 201](../../assets/images/identity-proctoring/candidate-sign-in.webp)
 
 ## 5. Revisar el consentimiento
 
 Después revisa el consentimiento: propósito, ubicación, retención, personas
 autorizadas, advertencia de fotosensibilidad y opción de revisión no biométrica.
 
-![Consentimiento para la verificación de identidad](../../assets/images/identity-proctoring/candidate-identity-consent.png)
+![Consentimiento para la verificación de identidad](../../assets/images/identity-proctoring/candidate-identity-consent.webp)
 
 ## 6. Completar la prueba de vida
 
 Tras aceptar, autoriza la cámara, centra el rostro y sigue las indicaciones de
 color y movimiento. Debe haber un solo rostro y luz frontal suficiente.
 
-![Posición del candidato para la prueba de vida](../../assets/images/identity-proctoring/candidate-liveness-positioning.png)
+![Posición del candidato para la prueba de vida](../../assets/images/identity-proctoring/candidate-liveness-positioning.webp)
 
 La captura publicada usa un retrato ficticio para proteger la privacidad; los
 controles corresponden al flujo probado en vivo.
