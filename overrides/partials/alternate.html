@@ -6,11 +6,13 @@
     </button>
     <div class="md-select__inner">
       <ul class="md-select__list">
-        {% set root = config.extra.canonical_root %}
         {% for alt in config.extra.alternate %}
-          {% set prefix = "" if alt.lang == "en" else "/" ~ alt.lang %}
+          {% set locale = "pt-br" if alt.lang == "pt-BR" else alt.lang %}
+          {% set prefix = "" if locale == "en" else "/" ~ locale %}
           <li class="md-select__item">
-            <a href="{{ root }}{{ prefix }}/{{ page.url }}" hreflang="{{ alt.lang }}" class="md-select__link">
+            {# Preserve the current page while keeping the published Portuguese
+               directory lowercase on case-sensitive GitHub Pages. #}
+            <a href="{{ prefix }}/{{ page.url }}" hreflang="{{ alt.lang }}" class="md-select__link">
               {{ alt.name }}
             </a>
           </li>
