@@ -10,7 +10,7 @@ translation_source_sha256: 173ab50c30199eb9a9667889688609598592bbab3972eab3326f0
 
 Un **candidato** es la persona que rinde un examen a través de la aplicación Client. Los candidatos son independientes de los **Usuarios** del personal.
 
-![La pestaña Candidatos](../../assets/images/manager/examinees-tab.png)
+![La pestaña Candidatos](../../assets/images/manager/examinees-tab.webp)
 
 ## Agrega un candidato
 
@@ -24,7 +24,7 @@ Un **candidato** es la persona que rinde un examen a través de la aplicación C
 
 El código identifica al candidato al iniciar sesión y debe ser único. Una foto cuadrada de aproximadamente 256 × 256 píxeles funciona mejor cuando tu flujo de trabajo utiliza imágenes de candidatos o verificación de identidad.
 
-![Un registro de candidato guardado](../../assets/images/manager/examinee-details.png)
+![Un registro de candidato guardado](../../assets/images/manager/examinee-details.webp)
 
 ## Prepara un archivo de importación
 

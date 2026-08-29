@@ -74,7 +74,7 @@ les exigences relatives aux appareils, les attentes en matière de surveillance 
 La table des candidats mappés de l'examen constitue la vue de surveillance. Il montre celui de chaque personne
 état de connexion et, une fois terminé, leur score.
 
-![État de connexion et scores dans le tableau des candidats mappés](../../assets/images/manager/exam-details.png)
+![État de connexion et scores dans le tableau des candidats mappés](../../assets/images/manager/exam-details.webp)
 
 Manager affiche les états de mappage et de connexion tels que **Connecté**, **Prêt**,
 **En cours**, **Déconnecté** et **Terminé**, avec code couleur donc en cours

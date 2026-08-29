@@ -30,7 +30,7 @@ Il vous faut :
 
 Ouvrez **Accueil → Paramètres → Clés et webhook API** et créez une **Clé publique API**.
 
-![La zone clé API dans Paramètres de l'organisation](../assets/images/embedding-client-app/api_section_1.jpg)
+![La zone clé API dans Paramètres de l'organisation](../assets/images/embedding-client-app/api_section_1.webp)
 
 L'intégration simple utilise uniquement la clé publique. Ne placez pas la clé secrète API dans
 code du navigateur.
@@ -47,7 +47,7 @@ Dans **Domaines et sous-domaines approuvés pour l'intégration du widget client
 Par exemple, saisissez `assessment.example.edu`, et non
 `https://assessment.example.edu/exams`.
 
-![La liste des domaines approuvés pour le widget Client](../assets/images/embedding-client-app/domain_section.jpg)
+![La liste des domaines approuvés pour le widget Client](../assets/images/embedding-client-app/domain_section.webp)
 
 Pour les tests locaux, ajoutez le nom d'hôte que vous utilisez réellement, tel que `localhost` ou
 `127.0.0.1` ; N'inclut pas le port. Supprimez les hôtes de développement après les tests.
@@ -80,7 +80,7 @@ Si la clé est manquante ou invalide, le script du widget ne se chargera pas cor
 
 Dans Manager, sélectionnez l'examen et choisissez **Ouvrir le lien d'examen**. Copiez l'URL.
 
-![Trouvez le lien de l'examen dans Manager](../assets/images/embedding-client-app/manager_exam_details.jpg)
+![Trouvez le lien de l'examen dans Manager](../assets/images/embedding-client-app/manager_exam_details.webp)
 
 Ajoutez le lien avec la classe `examina-io-client-widget` :
 

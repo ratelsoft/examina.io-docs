@@ -12,7 +12,7 @@ O Designer é onde os exames são elaborados. Você cria um **projeto**, insere 
 
 O Designer roda no navegador e não precisa de nada instalado.
 
-![O espaço de trabalho do Designer sem nenhum projeto aberto](../../assets/images/designer/workspace-empty.png)
+![O espaço de trabalho do Designer sem nenhum projeto aberto](../../assets/images/designer/workspace-empty.webp)
 
 ## O espaço de trabalho
 
@@ -45,7 +45,7 @@ Guarde o projeto. Se você o perder e mantiver apenas o exame exportado, perder�
 3. Selecione esse exame no Exam Explorer para preencher seus detalhes.
 4. Escolha **File → Save Project** e guarde o `.smexproj` em um local seguro.
 
-![O menu File](../../assets/images/designer/file-menu.png)
+![O menu File](../../assets/images/designer/file-menu.webp)
 
 Observe quais itens estão desativados (em cinza) e que eles ficam disponíveis em dois estágios. **Save Project**, **Save Project As...** e **New Exam** ficam disponíveis assim que um projeto é aberto. As duas ações de exportação permanecem desativadas até que você realmente **selecione um exame** no Exam Explorer, pois o Designer exporta um exame por vez e precisa saber qual. Um menu File cheio de texto em cinza não é um erro — geralmente significa apenas que nada foi selecionado ainda.
 
@@ -58,7 +58,7 @@ Observe quais itens estão desativados (em cinza) e que eles ficam disponíveis 
 
     Exporte o exame a partir da versão que o criou ou peça a quem o enviou para salvá-lo em uma versão compatível.
 
-![O projeto de exemplo aberto, com seu exame no Exam Explorer](../../assets/images/designer/project-loaded.png)
+![O projeto de exemplo aberto, com seu exame no Exam Explorer](../../assets/images/designer/project-loaded.webp)
 
 As capturas de tela nestas páginas usam um exemplo do início ao fim: um projeto chamado **Northgate Entrance Exam 2026** contendo um único exame, *Northgate Entrance Examination*, dividido em seis provas.
 

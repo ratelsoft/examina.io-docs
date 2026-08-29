@@ -16,7 +16,7 @@ Faça login, abra **Início** e selecione **Manager** na Galeria de Aplicativos.
 
 ## Espaço de trabalho principal
 
-![O espaço de trabalho do Manager com a aba Provas selecionada](../../assets/images/manager/exams-tab.png)
+![O espaço de trabalho do Manager com a aba Provas selecionada](../../assets/images/manager/exams-tab.webp)
 
 O Manager possui três abas de recursos:
 
@@ -28,7 +28,7 @@ Selecione um item no painel esquerdo para abrir seus detalhes e ações disponí
 
 O menu **Arquivo** contém os quatro comandos de criação, e eles são os mesmos independentemente da aba em que você estiver:
 
-![O menu Arquivo do Manager](../../assets/images/manager/file-menu.png)
+![O menu Arquivo do Manager](../../assets/images/manager/file-menu.webp)
 
 - **Adicionar Nova Prova**
 - **Adicionar Novo Candidato**
@@ -48,7 +48,7 @@ O menu **Arquivo** contém os quatro comandos de criação, e eles são os mesmo
 
 ## Provas
 
-![Uma prova selecionada, com suas configurações e candidatos mapeados](../../assets/images/manager/exam-details.png)
+![Uma prova selecionada, com suas configurações e candidatos mapeados](../../assets/images/manager/exam-details.webp)
 
 O registro de uma prova mostra seu título, código e versão, o link que os candidatos usam, visibilidade, se os resultados são exibidos após a prova, se a fiscalização de provas ao vivo e a pré-verificação pelo eFace ID estão ativas, o horário em que foi adicionada, o tamanho do arquivo importado e o fluxo de cadernos de prova. As ações da prova podem incluir:
 
@@ -65,13 +65,13 @@ As ações disponíveis dependem do tipo de prova, da função da conta, do plan
 
 ## Candidatos
 
-![Um candidato selecionado, com provas mapeadas e associação a Grupos](../../assets/images/manager/examinee-details.png)
+![Um candidato selecionado, com provas mapeadas e associação a Grupos](../../assets/images/manager/examinee-details.webp)
 
 O registro de um candidato armazena um código ou ID exclusivo, senha, nome, gênero e detalhes opcionais, como e-mail, número de telefone, data de nascimento e fotografia. Abaixo dos detalhes há dois painéis: as provas às quais essa pessoa está mapeada e os Grupos aos quais ela pertence. A partir daqui, você pode gerenciar a associação a Grupos, mapear uma prova e cadernos, revisar detalhes do mapeamento e visualizar um resultado concluído.
 
 ## Grupos
 
-![Um Grupo selecionado, listando seus membros](../../assets/images/manager/group-details.png)
+![Um Grupo selecionado, listando seus membros](../../assets/images/manager/group-details.webp)
 
 Um Grupo é uma coleção operacional de candidatos, como uma turma, coorte ou sessão de prova. Mapear um Grupo para uma prova aplica a atribuição aos membros atuais do Grupo que ainda não estejam mapeados.
 

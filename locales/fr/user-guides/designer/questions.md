@@ -81,7 +81,7 @@ cohérent et prévisualisez chaque question.
 Le volet Modifier prend en charge le formatage du texte, les titres, la couleur, les listes, l'alignement,
 exposant, indice, symboles, expressions, images, audio et tableaux.
 
-![L'éditeur de questions, avec instructions, questions, options et explication](../../assets/images/designer/question-editor.png)
+![L'éditeur de questions, avec instructions, questions, options et explication](../../assets/images/designer/question-editor.webp)
 
 Utilisez le formatage pour améliorer la structure, pas la décoration. Confirmez que c'est important
 le sens n’est pas communiqué uniquement par la couleur.
@@ -115,7 +115,7 @@ Gardez les tableaux suffisamment petits pour s'adapter aux écrans pris en charg
 
 Sélectionnez **Aperçu** pour inspecter l'invite et les options affichées.
 
-![L'aperçu montre la question telle que le candidat la verra](../../assets/images/designer/question-preview.png)
+![L'aperçu montre la question telle que le candidat la verra](../../assets/images/designer/question-preview.webp)
 
 Avant l'exportation, vérifiez :
 

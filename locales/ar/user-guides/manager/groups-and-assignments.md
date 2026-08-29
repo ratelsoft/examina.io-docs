@@ -38,7 +38,7 @@ translation_source_sha256: 4c6bbfaf4fda4dda6ae0d94a03fd399b97cb5b7665f17fbe98f78
 4. احفظ المجموعة.
 5. اختر المجموعة، ثم قم بإضافة الممتحنين من القائمة القابلة للبحث.
 
-![المجموعة وأعضاؤها](../../assets/images/manager/group-details.png)
+![المجموعة وأعضاؤها](../../assets/images/manager/group-details.webp)
 
 تغطي الأزرار الموجودة بجانب قائمة الأعضاء كل طريقة لملء المجموعة: إضافة
 الممتحنين واحدًا تلو الآخر، أضف عدة ممتحنين مرة واحدة، أضف الممتحنين المطابقين لـ
@@ -101,7 +101,7 @@ translation_source_sha256: 4c6bbfaf4fda4dda6ae0d94a03fd399b97cb5b7665f17fbe98f78
 
 قبل نشر الامتحان:
 
-![قائمة الممتحنين المعينين للامتحان](../../assets/images/manager/exam-details.png)
+![قائمة الممتحنين المعينين للامتحان](../../assets/images/manager/exam-details.webp)
 
 1. افتح قائمة الممتحنين المعينين للامتحان.
 2. قارن عددها بالقائمة المقصودة.

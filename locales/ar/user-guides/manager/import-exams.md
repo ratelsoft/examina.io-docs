@@ -32,7 +32,7 @@ translation_source_sha256: cdd0384f56afe40f416a9be4f57bf31c41f1b3b32098cafb860f7
 
 ## قم باستيراد الملف {#import-the-file}
 
-![ملف → إضافة اختبار جديد](../../assets/images/manager/file-menu.png)
+![ملف → إضافة اختبار جديد](../../assets/images/manager/file-menu.webp)
 
 1. افتح **Manager**.
 2. حدد **ملف → إضافة اختبار جديد**.
@@ -50,7 +50,7 @@ translation_source_sha256: cdd0384f56afe40f416a9be4f57bf31c41f1b3b32098cafb860f7
 
 قم باختيار الاختبار ومراجعة لوحة التفاصيل الخاصة به:
 
-![تفاصيل الامتحان المستورد](../../assets/images/manager/exam-details.png)
+![تفاصيل الامتحان المستورد](../../assets/images/manager/exam-details.webp)
 
 - عنوان الامتحان، والرمز، والإصدار؛
 - تدفق ورقة الامتحان.

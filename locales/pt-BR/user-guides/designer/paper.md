@@ -20,7 +20,7 @@ Uma prova é uma unidade com tempo determinado dentro de um exame. Ela pode repr
 
 Os títulos das provas devem ser exclusivos dentro do exame.
 
-![Uma prova selecionada no Exam Explorer, com suas questões listadas abaixo dela](../../assets/images/designer/paper-in-explorer.png)
+![Uma prova selecionada no Exam Explorer, com suas questões listadas abaixo dela](../../assets/images/designer/paper-in-explorer.webp)
 
 ## Propriedades da prova
 

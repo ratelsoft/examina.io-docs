@@ -16,7 +16,7 @@ Inicia sesión, abre **Inicio** y selecciona **Manager** en la Galería de aplic
 
 ## Entorno de trabajo principal
 
-![El entorno de trabajo de Manager con la pestaña Exámenes seleccionada](../../assets/images/manager/exams-tab.png)
+![El entorno de trabajo de Manager con la pestaña Exámenes seleccionada](../../assets/images/manager/exams-tab.webp)
 
 Manager tiene tres pestañas de recursos:
 
@@ -28,7 +28,7 @@ Selecciona un elemento en el panel izquierdo para abrir sus detalles y las accio
 
 El menú **Archivo** contiene los cuatro comandos de creación, y son los mismos independientemente de la pestaña en la que te encuentres:
 
-![El menú Archivo de Manager](../../assets/images/manager/file-menu.png)
+![El menú Archivo de Manager](../../assets/images/manager/file-menu.webp)
 
 - **Agregar nuevo examen**
 - **Agregar nuevo candidato**
@@ -48,7 +48,7 @@ El menú **Archivo** contiene los cuatro comandos de creación, y son los mismos
 
 ## Exámenes
 
-![Un examen seleccionado, con su configuración y los candidatos vinculados](../../assets/images/manager/exam-details.png)
+![Un examen seleccionado, con su configuración y los candidatos vinculados](../../assets/images/manager/exam-details.webp)
 
 El registro de un examen muestra su título, código y versión, el enlace que utilizan los candidatos, la visibilidad, si se muestran los resultados después del examen, si están habilitadas la supervisión de exámenes en vivo y la preverificación con eFace ID, la hora en que se agregó, el tamaño del archivo importado y el flujo de la evaluación. Las acciones del examen pueden incluir:
 
@@ -65,13 +65,13 @@ Las acciones disponibles dependen del tipo de examen, el rol de la cuenta, el pl
 
 ## Candidatos
 
-![Un candidato seleccionado, con los exámenes vinculados y su pertenencia a grupos](../../assets/images/manager/examinee-details.png)
+![Un candidato seleccionado, con los exámenes vinculados y su pertenencia a grupos](../../assets/images/manager/examinee-details.webp)
 
 El registro de un candidato almacena un código o ID único, contraseña de acceso, nombre, género y detalles opcionales como correo electrónico, número de teléfono, fecha de nacimiento y fotografía. Debajo de los detalles se encuentran dos paneles: los exámenes a los que está vinculada esta persona y los grupos a los que pertenece. Desde aquí puedes administrar la pertenencia a grupos, vincular un examen y evaluaciones, revisar los detalles de la vinculación y ver un resultado completado.
 
 ## Grupos
 
-![Un grupo seleccionado, mostrando la lista de sus miembros](../../assets/images/manager/group-details.png)
+![Un grupo seleccionado, mostrando la lista de sus miembros](../../assets/images/manager/group-details.webp)
 
 Un grupo es una colección operativa de candidatos, como una clase, cohorte o sesión de examen. Vincular un grupo a un examen aplica la asignación a los miembros actuales del grupo que aún no estén vinculados.
 

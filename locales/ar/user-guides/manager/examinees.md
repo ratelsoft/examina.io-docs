@@ -17,7 +17,7 @@ translation_source_sha256: 173ab50c30199eb9a9667889688609598592bbab3972eab3326f0
 **الممتحن** هو المرشح الذي يؤدي الاختبار من خلال العميل
 application. الممتحنين منفصلون عن الموظفين **المستخدمين**.
 
-![علامة التبويب الممتحنين](../../assets/images/manager/examinees-tab.png)
+![علامة التبويب الممتحنين](../../assets/images/manager/examinees-tab.webp)
 
 ## إضافة ممتحن واحد {#add-one-examinee}
 
@@ -34,7 +34,7 @@ application. الممتحنين منفصلون عن الموظفين **المس�
 تعمل الصورة التي يبلغ حجمها حوالي 256 × 256 بكسل بشكل أفضل عندما يستخدم سير عملك الممتحن
 الصور أو التحقق من الهوية.
 
-![سجل الممتحنين المحفوظ ](../../assets/images/manager/examinee-details.png)
+![سجل الممتحنين المحفوظ ](../../assets/images/manager/examinee-details.webp)
 
 ## قم بإعداد ملف الاستيراد {#prepare-an-import-file}
 

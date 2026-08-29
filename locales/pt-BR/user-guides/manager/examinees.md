@@ -10,7 +10,7 @@ translation_source_sha256: 173ab50c30199eb9a9667889688609598592bbab3972eab3326f0
 
 Um **candidato** é quem realiza um exame por meio do aplicativo Client. Os candidatos são separados dos **Usuários** da equipe.
 
-![A aba Candidatos](../../assets/images/manager/examinees-tab.png)
+![A aba Candidatos](../../assets/images/manager/examinees-tab.webp)
 
 ## Adicionar um candidato
 
@@ -24,7 +24,7 @@ Um **candidato** é quem realiza um exame por meio do aplicativo Client. Os cand
 
 O código identifica o candidato durante o login e deve ser exclusivo. Uma foto quadrada de cerca de 256 × 256 pixels funciona melhor quando seu fluxo de trabalho utiliza imagens dos candidatos ou verificação de identidade.
 
-![Um registro de candidato salvo](../../assets/images/manager/examinee-details.png)
+![Um registro de candidato salvo](../../assets/images/manager/examinee-details.webp)
 
 ## Preparar um arquivo de importação
 

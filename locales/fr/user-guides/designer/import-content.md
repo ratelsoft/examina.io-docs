@@ -45,7 +45,7 @@ la question commence. `.doc` n'est pas pris en charge : ouvrez-le dans Word et 
 
 L'étape 1 demande le fichier. Les documents passent ensuite à l'étape 2 ; autre chose à l'étape 3.
 
-![Étape 1 de l'assistant d'import, avec le sélecteur de fichiers et les types de fichiers acceptés](../../assets/images/designer/import-choose-file.png)
+![Étape 1 de l'assistant d'import, avec le sélecteur de fichiers et les types de fichiers acceptés](../../assets/images/designer/import-choose-file.webp)
 
 ## Dites à Designer où commence chaque question {#tell-designer-where-each-question-starts}
 
@@ -54,7 +54,7 @@ dans votre fichier : `1.`, `Q1.`, `Q1` sur une ligne qui lui est propre, ou `Q.`
 présélectionné, alors choisissez celui qui correspond à votre document. Ouvrir **Que peut-on faire d'autre
 J'ai mis dans mon document ?** pour une référence aux balises, chacune en début de ligne.
 
-![Étape 2 avec les options du marqueur de question et le panneau de balises open](../../assets/images/designer/import-question-markers.png)
+![Étape 2 avec les options du marqueur de question et le panneau de balises open](../../assets/images/designer/import-question-markers.webp)
 
 ### Balises {#tags}
 
@@ -115,7 +115,7 @@ L'étape 3 montre ce que Designer a trouvé sous la forme d'un arbre Examen → 
 Seuls les niveaux autorisés par votre point d'entrée sont cochables : l'importation de papiers vous permet
 cochez les épreuves et les questions mais pas les examens ; importer des questions, uniquement des questions.
 
-![Étape 3 avec l'arborescence de contenu cochée à gauche et une question prévisualisée à droite](../../assets/images/designer/import-select-content.png)
+![Étape 3 avec l'arborescence de contenu cochée à gauche et une question prévisualisée à droite](../../assets/images/designer/import-select-content.webp)
 
 Les images à l'intérieur d'un `.docx` sont importées avec leurs questions ; toute image trop grande
 ou dans un format que Designer ne peut pas afficher est ignoré, compté et signalé lorsque
@@ -134,7 +134,7 @@ Cliquez avec le bouton droit sur un article et choisissez-le pour extraire les q
 
 La connexion n’est pas stockée. Designer le demande à nouveau dans une nouvelle session.
 
-![La boîte de dialogue Questions de téléchargement demandant une connexion au compte Ratelsoft](../../assets/images/designer/import-download-questions.png)
+![La boîte de dialogue Questions de téléchargement demandant une connexion au compte Ratelsoft](../../assets/images/designer/import-download-questions.webp)
 
 Pour copier du contenu dans le projet ouvert, voir [Réutiliser le projet
 contenu](importing-questions.md).

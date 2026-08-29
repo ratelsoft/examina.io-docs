@@ -33,7 +33,7 @@ Um Circle contém três tipos de membros:
 
 Por exemplo, um Circle `BIO-201` poderia conter o coordenador do curso e os fiscais de prova, o exame parcial e os alunos matriculados. A equipe fora desse Circle não ganharia acesso apenas por possuir uma conta Regular.
 
-![Um Circle mostrando contagens de candidatos, usuários e exames](../assets/images/administration/circles-permissions.png)
+![Um Circle mostrando contagens de candidatos, usuários e exames](../assets/images/administration/circles-permissions.webp)
 
 ## Modelo de função recomendado
 

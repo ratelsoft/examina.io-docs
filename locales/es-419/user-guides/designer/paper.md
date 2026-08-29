@@ -20,7 +20,7 @@ Una prueba es una unidad con tiempo medido dentro de un examen. Puede representa
 
 Los títulos de las pruebas deben ser únicos dentro del examen.
 
-![Una prueba seleccionada en el Explorador de exámenes, con sus preguntas enumeradas debajo](../../assets/images/designer/paper-in-explorer.png)
+![Una prueba seleccionada en el Explorador de exámenes, con sus preguntas enumeradas debajo](../../assets/images/designer/paper-in-explorer.webp)
 
 ## Propiedades de la prueba
 

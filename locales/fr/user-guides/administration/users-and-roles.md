@@ -18,7 +18,7 @@ Ce ne sont pas des dossiers de candidats.
 Les comptes racine et administrateur peuvent ouvrir **Accueil → Utilisateurs**. Le tableau des utilisateurs
 affiche le nom, l'adresse e-mail et le type de compte de chaque membre du personnel visible.
 
-![La table Utilisateurs avec un compte coordinateur d'examen régulier](../../assets/images/administration/users-and-roles.png)
+![La table Utilisateurs avec un compte coordinateur d'examen régulier](../../assets/images/administration/users-and-roles.webp)
 
 ## Choisissez un rôle de compte {#choose-an-account-role}
 

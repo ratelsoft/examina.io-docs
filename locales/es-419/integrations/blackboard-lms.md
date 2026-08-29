@@ -64,7 +64,7 @@ Como Root o Administrador de examina.io:
 
 El área de integración de LMS está cerca de la parte inferior de **Configuración**. Blackboard Learn / Ultra debería mostrarse como **Disponible**, junto a Moodle y Canvas. Selecciona **Agregar registro** desde esta área para comenzar.
 
-![Abre el área de integración de LMS en la Configuración de examina.io](../assets/images/integrations/blackboard/01-examina-lti-settings.png)
+![Abre el área de integración de LMS en la Configuración de examina.io](../assets/images/integrations/blackboard/01-examina-lti-settings.webp)
 
 Mantén el formulario abierto. Blackboard necesita la Application ID antes de poder crear el Deployment ID específico de la institución que completa este registro.
 
@@ -75,27 +75,27 @@ Como administrador del sistema de Blackboard Learn:
 1. Abre el área de administración de Blackboard. En la navegación Ultra, selecciona **Admin. del sistema**; en la Experiencia Original, abre el **Panel del administrador**.
 2. Busca la sección **Integraciones** y selecciona **Proveedores de herramientas LTI**.
 
-![Abre Proveedores de herramientas LTI desde la sección Integraciones de las herramientas de administración de Blackboard](../assets/images/integrations/blackboard/02-blackboard-admin-integrations.png)
+![Abre Proveedores de herramientas LTI desde la sección Integraciones de las herramientas de administración de Blackboard](../assets/images/integrations/blackboard/02-blackboard-admin-integrations.webp)
 
 3. Selecciona **Registrar herramienta LTI 1.3/Advantage**.
 
-![Selecciona Registrar herramienta LTI 1.3/Advantage](../assets/images/integrations/blackboard/03-blackboard-lti-providers.png)
+![Selecciona Registrar herramienta LTI 1.3/Advantage](../assets/images/integrations/blackboard/03-blackboard-lti-providers.webp)
 
 4. Ingresa la **Examina Application ID** y luego selecciona **Enviar**.
 
-![Ingresa la Examina Application ID en Blackboard](../assets/images/integrations/blackboard/04-blackboard-register-application-id.png)
+![Ingresa la Examina Application ID en Blackboard](../assets/images/integrations/blackboard/04-blackboard-register-application-id.webp)
 
 5. Revisa el nombre de la herramienta importada, el dominio, la URL de clave pública, las URL de redirección y la ubicación administrada.
 6. Establece el **Estado de la herramienta** en **Aprobado**.
 
-![Revisa los dominios de producción de Examina y aprueba la herramienta](../assets/images/integrations/blackboard/05-blackboard-approve-tool.png)
+![Revisa los dominios de producción de Examina y aprueba la herramienta](../assets/images/integrations/blackboard/05-blackboard-approve-tool.webp)
 
 7. En el uso compartido de datos del usuario, aprueba los datos que permita tu institución: **Nombre**, **Correo electrónico** y **Rol**.
 8. Habilita **Permitir acceso al servicio de calificaciones** cuando los resultados deban devolverse con AGS.
 9. Habilita **Permitir acceso al servicio de membresía** solo cuando se requiera acceso a la lista de estudiantes del curso a través de NRPS.
 10. Selecciona **Enviar**.
 
-![Aprueba los campos del candidato, el servicio de calificaciones y el servicio de membresía opcional](../assets/images/integrations/blackboard/06-blackboard-institution-policies.png)
+![Aprueba los campos del candidato, el servicio de calificaciones y el servicio de membresía opcional](../assets/images/integrations/blackboard/06-blackboard-institution-policies.webp)
 
 !!! note "El acceso a Admin. del sistema depende de los permisos"
 
@@ -109,7 +109,7 @@ Crea otra implementación de Blackboard solo cuando la institución necesite int
 
 Después del envío, la lista de proveedores debería mostrar **examina.io Assessments** como una herramienta LTI 1.3 aprobada. Los campos de datos exactos y la cantidad de ubicaciones dependen de los permisos y ubicaciones que haya aprobado tu institución.
 
-![Examina instalado como una herramienta LTI 1.3 de Blackboard aprobada](../assets/images/integrations/blackboard/07-blackboard-installed-tool.png)
+![Examina instalado como una herramienta LTI 1.3 de Blackboard aprobada](../assets/images/integrations/blackboard/07-blackboard-installed-tool.webp)
 
 ## 4. Finaliza el registro en examina.io
 
@@ -159,7 +159,7 @@ Regresa a **Proveedores de herramientas LTI** en Blackboard, abre el menú de **
 
 No crees una segunda ubicación a menos que tu institución necesite intencionalmente una ubicación independiente con una disponibilidad diferente. Una ubicación duplicada puede hacer que no quede claro qué registro está iniciando un instructor.
 
-![Confirma la ubicación de Deep Linking de examina.io Assessments](../assets/images/integrations/blackboard/08-blackboard-manage-placement.png)
+![Confirma la ubicación de Deep Linking de examina.io Assessments](../assets/images/integrations/blackboard/08-blackboard-manage-placement.webp)
 
 ## 6. Agrega un examen publicado a un curso Ultra
 
@@ -170,15 +170,15 @@ Como instructor en el curso de destino:
 3. Elige **Content Market**.
 4. Busca **examina.io Assessments** en **Herramientas de la institución** y selecciónalo.
 
-![Abre examina.io Assessments desde el Content Market de Blackboard Ultra](../assets/images/integrations/blackboard-content-market.png)
+![Abre examina.io Assessments desde el Content Market de Blackboard Ultra](../assets/images/integrations/blackboard-content-market.webp)
 
 El selector de examina.io se abre dentro de Blackboard. Selecciona **General Chemistry Fundamentals** y luego elige **Add selected exam**.
 
-![Elige el examen publicado General Chemistry Fundamentals](../assets/images/integrations/blackboard-select-exam.png)
+![Elige el examen publicado General Chemistry Fundamentals](../assets/images/integrations/blackboard-select-exam.webp)
 
 Blackboard regresa al curso y crea el elemento de contenido de la evaluación. Confirma su nombre visible para el candidato, visibilidad, fecha de vencimiento, puntos máximos y directiva de intentos; luego, hazlo visible para los candidatos.
 
-![General Chemistry Fundamentals agregado a Contenido del curso de Blackboard](../assets/images/integrations/blackboard-course-assessment.png)
+![General Chemistry Fundamentals agregado a Contenido del curso de Blackboard](../assets/images/integrations/blackboard-course-assessment.webp)
 
 Abre el elemento una vez como instructor y confirma que aparezca el examen publicado previsto. Si seleccionaste el examen incorrecto, elimina el elemento de contenido y vuelve a usar el Content Market para seleccionarlo de nuevo.
 
@@ -191,7 +191,7 @@ Utiliza un candidato ficticio inscrito en el curso:
 3. Confirma que la evaluación se abra dentro de Blackboard sin necesidad de un segundo inicio de sesión en examina.io.
 4. Comienza, completa y envía la evaluación.
 
-![General Chemistry Fundamentals abierto para un candidato en Blackboard Ultra](../assets/images/integrations/blackboard-learner-assessment.png)
+![General Chemistry Fundamentals abierto para un candidato en Blackboard Ultra](../assets/images/integrations/blackboard-learner-assessment.webp)
 
 El inicio de LTI verifica la plataforma de Blackboard, el Deployment ID, el curso, el elemento de contenido, el candidato y la publicación seleccionada. Una URL de inicio copiada no reemplaza el hecho de abrir la evaluación desde Blackboard.
 
@@ -199,7 +199,7 @@ El inicio de LTI verifica la plataforma de Blackboard, el Deployment ID, el curs
 
 Después de enviarla, abre el **Libro de calificaciones** como instructor. Confirma que la puntuación aparezca para **General Chemistry Fundamentals**, para el candidato correcto y en el elemento correcto del libro de calificaciones. El candidato también puede revisar el resultado desde la vista de calificaciones del curso.
 
-![Puntuación de examina.io enviada y devuelta al libro de calificaciones de Blackboard](../assets/images/integrations/blackboard-gradebook.png)
+![Puntuación de examina.io enviada y devuelta al libro de calificaciones de Blackboard](../assets/images/integrations/blackboard-gradebook.webp)
 
 La entrega de calificaciones se pone en cola de forma independiente al envío del examen, por lo que una interrupción temporal de Blackboard no convierte una evaluación completada en un envío fallido. Es posible que la puntuación tarde un momento en aparecer. Actualiza el libro de calificaciones antes de investigar un resultado faltante.
 

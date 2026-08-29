@@ -14,7 +14,7 @@ No son registros de candidatos.
 Las cuentas Root y Administrator pueden abrir **Inicio → Usuarios**. La tabla de Usuarios
 muestra el nombre, la dirección de correo electrónico y el tipo de cuenta de cada miembro visible del personal.
 
-![La tabla de Usuarios con una cuenta de coordinador de exámenes de tipo Regular](../../assets/images/administration/users-and-roles.png)
+![La tabla de Usuarios con una cuenta de coordinador de exámenes de tipo Regular](../../assets/images/administration/users-and-roles.webp)
 
 ## Elige un rol de cuenta
 

@@ -17,7 +17,7 @@ translation_source_sha256: b9c946628f9fcca401d26f0faab24b32e0a5ed14d358638d8aa32
 ** الممتحنين **. يمكن للمستخدم العمل مع الموارد المتاحة من خلال
 دائرة، تخضع لدور حساب المستخدم.
 
-![دائرة تلخص الممتحنين والمستخدمين والامتحانات](../../assets/images/administration/circles-permissions.png)
+![دائرة تلخص الممتحنين والمستخدمين والامتحانات](../../assets/images/administration/circles-permissions.webp)
 
 ## خطط للدائرة {#plan-the-circle}
 

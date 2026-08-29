@@ -27,7 +27,7 @@ ils peuvent accéder peut être limité par [Circles](../administration/circles-
 
 ## Espace de travail principal {#main-workspace}
 
-![L'espace de travail Manager avec l'onglet Examens sélectionné](../../assets/images/manager/exams-tab.png)
+![L'espace de travail Manager avec l'onglet Examens sélectionné](../../assets/images/manager/exams-tab.webp)
 
 Manager comporte trois onglets de ressources :
 
@@ -42,7 +42,7 @@ s'actualise depuis le serveur. Actualisez chaque fois qu'un autre utilisateur a 
 Le menu **Fichier** contient les quatre commandes de création, et ce sont les mêmes
 quel que soit l'onglet sur lequel vous vous trouvez :
 
-![Le menu Fichier Manager](../../assets/images/manager/file-menu.png)
+![Le menu Fichier Manager](../../assets/images/manager/file-menu.webp)
 
 - **Ajouter un nouvel examen**
 - **Ajouter un nouveau candidat**
@@ -64,7 +64,7 @@ quel que soit l'onglet sur lequel vous vous trouvez :
 
 ## Examens {#exams}
 
-![Un examen sélectionné, avec ses paramètres et les candidats cartographiés](../../assets/images/manager/exam-details.png)
+![Un examen sélectionné, avec ses paramètres et les candidats cartographiés](../../assets/images/manager/exam-details.webp)
 
 Un dossier d'examen indique son titre, son code et sa version, le lien utilisé par les candidats,
 visibilité, si les résultats sont affichés après l'examen, si la surveillance en direct
@@ -85,7 +85,7 @@ Les actions disponibles dépendent du type d'examen, du rôle du compte, du plan
 
 ## Candidats {#examinees}
 
-![Un candidat sélectionné, avec des examens cartographiés et une appartenance à un groupe](../../assets/images/manager/examinee-details.png)
+![Un candidat sélectionné, avec des examens cartographiés et une appartenance à un groupe](../../assets/images/manager/examinee-details.webp)
 
 Un dossier de candidat stocke un code ou identifiant unique, un mot de passe, un nom, un sexe et
 détails facultatifs tels que l’e-mail, le numéro de téléphone, la date de naissance et la photographie.
@@ -95,7 +95,7 @@ et des articles, examinez les détails du mappage et affichez un résultat final
 
 ## Groupes {#groups}
 
-![Un groupe sélectionné, listant ses membres](../../assets/images/manager/group-details.png)
+![Un groupe sélectionné, listant ses membres](../../assets/images/manager/group-details.webp)
 
 Un groupe est un ensemble opérationnel de candidats, tel qu'une classe, une cohorte ou
 séance d'examen. Mapper un groupe à un examen applique l'affectation au groupe.

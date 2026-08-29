@@ -18,7 +18,7 @@ translation_source_sha256: 08c940d21a9db0e95244f721e5db54146dfe7c47b7d4b9ec56cc7
 ينطبق على الامتحان ككل معظمها مرئي للممتحن، فهو كذلك
 يستحق أن يتم تعمده هنا بدلاً من ملئه لتجاوز الشاشة.
 
-![خصائص وإعدادات الامتحان](../../assets/images/designer/exam-properties.png)
+![خصائص وإعدادات الامتحان](../../assets/images/designer/exam-properties.webp)
 
 ## عنوان الامتحان {#exam-title}
 

@@ -80,21 +80,21 @@ besoins. Pour cette raison, la configuration initiale comporte deux étapes :
 Connectez-vous avec un compte d'administrateur de site Moodle et ouvrez ** Site
 administration** depuis la navigation principale.
 
-![Ouvrir l'administration du site dans Moodle](../assets/images/integrations/moodle/admin-01-site-administration.png)
+![Ouvrir l'administration du site dans Moodle](../assets/images/integrations/moodle/admin-01-site-administration.webp)
 
 Sélectionnez l'onglet **Plugins**. Sous **Modules d'activité**, sélectionnez **Externe
 outil**.
 
-![Trouver des modules d'activité sur la page Plugins de Moodle](../assets/images/integrations/moodle/admin-02-plugins.png)
+![Trouver des modules d'activité sur la page Plugins de Moodle](../assets/images/integrations/moodle/admin-02-plugins.webp)
 
 Sur la page Paramètres des outils externes, sélectionnez **Gérer les outils**.
 
-![Ouvrez Gérer les outils à partir des paramètres des outils externes de Moodle](../assets/images/integrations/moodle/admin-03-external-tool-menu.png)
+![Ouvrez Gérer les outils à partir des paramètres des outils externes de Moodle](../assets/images/integrations/moodle/admin-03-external-tool-menu.webp)
 
 Sélectionnez **Configurer un outil manuellement**. Si un autre outil examina.io est déjà
 existe, modifiez-le au lieu de créer un double.
 
-![Choisissez Configurer un outil manuellement sur la page Gérer les outils de Moodle](../assets/images/integrations/moodle/admin-04-manage-tools.png)
+![Choisissez Configurer un outil manuellement sur la page Gérer les outils de Moodle](../assets/images/integrations/moodle/admin-04-manage-tools.webp)
 
 Remplissez le formulaire outil :
 
@@ -112,7 +112,7 @@ Remplissez le formulaire outil :
 9. Gardez l'outil caché du sélecteur d'activité jusqu'à ce que la configuration soit terminée.
    terminer, puis enregistrez-le.
 
-![Entrez les points de terminaison publics examina.io dans Moodle](../assets/images/integrations/moodle/admin-05-production-endpoints.png)
+![Entrez les points de terminaison publics examina.io dans Moodle](../assets/images/integrations/moodle/admin-05-production-endpoints.webp)
 
 !!! warning "La valeur JWKS dans la capture d'écran est un exemple"
     `your-registration-id` est un espace réservé et non une valeur à copier. Après toi
@@ -158,7 +158,7 @@ En tant que racine ou administrateur examina.io :
      ça.
 7. Sélectionnez **Enregistrer l'enregistrement**.
 
-![Ajouter un enregistrement Moodle LTI 1.3 dans examina.io](../assets/images/integrations/moodle/01-examina-add-moodle-registration.png)
+![Ajouter un enregistrement Moodle LTI 1.3 dans examina.io](../assets/images/integrations/moodle/01-examina-add-moodle-registration.webp)
 
 La carte d'enregistrement enregistrée affiche l'**initiation de connexion exacte **OIDC**, **LTI
 lancement**, **Deep Linking** et **Jeu de clés publiques spécifiques à l'enregistrement (JWKS)**
@@ -189,14 +189,14 @@ Configurez ensuite les services Moodle et les paramètres de confidentialité :
 - Utilisez **Embed** comme conteneur de lancement par défaut si vous souhaitez que l'évaluation
   restez sur la page du cours Moodle.
 
-![Activer les services de grade et de liste Moodle tout en limitant les données d'identité partagées](../assets/images/integrations/moodle/admin-06-services-privacy.png)
+![Activer les services de grade et de liste Moodle tout en limitant les données d'identité partagées](../assets/images/integrations/moodle/admin-06-services-privacy.webp)
 
 Le partage d’un nom d’affichage ou d’une adresse e-mail Moodle est facultatif. examina.io peut cartographier
 un apprenant LTI utilisant l'identifiant de sujet pseudonyme de la plateforme. Activer
 champs de profil supplémentaires uniquement lorsque votre institution a un besoin documenté et
 base légale pour les partager.
 
-![L'outil actif Moodle utilisant l'URL de lancement de production examina.io](../assets/images/integrations/moodle/02-moodle-manage-tools.png)
+![L'outil actif Moodle utilisant l'URL de lancement de production examina.io](../assets/images/integrations/moodle/02-moodle-manage-tools.webp)
 
 Retournez à examina.io et activez l'enregistrement. Un suspendu ou révoqué
 l'inscription ne peut pas accepter de nouveaux lancements.
@@ -212,13 +212,13 @@ En tant qu'enseignant dans le cours de destination :
 4. Saisissez le nom de l'activité destinée à l'apprenant.
 5. Sélectionnez **Sélectionner le contenu**.
 
-![Configurer une activité sur outil externe dans un cours Moodle](../assets/images/integrations/moodle/02-moodle-external-tool-settings.png)
+![Configurer une activité sur outil externe dans un cours Moodle](../assets/images/integrations/moodle/02-moodle-external-tool-settings.webp)
 
 examina.io ouvre une liste d'évaluations publiées que l'instructeur peut utiliser.
 Choisissez l’évaluation souhaitée et confirmez la sélection. Dans cet exemple, le
 l'enseignant choisit **Structure et fonction cellulaire** pour **Introduction à la biologie**.
 
-![Sélectionnez une évaluation examina.io publiée dans Moodle](../assets/images/integrations/moodle/03-select-published-exam.png)
+![Sélectionnez une évaluation examina.io publiée dans Moodle](../assets/images/integrations/moodle/03-select-published-exam.webp)
 
 Enregistrez l'activité et ouvrez-la une fois en tant qu'enseignant. Confirmez que l'activité
 affiche le titre correct de l'évaluation et ne demande pas de réponse distincte.
@@ -233,7 +233,7 @@ Utiliser un apprenant fictif inscrit au cours pour validation :
 3. Confirmez que l'examen attendu s'ouvre dans Moodle.
 4. Complétez et soumettez l'évaluation.
 
-![Une évaluation biologique basée sur la source ouverte dans Moodle](../assets/images/integrations/moodle/04-learner-embedded-assessment.png)
+![Une évaluation biologique basée sur la source ouverte dans Moodle](../assets/images/integrations/moodle/04-learner-embedded-assessment.webp)
 
 L'identité Moodle de l'apprenant, le cours, le placement d'activité et la sélection
 Les évaluations publiées sont vérifiées lors du lancement du LTI. Une URL copiée à partir d'un
@@ -244,7 +244,7 @@ un cours ou un environnement différent ne remplace pas ce lancement.
 Une fois que l'apprenant a soumis, ouvrez **Notes → Rapport de notation** dans Moodle. Confirmer
 que le résultat apparaisse sous l'activité et l'apprenant corrects.
 
-![Le résultat examina.io soumis dans le carnet de notes Moodle](../assets/images/integrations/moodle/05-moodle-gradebook-result.png)
+![Le résultat examina.io soumis dans le carnet de notes Moodle](../assets/images/integrations/moodle/05-moodle-gradebook-result.webp)
 
 La remise des notes est mise en file d'attente séparément de la soumission de l'examen afin qu'un délai temporaire
 La panne Moodle ne transforme pas une évaluation terminée en un échec de soumission.

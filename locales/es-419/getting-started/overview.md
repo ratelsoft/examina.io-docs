@@ -10,7 +10,7 @@ translation_source_sha256: 3758552e04cfd298de85e07c2a290dd7c4675706cab28137e1fb9
 
 examina.io separa el trabajo de evaluación en aplicaciones enfocadas. Los autores de preguntas pueden crear contenido sin acceso a los registros de los candidatos, los administradores pueden programar y realizar exámenes, los supervisores solo pueden supervisar los exámenes que tienen asignados y los candidatos usan una aplicación Client dedicada.
 
-![La galería de aplicaciones de examina.io muestra Designer, Manager y Client](../assets/images/dashboard/apps-gallery.png)
+![La galería de aplicaciones de examina.io muestra Designer, Manager y Client](../assets/images/dashboard/apps-gallery.webp)
 
 ## Flujo de trabajo de evaluación
 
@@ -29,7 +29,7 @@ La misma persona puede realizar varias etapas en una organización pequeña. Las
 
 Designer es la aplicación para la creación de exámenes. Úsala para crear proyectos de examen, organizar una o más pruebas, agregar secciones, redactar preguntas, establecer reglas de puntuación y tiempo e importar contenido de preguntas existente.
 
-![La misma pregunta en el panel de edición y en el panel de vista previa de Designer](../assets/images/general/designer-edit-preview.png)
+![La misma pregunta en el panel de edición y en el panel de vista previa de Designer](../assets/images/general/designer-edit-preview.webp)
 
 Cuando finalices la creación, exporta el examen como un archivo `.smex` encriptado para su entrega a través de Manager. Comienza con [Introducción a Designer](../user-guides/designer/introduction.md).
 
@@ -45,7 +45,7 @@ Manager conecta el contenido del examen con las personas que lo rinden. Los admi
 - abrir o distribuir un enlace de examen; y
 - monitorear el progreso y generar resultados u informes.
 
-![Un examen en Manager con sus candidatos vinculados](../assets/images/manager/exam-details.png)
+![Un examen en Manager con sus candidatos vinculados](../assets/images/manager/exam-details.webp)
 
 Consulta la [descripción general de Manager](../user-guides/manager/overview.md) para conocer la navegación principal y la secuencia operativa recomendada.
 
@@ -53,7 +53,7 @@ Consulta la [descripción general de Manager](../user-guides/manager/overview.md
 
 Proctor es el espacio de trabajo de supervisión en vivo. Cuando la supervisión en vivo está habilitada para un examen, los supervisores autorizados pueden revisar la transmisión disponible de audio, cámara web y pantalla, comunicarse con un candidato y aprobar el inicio de un examen cuando el flujo de trabajo configurado lo requiera.
 
-![El espacio de trabajo de Proctor, una tarjeta por candidato](../assets/images/general/proctoring-view.png)
+![El espacio de trabajo de Proctor, una tarjeta por candidato](../assets/images/general/proctoring-view.webp)
 
 Cada candidato conectado aparece como una tarjeta con vistas de Detalles, Cámara web y Pantalla, controles de grabación y silencio, y una casilla de mensajes directos.
 
@@ -63,7 +63,7 @@ Solo habilita las funciones de supervisión de exámenes que tu organización es
 
 Client es la aplicación orientada al candidato. Los candidatos abren el enlace del examen, ingresan sus credenciales asignadas, completan cualquier verificación de sistema o de identidad requerida y rinden las pruebas vinculadas.
 
-![La aplicación Client orientada al candidato](../assets/images/client/question.png)
+![La aplicación Client orientada al candidato](../assets/images/client/question.webp)
 
 Client guarda de forma periódica el estado del examen mientras haya una conexión disponible. La [guía para el día de la prueba](../user-guides/client/take-an-exam.md) explica cómo deben prepararse los candidatos y qué hacer si se interrumpe la conexión.
 

@@ -23,7 +23,7 @@ translation_source_sha256: 535b1a2e6b873d0f6b729817ca3c9e64db7b8931167422d03e881
 [أدوار الحساب ](roles-and-permissions.md). استخدم **المستخدمون** لإضافة حسابات الموظفين
 و **الدوائر** إذا كان الوصول يجب أن يقتصر على اختبارات أو ممتحنين محددين.
 
-![معرض تطبيقات examina.io بعد تسجيل الدخول](../assets/images/dashboard/apps-gallery.png)
+![معرض تطبيقات examina.io بعد تسجيل الدخول](../assets/images/dashboard/apps-gallery.webp)
 
 ## 2. إنشاء محتوى الامتحان {#2-create-the-exam-content}
 

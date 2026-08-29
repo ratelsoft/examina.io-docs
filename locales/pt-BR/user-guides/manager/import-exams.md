@@ -25,7 +25,7 @@ Mantenha o projeto de origem como seu modelo editável principal. O arquivo `.sm
 
 ## Importar o arquivo
 
-![Arquivo → Adicionar Nova Prova](../../assets/images/manager/file-menu.png)
+![Arquivo → Adicionar Nova Prova](../../assets/images/manager/file-menu.webp)
 
 1. Abra o **Manager**.
 2. Selecione **Arquivo → Adicionar Nova Prova**.
@@ -39,7 +39,7 @@ Se o Manager informar que o tipo de arquivo não é suportado, volte ao Designer
 
 Selecione a prova e revise o painel de detalhes:
 
-![Os detalhes da prova importada](../../assets/images/manager/exam-details.png)
+![Os detalhes da prova importada](../../assets/images/manager/exam-details.webp)
 
 - título, código e versão da prova;
 - fluxo dos cadernos da prova;

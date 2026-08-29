@@ -14,7 +14,7 @@ Esta lista de verificação guia um administrador de organização desde uma con
 
 Em **Início**, verifique se as pessoas que estão preparando a avaliação possuem as [funções de conta](roles-and-permissions.md) corretas. Use **Usuários** para adicionar contas de equipe e **Círculos** se o acesso precisar ser limitado a exames ou candidatos específicos.
 
-![A galeria de aplicativos do examina.io após fazer login](../assets/images/dashboard/apps-gallery.png)
+![A galeria de aplicativos do examina.io após fazer login](../assets/images/dashboard/apps-gallery.webp)
 
 ## 2. Crie o conteúdo do exame
 

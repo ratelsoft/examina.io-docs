@@ -52,7 +52,7 @@ Informe aos candidatos a data, o horário, o fuso horário, o link, o método de
 
 A tabela de candidatos mapeados da prova é a visualização de monitoramento. Ela mostra o estado de conexão de cada pessoa e, assim que elas terminam, a sua pontuação.
 
-![Status de conexão e pontuações na tabela de candidatos mapeados](../../assets/images/manager/exam-details.png)
+![Status de conexão e pontuações na tabela de candidatos mapeados](../../assets/images/manager/exam-details.webp)
 
 O Manager mostra os estados de mapeamento e conexão como **Conectado**, **Pronto**, **Em execução**, **Desconectado** e **Finalizado**, com códigos de cores para que a aplicação em andamento possa ser visualizada rapidamente. Atualize a tabela de mapeamento antes de tomar uma decisão para ter os dados mais recentes do servidor.
 

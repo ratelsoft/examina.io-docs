@@ -31,7 +31,7 @@ Esta guía es para candidatos. Tu institución educativa o proveedor de evaluaci
 
 La apariencia de la página de inicio de sesión puede incluir la marca de la organización.
 
-![Página de inicio de sesión de Client](../../assets/images/client/login.png)
+![Página de inicio de sesión de Client](../../assets/images/client/login.webp)
 
 !!! tip "Si tu organización te envió un enlace de inicio de sesión por correo electrónico"
     Algunas organizaciones envían un enlace que te permite iniciar sesión sin necesidad de un código o contraseña.
@@ -41,7 +41,7 @@ La apariencia de la página de inicio de sesión puede incluir la marca de la or
 
 Una vez que hayas iniciado sesión, Client mostrará el examen antes de que comience: el título, la duración total, la descripción e instrucciones generales redactadas por el autor del examen, y una tabla de las pruebas con sus cantidades de preguntas y duraciones.
 
-![Pantalla de detalles del examen mostrada antes de que comience el examen](../../assets/images/client/exam-details.png)
+![Pantalla de detalles del examen mostrada antes de que comience el examen](../../assets/images/client/exam-details.webp)
 
 Lee detenidamente esta pantalla. La duración mostrada corresponde a toda la sesión y la tabla de pruebas es la panorámica más clara que tendrás sobre lo que viene.
 
@@ -63,11 +63,11 @@ La forma en que comienza el examen depende de cómo se haya configurado:
 - si el examen está **controlado por el servidor**, Client mostrará *Awaiting Manager to issue Exam Start Order* y esperará; no podrás comenzar hasta que el supervisor lo inicie;
 - de lo contrario, aparecerá un botón **Begin Exam** y elegirás con qué prueba comenzar.
 
-![Selección de la prueba de inicio](../../assets/images/client/choose-paper.png)
+![Selección de la prueba de inicio](../../assets/images/client/choose-paper.webp)
 
 ## Mientras respondes
 
-![Respuesta a una pregunta, con Exam Explorer a la izquierda](../../assets/images/client/question.png)
+![Respuesta a una pregunta, con Exam Explorer a la izquierda](../../assets/images/client/question.webp)
 
 El encabezado muestra el tiempo restante, el progreso del examen, la prueba actual y el número de pregunta. El **Exam Explorer** a la izquierda enumera cada prueba y pregunta, y la leyenda debajo explica los íconos: verde para respondida, gris para no respondida, rojo para omitida. Úsalo para identificar lo que aún te falta antes de enviar.
 
@@ -90,13 +90,13 @@ Client guarda periódicamente el estado de tu examen mientras haya una conexión
 
 Client cuenta lo que te falta y te informa antes de aceptar el envío, por lo que este cuadro de diálogo es la última oportunidad para regresar:
 
-![Confirmación de finalización, advirtiendo sobre preguntas no respondidas](../../assets/images/client/finish-confirm.png)
+![Confirmación de finalización, advirtiendo sobre preguntas no respondidas](../../assets/images/client/finish-confirm.webp)
 
 Que el puntaje se muestre de inmediato depende de la configuración de la organización. Un mensaje genérico de finalización puede ser normal.
 
 Donde se muestran los resultados, Client los desglosa por prueba (preguntas respondidas, no respondidas u omitidas, el puntaje obtenido y el puntaje máximo posible), con el total en la parte inferior.
 
-![Informe del examen mostrado después del envío](../../assets/images/client/result.png)
+![Informe del examen mostrado después del envío](../../assets/images/client/result.webp)
 
 ## Si algo sale mal
 

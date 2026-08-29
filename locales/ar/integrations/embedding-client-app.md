@@ -30,7 +30,7 @@ translation_source_sha256: 6f480dd668adcac7c3052eb0cb74773a0e6581bfcdc08141f994a
 
 افتح **الصفحة الرئيسية → الإعدادات → مفاتيح API وخطاف الويب** وأنشئ **مفتاح API العام**.
 
-![المنطقة الرئيسية API في إعدادات المؤسسة](../assets/images/embedding-client-app/api_section_1.jpg)
+![المنطقة الرئيسية API في إعدادات المؤسسة](../assets/images/embedding-client-app/api_section_1.webp)
 
 يستخدم التضمين البسيط المفتاح العام فقط. لا تضع المفتاح السري API بالداخل
 رمز المتصفح.
@@ -47,7 +47,7 @@ translation_source_sha256: 6f480dd668adcac7c3052eb0cb74773a0e6581bfcdc08141f994a
 على سبيل المثال، أدخل `assessment.example.edu`، وليس
 `https://assessment.example.edu/exams`.
 
-![قائمة النطاقات المعتمدة لعنصر واجهة المستخدم ](../assets/images/embedding-client-app/domain_section.jpg)
+![قائمة النطاقات المعتمدة لعنصر واجهة المستخدم ](../assets/images/embedding-client-app/domain_section.webp)
 
 للاختبار المحلي، أضف اسم المضيف الذي تستخدمه بالفعل، مثل `localhost` أو
 `127.0.0.1`; لا تشمل المنفذ. قم بإزالة مضيفي التطوير بعد الاختبار.
@@ -80,7 +80,7 @@ translation_source_sha256: 6f480dd668adcac7c3052eb0cb74773a0e6581bfcdc08141f994a
 
 في Manager، حدد الاختبار واختر **فتح رابط الاختبار**. انسخ عنوان URL.
 
-![ابحث عن رابط الامتحان في Manager](../assets/images/embedding-client-app/manager_exam_details.jpg)
+![ابحث عن رابط الامتحان في Manager](../assets/images/embedding-client-app/manager_exam_details.webp)
 
 أضف الرابط مع فئة `examina-io-client-widget`:
 

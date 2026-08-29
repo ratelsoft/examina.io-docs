@@ -17,7 +17,7 @@ Un cercle est une limite d'autorisation composée d'**utilisateurs**, d'**examen
 **Candidats**. Un utilisateur peut travailler avec les ressources mises à disposition via le
 Circle, sous réserve du rôle de compte de l'Utilisateur.
 
-![Un Cercle résume ses candidats, ses utilisateurs et ses examens](../../assets/images/administration/circles-permissions.png)
+![Un Cercle résume ses candidats, ses utilisateurs et ses examens](../../assets/images/administration/circles-permissions.webp)
 
 ## Planifier le cercle {#plan-the-circle}
 

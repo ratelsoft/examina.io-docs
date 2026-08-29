@@ -41,6 +41,9 @@ jobs:
       - name: Validate localized source parity
         run: python scripts/check_localizations.py
 
+      - name: Validate localized screenshots
+        run: python scripts/check_localized_images.py
+
       - name: Validate application contract
         run: python scripts/check_application_contract.py
 

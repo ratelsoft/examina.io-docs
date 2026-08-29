@@ -25,7 +25,7 @@ module ou un autre segment d’évaluation. Un examen peut contenir plusieurs é
 
 Les titres des épreuves doivent être uniques au sein de l’examen.
 
-![Un article sélectionné dans Exam Explorer, avec ses questions répertoriées en dessous](../../assets/images/designer/paper-in-explorer.png)
+![Un article sélectionné dans Exam Explorer, avec ses questions répertoriées en dessous](../../assets/images/designer/paper-in-explorer.webp)
 
 ## Propriétés du papier {#paper-properties}
 

@@ -10,7 +10,7 @@ translation_source_sha256: 08c940d21a9db0e95244f721e5db54146dfe7c47b7d4b9ec56cc7
 
 Selecciona un examen en Exam Explorer y el panel de edición mostrará todo lo que se aplica al examen en su totalidad. La mayor parte es visible para el candidato, por lo que vale la pena hacerlo a conciencia en lugar de completarlo solo para pasar de pantalla.
 
-![Propiedades y configuración del examen](../../assets/images/designer/exam-properties.png)
+![Propiedades y configuración del examen](../../assets/images/designer/exam-properties.webp)
 
 ## Título del examen
 

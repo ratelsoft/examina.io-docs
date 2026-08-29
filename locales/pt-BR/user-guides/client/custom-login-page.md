@@ -20,9 +20,9 @@ O Client oferece três estilos:
 
 O Default suporta a identidade visual específica do exame criada no Designer. O Modern e o Classic usam o logotipo e a imagem de fundo da organização.
 
-![O estilo de login Modern do Client com a identidade visual da organização](../../assets/images/custom-login-page/modern_login_page.jpg)
+![O estilo de login Modern do Client com a identidade visual da organização](../../assets/images/custom-login-page/modern_login_page.webp)
 
-![O estilo de login Classic do Client com a mesma identidade visual](../../assets/images/custom-login-page/classic_login_page.jpg)
+![O estilo de login Classic do Client com a mesma identidade visual](../../assets/images/custom-login-page/classic_login_page.webp)
 
 O Classic aplica um tratamento visual sobre o fundo para preservar o contraste ao redor dos campos de login. Verifique a imagem final em ambos os estilos em vez de presumir que parecerão idênticos.
 
@@ -34,7 +34,7 @@ O Classic aplica um tratamento visual sobre o fundo para preservar o contraste a
 4. Escolha um arquivo JPG, GIF ou PNG de no máximo 512 KB.
 5. Aguarde a conclusão do envio.
 
-![Alterar o logotipo da organização a partir das Configurações](../../assets/images/custom-login-page/change_logo.png)
+![Alterar o logotipo da organização a partir das Configurações](../../assets/images/custom-login-page/change_logo.webp)
 
 Se nenhum logotipo for configurado, o nome da organização poderá aparecer em seu lugar. Use um logotipo com espaçamento claro e contraste suficiente tanto para fundos claros quanto fotográficos.
 
@@ -53,7 +53,7 @@ A alteração é aplicada em nível de organização. Coordene-a com qualquer pe
 3. Use as dimensões recomendadas exibidas — 1920 × 1280 pixels — e permaneça dentro do limite de tamanho de arquivo exibido.
 4. Aguarde a conclusão do envio.
 
-![Selecionar o estilo de login e a imagem de fundo em Configurações](../../assets/images/custom-login-page/change_style.png)
+![Selecionar o estilo de login e a imagem de fundo em Configurações](../../assets/images/custom-login-page/change_style.webp)
 
 O Modern e o Classic podem usar um plano de fundo fornecido quando nenhuma imagem personalizada for configurada. Selecione a pequena pré-visualização para inspecionar o plano de fundo atual em um tamanho maior.
 
