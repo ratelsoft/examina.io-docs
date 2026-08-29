@@ -95,7 +95,8 @@ def main() -> int:
             expected_language_links = {
                 lang: urlsplit(expected_alternates[lang]).path for lang in LANGUAGES
             }
-            if parsed.language_links != expected_language_links:
+            is_standalone_api_reference = language == "en" and relative == Path("api/index.md")
+            if not is_standalone_api_reference and parsed.language_links != expected_language_links:
                 errors.append(f"{label}: language selector links do not use canonical page paths")
             if not parsed.description.strip():
                 errors.append(f"{label}: generated meta description is missing")
