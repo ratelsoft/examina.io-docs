@@ -48,7 +48,6 @@ theme:
     - content.tooltips
     - navigation.footer
     - navigation.indexes
-    - navigation.instant
     - navigation.sections
     - navigation.top
     - search.highlight

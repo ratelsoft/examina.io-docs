@@ -14,7 +14,7 @@ Este listado de verificación guía a un administrador de la organización desde
 
 Desde **Inicio**, verifica que las personas que preparan la evaluación tengan los [roles de cuenta](roles-and-permissions.md) correctos. Usa **Usuarios** para añadir cuentas de personal y **Círculos** si el acceso debe limitarse a exámenes o candidatos particulares.
 
-![La galería de aplicaciones de examina.io después de iniciar sesión](../assets/images/dashboard/apps-gallery.png)
+![La galería de aplicaciones de examina.io después de iniciar sesión](../assets/images/dashboard/apps-gallery.webp)
 
 ## 2. Crea el contenido del examen
 

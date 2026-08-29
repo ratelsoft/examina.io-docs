@@ -10,7 +10,7 @@ translation_source_sha256: 551087143ecc0eaf4a63a442e2ff2f2373d7c666d9cd232732c01
 
 Las cuentas Root y Administrator pueden abrir **Inicio → Configuración** para gestionar la imagen de marca de toda la organización, los dominios incrustados, las credenciales de API, el envío de webhooks y las conexiones compatibles con plataformas de aprendizaje.
 
-![Configuración de la organización para dominios, imagen de marca, claves API y webhook](../../assets/images/administration/organization-settings.png)
+![Configuración de la organización para dominios, imagen de marca, claves API y webhook](../../assets/images/administration/organization-settings.webp)
 
 ## Dominios incrustados aprobados
 

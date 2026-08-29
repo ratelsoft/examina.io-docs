@@ -52,7 +52,7 @@ Informa a los candidatos la fecha, la hora, la zona horaria, el enlace, el méto
 
 La tabla de candidatos asignados del examen es la vista de supervisión. Muestra el estado de conexión de cada persona y, una vez que finaliza, su puntuación.
 
-![Estado de conexión y puntuaciones en la tabla de candidatos asignados](../../assets/images/manager/exam-details.png)
+![Estado de conexión y puntuaciones en la tabla de candidatos asignados](../../assets/images/manager/exam-details.webp)
 
 Manager muestra los estados de asignación y conexión como **Connected**, **Ready**, **Running**, **Disconnected** y **Finished**, codificados por colores para que una sesión en curso se pueda evaluar de un vistazo. Actualiza la tabla de asignaciones antes de tomar una decisión para contar con los datos más recientes del servidor.
 

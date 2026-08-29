@@ -17,7 +17,7 @@ Les comptes racine et administrateur peuvent ouvrir **Accueil → Paramètres** 
 image de marque à l'échelle de l'organisation, domaines intégrés, informations d'identification API, livraison de webhooks,
 et prise en charge des connexions avec la plateforme d'apprentissage.
 
-![Paramètres de l'organisation pour les domaines, la marque, les clés API et le webhook](../../assets/images/administration/organization-settings.png)
+![Paramètres de l'organisation pour les domaines, la marque, les clés API et le webhook](../../assets/images/administration/organization-settings.webp)
 
 ## Domaines d'intégration approuvés {#approved-embed-domains}
 

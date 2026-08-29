@@ -28,12 +28,25 @@ def parse(page: Path) -> tuple[dict, str]:
     return yaml.safe_load(match.group(1)) or {}, match.group(2)
 
 
+def normalize_image_reference(reference: str) -> str:
+    """Compare image structure independently of the localized raster format."""
+
+    return re.sub(
+        r"\.(?:png|jpe?g|webp)(?=(?:[?#].*)?$)",
+        ".<image>",
+        reference,
+        flags=re.IGNORECASE,
+    )
+
+
 def structures(text: str) -> dict[str, list[str]]:
+    images = re.findall(r"!\[[^]]*\]\(([^)]+)\)", text)
+    text_without_images = re.sub(r"!\[[^]]*\]\([^)]+\)", "", text)
     return {
         "fences": re.findall(r"^\s*```", text, re.MULTILINE),
         "backticks": re.findall(r"`", text),
-        "links": re.findall(r"\]\(([^)]+)\)", text),
-        "images": re.findall(r"!\[[^]]*\]\(([^)]+)\)", text),
+        "links": re.findall(r"\]\(([^)]+)\)", text_without_images),
+        "images": [normalize_image_reference(reference) for reference in images],
         "headings": re.findall(r"^#{1,6} ", text, re.MULTILINE),
         "admonitions": re.findall(r"^\s*!!!", text, re.MULTILINE),
     }

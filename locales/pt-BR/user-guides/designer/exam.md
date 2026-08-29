@@ -10,7 +10,7 @@ translation_source_sha256: 08c940d21a9db0e95244f721e5db54146dfe7c47b7d4b9ec56cc7
 
 Selecione uma prova no Exam Explorer e o painel de edição mostrará tudo o que se aplica à prova como um todo. A maior parte é visível para o candidato, portanto vale a pena dedicar uma atenção cuidadosa a esta etapa, em vez de apenas preencher os campos para avançar na tela.
 
-![Propriedades e configurações da prova](../../assets/images/designer/exam-properties.png)
+![Propriedades e configurações da prova](../../assets/images/designer/exam-properties.webp)
 
 ## Título da prova
 

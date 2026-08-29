@@ -20,9 +20,9 @@ Client ofrece tres estilos:
 
 Default admite la identidad visual específica del examen creada en Designer. Modern y Classic utilizan el logotipo y la imagen de fondo de la organización.
 
-![El estilo de inicio de sesión Modern de Client con la imagen de la organización](../../assets/images/custom-login-page/modern_login_page.jpg)
+![El estilo de inicio de sesión Modern de Client con la imagen de la organización](../../assets/images/custom-login-page/modern_login_page.webp)
 
-![El estilo de inicio de sesión Classic de Client con la misma imagen de la organización](../../assets/images/custom-login-page/classic_login_page.jpg)
+![El estilo de inicio de sesión Classic de Client con la misma imagen de la organización](../../assets/images/custom-login-page/classic_login_page.webp)
 
 Classic aplica un tratamiento visual sobre el fondo para preservar el contraste alrededor de los campos de inicio de sesión. Revisa la imagen final en ambos estilos en lugar de asumir que se verán idénticas.
 
@@ -34,7 +34,7 @@ Classic aplica un tratamiento visual sobre el fondo para preservar el contraste 
 4. Elige un archivo JPG, GIF o PNG que no supere los 512 KB.
 5. Espera a que se complete la carga.
 
-![Cambia el logotipo de la organización desde Configuración](../../assets/images/custom-login-page/change_logo.png)
+![Cambia el logotipo de la organización desde Configuración](../../assets/images/custom-login-page/change_logo.webp)
 
 Si no se establece ningún logotipo, el nombre de la organización puede aparecer en su lugar. Utiliza un logotipo con un margen claro y suficiente contraste tanto para fondos claros como fotográficos.
 
@@ -53,7 +53,7 @@ El cambio se aplica a nivel de organización. Coordínalo con cualquier persona 
 3. Utiliza las dimensiones recomendadas que se muestran (1920 × 1280 píxeles) y mantente dentro del límite de tamaño de archivo mostrado.
 4. Espera a que finalice la carga.
 
-![Selecciona el estilo de inicio de sesión y la imagen de fondo en Configuración](../../assets/images/custom-login-page/change_style.png)
+![Selecciona el estilo de inicio de sesión y la imagen de fondo en Configuración](../../assets/images/custom-login-page/change_style.webp)
 
 Modern y Classic pueden usar un fondo predeterminado cuando no se establece una imagen personalizada. Selecciona la vista previa pequeña para inspeccionar el fondo actual en un tamaño mayor.
 

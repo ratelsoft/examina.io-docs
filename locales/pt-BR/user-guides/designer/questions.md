@@ -62,7 +62,7 @@ Se várias questões usarem o mesmo texto de apoio, mantenha a redação e a for
 
 O painel de edição suporta formatação de texto, títulos, cores, listas, alinhamento, sobrescrito, subscrito, símbolos, expressões, imagens, áudios e tabelas.
 
-![O editor de questões, com instrução, questão, opções e explicação](../../assets/images/designer/question-editor.png)
+![O editor de questões, com instrução, questão, opções e explicação](../../assets/images/designer/question-editor.webp)
 
 Use a formatação para melhorar a estrutura, não para decoração. Confirme se significados importantes não são transmitidos apenas pela cor.
 
@@ -90,7 +90,7 @@ Mantenha as tabelas pequenas o suficiente para se ajustarem às telas suportadas
 
 Selecione **Preview** para inspecionar o enunciado e as opções renderizados.
 
-![A visualização mostra a questão como o candidato a verá](../../assets/images/designer/question-preview.png)
+![A visualização mostra a questão como o candidato a verá](../../assets/images/designer/question-preview.webp)
 
 Antes de exportar, verifique se:
 

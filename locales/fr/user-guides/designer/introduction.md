@@ -20,7 +20,7 @@ est attribué aux personnes et livré.
 
 Designer s’exécute dans le navigateur et ne nécessite aucune installation.
 
-![L'espace de travail Designer sans projet open](../../assets/images/designer/workspace-empty.png)
+![L'espace de travail Designer sans projet open](../../assets/images/designer/workspace-empty.webp)
 
 ## L'espace de travail {#the-workspace}
 
@@ -56,7 +56,7 @@ possibilité d'éditer confortablement.
 3. Sélectionnez cet examen dans Exam Explorer pour renseigner ses détails.
 4. Choisissez **Fichier → Enregistrer le projet** et conservez le `.smexproj` dans un endroit sûr.
 
-![Le menu Fichier](../../assets/images/designer/file-menu.png)
+![Le menu Fichier](../../assets/images/designer/file-menu.webp)
 
 Notez quels éléments sont grisés et qu'ils se réveillent en deux étapes.
 **Enregistrer le projet**, **Enregistrer le projet sous...** et **Nouvel examen** seront disponibles une seule fois.
@@ -78,7 +78,7 @@ signifie généralement que rien n'est encore sélectionné.
     Exportez l'examen à partir de la version qui l'a créé ou demandez à celui qui l'a envoyé
     enregistrer à partir d'une version correspondante.
 
-![L'exemple de projet ouvert, avec son examen dans Exam Explorer](../../assets/images/designer/project-loaded.png)
+![L'exemple de projet ouvert, avec son examen dans Exam Explorer](../../assets/images/designer/project-loaded.webp)
 
 Les captures d'écran de ces pages utilisent un exemple : un projet nommé
 **Examen d'entrée Northgate 2026** avec un seul examen, *entrée Northgate

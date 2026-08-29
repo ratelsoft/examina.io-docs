@@ -62,7 +62,7 @@ Si varias preguntas usan la misma lectura, mantén la redacción y el formato un
 
 El panel Editar admite formato de texto, encabezados, color, listas, alineación, superíndice, subíndice, símbolos, expresiones, imágenes, audio y tablas.
 
-![El editor de preguntas, con instrucción, pregunta, opciones y explicación](../../assets/images/designer/question-editor.png)
+![El editor de preguntas, con instrucción, pregunta, opciones y explicación](../../assets/images/designer/question-editor.webp)
 
 Usa el formato para mejorar la estructura, no como decoración. Confirma que la información importante no se comunique únicamente mediante el color.
 
@@ -90,7 +90,7 @@ Mantén las tablas lo suficientemente pequeñas como para que quepan en las pant
 
 Selecciona **Vista previa** para inspeccionar el enunciado y las opciones procesadas.
 
-![La vista previa muestra la pregunta tal como la verá el candidato](../../assets/images/designer/question-preview.png)
+![La vista previa muestra la pregunta tal como la verá el candidato](../../assets/images/designer/question-preview.webp)
 
 Antes de exportar, verifica que:
 

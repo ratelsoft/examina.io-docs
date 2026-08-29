@@ -14,7 +14,7 @@ Eles não são registros de candidatos.
 Contas Root e Administrator podem abrir **Início → Usuários**. A tabela Usuários
 mostra o nome, endereço de e-mail e tipo de conta de cada membro da equipe visível.
 
-![A tabela Usuários com uma conta Regular de coordenador de provas](../../assets/images/administration/users-and-roles.png)
+![A tabela Usuários com uma conta Regular de coordenador de provas](../../assets/images/administration/users-and-roles.webp)
 
 ## Escolher uma função de conta
 

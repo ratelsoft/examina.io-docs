@@ -39,7 +39,7 @@ pour le contrôle d'accès.
 4. Enregistrez le groupe.
 5. Sélectionnez le groupe, puis ajoutez des candidats dans la liste consultable.
 
-![Un Groupe et ses membres](../../assets/images/manager/group-details.png)
+![Un Groupe et ses membres](../../assets/images/manager/group-details.webp)
 
 Les boutons à côté de la liste des membres couvrent toutes les manières de remplir un groupe : ajouter
 candidats un à la fois, ajoutez-en plusieurs à la fois, ajoutez les candidats correspondant à un
@@ -102,7 +102,7 @@ cette mission. Vérifiez toujours :
 
 Avant de publier un examen :
 
-![La liste des candidats mappés pour un examen](../../assets/images/manager/exam-details.png)
+![La liste des candidats mappés pour un examen](../../assets/images/manager/exam-details.webp)
 
 1. Ouvrez la liste des candidats mappés de l'examen.
 2. Comparez son décompte avec la liste prévue.

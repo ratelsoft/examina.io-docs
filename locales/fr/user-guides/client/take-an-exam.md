@@ -43,7 +43,7 @@ instructions lorsqu’elles diffèrent de ce guide général.
 
 L'apparence de la page de connexion peut être marquée par l'organisation.
 
-![La page de connexion client](../../assets/images/client/login.png)
+![La page de connexion client](../../assets/images/client/login.webp)
 
 !!! tip "Si votre organisateur vous a envoyé par e-mail un lien de connexion"
     Certains organisateurs envoient un lien qui vous connecte sans code ni mot de passe.
@@ -59,7 +59,7 @@ Une fois connecté, le Client affiche l'examen avant qu'il ne commence : son ti
 la durée totale, la description et les instructions générales rédigées par l'examen
 auteur, et un tableau des articles avec leur nombre de questions et leur durée.
 
-![L'écran des détails de l'examen affiché avant le début de l'examen](../../assets/images/client/exam-details.png)
+![L'écran des détails de l'examen affiché avant le début de l'examen](../../assets/images/client/exam-details.webp)
 
 Lisez correctement cet écran. La durée indiquée correspond à la séance entière et la
 la table en papier est l’image la plus claire que vous obtiendrez de ce qui vous attend.
@@ -85,11 +85,11 @@ Le début de l'examen dépend de la manière dont il a été configuré :
 - sinon un bouton **Commencer l'examen** apparaît et vous choisissez quelle épreuve commencer
   avec.
 
-![Choisir le papier de départ](../../assets/images/client/choose-paper.png)
+![Choisir le papier de départ](../../assets/images/client/choose-paper.webp)
 
 ## En répondant {#while-answering}
 
-![Répondre à une question, avec l'Explorateur d'examens à gauche](../../assets/images/client/question.png)
+![Répondre à une question, avec l'Explorateur d'examens à gauche](../../assets/images/client/question.webp)
 
 L'en-tête indique le temps restant, la progression de l'examen, l'épreuve en cours et le
 numéro de question. L'**Exam Explorer** sur la gauche répertorie chaque épreuve et
@@ -119,7 +119,7 @@ réussit.
 Le client compte ce qu'il vous reste et vous le dit avant d'accepter le
 soumission, donc cette boîte de dialogue est la dernière chance de revenir en arrière :
 
-![La confirmation de fin, avertissement concernant les questions sans réponse](../../assets/images/client/finish-confirm.png)
+![La confirmation de fin, avertissement concernant les questions sans réponse](../../assets/images/client/finish-confirm.webp)
 
 L'affichage immédiat d'un score dépend des paramètres de l'organisateur.
 Un message d'achèvement générique peut être normal.
@@ -128,7 +128,7 @@ Lorsque les résultats sont affichés, le client les décompose par article – 
 répondu, sans réponse et sauté, le score et le score pouvant être obtenu - avec le
 totale en dessous.
 
-![Le rapport d'examen affiché après la soumission](../../assets/images/client/result.png)
+![Le rapport d'examen affiché après la soumission](../../assets/images/client/result.webp)
 
 ## Si quelque chose ne va pas {#if-something-goes-wrong}
 

@@ -80,21 +80,21 @@ translation_source_sha256: dd7c24259f01e8432c23a5521cccb6d9170133e6628f1262dc730
 قم بتسجيل الدخول باستخدام حساب مسؤول الموقع Moodle وافتح **الموقع
 الإدارة ** من التنقل الرئيسي.
 
-![افتح إدارة الموقع في Moodle](../assets/images/integrations/moodle/admin-01-site-administration.png)
+![افتح إدارة الموقع في Moodle](../assets/images/integrations/moodle/admin-01-site-administration.webp)
 
 حدد علامة التبويب **المكونات الإضافية**. ضمن **وحدات النشاط**، حدد **خارجي
 أداة **.
 
-![ابحث عن وحدات النشاط في صفحة المكونات الإضافية لـ Moodle](../assets/images/integrations/moodle/admin-02-plugins.png)
+![ابحث عن وحدات النشاط في صفحة المكونات الإضافية لـ Moodle](../assets/images/integrations/moodle/admin-02-plugins.webp)
 
 في صفحة إعدادات الأداة الخارجية، حدد **إدارة الأدوات**.
 
-![افتح إدارة الأدوات من إعدادات الأداة الخارجية Moodle](../assets/images/integrations/moodle/admin-03-external-tool-menu.png)
+![افتح إدارة الأدوات من إعدادات الأداة الخارجية Moodle](../assets/images/integrations/moodle/admin-03-external-tool-menu.webp)
 
 حدد **تكوين أداة يدويًا**. إذا كانت هناك أداة examina.io أخرى بالفعل
 موجود، قم بتحريره بدلاً من إنشاء نسخة مكررة.
 
-![اختر تكوين أداة يدويًا في صفحة أدوات إدارة Moodle](../assets/images/integrations/moodle/admin-04-manage-tools.png)
+![اختر تكوين أداة يدويًا في صفحة أدوات إدارة Moodle](../assets/images/integrations/moodle/admin-04-manage-tools.webp)
 
 أكمل نموذج الأداة:
 
@@ -112,7 +112,7 @@ translation_source_sha256: dd7c24259f01e8432c23a5521cccb6d9170133e6628f1262dc730
 9. احتفظ بالأداة مخفية عن منتقي النشاط حتى يتم التكوين
    كاملة، ثم احفظها.
 
-![أدخل نقاط النهاية examina.io العامة في Moodle](../assets/images/integrations/moodle/admin-05-production-endpoints.png)
+![أدخل نقاط النهاية examina.io العامة في Moodle](../assets/images/integrations/moodle/admin-05-production-endpoints.webp)
 
 !!! warning "تعد قيمة JWKS الموجودة في لقطة الشاشة مثالاً على ذلك"
     `your-registration-id` هو عنصر نائب، وليس قيمة لنسخها. بعدك
@@ -158,7 +158,7 @@ translation_source_sha256: dd7c24259f01e8432c23a5521cccb6d9170133e6628f1262dc730
      ذلك.
 7. حدد **حفظ التسجيل**.
 
-![إضافة تسجيل Moodle LTI 1.3 في examina.io](../assets/images/integrations/moodle/01-examina-add-moodle-registration.png)
+![إضافة تسجيل Moodle LTI 1.3 في examina.io](../assets/images/integrations/moodle/01-examina-add-moodle-registration.webp)
 
 تعرض بطاقة التسجيل المحفوظة **بدء تسجيل الدخول OIDC**، **LTI بالضبط**
 الإطلاق**، **الربط العميق**، والتسجيل الخاص **مجموعة المفاتيح العامة (JWKS)**
@@ -189,14 +189,14 @@ translation_source_sha256: dd7c24259f01e8432c23a5521cccb6d9170133e6628f1262dc730
 - استخدم **تضمين** كحاوية التشغيل الافتراضية إذا كنت تريد إجراء التقييم
   البقاء داخل صفحة الدورة التدريبية Moodle.
 
-![تمكين خدمات التقدير والقائمة Moodle مع تقييد بيانات الهوية المشتركة](../assets/images/integrations/moodle/admin-06-services-privacy.png)
+![تمكين خدمات التقدير والقائمة Moodle مع تقييد بيانات الهوية المشتركة](../assets/images/integrations/moodle/admin-06-services-privacy.webp)
 
 تعد مشاركة اسم العرض أو عنوان البريد الإلكتروني Moodle أمرًا اختياريًا. يمكن لـ examina.io رسم خريطة
 متعلم LTI يستخدم معرف الموضوع المستعار الخاص بالمنصة. تمكين
 حقول ملف التعريف الإضافية فقط عندما يكون لدى مؤسستك حاجة موثقة و
 الأساس القانوني لمشاركتها.
 
-![أداة Moodle النشطة باستخدام إطلاق examina.io URL](../assets/images/integrations/moodle/02-moodle-manage-tools.png)
+![أداة Moodle النشطة باستخدام إطلاق examina.io URL](../assets/images/integrations/moodle/02-moodle-manage-tools.webp)
 
 ارجع إلى examina.io وقم بتنشيط التسجيل. موقوفة أو ملغاة
 لا يمكن للتسجيل قبول عمليات الإطلاق الجديدة.
@@ -212,13 +212,13 @@ translation_source_sha256: dd7c24259f01e8432c23a5521cccb6d9170133e6628f1262dc730
 4. أدخل اسم النشاط الذي يواجه المتعلم.
 5. حدد **تحديد المحتوى**.
 
-![قم بتكوين نشاط أداة خارجية في دورة Moodle](../assets/images/integrations/moodle/02-moodle-external-tool-settings.png)
+![قم بتكوين نشاط أداة خارجية في دورة Moodle](../assets/images/integrations/moodle/02-moodle-external-tool-settings.webp)
 
 يفتح examina.io قائمة بالتقييمات المنشورة التي قد يستخدمها المعلم.
 اختر التقييم المقصود وأكد الاختيار. في هذا المثال،
 يختار المعلم **بنية الخلية ووظيفتها** في **مقدمة في علم الأحياء**.
 
-![حدد تقييم examina.io المنشور من Moodle](../assets/images/integrations/moodle/03-select-published-exam.png)
+![حدد تقييم examina.io المنشور من Moodle](../assets/images/integrations/moodle/03-select-published-exam.webp)
 
 احفظ النشاط وافتحه مرة واحدة كمعلم. تأكيد أن النشاط
 يظهر عنوان التقييم الصحيح ولا يطالب بفصله
@@ -233,7 +233,7 @@ examina.io اسم المستخدم وكلمة المرور.
 3. التأكد من فتح الإمتحان المتوقع داخل Moodle.
 4. أكمل التقييم وأرسله.
 
-![تقييم الأحياء المدعوم من المصدر مفتوح داخل Moodle](../assets/images/integrations/moodle/04-learner-embedded-assessment.png)
+![تقييم الأحياء المدعوم من المصدر مفتوح داخل Moodle](../assets/images/integrations/moodle/04-learner-embedded-assessment.webp)
 
 هوية Moodle للمتعلم، والدورة، وموضع النشاط، والمحدد
 يتم التحقق من التقييم المنشور أثناء إطلاق LTI. تم نسخ عنوان URL من a
@@ -244,7 +244,7 @@ examina.io اسم المستخدم وكلمة المرور.
 بعد إرسال المتعلم، افتح **الدرجات → تقرير المصنف** في Moodle. تأكيد
 أن تظهر النتيجة تحت النشاط الصحيح والمتعلم.
 
-![نتيجة examina.io المقدمة في دفتر العلامات Moodle](../assets/images/integrations/moodle/05-moodle-gradebook-result.png)
+![نتيجة examina.io المقدمة في دفتر العلامات Moodle](../assets/images/integrations/moodle/05-moodle-gradebook-result.webp)
 
 يتم وضع تسليم الدرجات في قائمة الانتظار بشكل منفصل عن تقديم الاختبار بحيث يكون مؤقتًا
 لا يؤدي انقطاع Moodle إلى تحويل التقييم المكتمل إلى إرسال فاشل.

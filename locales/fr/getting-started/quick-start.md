@@ -23,7 +23,7 @@ Depuis **Accueil**, vérifiez que les personnes qui préparent l'évaluation ont
 [rôles de compte](roles-and-permissions.md). Utilisez **Utilisateurs** pour ajouter des comptes de personnel
 et **Cercles** si l'accès doit être limité à des examens ou à des candidats particuliers.
 
-![La galerie d'applications examina.io après la connexion](../assets/images/dashboard/apps-gallery.png)
+![La galerie d'applications examina.io après la connexion](../assets/images/dashboard/apps-gallery.webp)
 
 ## 2. Créez le contenu de l'examen {#2-create-the-exam-content}
 

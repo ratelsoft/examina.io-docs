@@ -17,7 +17,7 @@ translation_source_sha256: 173ab50c30199eb9a9667889688609598592bbab3972eab3326f0
 Un **examiné** est un candidat qui passe un examen via le client.
 demande. Les candidats sont distincts du personnel **Utilisateurs**.
 
-![L'onglet Candidats](../../assets/images/manager/examinees-tab.png)
+![L'onglet Candidats](../../assets/images/manager/examinees-tab.webp)
 
 ## Ajouter un candidat {#add-one-examinee}
 
@@ -34,7 +34,7 @@ Le code identifie le candidat lors de la connexion et doit être unique. Un carr
 une photo d'environ 256 × 256 pixels fonctionne mieux lorsque votre flux de travail utilise le candidat
 images ou vérification d’identité.
 
-![Un dossier de candidat enregistré](../../assets/images/manager/examinee-details.png)
+![Un dossier de candidat enregistré](../../assets/images/manager/examinee-details.webp)
 
 ## Préparer un fichier d'importation {#prepare-an-import-file}
 

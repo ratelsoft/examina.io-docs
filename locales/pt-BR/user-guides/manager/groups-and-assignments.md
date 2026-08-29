@@ -30,7 +30,7 @@ Um Grupo não concede permissões de equipe. Use um [Circle](../administration/c
 4. Salve o Grupo.
 5. Selecione o Grupo e adicione candidatos da lista pesquisável.
 
-![Um Grupo e seus membros](../../assets/images/manager/group-details.png)
+![Um Grupo e seus membros](../../assets/images/manager/group-details.webp)
 
 Os botões ao lado da lista de membros cobrem todas as formas de preencher um Grupo: adicionar candidatos um por um, adicionar vários de uma vez, adicionar os candidatos correspondentes a um arquivo enviado ou copiar os membros de outro Grupo.
 
@@ -83,7 +83,7 @@ O horário de início mapeado opcional é o horário inicial em que o exame fica
 
 Antes de publicar um exame:
 
-![A lista de candidatos mapeados para um exame](../../assets/images/manager/exam-details.png)
+![A lista de candidatos mapeados para um exame](../../assets/images/manager/exam-details.webp)
 
 1. Abra a lista de candidatos mapeados do exame.
 2. Compare a contagem com a lista de inscritos pretendida.

@@ -87,22 +87,22 @@ Connectez-vous avec un compte administrateur de compte racine Canvas. Sélection
 la navigation globale, puis choisissez le compte racine de votre institution. Si Canvas
 affiche d'abord la liste des comptes, sélectionnez le nom du compte racine.
 
-![Sélectionnez le compte racine Canvas de l'institution](../assets/images/integrations/canvas/admin-01-accounts.png)
+![Sélectionnez le compte racine Canvas de l'institution](../assets/images/integrations/canvas/admin-01-accounts.webp)
 
 La navigation dans le compte doit inclure les **clés de développeur** et les **applications**. Si soit
 l'élément est manquant, votre rôle Canvas ne dispose pas du compte root requis
 autorisation ; demandez à l'administrateur Canvas de l'établissement d'effectuer cette configuration.
 
-![Ouvrir les clés de développeur à partir de la navigation du compte racine Canvas](../assets/images/integrations/canvas/admin-02-root-account.png)
+![Ouvrir les clés de développeur à partir de la navigation du compte racine Canvas](../assets/images/integrations/canvas/admin-02-root-account.webp)
 
 Ouvrez **Clés de développeur**, puis sélectionnez **+ Clé de développeur**.
 
-![Ouvrez la page des clés de développeur Canvas](../assets/images/integrations/canvas/admin-03-developer-keys.png)
+![Ouvrez la page des clés de développeur Canvas](../assets/images/integrations/canvas/admin-03-developer-keys.webp)
 
 Choisissez **Clé LTI**. Canvas peut également afficher **Inscription LTI** ; utilise cette option
 uniquement lorsque examina.io a fourni une URL d'enregistrement dynamique unique.
 
-![Choisissez la clé LTI dans le menu Clé du développeur Canvas](../assets/images/integrations/canvas/admin-04-create-lti-key.png)
+![Choisissez la clé LTI dans le menu Clé du développeur Canvas](../assets/images/integrations/canvas/admin-04-create-lti-key.webp)
 
 Choisissez **Saisie manuelle**, puis complétez les paramètres clés :
 
@@ -117,7 +117,7 @@ Choisissez **Saisie manuelle**, puis complétez les paramètres clés :
 6. Définissez la **Méthode JWK** sur **URL JWK publique** et entrez le jeu de clés provisoire.
    URL décrite ci-dessus.
 
-![Entrez les URL publiques examina.io dans une clé Canvas LTI](../assets/images/integrations/canvas/admin-05-lti-key-settings.png)
+![Entrez les URL publiques examina.io dans une clé Canvas LTI](../assets/images/integrations/canvas/admin-05-lti-key-settings.webp)
 
 !!! warning "La valeur JWKS est spécifique à l'enregistrement"
     Si vous utilisez `https://www.examina.io/lti/jwks/your-registration-id` pendant
@@ -138,12 +138,12 @@ Les quatre premiers niveaux de support reviennent via AGS. La portée finale pre
 liste de cours NRPS en option ; laissez-le désactivé lorsque vous n'avez pas besoin de la liste
 accès.
 
-![Sélectionnez les oscilloscopes Canvas AGS et NRPS en option](../assets/images/integrations/canvas/admin-06-lti-services.png)
+![Sélectionnez les oscilloscopes Canvas AGS et NRPS en option](../assets/images/integrations/canvas/admin-06-lti-services.webp)
 
 Sous **Emplacements**, ajoutez **Sélection d'affectation**. Ajouter **Navigation du cours**
 uniquement si votre établissement souhaite également un point d’entrée examina.io au niveau du cours.
 
-![Ajouter une sélection de devoirs et des placements facultatifs de navigation dans les cours](../assets/images/integrations/canvas/admin-07-placements.png)
+![Ajouter une sélection de devoirs et des placements facultatifs de navigation dans les cours](../assets/images/integrations/canvas/admin-07-placements.webp)
 
 Enregistrez la clé, copiez son **ID client** et conservez la clé **Désactivée**. Ouvrir **Admin →
 votre compte root → Applications → Gérer**, installez l'application à l'aide de l'ID client et
@@ -182,7 +182,7 @@ Point de terminaison générique OAuth JWKS de Canvas dans le champ des clés pu
    approuvé et accordé.
 7. Sélectionnez **Enregistrer l'enregistrement**.
 
-![Ajouter un enregistrement Canvas LTI 1.3 dans examina.io](../assets/images/integrations/canvas/01-examina-add-canvas-registration.png)
+![Ajouter un enregistrement Canvas LTI 1.3 dans examina.io](../assets/images/integrations/canvas/01-examina-add-canvas-registration.webp)
 
 La carte enregistrée affiche l'**initiation de connexion OIDC exacte**, le **lancement LTI**,
 **Deep Linking** et URL **Ensemble de clés publiques (JWKS)** spécifiques à l'enregistrement.
@@ -216,14 +216,14 @@ Logo examina.io en Canvas. Si une installation existante affiche toujours le nom
 icône d'outil externe générique, mettez à jour la clé de développeur avec cette valeur et
 actualisez ou réinstallez l'application pour que Canvas recharge ses métadonnées d'enregistrement.
 
-![Confirmez que les évaluations examina.io sont activées et à jour dans les applications Canvas](../assets/images/integrations/canvas/admin-08-apps-manage.png).
+![Confirmez que les évaluations examina.io sont activées et à jour dans les applications Canvas](../assets/images/integrations/canvas/admin-08-apps-manage.webp).
 
 Si l'application affiche **Non disponible**, ouvrez son paramètre de disponibilité, choisissez le
 compte root ou un sous-compte approuvé, sélectionnez **Disponible** et enregistrez. Limite
 disponibilité pour les institutions, sous-comptes ou cours approuvés pour le
 intégration.
 
-![Rendre l'application Canvas disponible pour le compte approuvé](../assets/images/integrations/canvas/admin-09-availability.png)
+![Rendre l'application Canvas disponible pour le compte approuvé](../assets/images/integrations/canvas/admin-09-availability.webp)
 
 Retournez à examina.io et activez l'enregistrement. Un suspendu ou révoqué
 l'inscription ne peut pas accepter de nouveaux lancements.
@@ -238,12 +238,12 @@ En tant que moniteur dans le cours de destination :
 4. Sélectionnez **Rechercher**, puis choisissez **Ajouter une évaluation examina.io**.
 5. Sélectionnez l'examen publié souhaité et choisissez **Ajouter l'examen sélectionné**.
 
-![Choisissez une évaluation examina.io publiée dans Canvas](../assets/images/integrations/canvas/04-canvas-select-published-exam.png)
+![Choisissez une évaluation examina.io publiée dans Canvas](../assets/images/integrations/canvas/04-canvas-select-published-exam.webp)
 
 Canvas revient au formulaire d'affectation avec l'URL de lancement sélectionnée. Confirmer
 le nom de l'affectation, les points, l'accès à l'affectation, les dates et la politique de tentative.
 
-![Une affectation d'outil externe Canvas utilisant l'URL de lancement de production examina.io](../assets/images/integrations/canvas/05-canvas-assignment-settings.png)
+![Une affectation d'outil externe Canvas utilisant l'URL de lancement de production examina.io](../assets/images/integrations/canvas/05-canvas-assignment-settings.webp)
 
 Choisissez **Enregistrer et publier**, puis ouvrez le devoir une fois en tant qu'instructeur.
 Confirmez que l'évaluation attendue apparaît et que Canvas ne vous invite pas
@@ -258,7 +258,7 @@ Utilisez un apprenant fictif inscrit au cours :
 3. Confirmez que l'examen attendu s'ouvre dans le devoir Canvas.
 4. Commencez, complétez et soumettez l’évaluation.
 
-![Une évaluation examina.io publiée intégrée dans un devoir Canvas](../assets/images/integrations/canvas/06-canvas-learner-assessment.png)
+![Une évaluation examina.io publiée intégrée dans un devoir Canvas](../assets/images/integrations/canvas/06-canvas-learner-assessment.webp)
 
 Le lancement LTI vérifie la plate-forme Canvas, le déploiement, le cours, l'affectation,
 apprenant et publication sélectionnée. Une URL de lancement copiée ne remplace pas
@@ -270,7 +270,7 @@ Après la soumission, ouvrez la vue des notes Canvas en tant qu'apprenant ou Car
 en tant qu'instructeur. Confirmez que le résultat apparaît pour l'affectation correcte
 et l'apprenant.
 
-![L'évaluation examina.io terminée a été renvoyée dans le carnet de notes Canvas](../assets/images/integrations/canvas/07-canvas-grade-return.png)
+![L'évaluation examina.io terminée a été renvoyée dans le carnet de notes Canvas](../assets/images/integrations/canvas/07-canvas-grade-return.webp)
 
 La remise des notes est mise en file d'attente séparément de la soumission de l'examen, donc un délai temporaire
 La panne Canvas ne transforme pas une évaluation terminée en un échec de soumission.

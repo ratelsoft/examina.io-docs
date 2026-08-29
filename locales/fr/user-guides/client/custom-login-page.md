@@ -28,9 +28,9 @@ Le client propose trois styles :
 Par défaut, prend en charge la personnalisation spécifique aux examens créée dans Designer. Moderne et classique
 utilisez le logo et l’image d’arrière-plan de l’organisation.
 
-![Le style de connexion Client moderne avec la marque de l'organisation](../../assets/images/custom-login-page/modern_login_page.jpg)
+![Le style de connexion Client moderne avec la marque de l'organisation](../../assets/images/custom-login-page/modern_login_page.webp)
 
-![Le style de connexion Client Classique avec la même marque](../../assets/images/custom-login-page/classic_login_page.jpg)
+![Le style de connexion Client Classique avec la même marque](../../assets/images/custom-login-page/classic_login_page.webp)
 
 Classic applique un traitement visuel sur l'arrière-plan pour préserver le contraste
 autour des champs de connexion. Vérifiez l'image finale dans les deux styles plutôt que
@@ -44,7 +44,7 @@ en supposant qu'ils seront identiques.
 4. Choisissez un fichier JPG, GIF ou PNG ne dépassant pas 512 Ko.
 5. Attendez la fin du téléchargement.
 
-![Modifier le logo de l'organisation depuis Settings](../../assets/images/custom-login-page/change_logo.png)
+![Modifier le logo de l'organisation depuis Settings](../../assets/images/custom-login-page/change_logo.webp)
 
 Si aucun logo n'est défini, le nom de l'organisation peut apparaître à sa place. Utiliser un logo
 avec un rembourrage clair et suffisamment de contraste pour la lumière et la photographie
@@ -67,7 +67,7 @@ exécuter un examen actif avant de changer de style.
    la limite de taille de fichier affichée.
 4. Attendez la fin du téléchargement.
 
-![Sélectionnez le style de connexion et l'image d'arrière-plan dans Paramètres](../../assets/images/custom-login-page/change_style.png)
+![Sélectionnez le style de connexion et l'image d'arrière-plan dans Paramètres](../../assets/images/custom-login-page/change_style.webp)
 
 Moderne et Classique peuvent utiliser un arrière-plan fourni lorsqu'aucune image personnalisée n'est définie.
 Sélectionnez le petit aperçu pour inspecter l’arrière-plan actuel dans une taille plus grande.

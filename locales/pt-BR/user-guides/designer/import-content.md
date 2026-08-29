@@ -25,13 +25,13 @@ Um arquivo de projeto `.smexproj` e um exame exportado `.smex` são lidos direta
 
 A Etapa 1 solicita o arquivo. Documentos seguem para a etapa 2; qualquer outro arquivo vai para a etapa 3.
 
-![Etapa 1 do assistente de importação, com o seletor de arquivos e os tipos de arquivos aceitos](../../assets/images/designer/import-choose-file.png)
+![Etapa 1 do assistente de importação, com o seletor de arquivos e os tipos de arquivos aceitos](../../assets/images/designer/import-choose-file.webp)
 
 ## Informe ao Designer onde cada questão começa
 
 A etapa 2 aparece apenas para documentos. Escolha o marcador que inicia cada questão no seu arquivo: `1.`, `Q1.`, `Q1` em uma linha própria ou `Q.`. Nada fica pré-selecionado, portanto escolha a opção correspondente ao seu documento. Abra **O que mais posso colocar no meu documento?** para consultar as tags, cada uma no início de uma linha.
 
-![Etapa 2 com as opções de marcador de questão e o painel de tags aberto](../../assets/images/designer/import-question-markers.png)
+![Etapa 2 com as opções de marcador de questão e o painel de tags aberto](../../assets/images/designer/import-question-markers.webp)
 
 ### Tags
 
@@ -79,7 +79,7 @@ A etapa 3 mostra o que o Designer encontrou em uma árvore Exame → Prova → Q
 
 Apenas os níveis permitidos pelo seu ponto de entrada podem ser marcados: importar provas permite marcar provas e questões, mas não exames; importar questões permite marcar apenas questões.
 
-![Etapa 3 com a árvore de conteúdo marcada à esquerda e a pré-visualização de uma questão à direita](../../assets/images/designer/import-select-content.png)
+![Etapa 3 com a árvore de conteúdo marcada à esquerda e a pré-visualização de uma questão à direita](../../assets/images/designer/import-select-content.webp)
 
 As imagens dentro de um arquivo `.docx` são importadas junto com suas questões; qualquer imagem grande demais ou em um formato que o Designer não consiga exibir é ignorada, contada e informada ao término da importação. O conteúdo importado torna-se conteúdo comum do Designer, portanto pré-visualize-o, defina pontuações e seções e salve o projeto.
 
@@ -94,6 +94,6 @@ As imagens dentro de um arquivo `.docx` são importadas junto com suas questões
 
 O login não é armazenado. O Designer solicitará o login novamente em uma nova sessão.
 
-![A caixa de diálogo Baixar Questões solicitando login na conta Ratelsoft](../../assets/images/designer/import-download-questions.png)
+![A caixa de diálogo Baixar Questões solicitando login na conta Ratelsoft](../../assets/images/designer/import-download-questions.webp)
 
 Para copiar conteúdo dentro do projeto aberto, consulte [Reutilizar conteúdo do projeto](importing-questions.md).

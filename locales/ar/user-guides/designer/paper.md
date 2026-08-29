@@ -26,7 +26,7 @@ translation_source_sha256: 307977844c66c2b373aa10eafdfcf80aba0eabf5a946b9051fca0
 
 يجب أن تكون عناوين الأوراق فريدة داخل الامتحان.
 
-![ورقة بحثية مختارة في Exam Explorer، مع أسئلتها مدرجة أسفلها](../../assets/images/designer/paper-in-explorer.png)
+![ورقة بحثية مختارة في Exam Explorer، مع أسئلتها مدرجة أسفلها](../../assets/images/designer/paper-in-explorer.webp)
 
 ## خصائص الورق {#paper-properties}
 

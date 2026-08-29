@@ -100,7 +100,7 @@ translation_source_sha256: 422e41fc1c98d41eb579d211afea9c788d3da4fb8a73e1d7ff0bb
 يجب أن يظهر Ultra **Available**، بجانب Moodle وCanvas. حدد **إضافة
 التسجيل ** من هذه المنطقة للبدء.
 
-![افتح منطقة تكامل LMS في إعدادات examina.io](../assets/images/integrations/blackboard/01-examina-lti-settings.png)
+![افتح منطقة تكامل LMS في إعدادات examina.io](../assets/images/integrations/blackboard/01-examina-lti-settings.webp)
 
 أبقِ النموذج مفتوحًا. يحتاج Blackboard إلى معرف التطبيق قبل أن يتمكن من الإنشاء
 معرف النشر الخاص بالمؤسسة الذي يكمل هذا التسجيل.
@@ -113,21 +113,21 @@ translation_source_sha256: 422e41fc1c98d41eb579d211afea9c788d3da4fb8a73e1d7ff0bb
    المشرف**; في التجربة الأصلية، افتح **لوحة الإدارة**.
 2. ابحث عن قسم **عمليات التكامل** وحدد **LTI Tool Providers**.
 
-![افتح موفري الأدوات LTI من قسم عمليات التكامل في أدوات المسؤول Blackboard](../assets/images/integrations/blackboard/02-blackboard-admin-integrations.png)
+![افتح موفري الأدوات LTI من قسم عمليات التكامل في أدوات المسؤول Blackboard](../assets/images/integrations/blackboard/02-blackboard-admin-integrations.webp)
 
 3. حدد **تسجيل LTI 1.3/أداة المزايا**.
 
-![اختر تسجيل LTI 1.3/أداة الميزة](../assets/images/integrations/blackboard/03-blackboard-lti-providers.png)
+![اختر تسجيل LTI 1.3/أداة الميزة](../assets/images/integrations/blackboard/03-blackboard-lti-providers.webp)
 
 4. أدخل **معرف تطبيق Examina**، ثم حدد **إرسال**.
 
-![أدخل معرف تطبيق Examina في Blackboard](../assets/images/integrations/blackboard/04-blackboard-register-application-id.png)
+![أدخل معرف تطبيق Examina في Blackboard](../assets/images/integrations/blackboard/04-blackboard-register-application-id.webp)
 
 5. قم بمراجعة اسم الأداة المستوردة والمجال وعنوان URL للمفتاح العام وعناوين URL لإعادة التوجيه و
    التنسيب المُدار.
 6. اضبط **حالة الأداة** على **موافق عليها**.
 
-![مراجعة مجالات إنتاج Examina والموافقة على الأداة](../assets/images/integrations/blackboard/05-blackboard-approve-tool.png)
+![مراجعة مجالات إنتاج Examina والموافقة على الأداة](../assets/images/integrations/blackboard/05-blackboard-approve-tool.webp)
 
 7. ضمن مشاركة بيانات المستخدم، قم بالموافقة على البيانات التي تسمح بها مؤسستك:
    **الاسم** و**البريد الإلكتروني** و**الدور**.
@@ -137,7 +137,7 @@ translation_source_sha256: 422e41fc1c98d41eb579d211afea9c788d3da4fb8a73e1d7ff0bb
    مطلوب من خلال NRPS.
 10. حدد **إرسال**.
 
-![الموافقة على حقول المتعلم وخدمة التقدير وخدمة العضوية الاختيارية](../assets/images/integrations/blackboard/06-blackboard-institution-policies.png)
+![الموافقة على حقول المتعلم وخدمة التقدير وخدمة العضوية الاختيارية](../assets/images/integrations/blackboard/06-blackboard-institution-policies.webp)
 
 !!! note "يتم التحكم بالأذونات بواسطة مسؤول النظام"
     إذا لم يكن **مسؤول النظام** مرئيًا في شريط التنقل الرئيسي Blackboard، فسيتم
@@ -164,7 +164,7 @@ translation_source_sha256: 422e41fc1c98d41eb579d211afea9c788d3da4fb8a73e1d7ff0bb
 أداة LTI 1.3 معتمدة. تعتمد حقول البيانات الدقيقة وعدد المواضع على ذلك
 على الأذونات والمواضع التي وافقت عليها مؤسستك.
 
-![تم تثبيت Examina كأداة Blackboard LTI 1.3 المعتمدة](../assets/images/integrations/blackboard/07-blackboard-installed-tool.png)
+![تم تثبيت Examina كأداة Blackboard LTI 1.3 المعتمدة](../assets/images/integrations/blackboard/07-blackboard-installed-tool.webp)
 
 ## 4. قم بإنهاء التسجيل في examina.io {#4-finish-the-registration-in-examinaio}
 
@@ -229,7 +229,7 @@ translation_source_sha256: 422e41fc1c98d41eb579d211afea9c788d3da4fb8a73e1d7ff0bb
 موضع منفصل مع توفر مختلف. يمكن إجراء موضع مكرر
 ليس من الواضح ما هو التسجيل الذي يطلقه المدرب.
 
-![تأكيد موضع الارتباط العميق لتقييمات examina.io](../assets/images/integrations/blackboard/08-blackboard-manage-placement.png)
+![تأكيد موضع الارتباط العميق لتقييمات examina.io](../assets/images/integrations/blackboard/08-blackboard-manage-placement.webp)
 
 ## 6. قم بإضافة اختبار منشور إلى مقرر Ultra الدراسي {#6-add-a-published-exam-to-an-ultra-course}
 
@@ -240,18 +240,18 @@ translation_source_sha256: 422e41fc1c98d41eb579d211afea9c788d3da4fb8a73e1d7ff0bb
 3. اختر **سوق المحتوى**.
 4. ابحث عن **تقييمات examina.io** ضمن **أدوات المؤسسة** وحدده.
 
-![افتح تقييمات examina.io من سوق المحتوى الفائق Blackboard](../assets/images/integrations/blackboard-content-market.png)
+![افتح تقييمات examina.io من سوق المحتوى الفائق Blackboard](../assets/images/integrations/blackboard-content-market.webp)
 
 يتم فتح المنتقي examina.io داخل Blackboard. اختر **الكيمياء العامة
 الأساسيات**، ثم اختر **إضافة الاختبار المحدد**.
 
-![اختر امتحان أساسيات الكيمياء العامة المنشور ](../assets/images/integrations/blackboard-select-exam.png)
+![اختر امتحان أساسيات الكيمياء العامة المنشور ](../assets/images/integrations/blackboard-select-exam.webp)
 
 يعود Blackboard إلى المقرر الدراسي ويقوم بإنشاء عنصر محتوى التقييم.
 قم بتأكيد الاسم المواجه للمتعلم، وإمكانية الرؤية، وتاريخ الاستحقاق، والحد الأقصى للنقاط، و
 تجربة السياسة، ثم جعلها مرئية للمتعلمين.
 
-![تم إضافة أساسيات الكيمياء العامة إلى محتوى الدورة Blackboard](../assets/images/integrations/blackboard-course-assessment.png)
+![تم إضافة أساسيات الكيمياء العامة إلى محتوى الدورة Blackboard](../assets/images/integrations/blackboard-course-assessment.webp)
 
 افتح العنصر مرة واحدة كمدرس وتأكد من نشر المقصود
 يظهر الامتحان. إذا تم تحديد اختبار خاطئ، قم بإزالة عنصر المحتوى واستخدامه
@@ -268,7 +268,7 @@ translation_source_sha256: 422e41fc1c98d41eb579d211afea9c788d3da4fb8a73e1d7ff0bb
    تسجيل الدخول examina.io.
 4. ابدأ التقييم وأكمله وأرسله.
 
-![أساسيات الكيمياء العامة مفتوحة للمتعلم في Blackboard Ultra](../assets/images/integrations/blackboard-learner-assessment.png)
+![أساسيات الكيمياء العامة مفتوحة للمتعلم في Blackboard Ultra](../assets/images/integrations/blackboard-learner-assessment.webp)
 
 يتحقق إطلاق LTI من منصة Blackboard، ومعرف النشر، والدورة التدريبية،
 عنصر المحتوى، والمتعلم، والنشر المحدد. عنوان URL المنسوخ للإطلاق ليس ملفًا
@@ -281,7 +281,7 @@ translation_source_sha256: 422e41fc1c98d41eb579d211afea9c788d3da4fb8a73e1d7ff0bb
 عنصر دفتر التقديرات الصحيح. ويمكن للمتعلم أيضا مراجعة النتيجة من الدورة
 عرض الدرجات.
 
-![تم إرجاع نتيجة examina.io المقدمة إلى دفتر العلامات Blackboard](../assets/images/integrations/blackboard-gradebook.png)
+![تم إرجاع نتيجة examina.io المقدمة إلى دفتر العلامات Blackboard](../assets/images/integrations/blackboard-gradebook.webp)
 
 يتم وضع تسليم الدرجات في قائمة الانتظار بشكل منفصل عن تقديم الاختبار، لذا فهو مؤقت
 لا يؤدي انقطاع Blackboard إلى تحويل التقييم المكتمل إلى تقييم فاشل

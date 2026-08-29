@@ -56,19 +56,19 @@ O Canvas cria um **Client ID** e um **Deployment ID** que o examina.io precisa. 
 
 Faça login com uma conta de administrador da conta raiz do Canvas. Selecione **Admin** na navegação global e escolha a conta raiz da sua instituição. Se o Canvas mostrar primeiro a lista de contas, selecione o nome da conta raiz.
 
-![Selecione a conta raiz do Canvas da instituição](../assets/images/integrations/canvas/admin-01-accounts.png)
+![Selecione a conta raiz do Canvas da instituição](../assets/images/integrations/canvas/admin-01-accounts.webp)
 
 A navegação da conta deve incluir **Chaves de desenvolvedor** e **Aplicativos**. Se algum desses itens estiver ausente, sua função no Canvas não tem a permissão necessária na conta raiz; peça ao administrador do Canvas da instituição para realizar essa configuração.
 
-![Abra as Chaves de desenvolvedor na navegação da conta raiz do Canvas](../assets/images/integrations/canvas/admin-02-root-account.png)
+![Abra as Chaves de desenvolvedor na navegação da conta raiz do Canvas](../assets/images/integrations/canvas/admin-02-root-account.webp)
 
 Abra **Chaves de desenvolvedor** e selecione **+ Chave de desenvolvedor**.
 
-![Abra a página Chaves de desenvolvedor do Canvas](../assets/images/integrations/canvas/admin-03-developer-keys.png)
+![Abra a página Chaves de desenvolvedor do Canvas](../assets/images/integrations/canvas/admin-03-developer-keys.webp)
 
 Escolha **Chave LTI**. O Canvas também pode mostrar **Registro LTI**; use essa opção apenas quando o examina.io fornecer uma URL de Registro Dinâmico de uso único.
 
-![Escolha Chave LTI no menu Chave de desenvolvedor do Canvas](../assets/images/integrations/canvas/admin-04-create-lti-key.png)
+![Escolha Chave LTI no menu Chave de desenvolvedor do Canvas](../assets/images/integrations/canvas/admin-04-create-lti-key.webp)
 
 Escolha **Entrada manual** e conclua as configurações da chave:
 
@@ -79,7 +79,7 @@ Escolha **Entrada manual** e conclua as configurações da chave:
 5. Insira `https://www.examina.io/lti/login` como a **URL de inicialização do OpenID Connect**.
 6. Defina **Método JWK** como **URL do JWK público** e insira a URL do conjunto de chaves provisório descrita acima.
 
-![Insira as URLs públicas do examina.io em uma chave LTI do Canvas](../assets/images/integrations/canvas/admin-05-lti-key-settings.png)
+![Insira as URLs públicas do examina.io em uma chave LTI do Canvas](../assets/images/integrations/canvas/admin-05-lti-key-settings.webp)
 
 !!! warning "O valor do JWKS é específico para o registro"
 
@@ -95,11 +95,11 @@ Em **Serviços LTI Advantage**, ative apenas os cinco escopos necessários para 
 
 Os quatro primeiros oferecem suporte ao envio de notas por meio do AGS. O escopo final oferece suporte à lista de alunos do curso opcional do NRPS; mantenha-o desativado quando não precisar do acesso à lista.
 
-![Selecione os escopos de AGS e NRPS opcional do Canvas](../assets/images/integrations/canvas/admin-06-lti-services.png)
+![Selecione os escopos de AGS e NRPS opcional do Canvas](../assets/images/integrations/canvas/admin-06-lti-services.webp)
 
 Em **Posicionamentos**, adicione **Seleção de tarefas**. Adicione **Navegação do curso** apenas se a sua instituição também desejar um ponto de entrada do examina.io no nível do curso.
 
-![Adicione os posicionamentos Seleção de tarefas e Navegação do curso opcional](../assets/images/integrations/canvas/admin-07-placements.png)
+![Adicione os posicionamentos Seleção de tarefas e Navegação do curso opcional](../assets/images/integrations/canvas/admin-07-placements.webp)
 
 Salve a chave, copie seu **Client ID** e mantenha a chave **Desativada**. Abra **Admin → sua conta raiz → Aplicativos → Gerenciar**, instale o aplicativo usando o Client ID e copie seu **Deployment ID**.
 
@@ -129,7 +129,7 @@ Para o Canvas hospedado, substitua `<your-canvas-host>` pelo nome de host exato 
 6. Ative **Lista de alunos do curso (NRPS)** apenas se o escopo correspondente do Canvas foi aprovado e concedido.
 7. Selecione **Salvar registro**.
 
-![Adicione um registro do Canvas LTI 1.3 no examina.io](../assets/images/integrations/canvas/01-examina-add-canvas-registration.png)
+![Adicione um registro do Canvas LTI 1.3 no examina.io](../assets/images/integrations/canvas/01-examina-add-canvas-registration.webp)
 
 O cartão salvo exibe as URLs exatas de **Inicialização do login OIDC**, **Inicialização do LTI**, **Deep Linking** e do **Conjunto de chaves públicas (JWKS)** específico do registro. Mantenha esse cartão aberto para a próxima etapa.
 
@@ -153,11 +153,11 @@ Salve a chave e **Ative-a**. Em **Aplicativos → Gerenciar**, abra **examina.io
 
 A **URL do ícone da ferramenta** fornece aos instrutores e administradores um logotipo reconhecível do examina.io no Canvas. Se uma instalação existente ainda exibir o ícone genérico de ferramenta externa do Canvas, atualize a Chave de Desenvolvedor com este valor e atualize ou reinstale o aplicativo para que o Canvas recarregue seus metadados de registro.
 
-![Confirme se o examina.io Assessments está ativo e atualizado nos Aplicativos do Canvas](../assets/images/integrations/canvas/admin-08-apps-manage.png)
+![Confirme se o examina.io Assessments está ativo e atualizado nos Aplicativos do Canvas](../assets/images/integrations/canvas/admin-08-apps-manage.webp)
 
 Se o aplicativo mostrar **Indisponível**, abra a configuração de disponibilidade, escolha a conta raiz ou uma subconta aprovada, selecione **Disponível** e salve. Limite a disponibilidade às instituições, subcontas ou cursos aprovados para a integração.
 
-![Torne o aplicativo do Canvas disponível para a conta aprovada](../assets/images/integrations/canvas/admin-09-availability.png)
+![Torne o aplicativo do Canvas disponível para a conta aprovada](../assets/images/integrations/canvas/admin-09-availability.webp)
 
 Retorne ao examina.io e ative o registro. Um registro suspenso ou revogado não pode aceitar novas inicializações.
 
@@ -171,11 +171,11 @@ Como instrutor no curso de destino:
 4. Selecione **Localizar** e escolha **Adicionar uma avaliação do examina.io**.
 5. Selecione o exame publicado pretendido e escolha **Adicionar exame selecionado**.
 
-![Escolha uma avaliação publicada do examina.io no Canvas](../assets/images/integrations/canvas/04-canvas-select-published-exam.png)
+![Escolha uma avaliação publicada do examina.io no Canvas](../assets/images/integrations/canvas/04-canvas-select-published-exam.webp)
 
 O Canvas retorna ao formulário de tarefa com a URL de inicialização selecionada. Confirme o nome da tarefa, pontos, acesso à tarefa, datas e política de tentativas.
 
-![Uma tarefa de Ferramenta Externa do Canvas usando a URL de inicialização de produção do examina.io](../assets/images/integrations/canvas/05-canvas-assignment-settings.png)
+![Uma tarefa de Ferramenta Externa do Canvas usando a URL de inicialização de produção do examina.io](../assets/images/integrations/canvas/05-canvas-assignment-settings.webp)
 
 Escolha **Salvar e publicar** e abra a tarefa uma vez como instrutor. Confirme se a avaliação esperada aparece e se o Canvas não solicita um login separado no examina.io.
 
@@ -188,7 +188,7 @@ Use um aluno fictício matriculado no curso:
 3. Confirme se o exame esperado abre dentro da tarefa do Canvas.
 4. Inicie, conclua e envie a avaliação.
 
-![Uma avaliação publicada do examina.io incorporada em uma tarefa do Canvas](../assets/images/integrations/canvas/06-canvas-learner-assessment.png)
+![Uma avaliação publicada do examina.io incorporada em uma tarefa do Canvas](../assets/images/integrations/canvas/06-canvas-learner-assessment.webp)
 
 A inicialização do LTI verifica a plataforma do Canvas, a implantação, o curso, a tarefa, o aluno e a publicação selecionada. Uma URL de inicialização copiada não substitui a abertura da tarefa a partir do Canvas.
 
@@ -196,7 +196,7 @@ A inicialização do LTI verifica a plataforma do Canvas, a implantação, o cur
 
 Após o envio, abra a visualização de notas no Canvas como aluno ou o Livro de Notas como instrutor. Confirme se o resultado aparece para a tarefa e usuário corretos.
 
-![A avaliação concluída do examina.io enviada de volta ao livro de notas do Canvas](../assets/images/integrations/canvas/07-canvas-grade-return.png)
+![A avaliação concluída do examina.io enviada de volta ao livro de notas do Canvas](../assets/images/integrations/canvas/07-canvas-grade-return.webp)
 
 A entrega de notas é enfileirada separadamente do envio do exame, portanto, uma interrupção temporária do Canvas não transforma uma avaliação concluída em um envio com falha. A pontuação pode levar um curto período para aparecer. Atualize a visualização de notas antes de investigar um resultado ausente.
 

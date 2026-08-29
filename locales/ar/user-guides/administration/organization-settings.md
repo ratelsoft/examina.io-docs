@@ -18,7 +18,7 @@ translation_source_sha256: 551087143ecc0eaf4a63a442e2ff2f2373d7c666d9cd232732c01
 العلامات التجارية على مستوى المؤسسة، وتضمين المجالات، وبيانات اعتماد API، وتسليم خطاف الويب،
 ودعم اتصالات منصة التعلم.
 
-![إعدادات المؤسسة للمجالات والعلامات التجارية ومفاتيح API وخطاف الويب](../../assets/images/administration/organization-settings.png)
+![إعدادات المؤسسة للمجالات والعلامات التجارية ومفاتيح API وخطاف الويب](../../assets/images/administration/organization-settings.webp)
 
 ## مجالات التضمين المعتمدة {#approved-embed-domains}
 

@@ -54,19 +54,19 @@ Moodle crea el **Client ID** y el **Deployment ID** que examina.io necesita. A c
 
 Inicia sesión con una cuenta de administrador del sitio de Moodle y abre **Administración del sitio** en la navegación principal.
 
-![Abre Administración del sitio en Moodle](../assets/images/integrations/moodle/admin-01-site-administration.png)
+![Abre Administración del sitio en Moodle](../assets/images/integrations/moodle/admin-01-site-administration.webp)
 
 Selecciona la pestaña **Plugins**. En **Módulos de actividad**, selecciona **Herramienta externa**.
 
-![Encuentra Módulos de actividad en la página de Plugins de Moodle](../assets/images/integrations/moodle/admin-02-plugins.png)
+![Encuentra Módulos de actividad en la página de Plugins de Moodle](../assets/images/integrations/moodle/admin-02-plugins.webp)
 
 En la página de configuración de Herramienta externa, selecciona **Gestionar herramientas**.
 
-![Abre Gestionar herramientas desde la configuración de Herramienta externa de Moodle](../assets/images/integrations/moodle/admin-03-external-tool-menu.png)
+![Abre Gestionar herramientas desde la configuración de Herramienta externa de Moodle](../assets/images/integrations/moodle/admin-03-external-tool-menu.webp)
 
 Selecciona **Configurar una herramienta manualmente**. Si ya existe otra herramienta de examina.io, edítala en lugar de crear un duplicado.
 
-![Elige Configurar una herramienta manualmente en la página Gestionar herramientas de Moodle](../assets/images/integrations/moodle/admin-04-manage-tools.png)
+![Elige Configurar una herramienta manualmente en la página Gestionar herramientas de Moodle](../assets/images/integrations/moodle/admin-04-manage-tools.webp)
 
 Completa el formulario de la herramienta:
 
@@ -83,7 +83,7 @@ Completa el formulario de la herramienta:
    `https://www.examina.io/lti/deep-link` como la **Content selection URL**.
 9. Mantén la herramienta oculta en el selector de actividades hasta completar la configuración y, a continuación, guárdala.
 
-![Ingresa los puntos de enlace públicos de examina.io en Moodle](../assets/images/integrations/moodle/admin-05-production-endpoints.png)
+![Ingresa los puntos de enlace públicos de examina.io en Moodle](../assets/images/integrations/moodle/admin-05-production-endpoints.webp)
 
 !!! warning "El valor de JWKS de la captura de pantalla es un ejemplo"
 
@@ -123,7 +123,7 @@ Como usuario Root o Administrador de examina.io:
    - **Lista de participantes del curso (NRPS)** lee la lista de miembros del curso cuando tu flujo de trabajo lo requiera.
 7. Selecciona **Guardar registro**.
 
-![Agrega un registro de Moodle LTI 1.3 en examina.io](../assets/images/integrations/moodle/01-examina-add-moodle-registration.png)
+![Agrega un registro de Moodle LTI 1.3 en examina.io](../assets/images/integrations/moodle/01-examina-add-moodle-registration.webp)
 
 La tarjeta de registro guardada muestra los puntos de enlace exactos de **OIDC login initiation**, **LTI launch**, **Deep Linking** y el **Public key set (JWKS)** específico del registro. Mantén abierta la tarjeta para el siguiente paso.
 
@@ -147,11 +147,11 @@ Luego, configura los servicios y la privacidad de Moodle:
 - Pon la herramienta a disposición en el selector de actividades una vez completada la configuración de puntos de enlace y servicios.
 - Utiliza **Incrustar** como el contenedor de inicio predeterminado si deseas que la evaluación permanezca dentro de la página del curso de Moodle.
 
-![Habilita los servicios de calificaciones y lista de participantes de Moodle limitando los datos de identidad compartidos](../assets/images/integrations/moodle/admin-06-services-privacy.png)
+![Habilita los servicios de calificaciones y lista de participantes de Moodle limitando los datos de identidad compartidos](../assets/images/integrations/moodle/admin-06-services-privacy.webp)
 
 Compartir un nombre visible o una dirección de correo electrónico de Moodle es opcional. examina.io puede mapear a un estudiante de LTI mediante el identificador seudónimo del sujeto de la plataforma. Habilita campos de perfil adicionales solo cuando tu institución tenga una necesidad documentada y una base legal para compartirlos.
 
-![La herramienta activa de Moodle utilizando la URL de inicio en producción de examina.io](../assets/images/integrations/moodle/02-moodle-manage-tools.png)
+![La herramienta activa de Moodle utilizando la URL de inicio en producción de examina.io](../assets/images/integrations/moodle/02-moodle-manage-tools.webp)
 
 Vuelve a examina.io y activa el registro. Un registro suspendido o revocado no puede aceptar nuevos inicios.
 
@@ -165,11 +165,11 @@ Como profesor en el curso de destino:
 4. Ingresa el nombre de la actividad visible para los estudiantes.
 5. Selecciona **Seleccionar contenido**.
 
-![Configura una actividad de herramienta externa en un curso de Moodle](../assets/images/integrations/moodle/02-moodle-external-tool-settings.png)
+![Configura una actividad de herramienta externa en un curso de Moodle](../assets/images/integrations/moodle/02-moodle-external-tool-settings.webp)
 
 examina.io abre una lista de evaluaciones publicadas que el instructor puede usar. Elige la evaluación deseada y confirma la selección. En este ejemplo, el profesor elige **Cell Structure and Function** para **Introduction to Biology**.
 
-![Selecciona una evaluación publicada de examina.io desde Moodle](../assets/images/integrations/moodle/03-select-published-exam.png)
+![Selecciona una evaluación publicada de examina.io desde Moodle](../assets/images/integrations/moodle/03-select-published-exam.webp)
 
 Guarda la actividad y ábrela una vez como profesor. Confirma que la actividad muestre el título correcto de la evaluación y que no solicite un nombre de usuario ni una contraseña independientes para examina.io.
 
@@ -182,7 +182,7 @@ Utiliza a un estudiante ficticio inscrito en el curso para realizar la validaci�
 3. Confirma que el examen esperado se abra dentro de Moodle.
 4. Completa y envía la evaluación.
 
-![Una evaluación de biología respaldada por fuente abierta dentro de Moodle](../assets/images/integrations/moodle/04-learner-embedded-assessment.png)
+![Una evaluación de biología respaldada por fuente abierta dentro de Moodle](../assets/images/integrations/moodle/04-learner-embedded-assessment.webp)
 
 La identidad del estudiante en Moodle, el curso, la ubicación de la actividad y la evaluación publicada seleccionada se verifican durante el inicio de LTI. Una URL copiada de otro curso o entorno no sustituye este inicio.
 
@@ -190,7 +190,7 @@ La identidad del estudiante en Moodle, el curso, la ubicación de la actividad y
 
 Después de que el estudiante envíe la evaluación, abre **Calificaciones → Informe del calificador** en Moodle. Confirma que el resultado aparezca debajo de la actividad y el estudiante correctos.
 
-![El resultado enviado de examina.io en el libro de calificaciones de Moodle](../assets/images/integrations/moodle/05-moodle-gradebook-result.png)
+![El resultado enviado de examina.io en el libro de calificaciones de Moodle](../assets/images/integrations/moodle/05-moodle-gradebook-result.webp)
 
 El envío de calificaciones se coloca en cola por separado de la entrega del examen para que una interrupción temporal de Moodle no transforme una evaluación completada en una entrega fallida. Por lo tanto, el resultado puede tardar poco tiempo en aparecer. Actualiza el libro de calificaciones antes de investigar un resultado faltante.
 

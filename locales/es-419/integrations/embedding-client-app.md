@@ -22,7 +22,7 @@ Necesitas:
 
 Abre **Inicio → Configuración → Claves API y Webhook** y crea una **Clave pública de API**.
 
-![El área de claves API en la Configuración de la organización](../assets/images/embedding-client-app/api_section_1.jpg)
+![El área de claves API en la Configuración de la organización](../assets/images/embedding-client-app/api_section_1.webp)
 
 La incrustación simple utiliza solo la clave pública. No coloques la clave secreta de la API en el código del navegador.
 
@@ -37,7 +37,7 @@ En **Dominios y subdominios aprobados para la incrustación del widget Client**:
 
 Por ejemplo, ingresa `assessment.example.edu`, no `https://assessment.example.edu/exams`.
 
-![La lista de dominios aprobados para el widget Client](../assets/images/embedding-client-app/domain_section.jpg)
+![La lista de dominios aprobados para el widget Client](../assets/images/embedding-client-app/domain_section.webp)
 
 Para pruebas locales, agrega el nombre de host que realmente utilices, como `localhost` o `127.0.0.1`; no incluyas el puerto. Elimina los hosts de desarrollo después de hacer las pruebas. Evita permitir todos los dominios en producción.
 
@@ -68,7 +68,7 @@ Si la clave falta o no es válida, el script del widget no se cargará correctam
 
 En Manager, selecciona el examen y elige **Abrir enlace del examen**. Copia la URL.
 
-![Encuentra el enlace del examen en Manager](../assets/images/embedding-client-app/manager_exam_details.jpg)
+![Encuentra el enlace del examen en Manager](../assets/images/embedding-client-app/manager_exam_details.webp)
 
 Agrega el enlace con la clase `examina-io-client-widget`:
 

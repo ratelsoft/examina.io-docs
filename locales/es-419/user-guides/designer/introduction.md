@@ -12,7 +12,7 @@ Designer es el lugar donde se redactan los exámenes. Creas un **proyecto**, inc
 
 Designer se ejecuta en el navegador y no requiere instalar nada.
 
-![El espacio de trabajo de Designer sin ningún proyecto abierto](../../assets/images/designer/workspace-empty.png)
+![El espacio de trabajo de Designer sin ningún proyecto abierto](../../assets/images/designer/workspace-empty.webp)
 
 ## El espacio de trabajo
 
@@ -45,7 +45,7 @@ Conserva el proyecto. Si lo pierdes y solo te quedas con el examen exportado, pe
 3. Selecciona ese examen en Exam Explorer para completar sus detalles.
 4. Elige **Archivo → Guardar proyecto** y guarda el archivo `.smexproj` en un lugar seguro.
 
-![El menú Archivo](../../assets/images/designer/file-menu.png)
+![El menú Archivo](../../assets/images/designer/file-menu.webp)
 
 Observa qué elementos están desactivados en gris y cómo se activan en dos etapas. **Guardar proyecto**, **Guardar proyecto como...** y **Nuevo examen** estarán disponibles una vez que haya un proyecto abierto. Las dos acciones de exportación permanecerán deshabilitadas hasta que **selecciones un examen** en Exam Explorer, ya que Designer exporta un examen a la vez y necesita saber cuál. Que el menú Archivo esté lleno de texto en gris no es un error: por lo general, significa que aún no has seleccionado nada.
 
@@ -58,7 +58,7 @@ Observa qué elementos están desactivados en gris y cómo se activan en dos eta
 
     Exporta el examen desde la versión que lo creó o pídele a quien te lo envió que lo guarde desde una versión compatible.
 
-![El proyecto de muestra abierto con su examen en Exam Explorer](../../assets/images/designer/project-loaded.png)
+![El proyecto de muestra abierto con su examen en Exam Explorer](../../assets/images/designer/project-loaded.webp)
 
 Las capturas de pantalla de estas páginas utilizan un solo ejemplo de referencia: un proyecto llamado **Northgate Entrance Exam 2026** que contiene un único examen, *Northgate Entrance Examination*, dividido en seis cuadernillos.
 

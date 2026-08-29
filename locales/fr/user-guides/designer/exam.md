@@ -18,7 +18,7 @@ Sélectionnez un examen dans Exam Explorer et le volet d'édition affiche tout c
 s'applique à l'examen dans son ensemble. La majeure partie est visible par le candidat.
 cela vaut la peine d'être délibéré ici plutôt que de le remplir pour passer l'écran.
 
-![Propriétés et paramètres de l'examen](../../assets/images/designer/exam-properties.png)
+![Propriétés et paramètres de l'examen](../../assets/images/designer/exam-properties.webp)
 
 ## Titre de l'examen {#exam-title}
 

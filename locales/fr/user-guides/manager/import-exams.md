@@ -32,7 +32,7 @@ le colis de livraison.
 
 ## Importer le fichier {#import-the-file}
 
-![Fichier → Ajouter un nouvel examen](../../assets/images/manager/file-menu.png)
+![Fichier → Ajouter un nouvel examen](../../assets/images/manager/file-menu.webp)
 
 1. Ouvrez **Manager**.
 2. Sélectionnez **Fichier → Ajouter un nouvel examen**.
@@ -50,7 +50,7 @@ encore une fois.
 
 Sélectionnez l'examen et consultez son panneau de détails :
 
-![Détails de l'examen importé](../../assets/images/manager/exam-details.png)
+![Détails de l'examen importé](../../assets/images/manager/exam-details.webp)
 
 - titre, code et version de l'examen ;
 - le flux des copies d'examen ;

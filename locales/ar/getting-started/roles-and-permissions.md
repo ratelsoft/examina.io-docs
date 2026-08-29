@@ -45,7 +45,7 @@ translation_source_sha256: f3a07ab346be91a3e2440c78660d0266283b6866d6780c44fe910
 المراقبون، والامتحان النصفي، والطلبة المسجلون. الموظفين خارج ذلك
 لن تتمكن الدائرة من الوصول لمجرد أن لديهم حسابًا عاديًا.
 
-![دائرة تظهر أعداد الممتحنين والمستخدمين والممتحنين](../assets/images/administration/circles-permissions.png)
+![دائرة تظهر أعداد الممتحنين والمستخدمين والممتحنين](../assets/images/administration/circles-permissions.webp)
 
 ## نموذج الدور الموصى به {#recommended-role-model}
 

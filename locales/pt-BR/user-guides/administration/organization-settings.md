@@ -10,7 +10,7 @@ translation_source_sha256: 551087143ecc0eaf4a63a442e2ff2f2373d7c666d9cd232732c01
 
 Contas Root e Administrator podem acessar **Início → Configurações** para gerenciar a marca de toda a organização, domínios de incorporação, credenciais de API, envio de webhooks e conexões com plataformas de aprendizagem suportadas.
 
-![Configurações da organização para domínios, marca, chaves de API e webhook](../../assets/images/administration/organization-settings.png)
+![Configurações da organização para domínios, marca, chaves de API e webhook](../../assets/images/administration/organization-settings.webp)
 
 ## Domínios de incorporação aprovados
 

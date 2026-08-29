@@ -19,7 +19,7 @@ translation_source_sha256: 0de577eb6227a78de5c3212ee769ac9f5df03d7870c962fa0fd9a
 يمكن فتح حسابات الجذر والمسؤول **الصفحة الرئيسية → المستخدمون**. جدول المستخدمين
 يعرض اسم كل موظف وعنوان بريده الإلكتروني ونوع الحساب المرئي.
 
-![جدول المستخدمين مع حساب منسق الامتحان العادي](../../assets/images/administration/users-and-roles.png)
+![جدول المستخدمين مع حساب منسق الامتحان العادي](../../assets/images/administration/users-and-roles.webp)
 
 ## اختر دور الحساب {#choose-an-account-role}
 

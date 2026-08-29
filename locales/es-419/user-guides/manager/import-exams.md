@@ -25,7 +25,7 @@ Conserva el proyecto de origen como tu versión maestra editable. El archivo `.s
 
 ## Importa el archivo
 
-![Archivo → Agregar nuevo examen](../../assets/images/manager/file-menu.png)
+![Archivo → Agregar nuevo examen](../../assets/images/manager/file-menu.webp)
 
 1. Abre **Manager**.
 2. Selecciona **Archivo → Agregar nuevo examen**.
@@ -39,7 +39,7 @@ Si Manager indica que el tipo de archivo no es compatible, regresa a Designer y 
 
 Selecciona el examen y revisa su panel de detalles:
 
-![Detalles del examen importado](../../assets/images/manager/exam-details.png)
+![Detalles del examen importado](../../assets/images/manager/exam-details.webp)
 
 - título, código y versión del examen;
 - flujo de la prueba del examen;

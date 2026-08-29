@@ -10,7 +10,7 @@ translation_source_sha256: 3758552e04cfd298de85e07c2a290dd7c4675706cab28137e1fb9
 
 O examina.io separa o trabalho de avaliação em aplicações focadas. Autores de questões podem criar conteúdos sem acesso aos registros de candidatos, administradores podem agendar e aplicar exames, fiscais de prova podem supervisionar apenas os exames aos quais foram atribuídos, e os candidatos usam um aplicativo Client dedicado.
 
-![A galeria de aplicativos do examina.io mostra o Designer, o Manager e o Client](../assets/images/dashboard/apps-gallery.png)
+![A galeria de aplicativos do examina.io mostra o Designer, o Manager e o Client](../assets/images/dashboard/apps-gallery.webp)
 
 ## Fluxo de trabalho de avaliação
 
@@ -29,7 +29,7 @@ A mesma pessoa pode realizar várias etapas em uma organização pequena. Organi
 
 O Designer é o aplicativo de autoria de exames. Use-o para criar projetos de exame, organizar uma ou mais provas, adicionar seções, escrever questões, definir regras de pontuação e tempo, e importar conteúdos de questões existentes.
 
-![A mesma questão no painel de edição e no painel de visualização do Designer](../assets/images/general/designer-edit-preview.png)
+![A mesma questão no painel de edição e no painel de visualização do Designer](../assets/images/general/designer-edit-preview.webp)
 
 Quando a autoria estiver concluída, exporte o exame como um arquivo `.smex` criptografado para aplicação através do Manager. Comece com a [Introdução ao Designer](../user-guides/designer/introduction.md).
 
@@ -45,7 +45,7 @@ O Manager conecta o conteúdo do exame às pessoas que o realizam. Administrador
 - abrir ou distribuir um link de exame; e
 - monitorar o progresso e gerar resultados ou relatórios.
 
-![Um exame no Manager, com seus candidatos mapeados](../assets/images/manager/exam-details.png)
+![Um exame no Manager, com seus candidatos mapeados](../assets/images/manager/exam-details.webp)
 
 Consulte a [Visão geral do Manager](../user-guides/manager/overview.md) para ver a navegação principal e a sequência operacional recomendada.
 
@@ -53,7 +53,7 @@ Consulte a [Visão geral do Manager](../user-guides/manager/overview.md) para ve
 
 O Proctor é o espaço de trabalho para fiscalização ao vivo. Quando a fiscalização de provas ao vivo está ativada para um exame, fiscais autorizados podem revisar as transmissões disponíveis de áudio, webcam e tela, comunicar-se com um candidato e aprovar o início do exame quando o fluxo de trabalho configurado exigir.
 
-![O espaço de trabalho do Proctor, com um bloco por candidato](../assets/images/general/proctoring-view.png)
+![O espaço de trabalho do Proctor, com um bloco por candidato](../assets/images/general/proctoring-view.webp)
 
 Cada candidato conectado aparece como um bloco com exibições de Detalhes, Webcam e Tela, controles de gravação e mudo, e uma caixa de mensagem direta.
 
@@ -63,7 +63,7 @@ Ative apenas os recursos de fiscalização de provas que sua organização tem a
 
 O Client é o aplicativo voltado para o candidato. Os candidatos abrem o link do exame, inserem suas credenciais atribuídas, concluem todas as verificações de sistema ou identidade necessárias e realizam as provas mapeadas.
 
-![O aplicativo Client voltado para o candidato](../assets/images/client/question.png)
+![O aplicativo Client voltado para o candidato](../assets/images/client/question.webp)
 
 O Client salva periodicamente o estado do exame enquanto houver uma conexão disponível. O [guia do dia da prova](../user-guides/client/take-an-exam.md) explica como os candidatos devem se preparar e o que fazer se a conexão for interrompida.
 

@@ -45,7 +45,7 @@ Par exemple, un cercle `BIO-201` peut contenir le coordinateur du cours et
 les surveillants, l'examen de mi-session et les étudiants inscrits. Personnel à l'extérieur
 Circle n’y aurait pas accès simplement parce qu’il possède un compte régulier.
 
-![Un cercle affichant le nombre de candidats, d'utilisateurs et d'examens](../assets/images/administration/circles-permissions.png)
+![Un cercle affichant le nombre de candidats, d'utilisateurs et d'examens](../assets/images/administration/circles-permissions.webp)
 
 ## Modèle recommandé {#recommended-role-model}
 

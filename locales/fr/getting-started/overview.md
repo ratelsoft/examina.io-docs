@@ -21,7 +21,7 @@ les auteurs peuvent créer du contenu sans accès aux dossiers des candidats, au
 peuvent planifier et dispenser des examens, les surveillants ne peuvent superviser que les examens qu'ils
 sont attribués et les candidats utilisent une application client dédiée.
 
-![La galerie d'applications examina.io affiche Designer, Manager et Client](../assets/images/dashboard/apps-gallery.png).
+![La galerie d'applications examina.io affiche Designer, Manager et Client](../assets/images/dashboard/apps-gallery.webp).
 
 ## Flux de travail d'évaluation {#assessment-workflow}
 
@@ -46,7 +46,7 @@ Designer est l'application de création d'examens. Utilisez-le pour créer des p
 organiser un ou plusieurs articles, ajouter des sections, rédiger des questions, définir une notation et
 règles de timing et importer le contenu des questions existantes.
 
-![La même question dans le volet d'édition et le volet d'aperçu Designer](../assets/images/general/designer-edit-preview.png)
+![La même question dans le volet d'édition et le volet d'aperçu Designer](../assets/images/general/designer-edit-preview.webp)
 
 Une fois la création terminée, exportez l'examen sous forme de fichier `.smex` crypté pour
 livraison via Manager. Commencez par [Présentation de Designer](../user-guides/designer/introduction.md).
@@ -64,7 +64,7 @@ le personnel autorisé utilise le Manager pour :
 - ouvrir ou diffuser un lien d'examen ; et
 - suivre les progrès et générer des résultats ou des rapports.
 
-![Un examen dans Manager, avec ses candidats mappés](../assets/images/manager/exam-details.png)
+![Un examen dans Manager, avec ses candidats mappés](../assets/images/manager/exam-details.webp)
 
 Voir la [Présentation de Manager](../user-guides/manager/overview.md) pour les informations principales
 navigation et une séquence de fonctionnement recommandée.
@@ -76,7 +76,7 @@ un examen, les surveillants autorisés peuvent examiner l'audio, la webcam et
 filtrer les flux, communiquer avec un candidat et approuver le début d'un examen lorsque
 le flux de travail configuré l'exige.
 
-![L'espace de travail Proctor, une vignette par candidat](../assets/images/general/proctoring-view.png)
+![L'espace de travail Proctor, une vignette par candidat](../assets/images/general/proctoring-view.webp)
 
 Chaque candidat connecté apparaît sous la forme d'une vignette avec des vues Détails, Webcam et Écran,
 commandes d'enregistrement et de sourdine, ainsi qu'une boîte de message direct.
@@ -90,7 +90,7 @@ Le client est l’application destinée aux candidats. Les candidats ouvrent le 
 leurs informations d'identification attribuées, effectuer tous les contrôles de système ou d'identité requis,
 et prenez les papiers cartographiés.
 
-![L'application client destinée aux candidats](../assets/images/client/question.png)
+![L'application client destinée aux candidats](../assets/images/client/question.webp)
 
 Le client enregistre périodiquement l'état de l'examen lorsqu'une connexion est disponible. Le
 [guide du jour du test](../user-guides/client/take-an-exam.md) explique comment les candidats

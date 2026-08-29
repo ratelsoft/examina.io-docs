@@ -10,7 +10,7 @@ translation_source_sha256: b9c946628f9fcca401d26f0faab24b32e0a5ed14d358638d8aa32
 
 Um Círculo é um limite de permissão formado por **Usuários**, **Exames** e **Candidatos** selecionados. Um Usuário pode trabalhar com os recursos disponibilizados por meio do Círculo, sujeito à função da conta do Usuário.
 
-![Um Círculo resume seus candidatos, usuários e exames](../../assets/images/administration/circles-permissions.png)
+![Um Círculo resume seus candidatos, usuários e exames](../../assets/images/administration/circles-permissions.webp)
 
 ## Planejar o Círculo
 

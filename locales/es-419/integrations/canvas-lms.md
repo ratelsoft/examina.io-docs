@@ -79,21 +79,21 @@ Inicia sesión con una cuenta de administrador de la cuenta raíz de Canvas. Sel
 la navegación global y luego elige la cuenta raíz de tu institución. Si Canvas
 muestra primero la lista de cuentas, selecciona el nombre de la cuenta raíz.
 
-![Seleccionar la cuenta raíz de Canvas de la institución](../assets/images/integrations/canvas/admin-01-accounts.png)
+![Seleccionar la cuenta raíz de Canvas de la institución](../assets/images/integrations/canvas/admin-01-accounts.webp)
 
 La navegación de la cuenta debe incluir **Developer keys** y **Apps**. Si falta
 alguno de los elementos, tu rol de Canvas no tiene el permiso de cuenta raíz requerido; pide al administrador de Canvas de la institución que realice esta configuración.
 
-![Abrir Developer keys desde la navegación de la cuenta raíz de Canvas](../assets/images/integrations/canvas/admin-02-root-account.png)
+![Abrir Developer keys desde la navegación de la cuenta raíz de Canvas](../assets/images/integrations/canvas/admin-02-root-account.webp)
 
 Abre **Developer keys** y luego selecciona **+ Developer Key**.
 
-![Abrir la página de Developer keys de Canvas](../assets/images/integrations/canvas/admin-03-developer-keys.png)
+![Abrir la página de Developer keys de Canvas](../assets/images/integrations/canvas/admin-03-developer-keys.webp)
 
 Elige **LTI Key**. Canvas también puede mostrar **LTI Registration**; usa esa opción
 solo cuando examina.io haya proporcionado una URL de Dynamic Registration de un solo uso.
 
-![Elegir LTI Key del menú Developer Key de Canvas](../assets/images/integrations/canvas/admin-04-create-lti-key.png)
+![Elegir LTI Key del menú Developer Key de Canvas](../assets/images/integrations/canvas/admin-04-create-lti-key.webp)
 
 Elige **Manual Entry** y luego completa la configuración de la clave:
 
@@ -108,7 +108,7 @@ Elige **Manual Entry** y luego completa la configuración de la clave:
 6. Establece **JWK Method** en **Public JWK URL** e ingresa la URL del conjunto de claves
    provisional descrita anteriormente.
 
-![Ingresar las URLs públicas de examina.io en una clave LTI de Canvas](../assets/images/integrations/canvas/admin-05-lti-key-settings.png)
+![Ingresar las URLs públicas de examina.io en una clave LTI de Canvas](../assets/images/integrations/canvas/admin-05-lti-key-settings.webp)
 
 !!! warning "El valor de JWKS es específico del registro"
 
@@ -129,12 +129,12 @@ servicios de esta guía:
 Los primeros cuatro respaldan la devolución de calificaciones a través de AGS. El alcance final respalda la
 lista de curso opcional de NRPS; déjalo deshabilitado cuando no necesites acceso a la lista.
 
-![Seleccionar los alcances de AGS de Canvas y NRPS opcionales](../assets/images/integrations/canvas/admin-06-lti-services.png)
+![Seleccionar los alcances de AGS de Canvas y NRPS opcionales](../assets/images/integrations/canvas/admin-06-lti-services.webp)
 
 En **Placements**, agrega **Assignment Selection**. Agrega **Course Navigation**
 solo si tu institución también desea un punto de entrada a nivel de curso para examina.io.
 
-![Agregar ubicaciones de Assignment Selection y Course Navigation opcional](../assets/images/integrations/canvas/admin-07-placements.png)
+![Agregar ubicaciones de Assignment Selection y Course Navigation opcional](../assets/images/integrations/canvas/admin-07-placements.webp)
 
 Guarda la clave, copia su **Client ID** y mantén la clave en **Off**. Abre **Admin →
 tu cuenta raíz → Apps → Manage**, instala la App usando el Client ID y
@@ -170,7 +170,7 @@ usuarios inician sesión. No agregues una ruta final al Issuer URL y no uses el 
    aprobado y otorgado.
 7. Selecciona **Save registration**.
 
-![Agregar un registro de Canvas LTI 1.3 en examina.io](../assets/images/integrations/canvas/01-examina-add-canvas-registration.png)
+![Agregar un registro de Canvas LTI 1.3 en examina.io](../assets/images/integrations/canvas/01-examina-add-canvas-registration.webp)
 
 La tarjeta guardada muestra las URLs exactas de **OIDC login initiation**, **LTI launch**,
 **Deep Linking** y la URL específica del registro de **Public key set (JWKS)**.
@@ -203,14 +203,14 @@ El **Tool Icon URL** proporciona a los instructores y administradores un logotip
 examina.io en Canvas. Si una instalación existente aún muestra el ícono genérico de herramienta externa de Canvas, actualiza la Developer Key con este valor y
 actualiza o vuelve a instalar la App para que Canvas recargue sus metadatos de registro.
 
-![Confirmar que examina.io Assessments esté activada y actualizada en Canvas Apps](../assets/images/integrations/canvas/admin-08-apps-manage.png)
+![Confirmar que examina.io Assessments esté activada y actualizada en Canvas Apps](../assets/images/integrations/canvas/admin-08-apps-manage.webp)
 
 Si la App muestra **Not Available**, abre su configuración de disponibilidad, elige la
 cuenta raíz o una subcuenta aprobada, selecciona **Available** y guarda. Limita
 la disponibilidad a las instituciones, subcuentas o cursos aprobados para la
 integración.
 
-![Hacer que la App de Canvas esté disponible para la cuenta aprobada](../assets/images/integrations/canvas/admin-09-availability.png)
+![Hacer que la App de Canvas esté disponible para la cuenta aprobada](../assets/images/integrations/canvas/admin-09-availability.webp)
 
 Regresa a examina.io y activa el registro. Un registro suspendido o revocado
 no puede aceptar nuevos inicios.
@@ -225,12 +225,12 @@ Como instructor en el curso de destino:
 4. Selecciona **Find** y luego elige **Add an examina.io assessment**.
 5. Selecciona el examen publicado deseado y elige **Add selected exam**.
 
-![Elegir una evaluación publicada de examina.io desde Canvas](../assets/images/integrations/canvas/04-canvas-select-published-exam.png)
+![Elegir una evaluación publicada de examina.io desde Canvas](../assets/images/integrations/canvas/04-canvas-select-published-exam.webp)
 
 Canvas regresa al formulario de la tarea con la URL de inicio seleccionada. Confirma
 el nombre de la tarea, los puntos, el acceso a la tarea, las fechas y la política de intentos.
 
-![Una tarea de Herramienta externa de Canvas que utiliza la URL de inicio de producción de examina.io](../assets/images/integrations/canvas/05-canvas-assignment-settings.png)
+![Una tarea de Herramienta externa de Canvas que utiliza la URL de inicio de producción de examina.io](../assets/images/integrations/canvas/05-canvas-assignment-settings.webp)
 
 Elige **Save & publish**, luego abre la tarea una vez como instructor.
 Confirma que aparezca la evaluación esperada y que Canvas no pida
@@ -245,7 +245,7 @@ Usa un estudiante ficticio inscrito en el curso:
 3. Confirma que el examen esperado se abra dentro de la tarea de Canvas.
 4. Comienza, completa y envía la evaluación.
 
-![Una evaluación publicada de examina.io incrustada en una tarea de Canvas](../assets/images/integrations/canvas/06-canvas-learner-assessment.png)
+![Una evaluación publicada de examina.io incrustada en una tarea de Canvas](../assets/images/integrations/canvas/06-canvas-learner-assessment.webp)
 
 El inicio de LTI verifica la plataforma de Canvas, el despliegue, el curso, la tarea,
 el estudiante y la publicación seleccionada. Una URL de inicio copiada no reemplaza
@@ -256,7 +256,7 @@ el abrir la tarea desde Canvas.
 Después de enviar la evaluación, abre la vista de calificaciones de Canvas como estudiante o el libro de calificaciones (Gradebook)
 como instructor. Confirma que el resultado aparezca para la tarea y el estudiante correctos.
 
-![La evaluación de examina.io completada enviada de vuelta al libro de calificaciones de Canvas](../assets/images/integrations/canvas/07-canvas-grade-return.png)
+![La evaluación de examina.io completada enviada de vuelta al libro de calificaciones de Canvas](../assets/images/integrations/canvas/07-canvas-grade-return.webp)
 
 La entrega de calificaciones se pone en cola por separado del envío del examen, por lo que una interrupción temporal de
 Canvas no convierte una evaluación completada en un envío fallido.

@@ -87,22 +87,22 @@ Canvas يطلق على هذا النمط اسم `assignment_selection`. الرس
 التنقل العالمي، ثم اختر الحساب الجذر لمؤسستك. إذا كان Canvas
 يظهر أولاً قائمة الحسابات، حدد اسم الحساب الجذر.
 
-![حدد الحساب الجذر Canvas الخاص بالمؤسسة](../assets/images/integrations/canvas/admin-01-accounts.png)
+![حدد الحساب الجذر Canvas الخاص بالمؤسسة](../assets/images/integrations/canvas/admin-01-accounts.webp)
 
 يجب أن يتضمن التنقل في الحساب **مفاتيح المطورين** و**التطبيقات**. إذا سواء
 العنصر مفقود، فإن دور Canvas الخاص بك لا يحتوي على حساب الجذر المطلوب
 إذن؛ اطلب من مسؤول Canvas بالمؤسسة إجراء هذا الإعداد.
 
-![افتح مفاتيح المطور من خلال التنقل في حساب الجذر Canvas](../assets/images/integrations/canvas/admin-02-root-account.png)
+![افتح مفاتيح المطور من خلال التنقل في حساب الجذر Canvas](../assets/images/integrations/canvas/admin-02-root-account.webp)
 
 افتح **مفاتيح المطور**، ثم حدد **+مفتاح المطور**.
 
-![افتح صفحة مفاتيح المطور Canvas](../assets/images/integrations/canvas/admin-03-developer-keys.png)
+![افتح صفحة مفاتيح المطور Canvas](../assets/images/integrations/canvas/admin-03-developer-keys.webp)
 
 اختر **مفتاح LTI**. قد يُظهر Canvas أيضًا **تسجيل LTI**؛ استخدم هذا الخيار
 فقط عندما يقوم examina.io بتوفير عنوان URL للتسجيل الديناميكي لمرة واحدة.
 
-![اختر مفتاح LTI من قائمة مفتاح مطور Canvas](../assets/images/integrations/canvas/admin-04-create-lti-key.png)
+![اختر مفتاح LTI من قائمة مفتاح مطور Canvas](../assets/images/integrations/canvas/admin-04-create-lti-key.webp)
 
 اختر **الإدخال اليدوي**، ثم أكمل إعدادات المفتاح:
 
@@ -117,7 +117,7 @@ Canvas يطلق على هذا النمط اسم `assignment_selection`. الرس
 6. اضبط **طريقة JWK** على **عنوان URL العام لـ JWK** وأدخل مجموعة المفاتيح المؤقتة
    عنوان URL الموضح أعلاه.
 
-![أدخل عناوين URL العامة لـ examina.io في مفتاح Canvas LTI](../assets/images/integrations/canvas/admin-05-lti-key-settings.png)
+![أدخل عناوين URL العامة لـ examina.io في مفتاح Canvas LTI](../assets/images/integrations/canvas/admin-05-lti-key-settings.webp)
 
 !!! warning "قيمة JWKS خاصة بالتسجيل"
     إذا كنت تستخدم `https://www.examina.io/lti/jwks/your-registration-id` أثناء
@@ -138,12 +138,12 @@ Canvas يطلق على هذا النمط اسم `assignment_selection`. الرس
 قائمة الدورات الاختيارية NRPS؛ اتركه معطلاً عندما لا تحتاج إلى القائمة
 الوصول.
 
-![حدد Canvas AGS ونطاقات NRPS الاختيارية](../assets/images/integrations/canvas/admin-06-lti-services.png)
+![حدد Canvas AGS ونطاقات NRPS الاختيارية](../assets/images/integrations/canvas/admin-06-lti-services.webp)
 
 ضمن **المواضع**، أضف **اختيار الواجب**. إضافة ** التنقل في الدورة **
 فقط إذا كانت مؤسستك تريد أيضًا نقطة دخول examina.io على مستوى المقرر الدراسي.
 
-![أضف تحديد الواجبات ومواضع التنقل الاختيارية للدورة التدريبية ](../assets/images/integrations/canvas/admin-07-placements.png)
+![أضف تحديد الواجبات ومواضع التنقل الاختيارية للدورة التدريبية ](../assets/images/integrations/canvas/admin-07-placements.webp)
 
 احفظ المفتاح، وانسخ **معرف العميل** الخاص به، واحتفظ بالمفتاح **إيقاف**. افتح **المسؤول →
 حسابك الجذر → التطبيقات → إدارة**، وتثبيت التطبيق باستخدام معرف العميل، و
@@ -182,7 +182,7 @@ Canvas يطلق على هذا النمط اسم `assignment_selection`. الرس
    تمت الموافقة عليها ومنحها.
 7. حدد **حفظ التسجيل**.
 
-![إضافة تسجيل Canvas LTI 1.3 في examina.io](../assets/images/integrations/canvas/01-examina-add-canvas-registration.png)
+![إضافة تسجيل Canvas LTI 1.3 في examina.io](../assets/images/integrations/canvas/01-examina-add-canvas-registration.webp)
 
 تعرض البطاقة المحفوظة **بدء تسجيل الدخول OIDC**، **إطلاق LTI**،
 **الارتباط العميق** وعناوين URL الخاصة بـ **مجموعة المفاتيح العامة (JWKS)** الخاصة بالتسجيل.
@@ -216,14 +216,14 @@ Canvas يطلق على هذا النمط اسم `assignment_selection`. الرس
 رمز الأداة الخارجية العامة، قم بتحديث مفتاح المطور بهذه القيمة و
 قم بتحديث التطبيق أو إعادة تثبيته حتى يقوم Canvas بإعادة تحميل بيانات تعريف التسجيل الخاصة به.
 
-![تأكد من أن تقييمات examina.io قيد التشغيل وحديثة في Canvas Apps](../assets/images/integrations/canvas/admin-08-apps-manage.png)
+![تأكد من أن تقييمات examina.io قيد التشغيل وحديثة في Canvas Apps](../assets/images/integrations/canvas/admin-08-apps-manage.webp)
 
 إذا أظهر التطبيق **غير متاح**، فافتح إعداد التوفر الخاص به، واختر
 حساب جذر أو حساب فرعي معتمد، حدد **متاح**، ثم احفظ. الحد
 التوفر للمؤسسات أو الحسابات الفرعية أو الدورات المعتمدة لل
 التكامل.
 
-![جعل تطبيق Canvas متاحًا للحساب المعتمد](../assets/images/integrations/canvas/admin-09-availability.png)
+![جعل تطبيق Canvas متاحًا للحساب المعتمد](../assets/images/integrations/canvas/admin-09-availability.webp)
 
 ارجع إلى examina.io وقم بتنشيط التسجيل. موقوفة أو ملغاة
 لا يمكن للتسجيل قبول عمليات الإطلاق الجديدة.
@@ -238,12 +238,12 @@ Canvas يطلق على هذا النمط اسم `assignment_selection`. الرس
 4. حدد **بحث**، ثم اختر **إضافة تقييم examina.io**.
 5. حدد الاختبار المنشور المقصود واختر **إضافة الاختبار المحدد**.
 
-![اختر تقييم examina.io المنشور من Canvas](../assets/images/integrations/canvas/04-canvas-select-published-exam.png)
+![اختر تقييم examina.io المنشور من Canvas](../assets/images/integrations/canvas/04-canvas-select-published-exam.webp)
 
 يعود Canvas إلى نموذج المهمة مع تحديد عنوان URL الخاص بالتشغيل. تأكيد
 اسم المهمة، والنقاط، والوصول إلى المهمة، والتواريخ، وسياسة المحاولة.
 
-![تعيين أداة خارجية Canvas باستخدام URL](../assets/images/integrations/canvas/05-canvas-assignment-settings.png) للإنتاج examina.io
+![تعيين أداة خارجية Canvas باستخدام URL](../assets/images/integrations/canvas/05-canvas-assignment-settings.webp) للإنتاج examina.io
 
 اختر **حفظ ونشر**، ثم افتح المهمة مرة واحدة كمدرس.
 تأكد من ظهور التقييم المتوقع وأن Canvas لا يطالب
@@ -258,7 +258,7 @@ Canvas يطلق على هذا النمط اسم `assignment_selection`. الرس
 3. التأكد من فتح الاختبار المتوقع داخل المهمة Canvas.
 4. ابدأ التقييم وأكمله وأرسله.
 
-![تقييم examina.io منشور مضمن في مهمة Canvas](../assets/images/integrations/canvas/06-canvas-learner-assessment.png)
+![تقييم examina.io منشور مضمن في مهمة Canvas](../assets/images/integrations/canvas/06-canvas-learner-assessment.webp)
 
 يتحقق إطلاق LTI من منصة Canvas ونشرها ودورتها التدريبية والمهمة،
 المتعلم، والنشر المختار. عنوان URL المنسوخ للإطلاق ليس بديلاً لـ
@@ -270,7 +270,7 @@ Canvas يطلق على هذا النمط اسم `assignment_selection`. الرس
 كمدرس. تأكد من ظهور النتيجة للمهمة الصحيحة
 والمتعلم.
 
-![تم إرجاع تقييم examina.io المكتمل إلى دفتر العلامات Canvas](../assets/images/integrations/canvas/07-canvas-grade-return.png)
+![تم إرجاع تقييم examina.io المكتمل إلى دفتر العلامات Canvas](../assets/images/integrations/canvas/07-canvas-grade-return.webp)
 
 يتم وضع تسليم الدرجات في قائمة الانتظار بشكل منفصل عن تقديم الاختبار، لذا فهو مؤقت
 لا يؤدي انقطاع Canvas إلى تحويل التقييم المكتمل إلى إرسال فاشل.
