@@ -5,6 +5,7 @@ from __future__ import annotations
 
 from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import urlsplit
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -21,6 +22,7 @@ class MetadataParser(HTMLParser):
         self.body_dir = ""
         self.canonical = ""
         self.alternates: dict[str, str] = {}
+        self.language_links: dict[str, str] = {}
         self.description = ""
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
@@ -37,6 +39,10 @@ class MetadataParser(HTMLParser):
             hreflang = values.get("hreflang")
             if hreflang:
                 self.alternates[hreflang] = values.get("href") or ""
+        elif tag == "a" and "md-select__link" in (values.get("class") or "").split():
+            hreflang = values.get("hreflang")
+            if hreflang:
+                self.language_links[hreflang] = values.get("href") or ""
 
 
 def output_path(relative: Path, prefix: str) -> Path:
@@ -86,6 +92,11 @@ def main() -> int:
                 errors.append(f"{label}: canonical is {parsed.canonical!r}")
             if parsed.alternates != expected_alternates:
                 errors.append(f"{label}: hreflang set does not match page variants")
+            expected_language_links = {
+                lang: urlsplit(expected_alternates[lang]).path for lang in LANGUAGES
+            }
+            if parsed.language_links != expected_language_links:
+                errors.append(f"{label}: language selector links do not use canonical page paths")
             if not parsed.description.strip():
                 errors.append(f"{label}: generated meta description is missing")
 
