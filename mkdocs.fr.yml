@@ -66,6 +66,7 @@ plugins:
 extra:
   generator: false
   canonical_root: https://docs.examina.io
+  social_image_alt: Applications d'évaluation examina.io
   alternate:
     - name: English
       link: /
