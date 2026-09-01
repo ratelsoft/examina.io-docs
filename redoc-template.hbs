@@ -6,6 +6,19 @@
     <title>{{title}}</title>
     <meta name="description" content="{{{templateOptions.metaDescription}}}">
     <link rel="canonical" href="https://docs.examina.io/api/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="examina.io Docs">
+    <meta property="og:title" content="{{title}}">
+    <meta property="og:description" content="{{{templateOptions.metaDescription}}}">
+    <meta property="og:url" content="https://docs.examina.io/api/">
+    <meta property="og:image" content="https://docs.examina.io/assets/images/dashboard/apps-gallery-2026.png">
+    <meta property="og:image:width" content="1600">
+    <meta property="og:image:height" content="1000">
+    <meta property="og:image:alt" content="examina.io assessment applications">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{title}}">
+    <meta name="twitter:description" content="{{{templateOptions.metaDescription}}}">
+    <meta name="twitter:image" content="https://docs.examina.io/assets/images/dashboard/apps-gallery-2026.png">
     <link rel="alternate" hreflang="en" href="https://docs.examina.io/api/">
     <link rel="alternate" hreflang="fr" href="https://docs.examina.io/fr/api/">
     <link rel="alternate" hreflang="ar" href="https://docs.examina.io/ar/api/">
@@ -14,6 +27,43 @@
     <link rel="alternate" hreflang="x-default" href="https://docs.examina.io/api/">
     <link rel="icon" href="../assets/favicon.ico">
     <link rel="stylesheet" href="../stylesheets/redoc.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.examina.io/#organization",
+            "name": "Ratelsoft Inc.",
+            "url": "https://www.examina.io/",
+            "brand": {"@type": "Brand", "name": "examina.io"}
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://docs.examina.io/#website",
+            "url": "https://docs.examina.io/",
+            "name": "examina.io Docs",
+            "publisher": {"@id": "https://www.examina.io/#organization"}
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://docs.examina.io/api/#webpage",
+            "url": "https://docs.examina.io/api/",
+            "name": "{{title}}",
+            "description": "{{{templateOptions.metaDescription}}}",
+            "inLanguage": "en",
+            "isPartOf": {"@id": "https://docs.examina.io/#website"}
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "examina.io Docs", "item": "https://docs.examina.io/"},
+              {"@type": "ListItem", "position": 2, "name": "API Reference", "item": "https://docs.examina.io/api/"}
+            ]
+          }
+        ]
+      }
+    </script>
     {{#unless disableGoogleFont}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

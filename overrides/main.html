@@ -1,12 +1,13 @@
 {% extends "base.html" %}
 
 {% block site_meta %}
+  {% set description = page.meta.description if page.meta and page.meta.description else config.site_description %}
+  {% set root = config.extra.canonical_root %}
+  {% set share_image = root ~ "/assets/images/dashboard/apps-gallery-2026.png" %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  {% if page.meta and page.meta.description %}
-    <meta name="description" content="{{ page.meta.description }}">
-  {% elif config.site_description %}
-    <meta name="description" content="{{ config.site_description }}">
+  {% if description %}
+    <meta name="description" content="{{ description }}">
   {% endif %}
   {% if page.meta and page.meta.author %}
     <meta name="author" content="{{ page.meta.author }}">
@@ -15,6 +16,19 @@
   {% endif %}
   {% if page.canonical_url %}
     <link rel="canonical" href="{{ page.canonical_url }}">
+    <meta property="og:type" content="{{ 'website' if page.is_homepage else 'article' }}">
+    <meta property="og:site_name" content="examina.io Docs">
+    <meta property="og:title" content="{{ page.title | striptags }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:url" content="{{ page.canonical_url }}">
+    <meta property="og:image" content="{{ share_image }}">
+    <meta property="og:image:width" content="1600">
+    <meta property="og:image:height" content="1000">
+    <meta property="og:image:alt" content="{{ config.extra.social_image_alt }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.title | striptags }}">
+    <meta name="twitter:description" content="{{ description }}">
+    <meta name="twitter:image" content="{{ share_image }}">
   {% endif %}
   {% if page.previous_page %}
     <link rel="prev" href="{{ page.previous_page.url | url }}">
@@ -22,7 +36,6 @@
   {% if page.next_page %}
     <link rel="next" href="{{ page.next_page.url | url }}">
   {% endif %}
-  {% set root = config.extra.canonical_root %}
   {% for alt in config.extra.alternate %}
     {% set prefix = "" if alt.lang == "en" else ("/pt-br" if alt.lang == "pt-BR" else "/" ~ alt.lang) %}
     <link rel="alternate" href="{{ root }}{{ prefix }}/{{ page.url }}" hreflang="{{ alt.lang }}">
@@ -34,6 +47,54 @@
   {% endif %}
   <link rel="icon" href="{{ config.theme.favicon | url }}">
   <meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-material-9.7.7">
+  {% if page.canonical_url %}
+    <script type="application/ld+json">
+      {{ {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.examina.io/#organization",
+            "name": "Ratelsoft Inc.",
+            "url": "https://www.examina.io/",
+            "brand": {"@type": "Brand", "name": "examina.io"}
+          },
+          {
+            "@type": "WebSite",
+            "@id": root ~ "/#website",
+            "url": root ~ "/",
+            "name": "examina.io Docs",
+            "publisher": {"@id": "https://www.examina.io/#organization"}
+          },
+          {
+            "@type": "WebPage",
+            "@id": page.canonical_url ~ "#webpage",
+            "url": page.canonical_url,
+            "name": page.title | striptags,
+            "description": description,
+            "inLanguage": config.theme.language,
+            "isPartOf": {"@id": root ~ "/#website"}
+          }
+        ] + ([] if page.is_homepage else [{
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": config.site_name, "item": config.site_url},
+            {"@type": "ListItem", "position": 2, "name": page.title | striptags, "item": page.canonical_url}
+          ]
+        }])
+      } | tojson }}
+    </script>
+  {% endif %}
+{% endblock %}
+
+{% block htmltitle %}
+  {% if page.meta and page.meta.title %}
+    <title>{{ page.meta.title }} | examina.io</title>
+  {% elif page.title and not page.is_homepage %}
+    <title>{{ page.title | striptags }} | examina.io</title>
+  {% else %}
+    <title>{{ config.site_name }}</title>
+  {% endif %}
 {% endblock %}
 
 {% block announce %}

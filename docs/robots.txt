@@ -1,8 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://docs.examina.io/sitemap.xml
-Sitemap: https://docs.examina.io/fr/sitemap.xml
-Sitemap: https://docs.examina.io/ar/sitemap.xml
-Sitemap: https://docs.examina.io/es-419/sitemap.xml
-Sitemap: https://docs.examina.io/pt-br/sitemap.xml
+Sitemap: https://docs.examina.io/sitemap-index.xml

@@ -50,7 +50,9 @@ recorded digest.
 
 The generated-site checks validate internal files and anchors, Markdown code
 rendering, localized canonical URLs, reciprocal page-level `hreflang` links,
-Arabic right-to-left rendering, and all five sitemaps.
+social metadata, structured page and breadcrumb data, Arabic right-to-left
+rendering, all five locale sitemaps, and the sitemap index submitted to search
+engines.
 
 Changes pushed to `main` are validated and deployed to GitHub Pages by
 `.github/workflows/deploy-pages.yml`.
