@@ -55,6 +55,7 @@ nav:
   - التكاملات:
       - Moodle LMS: integrations/moodle-lms.md
       - Canvas LMS: integrations/canvas-lms.md
+      - إنشاء الأسئلة بالذكاء الاصطناعي من نظام إدارة التعلم: integrations/ai-authoring-from-lms.md
       - Blackboard Learn Ultra: integrations/blackboard-lms.md
       - سير عمل المطور: integrations/developer-workflow.md
       - بيئة المطور التجريبية: integrations/developer-sandbox.md

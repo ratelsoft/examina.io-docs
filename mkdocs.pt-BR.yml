@@ -51,6 +51,7 @@ nav:
   - Integrações:
       - Moodle LMS: integrations/moodle-lms.md
       - Canvas LMS: integrations/canvas-lms.md
+      - Criação com IA a partir de um LMS: integrations/ai-authoring-from-lms.md
       - Blackboard Learn Ultra: integrations/blackboard-lms.md
       - Fluxo de trabalho do desenvolvedor: integrations/developer-workflow.md
       - Sandbox do desenvolvedor: integrations/developer-sandbox.md
